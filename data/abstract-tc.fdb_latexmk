@@ -1,14 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1462719254 "abstract-tc.tex" "abstract-tc.pdf" "abstract-tc" 1462719255
+["pdflatex"] 1462771302 "abstract-tc.tex" "abstract-tc.pdf" "abstract-tc" 1462771302
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
-  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf" 1428852030 31983 18aeec08f48baa3cf3508d538dd5f459 ""
   "/usr/local/texlive/2015/texmf-var/web2c/xetex/xelatex.fmt" 1462692603 3445943 19b128c32713cc6ee877e8432432055a ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "abstract-tc.aux" 1462719255 66 8cb6031e2dd3e215f7143b25a85a2eff ""
-  "abstract-tc.tex" 1462719251 308 94dbb5d3e2c33a5152f7ff5aae3a4a7e ""
+  "abstract-tc.aux" 1462771254 8 a94a2480d3289e625eea47cd1b285758 ""
+  "abstract-tc.tex" 1462771300 279 b88e39d374abe53b77036d88db3d5b14 ""
   (generated)
   "abstract-tc.log"
-  "abstract-tc.aux"
   "abstract-tc.pdf"

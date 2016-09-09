@@ -1,0 +1,13 @@
+LICENSE.txt
+.DS_Store
+*.aux
+*.log
+*.fls
+*_bak*
+*.gz
+*.pages
+*.fdb_latexmk
+
+*.bbl
+*.lof
+

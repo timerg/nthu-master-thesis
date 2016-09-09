@@ -100,8 +100,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/ppxetex.def
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/ppxetex.def
-INPUT main.aux
-INPUT main.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
@@ -144,8 +142,14 @@ INPUT data/chap1.tex
 INPUT data/chap2.tex
 INPUT data/chap2.tex
 INPUT images/nthu-logo.pdf
+INPUT images/nthu-logo.pdf
 INPUT data/chap3.tex
 INPUT data/chap3.tex
+INPUT images/nthu-logo.pdf
+INPUT images/drawing.pdf_tex
+INPUT images/drawing.pdf_tex
+INPUT images/drawing.pdf
+INPUT images/drawing.pdf
 INPUT images/nthu-logo.pdf
 INPUT data/chap4.tex
 INPUT data/chap4.tex

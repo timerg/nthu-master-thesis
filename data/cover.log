@@ -1,0 +1,178 @@
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  30 AUG 2016 13:39
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**cover.tex
+(./cover.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+Missing character: There is no 國 in font nullfont!
+Missing character: There is no 立 in font nullfont!
+Missing character: There is no 清 in font nullfont!
+Missing character: There is no 華 in font nullfont!
+Missing character: There is no 大 in font nullfont!
+Missing character: There is no 學 in font nullfont!
+Missing character: There is no 資 in font nullfont!
+Missing character: There is no 訊 in font nullfont!
+Missing character: There is no 工 in font nullfont!
+Missing character: There is no 程 in font nullfont!
+Missing character: There is no 研 in font nullfont!
+Missing character: There is no 究 in font nullfont!
+Missing character: There is no 所 in font nullfont!
+Missing character: There is no 碩 in font nullfont!
+Missing character: There is no 士 in font nullfont!
+Missing character: There is no 論 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+./cover.tex:15: Undefined control sequence.
+<argument>  \LARGE 
+                   {奈米限量} 
+l.15 }
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 奈 in font nullfont!
+Missing character: There is no 米 in font nullfont!
+Missing character: There is no 限 in font nullfont!
+Missing character: There is no 量 in font nullfont!
+./cover.tex:22: Undefined control sequence.
+<argument>  \LARGE 
+                   {論文中文標題} 
+l.22 }
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 論 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 標 in font nullfont!
+Missing character: There is no 題 in font nullfont!
+
+./cover.tex:26: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \begin{tabular}
+                    {c}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 26.
+./cover.tex:29: Undefined control sequence.
+<argument> \large 
+                  \fontsize {16pt}{\baselineskip }{研究生：<中文名>}(...
+l.29 ...{研究生：<中文名>}(<English Name>)}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 研 in font nullfont!
+Missing character: There is no 究 in font nullfont!
+Missing character: There is no 生 in font nullfont!
+Missing character: There is no ： in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 名 in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no ) in font nullfont!
+./cover.tex:32: Undefined control sequence.
+<argument> \large 
+                  \fontsize {16pt}{\baselineskip }{指導教授：<中文名...
+l.32 ...<中文名> 教授}(Prof. <English Name>)}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 指 in font nullfont!
+Missing character: There is no 導 in font nullfont!
+Missing character: There is no 教 in font nullfont!
+Missing character: There is no 授 in font nullfont!
+Missing character: There is no ： in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 名 in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no 教 in font nullfont!
+Missing character: There is no 授 in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no 華 in font nullfont!
+Missing character: There is no 民 in font nullfont!
+Missing character: There is no 國 in font nullfont!
+Missing character: There is no 一 in font nullfont!
+Missing character: There is no 零 in font nullfont!
+Missing character: There is no 三 in font nullfont!
+Missing character: There is no 年 in font nullfont!
+Missing character: There is no 六 in font nullfont!
+Missing character: There is no 月 in font nullfont!
+)
+! Emergency stop.
+<*> cover.tex
+             
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 8 strings out of 493706
+ 72 string characters out of 6145770
+ 54323 words of memory out of 5000000
+ 3450 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 19i,7n,12p,128b,95s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

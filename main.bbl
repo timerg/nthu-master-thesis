@@ -1,3 +1,23 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{C5}
+C.-H. Lin, C.-Y. Hsiao, C.-H. Hung, Y.-R. Lo, C.-C. Lee, C.-J. Su, H.-C. Lin,
+  F.-H. Ko, T.-Y. Huang, and Y.-S. Yang.
+\newblock Ultrasensitive detection of dopamine using a polysilicon nanowire
+  field-effect transistor.
+\newblock {\em Chem. Commun.}, pages 5749--5751, 2008.
+
+\bibitem{C6}
+C.-H. Lin, C.-H. Hung, C.-Y. Hsiao, H.-C. Lin, F.-H. Ko, and Y.-S. Yang.
+\newblock Poly-silicon nanowire field-effect transistor for ultrasensitive and
+  label-free detection of pathogenic avian influenza dna.
+\newblock {\em WOS:000267162200012}, 2009.
+
+\bibitem{C7}
+I.~Zadorozhnyi, S.~Pud, S.~Vitusevich, and M.~Petrychuk.
+\newblock Features of the gate coupling effect in liquid-gated si nanowire
+  fets.
+\newblock In {\em Noise and Fluctuations (ICNF), 2015 International Conference
+  on}, pages 1--4, June 2015.
 
 \end{thebibliography}

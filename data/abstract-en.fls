@@ -2,7 +2,5 @@ PWD /Users/TimerPro/GitHub/nthu-master-thesis/data
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/xetex/xelatex.fmt
-INPUT abstract-tc.tex
-OUTPUT abstract-tc.log
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT abstract-en.tex
+OUTPUT abstract-en.log

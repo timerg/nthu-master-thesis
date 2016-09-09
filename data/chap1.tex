@@ -1,1 +1,30 @@
 \chapter{Introduction}
+\section{Motivation}
+Poly-silicon nanowire(SiNW) is an interesting and promising one-dimensional nano-structures. Many research of fabrication and electrical properties have been conducted \cite{J1}. It was first introduced to the biosensor field in 2001\cite{J2} and has become a promising candidate for various features such as high surface-to-volume ratio, ultra sensitivity, label-free electrical detection and  real-time measurement.
+
+Although there has been some great advances on nanowire structure design \cite{J3}, the work of systems-level engineering is still insufficient.
+Systems designed for specific purpose can help the device to meet pratical needs.
+
+
+{\color{red}Such as low noise }
+
+
+\section{Design Description}
+In our biosensing system, nanowire is trated as a MOSFET with its drain-source current ($I_{ds}$)  biased by a pmos current source.
+When a measurement event happens (such as a DNA concentration variation), the transconductance of nanowire changes and induces a current variance.
+This variance is converted into an amplified voltage signal.
+In the end of the measurement, a feedback circuit pulls up/down the nanowire gate-source volatge ($V_{gs}$) to set $I_{ds}$ to the initail value.
+
+
+
+%
+% The different concentration of the measuring solution induce the change of nanowire transcconduction.
+% By keeping bias voltage (drain, source, gates) same, the transconduction chage directly effect the drain-source current.
+% The current variance signal is converted into voltage signal and is amplified.
+% After each measurement, the drain-source current of nanowire returns to the constant value by a feedback circuit, which adjusts the gate-source voltage.
+% the current variance induced by the difference of the solution concentration
+% The other is the process variation. Since
+
+\section{Contribution to Knowledge}
+
+% In this work, a read-out circuit for ion sensing SiNW based on “constant current” idea is proposed.

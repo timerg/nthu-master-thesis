@@ -17,6 +17,7 @@
 \setCJKsansfont[Mapping=tex-text]{STSongti-TC-Light}
 \setCJKmonofont[Mapping=tex-text]{STSongti-TC-Light}
 
+
 \usepackage{wallpaper}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -30,16 +31,17 @@
 
 % set paper size
 \special{papersize=8.5in,11in}
-\topmargin=14.7mm		% bottom margin 14.7mm
+\topmargin=14.7mm
+% \bottomargin= 14.7mm
 \oddsidemargin=30mm		% left & right margin 17.45mm
 
 % text sizes (Keep these values unchanged!)
-\textwidth=150mm \textheight=250mm
+\textwidth=150mm \textheight=240mm
 \columnsep=5.0mm
 \parindent=3.5mm
 
 % misc parameters
-\headsep=0mm  \headheight=0mm \footskip=18mm
+\headsep=10mm  \headheight=0mm \footskip=18mm
 
 % conversion to values for LaTeX
 \advance\topmargin-1in\advance\oddsidemargin-1in
@@ -47,6 +49,7 @@
 %==============================================================
 
 \begin{document}
+\graphicspath{{images/}}
 
 \input{data/cover}
 
@@ -78,7 +81,8 @@
 \pagenumbering{gobble}
 \input{data/abstract-en}
 \input{data/abstract-tc}
-
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
 \tableofcontents
 \listoffigures
 
