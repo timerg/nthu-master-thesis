@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  9 SEP 2016 18:05
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  19 SEP 2016 01:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -926,8 +926,23 @@ File: ppxetex.def 2015/05/11 v0.4x Pdfpages driver for XeTeX (AM)
 \AM@toc@title=\toks22
 \c@AM@survey=\count145
 \AM@templatesizebox=\box47
+) (./main.aux
+
+LaTeX Warning: Label `fig:res' multiply defined.
+
+
+LaTeX Warning: Label `fig:res' multiply defined.
+
+
+LaTeX Warning: Label `fig:res' multiply defined.
+
+
+LaTeX Warning: Label `fig:res' multiply defined.
+
+
+LaTeX Warning: Label `fig:res' multiply defined.
+
 )
-No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -946,7 +961,7 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 51.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 51.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 51.
@@ -1061,12 +1076,11 @@ LaTeX Warning: Citation `J2' on page 1 undefined on input line 3.
 
 LaTeX Warning: Citation `J3' on page 1 undefined on input line 5.
 
-) (./data/chap2.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [1
+<use  "images/nthu-logo.pdf" > [1
 
 
-]
+]) (./data/chap2.tex
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1080,12 +1094,6 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 Chapter 3.
 
 LaTeX Warning: Citation `J8' on page 4 undefined on input line 3.
-
-
-LaTeX Warning: Citation `C5' on page 4 undefined on input line 9.
-
-
-LaTeX Warning: Citation `C6' on page 4 undefined on input line 9.
 
 LaTeX Font Info:    Try loading font information for EU1+pag on input line 13.
 LaTeX Font Info:    No file EU1pag.fd. on input line 13.
@@ -1102,46 +1110,65 @@ File: images/drawing.pdf Graphic file (type QTm)
  <use  "images/drawing.pdf"  page1>
 File: images/drawing.pdf Graphic file (type QTm)
  <use  "images/drawing.pdf"  page2>)
-
-LaTeX Warning: Citation `C7' on page 4 undefined on input line 30.
-
 File: images/nthu-logo.pdf Graphic file (type QTm)
-<use  "images/nthu-logo.pdf" > [4
+ <use  "images/nthu-logo.pdf" > [4
 
-]
-
-LaTeX Warning: Citation `C6' on page 5 undefined on input line 41.
-
-) (./data/chap4.tex
+] (./images/FgBg_Compare_Id.pdf_tex
+File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
+ <use  "images/FgBg_Compare_Id.pdf"  page1>
+File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
+ <use  "images/FgBg_Compare_Id.pdf"  page2>
+File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
+ <use  "images/FgBg_Compare_Id.pdf"  page3>) (./images/FgBg_Compare_Id_dev.pdf_tex
+File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
+ <use  "images/FgBg_Compare_Id_dev.pdf"  page1>
+File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
+ <use  "images/FgBg_Compare_Id_dev.pdf"  page2>
+File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
+ <use  "images/FgBg_Compare_Id_dev.pdf"  page3>)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [5]
+ <use  "images/nthu-logo.pdf" > [5] (./images/pIdVg.pdf_tex
+File: images/pIdVg.pdf Graphic file (type QTm)
+ <use  "images/pIdVg.pdf"  page1>) (./images/pIdgbs.pdf_tex
+File: images/pIdgbs.pdf Graphic file (type QTm)
+ <use  "images/pIdgbs.pdf"  page1>) (./images/drawing-1.pdf_tex) (./images/pIdgbs_Vd.pdf_tex
+File: images/pIdgbs_Vd.pdf Graphic file (type QTm)
+ <use  "images/pIdgbs_Vd.pdf"  page1>)
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [6] (./images/drawing-1.pdf_tex)) (./data/chap4.tex
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [7]
 Chapter 4.
 ) (./data/chap5.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [6
+ <use  "images/nthu-logo.pdf" > [8
 
 ]
 Chapter 5.
 ) (./data/chap6.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [7
+ <use  "images/nthu-logo.pdf" > [9
 
 ]
 Chapter 6.
 )
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [8
+ <use  "images/nthu-logo.pdf" > [10
 
 ] (./main.bbl) (./data/acknowledgement.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [9
+ <use  "images/nthu-logo.pdf" > [11
 
 
 ])
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [10
+ <use  "images/nthu-logo.pdf" > [12
 
 ] (./main.aux)
 
@@ -1151,16 +1178,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19272 strings out of 493706
- 389934 string characters out of 6145770
- 420154 words of memory out of 5000000
- 22442 multiletter control sequences out of 15000+600000
+ 19300 strings out of 493706
+ 390516 string characters out of 6145770
+ 421215 words of memory out of 5000000
+ 22448 multiletter control sequences out of 15000+600000
  8654 words of font info for 61 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 52i,13n,69p,10463b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,13n,69p,10463b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (16 pages).
+Output written on main.pdf (18 pages).

@@ -23,14 +23,126 @@ The exposed region, through several post-process, capture the DNA probe and serv
 
 
 \section{Measurement}
+This section presents the results.
 
 \subsection*{Front Gate and Back Gate}
 Two gates are available: front-gate (liquid gate) and back-gate.
 We choose front-gate as the operation gate in spite of some advantages that back-gate has.
-One among those advantages is the ablility to lower the 1/f noise.\cite{C7}
+One of them is the ablility to lower the 1/f noise \cite{C7, C8}.
 However, this only happens in a very high gate voltage, which is not practical in the integrated circuit design.
 Moreover, the front-gate induces larger drain-current.
 In other words, it has higher transconductance. And a high transconductance leads to a stronger feedback ability in our design.
+
+% \begin{figure}[!htbp]
+%     \centering
+%     {\fontfamily{pag}\selectfont\textbf{
+%         \def\svgwidth{5.0cm}
+%         \fontsize{6}{7}\selectfont
+%         \input {images/FgBg_Compare_Id_dev.pdf_tex}
+%     }}
+%     \fontsize{6}{7}\selectfont
+%     \caption{}
+%     \label{fig:res}
+% \end{figure}
+%
+% \begin{figure}[!htbp]
+%     \centering
+%     {\fontfamily{pag}\selectfont\textbf{
+%         \def\svgwidth{5.0cm}
+%         \fontsize{6}{7}\selectfont
+%         \input {images/FgBg_Compare_Id.pdf_tex}
+%     }}
+%     \fontsize{6}{7}\selectfont
+%     \caption{}
+%     \label{fig:res}
+% \end{figure}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{minipage}[t][0.1\textheight]{1\textwidth}
+        \centering
+        \def\svgwidth{10cm}
+        \fontsize{6}{15}\selectfont
+        \input {images/FgBg_Compare_Id.pdf_tex}
+        (a)
+    \end{minipage}
+    \vfill
+    \begin{minipage}[t][0.1\textheight]{1\textwidth}
+        \centering
+        \def\svgwidth{10cm}
+        \fontsize{6}{15}\selectfont
+        \input {images/FgBg_Compare_Id_dev.pdf_tex}
+        (b)
+    \end{minipage}
+    \caption{}
+    \label{fig:res}
+\end{figure}
+
+\subsection{Parameters}
+The most crucial parameter for our circuit design is the transconductance (gm).
+{\color{red}
+    The gm is acquired by finding the relation between drain-to-source current ($I_d$) and gate-source voltage ($V_g$), and perform differentiation: $\frac{\partial I_d}{\partial V_g}$.
+    use standard PBS as
+}
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{minipage}[t][0.1\textheight]{1\textwidth}
+        \centering
+        \def\svgwidth{10cm}
+        \fontsize{10}{20}\selectfont
+        \input {images/pIdVg.pdf_tex}
+        (a)
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t][0.1\textheight]{1\textwidth}
+        \centering
+        \def\svgwidth{10cm}
+        \fontsize{10}{20}\selectfont
+        \input {images/pIdgbs.pdf_tex}
+        (b)
+    \end{minipage}
+    \caption{}
+    \label{fig:res}
+\end{figure}
+
+The Id-Derivative figures indicates there is a ``linear region'' where gm is proportional to Id.
+This property implies the transconductance can be controlled in simple way.
+As mentioned in introduction, we may find specific bias Id for distinct elements and adjust their transconductance to a same value.
+
+\begin{figure}[!htbp]
+    \centering
+    % {\fontfamily{pag}\selectfont\textbf{
+        \def\svgwidth{10cm}
+        \fontsize{10}{20}\selectfont
+        \input {images/drawing-1.pdf_tex}
+    % }}
+    \fontsize{6}{7}\selectfont
+    \caption{Distinct element with a line idicate they have same transconductance}
+    \label{fig:res}
+\end{figure}
+
+We also prove that the transconductance under this region is unaffected by the drain-source voltage variance.
+
+\begin{figure}[!htbp]
+    \centering
+    % {\fontfamily{pag}\selectfont\textbf{
+        \def\svgwidth{10cm}
+        \fontsize{10}{20}\selectfont
+        \input {images/pIdgbs_Vd.pdf_tex}
+    % }}
+    \fontsize{6}{7}\selectfont
+    \caption{Id-transcinductance with Vds variance}
+    \label{fig:res}
+\end{figure}
+
+
+
+
+
+
+
 
 
 
@@ -38,9 +150,20 @@ In other words, it has higher transconductance. And a high transconductance lead
 \subsection{External Factor and Experimental Protocol}
 Several conditions effect nanowire performance.
 According to Yang's team, the nanowire using thick gate dielectric and having non-regular cross-sectional
-shape result in uncertainties of fabrication. \cite{C6}
+shape result in uncertainties of fabrication \cite{C6}.
+Figure below shows that two elements lying on the same wafer can exhibit different electrical characteristics.
 
-
+\begin{figure}[!htbp]
+    \centering
+    {\fontfamily{pag}\selectfont\textbf{
+        \def\svgwidth{5.0cm}
+        \fontsize{6}{7}\selectfont
+        \input {images/drawing-1.pdf_tex}
+    }}
+    \fontsize{6}{7}\selectfont
+    \caption{Nanowire Structure}
+    \label{fig:res}
+\end{figure}
 
  
 

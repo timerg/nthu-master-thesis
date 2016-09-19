@@ -8,12 +8,31 @@ Systems designed for specific purpose can help the device to meet pratical needs
 
 {\color{red}Such as low noise }
 
+\section*{Problem Define}
+With our experience from some application of nanowire, there are {\color{red}three} problems which needs {\color{red} integrated circuit solution:}
+\begin{enumerate}
+\item Disparity
+\begin{description}
+    \item By the nanowire measurement (These are presented in the section 3),
+\end{description}
+\item The second item
+\item The third etc \ldots
+\end{enumerate}
+
+
+
 
 \section{Design Description}
-In our biosensing system, nanowire is trated as a MOSFET with its drain-source current ($I_{ds}$)  biased by a pmos current source.
+In our biosensing system, nanowire is treated as a MOSFET.
+Its gate bias under a specific voltage source
+And the bio-siganl is viewed as small voltage signal input to the gate.
+
+
+ with its drain-source current ($I_{ds}$)  biased by a pmos current source.
 When a measurement event happens (such as a DNA concentration variation), the transconductance of nanowire changes and induces a current variance.
 This variance is converted into an amplified voltage signal.
-In the end of the measurement, a feedback circuit pulls up/down the nanowire gate-source volatge ($V_{gs}$) to set $I_{ds}$ to the initail value.
+After the measurement, a feedback circuit pulls up/down the nanowire gate-source volatge ($V_{gs}$) to set $I_{ds}$ to the initail value.
+
 
 
 
