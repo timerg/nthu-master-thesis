@@ -1,37 +1,119 @@
 \chapter{Introduction}
 \section{Motivation}
-Poly-silicon nanowire(SiNW) is an interesting and promising one-dimensional nano-structures. Many research of fabrication and electrical properties have been conducted \cite{J1}. It was first introduced to the biosensor field in 2001\cite{J2} and has become a promising candidate for various features such as high surface-to-volume ratio, ultra sensitivity, label-free electrical detection and  real-time measurement.
+Poly-silicon nanowire(SiNW) is an interesting and promising one-dimensional nano-structures.
+Many research of fabrication and electrical properties have been conducted \cite{J1}.
+It was first introduced to the biosensor field in 2001\cite{J2} and has become a promising candidate for various features such as high surface-to-volume ratio, ultra sensitivity, label-free electrical detection and  real-time measurement.
 
 Although there has been some great advances on nanowire structure design \cite{J3}, the work of systems-level engineering is still insufficient.
-Systems designed for specific purpose can help the device to meet pratical needs.
-
-
+Systems designed for specific purpose can help the device to meet practical needs.
 {\color{red}Such as low noise }
+Moreover, there are still several challenges that may be overcome through a better signal acquisition system \cite{R1}.
 
-\section*{Problem Define}
-With our experience from some application of nanowire, there are {\color{red}three} problems which needs {\color{red} integrated circuit solution:}
+One of the challenges is that the mass production of robust nanowire is still improbable.
+Element disparity may be a main reason among others.
+This problem also happens to the measurement of our own nanowire (Fig.~\ref{fig:disparity}).
+The nanowire we use is made by Professor Yang's team (National Chiao Tong University).
+And according to them, the nanowire use thick gate dielectric and have non-regular cross-sectional shape, which result in uncertainties of fabrication \cite{C6}.
+
+
+\section{Introduction}
+In this project, we design a nanowire readout circuit that is capable of performing both large signal and small signal measurement.
+Specifically, the circuit has two operation mode.
+One is large signal mode (LS), which bias nanowire under a drain current ($I_d$) and finds corresponding gate-to-source voltage ($V_{gs}$).
+The other is the small signal mode (SS).
+It detects and amplifies the current variance of nanowire.
+We also combines these two function to try a method for solving the disparity problem.
+
+\subsection*{Method for solving the disparity problem}
+It base on two assumptions.
 \begin{enumerate}
-\item Disparity
-\begin{description}
-    \item By the nanowire measurement (These are presented in the section 3),
-\end{description}
-\item The second item
-\item The third etc \ldots
+    \item The nanowire transconductance is proportional to the drain-to-source current (Id).
+    \item The changing of the concentration of targeted biomolecule can be viewed as the small signal voltage input to the gate end of a transistor.
+\end{enumerate}
+The first assumption implies one can control the nanowire transconductance by the biasing Id.
+The second assumption means that as long as different nanowire elements have a same transconductance, they produce same output current (small signal).
+We testify these assumption in chapter 3.
+
+We implement the method through our read-out circuit with large signal mode (LS) and small signal mode (SS).
+In the beginning of each measurement event, we applied the LS mode to initialized the drain current and gate voltage of nanowire.
+This is to standardize the transconductance of every nanowire.
+With nanowire biased under these $I_d$ and $V_{gs}$, the circuit turn to the SS.
+
+Some minutiae is reviewed in chapter 5.
+Currently the operation in the first mode is fully manual.
+In the future work this needs to be modified and may requires digital circuit assistance.
+
+
+\section{Design Flow and Chapter Layout}
+There are six chapters in this thesis, which are sorted according to the design flow.
+
+Chapter 2 are divided into two part.
+The first part is the literature review. {\color{red}...} The other is the analysis of measurement data from Yang's team.
+Most of those are the drain current of nanowire sweeping along the gate voltage (Id-Vg curves).
+We present some of the raw data and the analysis results in this part.
+
+Chapter 3 gives a brief description of nanowire structure.
+It is then followed by our own nanowire measurement based on the information in the previous chapter.
+The measurement includes:
+
+\begin{enumerate}
+\item Comparison between front gate and back gate
+\item Nanowire transconductance
+\item Nanowire drain-to-source resistance
 \end{enumerate}
 
+Chapter 4 is an ``accessory".
+We construct an discrete circuit which was designed for ion-sensitive field-effect transistor (ISFET) \cite{J4}.
+The purpose of this process is to practice the constant current method.
+The outcomes are deficient and it is its reference value which we spotlight.
+
+Chapter 5
+
+
+\begin{figure}[!htbp]
+    \centering
+    {\fontfamily{pag}\selectfont\textbf{
+        \def\svgwidth{5.0cm}
+        \fontsize{6}{7}\selectfont
+        \input {images/drawing-1.pdf_tex}
+    }}
+    \fontsize{6}{7}\selectfont
+    \caption{Design Flow}
+    \label{fig:designFlow}
+\end{figure}
 
 
 
-\section{Design Description}
-In our biosensing system, nanowire is treated as a MOSFET.
-Its gate bias under a specific voltage source
-And the bio-siganl is viewed as small voltage signal input to the gate.
+\section{Contribution to Knowledge}
+Our
+% This circuit has two operation mode.
+% One is the ``Gate Voltage Tracing (GVT)" mode, and the other is the ``Current Variance Measure (CVM)" mode.
 
 
- with its drain-source current ($I_{ds}$)  biased by a pmos current source.
-When a measurement event happens (such as a DNA concentration variation), the transconductance of nanowire changes and induces a current variance.
-This variance is converted into an amplified voltage signal.
-After the measurement, a feedback circuit pulls up/down the nanowire gate-source volatge ($V_{gs}$) to set $I_{ds}$ to the initail value.
+
+%
+% {\color{red}A better measure method}
+%
+%  The concentration changing of the testing solution effect the intrinsic characteristics of nanowire.
+% There are a variety of method for quantifying the affect.
+% The most common ones are finding drain-source current and nanowire drain-to-source resistance.
+% The method that Yang's team employed is to find several Id-Vg sweeping curves and see the rising/falling trend of them (Fig.~\ref{fig:IdVgandgbsId} (a)).
+%  By the method of Yang's team, we had an intuition using transconductance instead of drain-to-source resistance may give a more {\color{red}usful} result.
+% {\color{red}Because the }
+%
+%
+% In the beginning, we adopted Yang's method and made some modification to it.
+% By finding the derivative of Id with respect to Vg, we have the relation between Id and transconductance of nanowire (Fig.~\ref{fig:IdVgandgbsId} (b)).
+
+% In our biosensor system, nanowire is treated as a MOSFET.
+% Its gate bias under a specific voltage source
+% And the bio-signal is viewed as small voltage signal input to the gate.
+%
+%
+%  with its drain-source current ($I_{ds}$)  biased by a pmos current source.
+% When a measurement event happens (such as a DNA concentration variation), the transconductance of nanowire changes and induces a current variance.
+% This variance is converted into an amplified voltage signal.
+% After the measurement, a feedback circuit pulls up/down the nanowire gate-source voltage ($V_{gs}$) to set $I_{ds}$ to the initail value.
 
 
 
@@ -44,6 +126,5 @@ After the measurement, a feedback circuit pulls up/down the nanowire gate-source
 % the current variance induced by the difference of the solution concentration
 % The other is the process variation. Since
 
-\section{Contribution to Knowledge}
 
-% In this work, a read-out circuit for ion sensing SiNW based on “constant current” idea is proposed.
+

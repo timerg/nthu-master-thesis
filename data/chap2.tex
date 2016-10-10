@@ -1,2 +1,83 @@
-\chapter{Literature Review}
+\chapter{Literature Review \&}
+As previously mentioned in the introduction section, the read-out circuit we proposed has two operation mode (LS and SS).
+The LS mode is for drain current biasing while the SS mode is for current variance measurement.
+Each of them references different sources.
 
+\section{Constant Current and Source Follower}
+In this section, we review the knowledge and an article that is related to our design of large signal mode (LS).
+
+\subsection{Constant Current}
+
+
+\subsection{Source Follower}
+As one of the basic single stage amplifier, source follower (common drain) are employed to transfer voltage signal from gate to source while keeping drain current constant.
+Although we haven't seen it is applied to nanowire, there have been several applications in the read-out circuits of ISFET (Ion-sensitive Field-effect Transistor)\cite{SF1, SF2} for a long time.
+
+In ``Rapid Detection of E.coli Bacteria using Potassium-Sensitive FETs in CMOS", ISFET is applied as a biological transducer that convert detected bio-signal into it's input signal on the gate-end, which is resemble to our biosensor of nanowire.
+An read-out circuit of source follower is served as the analog front-end.
+The bio-signal induced voltage difference at the ISFET gate-end are converted to the source-end.
+There is no need for an extra current-to-voltage converter which may import more signal fluctuation such as shot noise or flicker noise.
+But on the other hand, the circuit requires a biasing current source.
+This current source may have to be stable, noiseless or wide-range on demand.
+And since the current value are usually under micro-scale even nano-scale, it is impractical to merely use external current source.
+The article use two resistors and an op-amp to design a current scale down circuit.
+Bias current decreases in proportional to the resistance ratio (N) of one resistor to another.
+Moreover, by keeping Vds at a constant value (0.5v), the circuit also removes {\color{red}the channel affect which is a factor that may effect linearity of the results.}
+It is showed in the schematic below that two op-amp based unit gain buffer are added to force the voltage at drain-end follows the source-end.
+
+{\color{red} Schematic}
+
+An issue need to be noticed is the impedance matching between the element and the current source circuit.
+It is known that the output impedance of current source should be much larger than the input impedance of the biased element.
+The equation for the output impedance of source follower is:
+\setlength{\mathindent}{6.5cm}
+\begin{align}
+    & \frac{r_{ds}}{1 + g_mr_{ds}}\\
+\intertext{The $g_m$ is the transconductance ($\frac{\partial I_d}{\partial V_{gs}}$) and the $r_{ds}$ is the drain-to-source impedance.
+This equation can be simplified as:}
+    & \frac{1}{g_m} \qquad \text{ for } \quad g_mr_{ds} >> 1 \label{eq:rsf2}
+\end{align}
+We also compute the output impedance of the current source circuit:
+\begin{equation} \label{eq:rcs}
+    N\times R_i
+\end{equation}
+$R_i$ is the impedance of the current source {\color{red}{I1 in Fig}}.
+In the integrated circuit, $R_i$ is not ideal but usually close to the $r_{ds}$ of a single MOSFET.
+
+As mentioned, Eq.\ref{eq:rcs} should be far larger than Eq.\ref{eq:rsf2}.
+However, $g_m$ is proportional to the $I_d$, which means Eq.\ref{eq:rsf2} is inversely proportional to N.
+When the bias current decreases, the output impedance decreases while the input impedance at the ISFET source-end increases.
+This creates a lower boundary of the bias current.
+
+The source follower structure provides a direct signal transition method.
+It is a good candidate for the read-out circuit with the aim of detecting transconductance or threshold voltage variance.
+Nevertheless, post-processing such as amplification and filtering are necessary.
+The experiment results in the article are untreated.
+Some strong signal attenuation exist, which are mainly caused by noise.
+
+We constructed this circuit with discrete elements and applied it to our nanowire. The results are presented in chapter 4.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Data Analysis}

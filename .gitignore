@@ -7,6 +7,11 @@ LICENSE.txt
 *.gz
 *.pages
 *.fdb_latexmk
+main.blg
+main.toc
+Makefile
+*.png
+*.svg
 
 *.bbl
 *.lof

@@ -26,11 +26,11 @@ The exposed region, through several post-process, capture the DNA probe and serv
 This section presents the results.
 
 \subsection*{Front Gate and Back Gate}
-Two gates are available: front-gate (liquid gate) and back-gate.
-We choose front-gate as the operation gate in spite of some advantages that back-gate has.
-One of them is the ablility to lower the 1/f noise \cite{C7, C8}.
+Two gates are available: floating gate (liquid gate) and back-gate.
+We choose floating gate as the operation gate in spite of some advantages that back-gate has.
+One of them is the ability to lower the 1/f noise \cite{C7, C8}.
 However, this only happens in a very high gate voltage, which is not practical in the integrated circuit design.
-Moreover, the front-gate induces larger drain-current.
+Moreover, the floating gate induces larger drain-current.
 In other words, it has higher transconductance. And a high transconductance leads to a stronger feedback ability in our design.
 
 % \begin{figure}[!htbp]
@@ -76,7 +76,7 @@ In other words, it has higher transconductance. And a high transconductance lead
         (b)
     \end{minipage}
     \caption{}
-    \label{fig:res}
+    \label{fig:IdVgandgbsId}
 \end{figure}
 
 \subsection{Parameters}
@@ -90,17 +90,13 @@ The most crucial parameter for our circuit design is the transconductance (gm).
     \centering
     \begin{minipage}[t][0.1\textheight]{1\textwidth}
         \centering
-        \def\svgwidth{10cm}
-        \fontsize{10}{20}\selectfont
-        \input {images/pIdVg.pdf_tex}
+        \includegraphics[width=0.6\textwidth,natwidth=610,natheight=442]{images/pIdVg.png}
         (a)
     \end{minipage}
     \hfill
     \begin{minipage}[t][0.1\textheight]{1\textwidth}
         \centering
-        \def\svgwidth{10cm}
-        \fontsize{10}{20}\selectfont
-        \input {images/pIdgbs.pdf_tex}
+        \includegraphics[width=0.6\textwidth,natwidth=610,natheight=442]{images/pIdgbs.png}
         (b)
     \end{minipage}
     \caption{}
@@ -111,59 +107,45 @@ The Id-Derivative figures indicates there is a ``linear region'' where gm is pro
 This property implies the transconductance can be controlled in simple way.
 As mentioned in introduction, we may find specific bias Id for distinct elements and adjust their transconductance to a same value.
 
-\begin{figure}[!htbp]
-    \centering
-    % {\fontfamily{pag}\selectfont\textbf{
-        \def\svgwidth{10cm}
-        \fontsize{10}{20}\selectfont
-        \input {images/drawing-1.pdf_tex}
-    % }}
-    \fontsize{6}{7}\selectfont
-    \caption{Distinct element with a line idicate they have same transconductance}
-    \label{fig:res}
-\end{figure}
+
 
 We also prove that the transconductance under this region is unaffected by the drain-source voltage variance.
 
 \begin{figure}[!htbp]
     \centering
     % {\fontfamily{pag}\selectfont\textbf{
-        \def\svgwidth{10cm}
-        \fontsize{10}{20}\selectfont
-        \input {images/pIdgbs_Vd.pdf_tex}
+        % \def\svgwidth{10cm}
+        % \fontsize{6}{10}\selectfont
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{images/pIdgbs_Vd.png}
     % }}
-    \fontsize{6}{7}\selectfont
-    \caption{Id-transcinductance with Vds variance}
-    \label{fig:res}
+    \fontsize{6}{10}\selectfont
+    \caption{Id-transconductance with Vds variance}
+    \label{fig:Idgbs_Vd}
 \end{figure}
 
 
 
-
-
-
-
-
-
-
-
-\subsection{External Factor and Experimental Protocol}
-Several conditions effect nanowire performance.
-According to Yang's team, the nanowire using thick gate dielectric and having non-regular cross-sectional
-shape result in uncertainties of fabrication \cite{C6}.
-Figure below shows that two elements lying on the same wafer can exhibit different electrical characteristics.
 
 \begin{figure}[!htbp]
     \centering
-    {\fontfamily{pag}\selectfont\textbf{
-        \def\svgwidth{5.0cm}
-        \fontsize{6}{7}\selectfont
-        \input {images/drawing-1.pdf_tex}
-    }}
-    \fontsize{6}{7}\selectfont
-    \caption{Nanowire Structure}
-    \label{fig:res}
+    % {\fontfamily{pag}\selectfont\textbf{
+    \def\svgwidth{10cm}
+    \fontsize{6}{10}\selectfont
+    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642] {images/pDisparity.png}
+    % }}
+    \fontsize{6}{10}\selectfont
+    \caption{Distinct element with a line idicate they have same transconductance}
+    \label{fig:disparity}
 \end{figure}
+By measuring two nanowire element which lie on the same wafer and are immersed with the same testing PBS solution
+
+
+
+
+
+
+
+
 
  
 

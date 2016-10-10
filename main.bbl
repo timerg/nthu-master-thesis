@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{R1}
+B.-R. Li, C.-C. Chen, U.~R. Kumar, and Y.-T. Chen.
+\newblock Advances in nanowire transistors for biological analysis and cellular
+  investigation.
+\newblock {\em Analyst}, 139:1589--1608, 2014.
+
 \bibitem{C5}
 C.-H. Lin, C.-Y. Hsiao, C.-H. Hung, Y.-R. Lo, C.-C. Lee, C.-J. Su, H.-C. Lin,
   F.-H. Ko, T.-Y. Huang, and Y.-S. Yang.
@@ -13,6 +19,20 @@ C.-H. Lin, C.-H. Hung, C.-Y. Hsiao, H.-C. Lin, F.-H. Ko, and Y.-S. Yang.
   label-free detection of pathogenic avian influenza dna.
 \newblock {\em WOS:000267162200012}, 2009.
 
+\bibitem{J4}
+N.~Nikkhoo, P.~G. Gulak, and K.~Maxwell.
+\newblock Rapid detection of e. coli bacteria using potassium-sensitive fets in
+  cmos.
+\newblock {\em IEEE Transactions on Biomedical Circuits and Systems},
+  7(5):621--630, Oct 2013.
+
+\bibitem{SF1}
+N.~Nikkhoo, P.~G. Gulak, and K.~Maxwell.
+\newblock Rapid detection of e. coli bacteria using potassium-sensitive fets in
+  cmos.
+\newblock {\em IEEE Transactions on Biomedical Circuits and Systems},
+  7(5):621--630, Oct 2013.
+
 \bibitem{C8}
 S.~Pud, J.~Li, V.~Sibiliev, M.~Petrychuk, V.~Kovalenko, A.~OffenhÃ€usser,
   and S.~Vitusevich.
@@ -20,6 +40,13 @@ S.~Pud, J.~Li, V.~Sibiliev, M.~Petrychuk, V.~Kovalenko, A.~OffenhÃ€usser,
   detection limit.
 \newblock {\em Nano Letters}, 14(2):578--584, 2014.
 \newblock PMID: 24392670.
+
+\bibitem{SF2}
+S.~Thanapitak.
+\newblock An 1 v - 1 nw source follower isfet readout circuit for biomedical
+  applications.
+\newblock In {\em Science and Information Conference (SAI), 2015}, pages
+  1118--1121, July 2015.
 
 \bibitem{C7}
 I.~Zadorozhnyi, S.~Pud, S.~Vitusevich, and M.~Petrychuk.

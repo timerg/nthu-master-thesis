@@ -7,45 +7,45 @@ Warning--I didn't find a database entry for "J1"
 Warning--I didn't find a database entry for "J2"
 Warning--I didn't find a database entry for "J3"
 Warning--I didn't find a database entry for "J8"
-You've used 4 entries,
+You've used 8 entries,
             2118 wiz_defined-function locations,
-            535 strings with 4802 characters,
-and the built_in function-call counts, 2000 in all, are:
-= -- 178
-> -- 147
-< -- 2
-+ -- 58
-- -- 54
-* -- 164
-:= -- 341
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 39
+            560 strings with 5327 characters,
+and the built_in function-call counts, 3557 in all, are:
+= -- 330
+> -- 213
+< -- 3
++ -- 85
+- -- 76
+* -- 284
+:= -- 586
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 62
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 62
-empty$ -- 115
-format.name$ -- 54
-if$ -- 407
+cite$ -- 8
+duplicate$ -- 120
+empty$ -- 241
+format.name$ -- 76
+if$ -- 743
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 4
-newline$ -- 24
-num.names$ -- 8
-pop$ -- 39
+int.to.str$ -- 8
+missing$ -- 8
+newline$ -- 44
+num.names$ -- 16
+pop$ -- 59
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 54
 quote$ -- 0
-skip$ -- 50
+skip$ -- 94
 stack$ -- 0
-substring$ -- 89
-swap$ -- 21
-text.length$ -- 2
+substring$ -- 215
+swap$ -- 37
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 32
 warning$ -- 0
-while$ -- 13
-width$ -- 5
-write$ -- 47
+while$ -- 26
+width$ -- 9
+write$ -- 91
 (There were 4 warnings)

@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.91, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'pIdgbs_Vd.pdf' (pdf, eps, ps)
+%% Accompanies image file 'pDisparity.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -49,22 +49,19 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.5)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{pIdgbs_Vd.pdf}}%
-    \put(0.15181125,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
-    \put(0.16828501,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
-    \put(0.175315,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{7}}}%
-    \put(0.35885376,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
-    \put(0.37532749,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
-    \put(0.38235748,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{6}}}%
-    \put(0.56589626,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
-    \put(0.58237,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
-    \put(0.58939999,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{5}}}%
-    \put(0.77293877,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
-    \put(0.78941254,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
-    \put(0.79644249,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{4}}}%
-    \put(0.97998001,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
-    \put(0.996455,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
-    \put(1.00348373,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{3}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{pDisparity.pdf}}%
+    \put(0.16475124,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.18122625,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.188255,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{7}}}%
+    \put(0.39767376,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.41414875,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.42117748,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.63059624,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.64707123,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.65410004,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.86351875,0.01806){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.87999374,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.88702248,0.02662624){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{4}}}%
     \put(0.02319225,0.16814377){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
     \put(0.03966638,0.17670876){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
     \put(0.046696,0.17670876){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{6}}}%
@@ -76,13 +73,9 @@
     \put(0.046696,0.49622961){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{4}}}%
     \put(0.52923374,0.00299999){\color[rgb]{0,0,0.17647059}\makebox(0,0)[b]{\smash{Id(A)}}}%
     \put(0.018,0.27141375){\color[rgb]{0,0,0.17647059}\rotatebox{90}{\makebox(0,0)[b]{\smash{Derivative(Id)}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=27]{pIdgbs_Vd.pdf}}%
-    \put(0.87466377,0.42945375){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{Vds=0.5v}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=28]{pIdgbs_Vd.pdf}}%
-    \put(0.87466377,0.41055375){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{Vds=0.75v}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=29]{pIdgbs_Vd.pdf}}%
-    \put(0.87466377,0.39165375){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{Vds=1.25v}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=30]{pIdgbs_Vd.pdf}}%
-    \put(0.87466377,0.37275375){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{Vds=1.5v}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{pDisparity.pdf}}%
+    \put(0.89444122,0.42945375){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{Nw.2-7}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{pDisparity.pdf}}%
+    \put(0.89444122,0.41055375){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{Nw.2-8}}}%
   \end{picture}%
 \endgroup%

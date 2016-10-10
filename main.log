@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  19 SEP 2016 01:17
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  10 OCT 2016 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,7 +9,16 @@ LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk12.clo
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
+\mathindent=\dimen102
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,7 +32,7 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\bibindent=\dimen102
+\bibindent=\dimen103
 ) (/usr/local/texlive/2015/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2015/03/01 v5547 L3 programming layer (loader) 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3-code.tex
@@ -55,12 +64,12 @@ L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
 \l__iow_current_word_int=\count97
 \l__iow_current_indentation_int=\count98
 L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
-\c_zero_dim=\dimen103
-\c_max_dim=\dimen104
-\l_tmpa_dim=\dimen105
-\l_tmpb_dim=\dimen106
-\g_tmpa_dim=\dimen107
-\g_tmpb_dim=\dimen108
+\c_zero_dim=\dimen104
+\c_max_dim=\dimen105
+\l_tmpa_dim=\dimen106
+\l_tmpb_dim=\dimen107
+\g_tmpa_dim=\dimen108
+\g_tmpb_dim=\dimen109
 \c_zero_skip=\skip43
 \c_max_skip=\skip44
 \l_tmpa_skip=\skip45
@@ -94,13 +103,13 @@ L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
 \g_tmpb_box=\box30
 L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_internal_box=\box31
-\l__coffin_internal_dim=\dimen109
-\l__coffin_offset_x_dim=\dimen110
-\l__coffin_offset_y_dim=\dimen111
-\l__coffin_x_dim=\dimen112
-\l__coffin_y_dim=\dimen113
-\l__coffin_x_prime_dim=\dimen114
-\l__coffin_y_prime_dim=\dimen115
+\l__coffin_internal_dim=\dimen110
+\l__coffin_offset_x_dim=\dimen111
+\l__coffin_offset_y_dim=\dimen112
+\l__coffin_x_dim=\dimen113
+\l__coffin_y_dim=\dimen114
+\l__coffin_x_prime_dim=\dimen115
+\l__coffin_y_prime_dim=\dimen116
 \c_empty_coffin=\box32
 \l__coffin_aligned_coffin=\box33
 \l__coffin_aligned_internal_coffin=\box34
@@ -109,27 +118,27 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_coffin=\box37
 \l__coffin_display_coord_coffin=\box38
 \l__coffin_display_pole_coffin=\box39
-\l__coffin_display_offset_dim=\dimen116
-\l__coffin_display_x_dim=\dimen117
-\l__coffin_display_y_dim=\dimen118
+\l__coffin_display_offset_dim=\dimen117
+\l__coffin_display_x_dim=\dimen118
+\l__coffin_display_y_dim=\dimen119
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3candidates 2015/03/01 v5544 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen119
-\l__box_bottom_dim=\dimen120
-\l__box_left_dim=\dimen121
-\l__box_right_dim=\dimen122
-\l__box_top_new_dim=\dimen123
-\l__box_bottom_new_dim=\dimen124
-\l__box_left_new_dim=\dimen125
-\l__box_right_new_dim=\dimen126
+\l__box_top_dim=\dimen120
+\l__box_bottom_dim=\dimen121
+\l__box_left_dim=\dimen122
+\l__box_right_dim=\dimen123
+\l__box_top_new_dim=\dimen124
+\l__box_bottom_new_dim=\dimen125
+\l__box_left_new_dim=\dimen126
+\l__box_right_new_dim=\dimen127
 \l__box_internal_box=\box40
-\l__coffin_bounding_shift_dim=\dimen127
-\l__coffin_left_corner_dim=\dimen128
-\l__coffin_right_corner_dim=\dimen129
-\l__coffin_bottom_corner_dim=\dimen130
-\l__coffin_top_corner_dim=\dimen131
-\l__coffin_scaled_total_height_dim=\dimen132
-\l__coffin_scaled_width_dim=\dimen133
+\l__coffin_bounding_shift_dim=\dimen128
+\l__coffin_left_corner_dim=\dimen129
+\l__coffin_right_corner_dim=\dimen130
+\l__coffin_bottom_corner_dim=\dimen131
+\l__coffin_top_corner_dim=\dimen132
+\l__coffin_scaled_total_height_dim=\dimen133
+\l__coffin_scaled_width_dim=\dimen134
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
 File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
@@ -138,7 +147,7 @@ File: l3xdvidpfmx.def 2015/03/01 v5544 L3 Experimental driver: xdvipdfmx
 Package: xeCJK 2015/05/15 v3.3.2 Typesetting CJK scripts with XeLaTeX
  (/usr/local/texlive/2015/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2014/11/25 v5471 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen134
+\l__xtemplate_tmp_dim=\dimen135
 \l__xtemplate_tmp_int=\count110
 \l__xtemplate_tmp_muskip=\muskip16
 \l__xtemplate_tmp_skip=\skip49
@@ -157,7 +166,7 @@ Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
 )
 \l__xeCJK_tmp_int=\count116
 \l__xeCJK_tmp_box=\box41
-\l__xeCJK_tmp_dim=\dimen135
+\l__xeCJK_tmp_dim=\dimen136
 \l__xeCJK_tmp_skip=\skip50
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -210,12 +219,12 @@ Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
 . Defining command \xeCJKResetCharClass with sig. '' on line 617.
 .................................................
 \g__xeCJK_node_int=\count120
-\c__xeCJK_CJK_node_dim=\dimen136
-\c__xeCJK_CJK-space_node_dim=\dimen137
-\c__xeCJK_default_node_dim=\dimen138
-\c__xeCJK_default-space_node_dim=\dimen139
-\c__xeCJK_CJK-widow_node_dim=\dimen140
-\c__xeCJK_normalspace_node_dim=\dimen141
+\c__xeCJK_CJK_node_dim=\dimen137
+\c__xeCJK_CJK-space_node_dim=\dimen138
+\c__xeCJK_default_node_dim=\dimen139
+\c__xeCJK_default-space_node_dim=\dimen140
+\c__xeCJK_CJK-widow_node_dim=\dimen141
+\c__xeCJK_normalspace_node_dim=\dimen142
 \l__xeCJK_ccglue_skip=\skip51
 \l__xeCJK_ecglue_skip=\skip52
 .................................................
@@ -256,22 +265,22 @@ Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
 . Declaring object type 'xeCJK/punctuation' taking \c_zero  argument(s) on
 . line 1813.
 .................................................
-\l__xeCJK_fixed_punct_width_dim=\dimen142
-\l__xeCJK_mixed_punct_width_dim=\dimen143
-\l__xeCJK_middle_punct_width_dim=\dimen144
-\l__xeCJK_fixed_margin_width_dim=\dimen145
-\l__xeCJK_mixed_margin_width_dim=\dimen146
-\l__xeCJK_middle_margin_width_dim=\dimen147
-\l__xeCJK_bound_punct_width_dim=\dimen148
-\l__xeCJK_bound_margin_width_dim=\dimen149
-\l__xeCJK_margin_minimum_dim=\dimen150
-\l__xeCJK_kerning_total_width_dim=\dimen151
-\l__xeCJK_same_align_margin_dim=\dimen152
-\l__xeCJK_different_align_margin_dim=\dimen153
-\l__xeCJK_kerning_margin_width_dim=\dimen154
-\l__xeCJK_kerning_margin_minimum_dim=\dimen155
-\l__xeCJK_bound_dim=\dimen156
-\l__xeCJK_reverse_bound_dim=\dimen157
+\l__xeCJK_fixed_punct_width_dim=\dimen143
+\l__xeCJK_mixed_punct_width_dim=\dimen144
+\l__xeCJK_middle_punct_width_dim=\dimen145
+\l__xeCJK_fixed_margin_width_dim=\dimen146
+\l__xeCJK_mixed_margin_width_dim=\dimen147
+\l__xeCJK_middle_margin_width_dim=\dimen148
+\l__xeCJK_bound_punct_width_dim=\dimen149
+\l__xeCJK_bound_margin_width_dim=\dimen150
+\l__xeCJK_margin_minimum_dim=\dimen151
+\l__xeCJK_kerning_total_width_dim=\dimen152
+\l__xeCJK_same_align_margin_dim=\dimen153
+\l__xeCJK_different_align_margin_dim=\dimen154
+\l__xeCJK_kerning_margin_width_dim=\dimen155
+\l__xeCJK_kerning_margin_minimum_dim=\dimen156
+\l__xeCJK_bound_dim=\dimen157
+\l__xeCJK_reverse_bound_dim=\dimen158
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -363,9 +372,9 @@ Package: fontspec 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count124
 \l_fontspec_language_int=\count125
 \l_fontspec_strnum_int=\count126
-\l__fontspec_tmpa_dim=\dimen158
-\l__fontspec_tmpb_dim=\dimen159
-\l__fontspec_tmpc_dim=\dimen160
+\l__fontspec_tmpa_dim=\dimen159
+\l__fontspec_tmpb_dim=\dimen160
+\l__fontspec_tmpc_dim=\dimen161
 Variant \tl_gset:cV already defined; not changing it on line 71
  (/usr/local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
 Package: fontspec-patches 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLaTeX
@@ -386,12 +395,12 @@ LaTeX Info: Redefining \- on input line 60.
 Package: fontspec-xetex 2015/03/14 v2.4c Font selection for XeLaTeX and LuaLaTeX
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
- (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1enc.def
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1enc.def
 File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 )
 LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmr.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmr.fd
 File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) (/usr/local/texlive/2015/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many other characters in Unicode lower plane
@@ -420,8 +429,8 @@ Package graphics Info: Driver file: xetex.def on input line 94.
  (/usr/local/texlive/2015/texmf-dist/tex/xelatex/xetex-def/xetex.def
 File: xetex.def 2015/03/25 v4.04 LaTeX color/graphics driver for XeTeX (TeX Live/RRM/JK)
 ))
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 ))
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -819,8 +828,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count130
 \calc@Bcount=\count131
-\calc@Adimen=\dimen163
-\calc@Bdimen=\dimen164
+\calc@Adimen=\dimen164
+\calc@Bdimen=\dimen165
 \calc@Askip=\skip54
 \calc@Bskip=\skip55
 LaTeX Info: Redefining \setlength on input line 80.
@@ -871,10 +880,10 @@ Package: amstext 2000/06/29 v2.01
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
-\ex@=\dimen165
+\ex@=\dimen166
 )) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen166
+\pmbraise@=\dimen167
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
@@ -890,7 +899,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box44
 \strutbox@=\box45
-\big@size=\dimen167
+\big@size=\dimen168
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count138
@@ -903,12 +912,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count143
 \maxfields@=\count144
 \andhelp@=\toks19
-\eqnshift@=\dimen168
-\alignsep@=\dimen169
-\tagshift@=\dimen170
-\tagwidth@=\dimen171
-\totwidth@=\dimen172
-\lineht@=\dimen173
+\eqnshift@=\dimen169
+\alignsep@=\dimen170
+\tagshift@=\dimen171
+\tagwidth@=\dimen172
+\totwidth@=\dimen173
+\lineht@=\dimen174
 \@envbody=\toks20
 \multlinegap=\skip66
 \multlinetaggap=\skip67
@@ -917,8 +926,8 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
-\AM@pagewidth=\dimen174
-\AM@pageheight=\dimen175
+\AM@pagewidth=\dimen175
+\AM@pageheight=\dimen176
  (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2015/05/11 v0.4x Pdfpages driver for XeTeX (AM)
 )
@@ -927,18 +936,6 @@ File: ppxetex.def 2015/05/11 v0.4x Pdfpages driver for XeTeX (AM)
 \c@AM@survey=\count145
 \AM@templatesizebox=\box47
 ) (./main.aux
-
-LaTeX Warning: Label `fig:res' multiply defined.
-
-
-LaTeX Warning: Label `fig:res' multiply defined.
-
-
-LaTeX Warning: Label `fig:res' multiply defined.
-
-
-LaTeX Warning: Label `fig:res' multiply defined.
-
 
 LaTeX Warning: Label `fig:res' multiply defined.
 
@@ -1051,59 +1048,76 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 
 ] (./main.toc
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 4.
-)
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [3
 
-] (./main.lof)
+])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+
+Overfull \vbox (8.448pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [4] (./main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [4
+ <use  "images/nthu-logo.pdf" > [5
 
 ] (./data/chap1.tex
 Chapter 1.
 
-LaTeX Warning: Citation `J1' on page 1 undefined on input line 3.
+LaTeX Warning: Citation `J1' on page 1 undefined on input line 4.
 
 
-LaTeX Warning: Citation `J2' on page 1 undefined on input line 3.
+LaTeX Warning: Citation `J2' on page 1 undefined on input line 5.
 
 
-LaTeX Warning: Citation `J3' on page 1 undefined on input line 5.
+LaTeX Warning: Citation `J3' on page 1 undefined on input line 7.
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
 <use  "images/nthu-logo.pdf" > [1
 
 
-]) (./data/chap2.tex
+]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [2]
-Chapter 2.
-) (./data/chap3.tex
-File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [3
+LaTeX Font Info:    Try loading font information for EU1+pag on input line 75.
+LaTeX Font Info:    No file EU1pag.fd. on input line 75.
 
-]
-Chapter 3.
-
-LaTeX Warning: Citation `J8' on page 4 undefined on input line 3.
-
-LaTeX Font Info:    Try loading font information for EU1+pag on input line 13.
-LaTeX Font Info:    No file EU1pag.fd. on input line 13.
 
 LaTeX Font Warning: Font shape `EU1/pag/m/n' undefined
-(Font)              using `EU1/lmr/m/n' instead on input line 13.
+(Font)              using `EU1/lmr/m/n' instead on input line 75.
 
 
 LaTeX Font Warning: Font shape `EU1/pag/bx/n' undefined
-(Font)              using `EU1/pag/m/n' instead on input line 17.
+(Font)              using `EU1/pag/m/n' instead on input line 79.
+
+(./images/drawing-1.pdf_tex)) (./data/chap2.tex
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [3]
+Chapter 2.
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [4
+
+]
+Overfull \vbox (8.58pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [5]) (./data/chap3.tex
+Overfull \vbox (8.58pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [6]
+Chapter 3.
+
+LaTeX Warning: Citation `J8' on page 7 undefined on input line 3.
 
 (./images/drawing.pdf_tex
 File: images/drawing.pdf Graphic file (type QTm)
@@ -1111,7 +1125,7 @@ File: images/drawing.pdf Graphic file (type QTm)
 File: images/drawing.pdf Graphic file (type QTm)
  <use  "images/drawing.pdf"  page2>)
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [4
+ <use  "images/nthu-logo.pdf" > [7
 
 ] (./images/FgBg_Compare_Id.pdf_tex
 File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
@@ -1129,46 +1143,60 @@ File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [5] (./images/pIdVg.pdf_tex
-File: images/pIdVg.pdf Graphic file (type QTm)
- <use  "images/pIdVg.pdf"  page1>) (./images/pIdgbs.pdf_tex
-File: images/pIdgbs.pdf Graphic file (type QTm)
- <use  "images/pIdgbs.pdf"  page1>) (./images/drawing-1.pdf_tex) (./images/pIdgbs_Vd.pdf_tex
-File: images/pIdgbs_Vd.pdf Graphic file (type QTm)
- <use  "images/pIdgbs_Vd.pdf"  page1>)
+ <use  "images/nthu-logo.pdf" > [8]
+File: images/pIdVg.png Graphic file (type QTm)
+ <use  "images/pIdVg.png" >
+File: images/pIdgbs.png Graphic file (type QTm)
+ <use  "images/pIdgbs.png" >
+File: images/pIdgbs_Vd.png Graphic file (type QTm)
+ <use  "images/pIdgbs_Vd.png" >
+File: images/pDisparity.png Graphic file (type QTm)
+ <use  "images/pDisparity.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [6] (./images/drawing-1.pdf_tex)) (./data/chap4.tex
+ <use  "images/nthu-logo.pdf" > [9]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [7]
+ <use  "images/nthu-logo.pdf" > [10]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [11]) (./data/chap4.tex
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [12]
 Chapter 4.
 ) (./data/chap5.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [8
+ <use  "images/nthu-logo.pdf" > [13
 
 ]
 Chapter 5.
 ) (./data/chap6.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [9
+ <use  "images/nthu-logo.pdf" > [14
 
 ]
 Chapter 6.
 )
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [10
+ <use  "images/nthu-logo.pdf" > [15
 
-] (./main.bbl) (./data/acknowledgement.tex
+] (./main.bbl
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [11
+ <use  "images/nthu-logo.pdf" > [16
 
 
-])
+]) (./data/acknowledgement.tex
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [12
+ <use  "images/nthu-logo.pdf" > [17])
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [18
 
 ] (./main.aux)
 
@@ -1182,12 +1210,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19300 strings out of 493706
- 390516 string characters out of 6145770
- 421215 words of memory out of 5000000
- 22448 multiletter control sequences out of 15000+600000
+ 19312 strings out of 493706
+ 390637 string characters out of 6145770
+ 423361 words of memory out of 5000000
+ 22463 multiletter control sequences out of 15000+600000
  8654 words of font info for 61 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 52i,13n,69p,10463b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,14n,69p,10463b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (18 pages).
+Output written on main.pdf (25 pages).
