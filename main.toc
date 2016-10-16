@@ -3,18 +3,19 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
 \contentsline {section}{\numberline {1.2}Introduction}{2}
-\contentsline {section}{\numberline {1.3}Design Flow and Chapter Layout}{3}
+\contentsline {section}{\numberline {1.3}Design Flow and Chapter Layout}{2}
 \contentsline {section}{\numberline {1.4}Contribution to Knowledge}{3}
 \contentsline {chapter}{\numberline {2}Literature Review \&}{4}
-\contentsline {section}{\numberline {2.1}Literature Review}{4}
-\contentsline {section}{\numberline {2.2}Constant Current and Source Follower}{4}
-\contentsline {subsection}{\numberline {2.2.1}Source Follower}{4}
-\contentsline {section}{\numberline {2.3}Data Analysis}{6}
-\contentsline {chapter}{\numberline {3}Nanowire Structure and Measurement}{7}
-\contentsline {section}{\numberline {3.1}Brief Description of Nanowire Structure}{7}
-\contentsline {section}{\numberline {3.2}Measurement}{7}
-\contentsline {subsection}{\numberline {3.2.1}Parameters}{9}
-\contentsline {chapter}{\numberline {4}Discrete Circuitry Design}{13}
-\contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{14}
-\contentsline {section}{\numberline {5.1}Signal Acquisition Method}{14}
-\contentsline {chapter}{\numberline {6}Discussion and Conclusions}{15}
+\contentsline {section}{\numberline {2.1}DC Sweep and Source Follower}{4}
+\contentsline {subsection}{\numberline {2.1.1}Constant Current}{4}
+\contentsline {subsection}{\numberline {2.1.2}Source Follower}{4}
+\contentsline {section}{\numberline {2.2}Small Signal (AC) Measurement Method Review}{6}
+\contentsline {section}{\numberline {2.3}Data Analysis}{8}
+\contentsline {chapter}{\numberline {3}Nanowire Structure and Measurement}{9}
+\contentsline {section}{\numberline {3.1}Brief Description of Nanowire Structure}{9}
+\contentsline {section}{\numberline {3.2}Measurement}{9}
+\contentsline {subsection}{\numberline {3.2.1}Parameters}{11}
+\contentsline {chapter}{\numberline {4}Discrete Circuitry Design}{15}
+\contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{16}
+\contentsline {section}{\numberline {5.1}Signal Acquisition Method}{16}
+\contentsline {chapter}{\numberline {6}Discussion and Conclusions}{17}

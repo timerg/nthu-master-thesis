@@ -3,49 +3,53 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: abbrv.bst
 Database file #1: data/thesis.bib
-Warning--I didn't find a database entry for "J1"
-Warning--I didn't find a database entry for "J2"
-Warning--I didn't find a database entry for "J3"
-Warning--I didn't find a database entry for "J8"
-You've used 8 entries,
+I was expecting a `,' or a `}'---line 127 of file data/thesis.bib
+ : 
+ : title = {Potassium ion-sensitive field effect transistor},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty title in Drift
+Warning--empty journal in Drift
+Warning--empty year in Drift
+You've used 12 entries,
             2118 wiz_defined-function locations,
-            560 strings with 5327 characters,
-and the built_in function-call counts, 3557 in all, are:
-= -- 330
-> -- 213
-< -- 3
-+ -- 85
-- -- 76
-* -- 284
-:= -- 586
-add.period$ -- 25
-call.type$ -- 8
-change.case$ -- 62
+            588 strings with 6443 characters,
+and the built_in function-call counts, 5596 in all, are:
+= -- 506
+> -- 365
+< -- 4
++ -- 147
+- -- 132
+* -- 475
+:= -- 926
+add.period$ -- 35
+call.type$ -- 12
+change.case$ -- 101
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 120
-empty$ -- 241
-format.name$ -- 76
-if$ -- 743
+cite$ -- 15
+duplicate$ -- 175
+empty$ -- 363
+format.name$ -- 132
+if$ -- 1148
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 8
-newline$ -- 44
-num.names$ -- 16
-pop$ -- 59
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 62
+num.names$ -- 24
+pop$ -- 104
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 90
 quote$ -- 0
-skip$ -- 94
+skip$ -- 132
 stack$ -- 0
-substring$ -- 215
-swap$ -- 37
-text.length$ -- 3
+substring$ -- 337
+swap$ -- 50
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 32
-warning$ -- 0
-while$ -- 26
-width$ -- 9
-write$ -- 91
-(There were 4 warnings)
+type$ -- 48
+warning$ -- 3
+while$ -- 38
+width$ -- 14
+write$ -- 129
+(There was 1 error message)

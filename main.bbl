@@ -1,4 +1,32 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Juv1}
+A.~Bonanno, V.~Cauda, M.~Crepaldi, P.~M. Ros, M.~Morello, D.~Demarchi, and
+  P.~Civera.
+\newblock A low-power read-out circuit and low-cost assembly of nanosensors
+  onto a 0.13 um cmos micro-for-nano chip.
+\newblock In {\em Advances in Sensors and Interfaces (IWASI), 2013 5th IEEE
+  International Workshop on}, pages 125--130, June 2013.
+
+\bibitem{Juv2}
+A.~Bonanno, M.~Morello, M.~Crepaldi, A.~Sanginario, S.~Benetto, V.~Cauda,
+  P.~Civera, and D.~Demarchi.
+\newblock A low-power 0.13 um cmos ic for zno-nanowire assembly and
+  nanowire-based uv sensor interface.
+\newblock {\em IEEE Sensors Journal}, 15(8):4203--4212, Aug 2015.
+
+\bibitem{C2001}
+Y.~Cui, Q.~Wei, H.~Park, and C.~Lieber.
+\newblock {Nanowire nanosensors for highly sensitive and selective detection of
+  biological and chemical species}.
+\newblock {\em {SCIENCE}}, {293}({5533}):{1289--1292}, {AUG 17} {2001}.
+
+\bibitem{C25th}
+N.~P. Dasgupta, J.~Sun, C.~Liu, S.~Brittman, S.~C. Andrews, J.~Lim, H.~Gao,
+  R.~Yan, and P.~Yang.
+\newblock {25th Anniversary Article: Semiconductor Nanowires Synthesis,
+  Characterization, and Applications}.
+\newblock {\em {ADVANCED MATERIALS}}, {26}({14}):{2137--2184}, {APR} {2014}.
 
 \bibitem{R1}
 B.-R. Li, C.-C. Chen, U.~R. Kumar, and Y.-T. Chen.
@@ -19,12 +47,8 @@ C.-H. Lin, C.-H. Hung, C.-Y. Hsiao, H.-C. Lin, F.-H. Ko, and Y.-S. Yang.
   label-free detection of pathogenic avian influenza dna.
 \newblock {\em WOS:000267162200012}, 2009.
 
-\bibitem{J4}
-N.~Nikkhoo, P.~G. Gulak, and K.~Maxwell.
-\newblock Rapid detection of e. coli bacteria using potassium-sensitive fets in
-  cmos.
-\newblock {\em IEEE Transactions on Biomedical Circuits and Systems},
-  7(5):621--630, Oct 2013.
+\bibitem{Drift}
+S.~D. Moss, J.~Janata, and C.~C. Johnson.
 
 \bibitem{SF1}
 N.~Nikkhoo, P.~G. Gulak, and K.~Maxwell.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  10 OCT 2016 17:51
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  17 OCT 2016 01:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -935,11 +935,7 @@ File: ppxetex.def 2015/05/11 v0.4x Pdfpages driver for XeTeX (AM)
 \AM@toc@title=\toks22
 \c@AM@survey=\count145
 \AM@templatesizebox=\box47
-) (./main.aux
-
-LaTeX Warning: Label `fig:res' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -1068,15 +1064,6 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 
 ] (./data/chap1.tex
 Chapter 1.
-
-LaTeX Warning: Citation `J1' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `J2' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation `J3' on page 1 undefined on input line 7.
-
 File: images/nthu-logo.pdf Graphic file (type QTm)
 <use  "images/nthu-logo.pdf" > [1
 
@@ -1110,22 +1097,27 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [5]) (./data/chap3.tex
+ <use  "images/nthu-logo.pdf" > [5]
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [6]
+Overfull \vbox (8.58pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [7] (./images/drawing-1.pdf_tex) (./images/drawing-1.pdf_tex)) (./data/chap3.tex
+Overfull \vbox (8.58pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [8]
 Chapter 3.
-
-LaTeX Warning: Citation `J8' on page 7 undefined on input line 3.
-
 (./images/drawing.pdf_tex
 File: images/drawing.pdf Graphic file (type QTm)
  <use  "images/drawing.pdf"  page1>
 File: images/drawing.pdf Graphic file (type QTm)
  <use  "images/drawing.pdf"  page2>)
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [7
+ <use  "images/nthu-logo.pdf" > [9
 
 ] (./images/FgBg_Compare_Id.pdf_tex
 File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
@@ -1143,7 +1135,7 @@ File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [8]
+ <use  "images/nthu-logo.pdf" > [10]
 File: images/pIdVg.png Graphic file (type QTm)
  <use  "images/pIdVg.png" >
 File: images/pIdgbs.png Graphic file (type QTm)
@@ -1155,67 +1147,61 @@ File: images/pDisparity.png Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [9]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [10]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [11]) (./data/chap4.tex
+ <use  "images/nthu-logo.pdf" > [11]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [12]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [13]) (./data/chap4.tex
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [14]
 Chapter 4.
 ) (./data/chap5.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [13
+ <use  "images/nthu-logo.pdf" > [15
 
 ]
 Chapter 5.
 ) (./data/chap6.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [14
+ <use  "images/nthu-logo.pdf" > [16
 
 ]
 Chapter 6.
 )
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [15
+ <use  "images/nthu-logo.pdf" > [17
 
 ] (./main.bbl
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [16
+ <use  "images/nthu-logo.pdf" > [18
 
 
 ]) (./data/acknowledgement.tex
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [17])
+ <use  "images/nthu-logo.pdf" > [19])
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [18
+ <use  "images/nthu-logo.pdf" > [20
 
 ] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 19312 strings out of 493706
- 390637 string characters out of 6145770
- 423361 words of memory out of 5000000
- 22463 multiletter control sequences out of 15000+600000
+ 19320 strings out of 493706
+ 390794 string characters out of 6145770
+ 424379 words of memory out of 5000000
+ 22467 multiletter control sequences out of 15000+600000
  8654 words of font info for 61 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 52i,14n,69p,10463b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,14n,69p,10463b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (25 pages).
+Output written on main.pdf (27 pages).
