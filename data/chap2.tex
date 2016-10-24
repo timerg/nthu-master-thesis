@@ -10,18 +10,26 @@ In this section, we review the knowledge and an article that is related to our d
 
 
 \subsection{Source Follower}
-{\color{red}{Fig of source follower}}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=5cm]{images/chapter2/SourceFollower.png}
+    \fontsize{6}{7}\selectfont
+    \caption{Sorce Follower}
+    \label{fig:SF}
+\end{figure}
+
 As one of the basic single stage amplifier, source follower (common drain) are employed to transfer voltage signal from gate to source while keeping drain current constant.
 The transfer function can be derived as:
-\setlength{\mathindent}{6.5cm}
+\setlength{\mathindent}{5.5cm}
 \begin{align}
     \frac{V_{out}}{V_{in}} & = \frac{r_{ds}g_m}{1 + r_{ds}g_m} \\    \label{eq:sfTF}
                            & \approx 1 \qquad \text{ for } \quad r_{ds}g_m >> 1
 \end{align}
-$g_m$ is the transconductance ($\frac{\partial I_d}{\partial V_{gs}}$) and $r_{ds}$ is the drain-to-source impedance.
+$g_m$ is the transconductance ($\frac{\partial I_d}{\partial V_{gs}}$) and $r_{ds}$ is the drain-to-source resistance.
 Although we haven't seen it is applied to nanowire, there have been several applications in the read-out circuits of ISFET (Ion-sensitive Field-effect Transistor)\cite{SF1, SF2} for a long time.
 
-In ``Rapid Detection of E.coli Bacteria using Potassium-Sensitive FETs in CMOS", ISFET is applied as a biological transducer that convert detected bio-signal into it's input signal on the gate-end, which is resemble to our biosensor of nanowire.
+In \cite{SF1}, ISFET is applied as a biological transducer that convert detected bio-signal into it's input signal on the gate-end, which is resemble to our biosensor of nanowire.
 An read-out circuit of source follower is served as the analog front-end.
 The bio-signal induced voltage difference at the ISFET gate-end are converted to the source-end.
 There is no need for an extra current-to-voltage converter which may import more signal fluctuation such as shot noise or flicker noise.
@@ -33,7 +41,13 @@ Bias current decreases in proportional to the resistance ratio (N) of one resist
 Moreover, by keeping Vds at a constant value (0.5v), the circuit also removes {\color{red}the channel affect which is a factor that may effect linearity of the results.}
 It is showed in the schematic below that two op-amp based unit gain buffer are added to force the voltage at drain-end follows the source-end.
 
-{\color{red} Schematic}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{images/chapter2/ISFET.png}
+    \fontsize{6}{7}\selectfont
+    \caption{ISFET readout circuit in \cite{SF1}}
+    \label{fig:ISFET}
+\end{figure}
 
 An issue need to be noticed is the impedance matching between the element and the current source circuit.
 It is known that the output impedance of current source should be much larger than the input impedance of the biased element.
@@ -48,7 +62,7 @@ We also compute the output impedance of the current source circuit:
 \begin{equation} \label{eq:rcs}
     N\times R_i
 \end{equation}
-$R_i$ is the impedance of the current source {\color{red}{I1 in Fig}}.
+$R_i$ is the impedance of the right-bottom current source in Fig.\ref{fig:ISFET}.
 In the integrated circuit, $R_i$ is not ideal but usually close to the $r_{ds}$ of a single MOSFET.
 
 As mentioned, Eq.\ref{eq:rcs} should be far larger than Eq.\ref{eq:rsf2}.
@@ -70,35 +84,45 @@ We constructed this circuit with discrete elements and applied it to our nanowir
 In previous section, the source follower we mentioned exhibited compelling advantages as a signal processing structure of nano-device.
 However, the structure overcomes obstacles when being applied to the small signal detection.
 Parasitic capacitors and resistors can severely influence the results.
-We take a simple MOSFET for example.
 
-{\color{red}{Fig of parasitic mosfet}}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=5cm]{images/chapter2/SourceFollower_wi_parasiticCap.png}
+    \fontsize{6}{7}\selectfont
+    \caption{Sorce Follower with parasitic capacitance}
+    \label{fig:SF_pC}
+\end{figure}
 
-With the parasitic elements from the figure above are included, we modified the transfer function Eq.\ref{eq:sfTF}
+As in figure \ref{fig:SF_pC} where the parasitic elements are included, we modified the transfer function Eq.\ref{eq:sfTF}
 \begin{align}
-    \frac{r_{ds}(sC_{gs} + gm)}{1 + r_{ds}(gm + s(C_{gs}+C_s))}
+    \frac{V_{out}}{V_{in}} = \frac{r_{ds}(sC_{gs} + gm)}{1 + r_{ds}(gm + s(C_{gs}+C_s))}
 \end{align}
 The equation can be similar to Eq.\ref{eq:sfTF} which roughly equals to 1 as long as $C_s$ is far more smaller than $C_{gs}$.
 Unfortunately, $C_s$ can be large since the output end of source follower usually connects to the next stage input or even the chip pad.
 In that case, the parasitic capacitors may attenuate the signal as signal frequency increase.
 
 Parasitic element is an issue and deserve more consideration.
-{\color{red}Works} we present below combine capacitance measurement with nanowire measure.   %not sure how many works yet.
+Moreover, things such as SNR, amplification and filtering are the factors for circuit design of ac signal measurement.
+We present the works from two teams below.
+Their method aims to measure drain-to-source resistance ($R_{NW}$) and drain-to-source capacitance ($C_{NW}$).
+We favor the second one (2.2.2) over the other and take it as reference for this work and those in the future.
+The reason is in the end of this section.
 
-
+\subsection{{\color{red}Resistance-to-Time}}
 The measurement system for ZnO-nanowire based sensor array from \cite{Juv1} applies the Time-over-Threshold techniques to its read-out circuit (Fig.\ref{fig:tot1}).
 The circuit alternatively charges an on-chip capacitor ($C_{int}$) with a constant current and discharges it through the nano-material resistance (nanowire).
 An inverter with its output switches from on to off when the capacitor is charged to its input threshold voltage, and vice versa.
 This behavior convert information of nanowire such as capacitance and resistance into time information.
-Both $C_{int}$ and capacitance of nanowire ($C_{NW}$) (from drain to source) effect charging time and together with the drain-to-source resistance effect the discharging time.
+Both $C_{int}$ and $C_{NW}$ effect charging time and together with the $R_{NW}$ effect the discharging time.
 
 The work presented in \cite{Juv1} doesn't have enough explanation about how do they interpret the capacitance and resistance information.
 It simply mentioned that a microcontroller is responsible for these calculation.
 Besides, the work lacks simulation and experiment of using complex elements as measure target.
 Most of the results are measurement of using concrete resistor as the substitute for nanowire and regard the $C_{NW}$ as 0p.
 The only nanowire experiment given at last doesn't has good performance.
+It seems that the design may only be applied to a complete-resistor or complete-capacitor element.
 
-The recent publicans \cite{Juv2} by the team is more elaborate.
+The recent publicans \cite{Juv2} by the team is more elaborate and have measurement of complex element (An element composed of both resistor and capacitor).
 In Fig.\ref{fig:tot2}, nanowire append between point A and B.
 The charing current is able to be applied from Mp1 or Mp2, which is determined by the ``sel" signal with the aid from the MUXs.
 This is simply mean to perform a reverse measurement and we ignore it by assume sel = 1 and point B is virtually ground.
@@ -117,17 +141,24 @@ The derivation of the $R_{NW}$ and $C_{NW}$ in the work can be simplified as:
 \end{align}
 $C_{base}$ are the $C_{int}$ plus parasitic capacitance and $R_{par}$ the parasitic resistance.
 These parasitic elements comes from the transistor in the integrated circuit block such as MUX and Mp.
-It must be noted that we doesn't concern the hysteresis of the schmitt trigger here owing to simplicity.
+It must be noted that owing to simplicity, we doesn't concern the hysteresis of the schmitt trigger here.
 
-
-
-
-
-
-
-
-
-
+\begin{figure}[!htbp]
+    \begin{minipage}[t][0.1\textheight]{0.6\textwidth}
+        \centering
+        \includegraphics[width=8cm]{images/chapter2/uv1.png}
+        \caption{(a) Schematic of \cite{Juv1}}
+        \label{fig:tot1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t][0.1\textheight]{0.4\textwidth}
+        \centering
+        \includegraphics[width=8cm]{images/chapter2/uv2.png}
+        \caption{(b) Schematic of \cite{Juv2}}
+        \label{fig:tot2}
+    \end{minipage}
+    \fontsize{6}{7}\selectfont
+\end{figure}
 
 \begin{figure}[!htbp]
     \centering
@@ -137,25 +168,97 @@ It must be noted that we doesn't concern the hysteresis of the schmitt trigger h
         \input {images/drawing-1.pdf_tex}
     }}
     \fontsize{6}{7}\selectfont
-    \caption{Nanowire Structure}
-    \label{fig:tot1}
+    \caption{Draw mos with (Cgd + Cd) and rds is modeled by Rnw and Cnw}
+    \label{fig:tot_mos}
 \end{figure}
+
+\subsection{Complex Impedance Solving}
+The nanowire-based hydrogen sensor measurement system from \cite{Jlockin} adopt another method.
+It use a lock-in amplifier to realize both resistive and capacitive impedance measurement.
+
 \begin{figure}[!htbp]
-    \centering
-    {\fontfamily{pag}\selectfont\textbf{
-        \def\svgwidth{5.0cm}
-        \fontsize{6}{7}\selectfont
-        \input {images/drawing-1.pdf_tex}
-    }}
-    \fontsize{6}{7}\selectfont
-    \caption{Nanowire Structure}
-    \label{fig:tot2}
+        \centering
+        \includegraphics[width=13cm]{images/chapter2/lockin.png}
+        \caption{(b) Block diagram of the lock-in amplifier in \cite{Jlockin}}
+        \label{fig:lockin}
 \end{figure}
- % detects and calculates both resistance and capacitance of ZnO-nanowire based sensor array through a read-out circuit and an external microcontroller.
+
+The system started by supplying nanowire with a sinusoidal voltage signal to one end while the other end is grounded virtually by a transimpedance amplifier (TIA).
+The TIA then converts the output current of nanowire into voltage signal which contains complex impedance information.
+The resistance is in the real part while the capacitance is in the virtual part
+\setlength{\mathindent}{5.5cm}
+\begin{align}
+    V_{out} &= I_{NW}R_{TIA} \\
+    I_{NW} &= V_{in}(\frac{1}{R_{NW}} + j 2\pi fC_{NW})
+\end{align}
+$f$ is the frequency of input signal.
+
+After remove high-order harmonic interferences by a controllable bandpass filter, the signal is demodulated.
+The resistive and capacitive impedance values are resolved through channel I and Q with phase different by 90 degree.
+The mixer is a linear multiplier that use for demodulation.
+With a radio frequency (RF) input and the input local oscillator (LO) input, it produce an output signal that consists of signals with frequencies $f_{RF} + f_{LO}$ and $f_{RF} - f_{LO}$.
+Incidentally, the signal are immune from the perturbation of low frequency noise which is a common problem for biosensor.
+
+\subsection{Comparison and Conclusion}
+We compare method 1 (Sec.2.2.1) and method 2 (Sec.2.2.2) here.
+Two methods we have mentioned focus on detecting the $R_{NW}$ difference.
+According to table \ref{tb:LVtable}, the resistor measurement range is different by a large extent.
+The result may because the minimum value of current flowing through nanowire is limited differently.
+The minimum current in method 1 is limited by the pmos(I charge) and the leakage current.
+In method 2, it is limited by the TIA.
+Since our method adopt this TIA block, we will discuss this problem in chapter 5.
+
+As for the $C_{NW}$ detection,
+the measure range is much worse.{\color{red}{Reason}}
+
+Method 2 perform well when it comes to noise suppression.
+In fact, the circuit in method 1 doesn't provide noise reduction ability.
+The special structure it use (The article \cite{Juv1} mentioned it as M4N approach) is the one responsible for that.
+
+Method 1 has a lower power consumption. However, it is under estimated since the microcontroller power is not included.
+
+\begin{table}[!b]
+    {\fontfamily{}\fontsize{10}{14}\selectfont
+    \centering
+    \label{tb:LVtable}
+    \begin{tabular}{l|cp{4cm}}
+        & \cite{Juv2} & \cite{Jlockin}\\
+        \hline
+        R meas range & 1M - 1G & 10 - 40k\\
+        \hline
+        R meas error & < 2.5\% & < 2\%\\
+        \hline
+        C meas range & 100fF - 1uF & 0.5 - 1.8nF\\
+        \hline
+        C meas error & < 3\% & < 3\%\\
+        \hline
+        SNR & > 45dB & - \\
+        \hline
+        Input refered noise & - & 190 nV/sqrt(Hz) @ 5 kHz \\
+        \hline
+        CMOS Technology & 0.13um & 0.18um\\
+        \hline
+        Power consumption & 14.82uW & 2mW\\
+    \end{tabular}
+    \caption{Specification Summary}
+    }
+\end{table}
+
+In our project, capacitance measurement is not our object (It is probably the next-stage target).
+But we should consider the parasitic capacitor effect in our circuit design.
+Method 1 convert the resistance information into time (frequency) information.
+If one want to avoid the affect from parasitic capacitor, he should apply a $C_{int}$ that is much larger than $C_{NW}$.
+However, it is not practical in integrated design because the chip size is limited.
+Method 2 seems to be a more
+The reason is that $C_{NW}$ is parallel to nanowire.
+Thus one can operating nanowire under specific region (Frequency or bias voltage/current ) where current flowing through $C_{NW}$ is ignorable comparing with $I_{NW}$.
 
 
 
 
 
 
-\section{Data Analysis}
+
+
+
+%
