@@ -151,10 +151,10 @@ INPUT images/drawing-1.pdf_tex
 INPUT data/chap2.tex
 INPUT data/chap2.tex
 INPUT images/nthu-logo.pdf
+INPUT images/nthu-logo.pdf
 INPUT images/chapter2/SourceFollower.png
 INPUT images/nthu-logo.pdf
 INPUT images/chapter2/ISFET.png
-INPUT images/nthu-logo.pdf
 INPUT images/nthu-logo.pdf
 INPUT images/chapter2/SourceFollower_wi_parasiticCap.png
 INPUT images/nthu-logo.pdf
@@ -163,8 +163,8 @@ INPUT images/chapter2/uv1.png
 INPUT images/chapter2/uv2.png
 INPUT images/drawing-1.pdf_tex
 INPUT images/drawing-1.pdf_tex
-INPUT images/chapter2/lockin.png
 INPUT images/nthu-logo.pdf
+INPUT images/chapter2/lockin.png
 INPUT images/nthu-logo.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT images/nthu-logo.pdf

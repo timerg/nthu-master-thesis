@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  20 OCT 2016 19:53
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  2 NOV 2016 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1073,16 +1073,16 @@ Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [2]
-LaTeX Font Info:    Try loading font information for EU1+pag on input line 74.
-LaTeX Font Info:    No file EU1pag.fd. on input line 74.
+LaTeX Font Info:    Try loading font information for EU1+pag on input line 73.
+LaTeX Font Info:    No file EU1pag.fd. on input line 73.
 
 
 LaTeX Font Warning: Font shape `EU1/pag/m/n' undefined
-(Font)              using `EU1/lmr/m/n' instead on input line 74.
+(Font)              using `EU1/lmr/m/n' instead on input line 73.
 
 
 LaTeX Font Warning: Font shape `EU1/pag/bx/n' undefined
-(Font)              using `EU1/pag/m/n' instead on input line 78.
+(Font)              using `EU1/pag/m/n' instead on input line 77.
 
 (./images/drawing-1.pdf_tex)) (./data/chap2.tex
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
@@ -1090,31 +1090,28 @@ Overfull \vbox (8.568pt too high) has occurred while \output is active []
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [3]
 Chapter 2.
-File: images/chapter2/SourceFollower.png Graphic file (type QTm)
-<use  "images/chapter2/SourceFollower.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: images/nthu-logo.pdf Graphic file (type QTm)
 <use  "images/nthu-logo.pdf" > [4
 
 ]
-File: images/chapter2/ISFET.png Graphic file (type QTm)
- <use  "images/chapter2/ISFET.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+File: images/chapter2/SourceFollower.png Graphic file (type QTm)
+ <use  "images/chapter2/SourceFollower.png" >
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [5]
+File: images/chapter2/ISFET.png Graphic file (type QTm)
+ <use  "images/chapter2/ISFET.png" >
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [6]
 File: images/chapter2/SourceFollower_wi_parasiticCap.png Graphic file (type QTm)
  <use  "images/chapter2/SourceFollower_wi_parasiticCap.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1127,32 +1124,32 @@ File: images/chapter2/uv1.png Graphic file (type QTm)
  <use  "images/chapter2/uv1.png" >
 File: images/chapter2/uv2.png Graphic file (type QTm)
  <use  "images/chapter2/uv2.png" >
-Overfull \hbox (56.90811pt too wide) in paragraph at lines 156--157
+Overfull \hbox (56.90811pt too wide) in paragraph at lines 173--174
  [][] 
  []
 
 
-Overfull \hbox (2.60799pt too wide) in paragraph at lines 147--161
+Overfull \hbox (2.60799pt too wide) in paragraph at lines 164--178
 [][]  [] 
  []
 
 (./images/drawing-1.pdf_tex)
+Overfull \vbox (8.58pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [9]
 File: images/chapter2/lockin.png Graphic file (type QTm)
  <use  "images/chapter2/lockin.png" >
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [9]
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [10]
-LaTeX Font Info:    Try loading font information for EU1+ on input line 221.
-LaTeX Font Info:    No file EU1.fd. on input line 221.
+LaTeX Font Info:    Try loading font information for EU1+ on input line 238.
+LaTeX Font Info:    No file EU1.fd. on input line 238.
 
 
 LaTeX Font Warning: Font shape `EU1//m/n' undefined
-(Font)              using `EU1/lmr/m/n' instead on input line 221.
+(Font)              using `EU1/lmr/m/n' instead on input line 238.
 
 
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
@@ -1249,10 +1246,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19348 strings out of 493706
- 391259 string characters out of 6145770
- 424448 words of memory out of 5000000
- 22486 multiletter control sequences out of 15000+600000
+ 19349 strings out of 493706
+ 391265 string characters out of 6145770
+ 426455 words of memory out of 5000000
+ 22487 multiletter control sequences out of 15000+600000
  8889 words of font info for 63 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  52i,14n,69p,10463b,403s stack positions out of 5000i,500n,10000p,200000b,80000s

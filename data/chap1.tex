@@ -16,21 +16,20 @@ And according to them, the nanowire use thick gate dielectric and have non-regul
 
 
 \section{Introduction}
-In this project, we design a nanowire readout circuit that is capable of performing both large signal and small signal measurement.
-Specifically, the circuit has two operation mode.
-One is large signal mode (LS), which bias nanowire under a drain current ($I_d$) and finds corresponding gate-to-source voltage ($V_{gs}$).
-The other is the small signal mode (SS).
-It detects and amplifies the current variance of nanowire.
+In this project, we design a nanowire readout circuit with two modes that perform large signal (DC) and small signal (AC) measurement.
+The DC mode do DC sweep.
+It bias nanowire under a drain current ($I_d$) and finds corresponding gate-to-source voltage ($V_{gs}$).
+The AC mode detects and amplifies the current variance of nanowire.
 We also combines these two function to try a method for solving the disparity problem.
 
 \subsection*{Method for solving the disparity problem}
 It base on two assumptions.
 \begin{enumerate}
     \item The nanowire transconductance is proportional to the drain-to-source current (Id).
-    \item The changing of the concentration of targeted biomolecule can be viewed as the small signal voltage input to the gate end of a transistor.
+    \item The changing of the concentration of targeted biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
 \end{enumerate}
 The first assumption implies one can control the nanowire transconductance by the biasing Id.
-The second assumption means that as long as different nanowire elements have a same transconductance, they produce same output current (small signal).
+The second assumption means that as long as different nanowire elements have a same transconductance, the output current induced by a concentration difference should be same.
 We testify these assumption in chapter 3.
 
 We implement the method through our read-out circuit with large signal mode (LS) and small signal mode (SS).

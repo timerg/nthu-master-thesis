@@ -7,11 +7,11 @@
 \contentsline {section}{\numberline {1.4}Contribution to Knowledge}{3}
 \contentsline {chapter}{\numberline {2}Literature Review \&}{4}
 \contentsline {section}{\numberline {2.1}DC Sweep and Source Follower}{4}
-\contentsline {subsection}{\numberline {2.1.1}Constant Current}{4}
-\contentsline {subsection}{\numberline {2.1.2}Source Follower}{4}
+\contentsline {subsection}{\numberline {2.1.1}Id-Vg Sweep}{4}
+\contentsline {subsection}{\numberline {2.1.2}Source Follower}{5}
 \contentsline {section}{\numberline {2.2}Small Signal (AC) Measurement Method Review}{7}
-\contentsline {subsection}{\numberline {2.2.1}{\color {red}Resistance-to-Time}}{8}
-\contentsline {subsection}{\numberline {2.2.2}Complex Impedance Solving}{9}
+\contentsline {subsection}{\numberline {2.2.1}RC Time Delay Measuring}{8}
+\contentsline {subsection}{\numberline {2.2.2}Complex Impedance Solving}{10}
 \contentsline {subsection}{\numberline {2.2.3}Comparison and Conclusion}{11}
 \contentsline {chapter}{\numberline {3}Nanowire Structure and Measurement}{13}
 \contentsline {section}{\numberline {3.1}Brief Description of Nanowire Structure}{13}

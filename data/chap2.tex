@@ -6,7 +6,31 @@ Each of them references different sources.
 \section{DC Sweep and Source Follower}
 In this section, we review the knowledge and an article that is related to our design of large signal mode (DC).
 
-\subsection{Constant Current}
+\subsection{Id-Vg Sweep and Transconductance}
+A common method for examining nanowire electrical properties is to perform DC sweep.
+In \cite{DN17}, two typical dc sweep experiments of nanowire at room temperature are given: $I_d$-$V_d$ and $I_d$-$V_g$.
+From the direct observation of the experiment results, nanowire seems to be more ``sensitive" to $V-g$ than $V_d$ because changing $V_g$ induces more $I_d$ variance than changing $V_d$.
+The cause is that in most of time, the transconductance ($g_m = \frac{\partial I_d}{\partial V_g}$) of a transistor is larger than its drain conductance ($g_d =  \frac{\partial I_d}{\partial V_d}$).
+{\color{red}We thus surmise that using transconductance as may resolution }
+% 需要確認清楚，濃度改變究竟是讓 transconductance 改變，還是成為另一個電壓差（或是threshold voltage 改變？）
+
+% With the MOSFET model of weak and strong inversion, we have the $I_d$ equations of MOSFET:
+% \begin{align}
+%     \text{strong inversion:} \quad & I_d  = \mu C_{ox} \frac{W}{L}((V_{gs} - V_t)V_{ds} - \frac{V_{ds}^2}{2})\\
+%     \text{weak inversion:} \quad & I_d  = I_0e^{\kappa V_{gs}/\phi_t}(1 - e^{-V_{ds}/\phi_t})
+% \end{align}
+% We can also derive the $g_m$ and $g_d$:
+% \begin{align}
+%     \text{strong inversion:} \quad & g_m  = \sqrt{2 \mu C_{ox} (\frac{W}{L})I_{dsat}\\
+%                                  & g_d = \\
+%     \text{weak inversion:} \quad & I_d  = I_0e^{\kappa V_{gs}/\phi_t}(1 - e^{-V_{ds}/\phi_t})
+% \end{align}
+
+
+
+
+
+
 
 
 \subsection{Source Follower}
@@ -28,6 +52,8 @@ The transfer function can be derived as:
 \end{align}
 $g_m$ is the transconductance ($\frac{\partial I_d}{\partial V_{gs}}$) and $r_{ds}$ is the drain-to-source resistance.
 Although we haven't seen it is applied to nanowire, there have been several applications in the read-out circuits of ISFET (Ion-sensitive Field-effect Transistor)\cite{SF1, SF2} for a long time.
+
+
 
 In \cite{SF1}, ISFET is applied as a biological transducer that convert detected bio-signal into it's input signal on the gate-end, which is resemble to our biosensor of nanowire.
 An read-out circuit of source follower is served as the analog front-end.
@@ -98,17 +124,16 @@ As in figure \ref{fig:SF_pC} where the parasitic elements are included, we modif
     \frac{V_{out}}{V_{in}} = \frac{r_{ds}(sC_{gs} + gm)}{1 + r_{ds}(gm + s(C_{gs}+C_s))}
 \end{align}
 The equation can be similar to Eq.\ref{eq:sfTF} which roughly equals to 1 as long as $C_s$ is far more smaller than $C_{gs}$.
-Unfortunately, $C_s$ can be large since the output end of source follower usually connects to the next stage input or even the chip pad.
-In that case, the parasitic capacitors may attenuate the signal as signal frequency increase.
+Unfortunately, $C_s$ can be large since the output end of source follower usually connects to the next stage input or a pad.
+In that case, the parasitic capacitors may attenuate the signal.
 
-Parasitic element is an issue and deserve more consideration.
-Moreover, things such as SNR, amplification and filtering are the factors for circuit design of ac signal measurement.
-We present the works from two teams below.
-Their method aims to measure drain-to-source resistance ($R_{NW}$) and drain-to-source capacitance ($C_{NW}$).
-We favor the second one (2.2.2) over the other and take it as reference for this work and those in the future.
-The reason is in the end of this section.
+We want to build another circuit structure that can not only performs ac signal measurement but also immunes from parasitic capacitance affect.
+This is achieved by reviewing those works that try to measure the parasitic capacitance first.
+Below, the works from two teams aims to measure drain-to-source resistance ($R_{NW}$) and drain-to-source capacitance ($C_{NW}$).
+Base on the reviews, we adopted and modified the method from one of it (2.2.2).
+This will be described briefly in section 2.2.3 and thoroughly in chapter 5.
 
-\subsection{{\color{red}Resistance-to-Time}}
+\subsection{RC Time Delay Measuring}
 The measurement system for ZnO-nanowire based sensor array from \cite{Juv1} applies the Time-over-Threshold techniques to its read-out circuit (Fig.\ref{fig:tot1}).
 The circuit alternatively charges an on-chip capacitor ($C_{int}$) with a constant current and discharges it through the nano-material resistance (nanowire).
 An inverter with its output switches from on to off when the capacitor is charged to its input threshold voltage, and vice versa.
@@ -201,9 +226,9 @@ Incidentally, the signal are immune from the perturbation of low frequency noise
 
 \subsection{Comparison and Conclusion}
 We compare method 1 (Sec.2.2.1) and method 2 (Sec.2.2.2) here.
-Two methods we have mentioned focus on detecting the $R_{NW}$ difference.
-According to table \ref{tb:LVtable}, the resistor measurement range is different by a large extent.
-The result may because the minimum value of current flowing through nanowire is limited differently.
+Both of them focus on detecting the $R_{NW}$ difference.
+According to the comparison table below (\ref{tb:LVtable}), we can see the resistor measurement range of method 1 is different from 2 by a large extent.
+This may because the minimum bias current of nanowire provided by the circuits are different.
 The minimum current in method 1 is limited by the pmos(I charge) and the leakage current.
 In method 2, it is limited by the TIA.
 Since our method adopt this TIA block, we will discuss this problem in chapter 5.
@@ -217,7 +242,7 @@ The special structure it use (The article \cite{Juv1} mentioned it as M4N approa
 
 Method 1 has a lower power consumption. However, it is under estimated since the microcontroller power is not included.
 
-\begin{table}[!b]
+\begin{table}[!htb]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
     \label{tb:LVtable}
@@ -244,14 +269,26 @@ Method 1 has a lower power consumption. However, it is under estimated since the
     }
 \end{table}
 
-In our project, capacitance measurement is not our object (It is probably the next-stage target).
-But we should consider the parasitic capacitor effect in our circuit design.
+In our project, capacitance measurement is not our object.
+But we will still need to consider the parasitic capacitor effect in our circuit design.
 Method 1 convert the resistance information into time (frequency) information.
 If one want to avoid the affect from parasitic capacitor, he should apply a $C_{int}$ that is much larger than $C_{NW}$.
 However, it is not practical in integrated design because the chip size is limited.
-Method 2 seems to be a more
-The reason is that $C_{NW}$ is parallel to nanowire.
-Thus one can operating nanowire under specific region (Frequency or bias voltage/current ) where current flowing through $C_{NW}$ is ignorable comparing with $I_{NW}$.
+
+Method 2 uses a TIA to measure resistance and capacitance together first and then resolve the complex value.
+We notice that the capacitance value is much larger than the resistance value.
+This difference may be revised downward in our silicon nanowire case.
+The resistance can be more than 100M.
+However, since $C_{NW}$ is parallel to $R_{NW}$, we wonder the C value can be ignored.
+Besides, our circuit measure the $g_m$ instead of $R_{NW}$.
+The value can be smaller than $R_{NW}$.
+In fact, we can even control the $I_d$ of nanowire to lower the $g_m$ further.
+
+Another reason that make method 2 more attractive is because the method is more flexible.
+One can simply add other analog blocks such as noise filter or amplifier to it.
+
+Overall, method 1 has advantage in detecting range and accuracy while method 2 has better noise suppression and flexibility.
+
 
 
 

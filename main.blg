@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: abbrv.bst
 Database file #1: data/thesis.bib
-I was expecting a `,' or a `}'---line 127 of file data/thesis.bib
+I was expecting a `,' or a `}'---line 141 of file data/thesis.bib
  : 
  : title = {Potassium ion-sensitive field effect transistor},
 (Error may have been on previous line)
@@ -11,45 +11,45 @@ I'm skipping whatever remains of this entry
 Warning--empty title in Drift
 Warning--empty journal in Drift
 Warning--empty year in Drift
-You've used 13 entries,
+You've used 14 entries,
             2118 wiz_defined-function locations,
-            598 strings with 6692 characters,
-and the built_in function-call counts, 6063 in all, are:
-= -- 548
-> -- 398
+            608 strings with 7036 characters,
+and the built_in function-call counts, 6672 in all, are:
+= -- 600
+> -- 451
 < -- 4
-+ -- 160
-- -- 144
-* -- 521
-:= -- 1006
-add.period$ -- 38
-call.type$ -- 13
-change.case$ -- 110
++ -- 181
+- -- 164
+* -- 585
+:= -- 1112
+add.period$ -- 41
+call.type$ -- 14
+change.case$ -- 123
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 186
-empty$ -- 392
-format.name$ -- 144
-if$ -- 1240
+cite$ -- 17
+duplicate$ -- 197
+empty$ -- 423
+format.name$ -- 164
+if$ -- 1356
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 13
-newline$ -- 67
-num.names$ -- 26
-pop$ -- 111
+int.to.str$ -- 14
+missing$ -- 14
+newline$ -- 72
+num.names$ -- 28
+pop$ -- 122
 preamble$ -- 1
-purify$ -- 98
+purify$ -- 110
 quote$ -- 0
-skip$ -- 139
+skip$ -- 146
 stack$ -- 0
-substring$ -- 369
-swap$ -- 51
+substring$ -- 407
+swap$ -- 52
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
+type$ -- 56
 warning$ -- 3
-while$ -- 41
-width$ -- 15
-write$ -- 140
+while$ -- 44
+width$ -- 16
+write$ -- 151
 (There was 1 error message)
