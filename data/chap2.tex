@@ -1,18 +1,34 @@
 \chapter{Literature Review \&}
 As previously mentioned in the introduction section, the read-out circuit we proposed has two operation mode (DC and AC).
-The DC mode is for drain current biasing while the AC mode is for current variance measurement.
+The DC mode control the drain current ($I_D$) of nanowire while the AC mode is for current variance measurement.
 Each of them references different sources.
 
 \section{DC Sweep and Source Follower}
 In this section, we review the knowledge and an article that is related to our design of large signal mode (DC).
 
-\subsection{Id-Vg Sweep and Transconductance}
-A common method for examining nanowire electrical properties is to perform DC sweep.
-In \cite{DN17}, two typical dc sweep experiments of nanowire at room temperature are given: $I_d$-$V_d$ and $I_d$-$V_g$.
-From the direct observation of the experiment results, nanowire seems to be more ``sensitive" to $V-g$ than $V_d$ because changing $V_g$ induces more $I_d$ variance than changing $V_d$.
-The cause is that in most of time, the transconductance ($g_m = \frac{\partial I_d}{\partial V_g}$) of a transistor is larger than its drain conductance ($g_d =  \frac{\partial I_d}{\partial V_d}$).
-{\color{red}We thus surmise that using transconductance as may resolution }
-% 需要確認清楚，濃度改變究竟是讓 transconductance 改變，還是成為另一個電壓差（或是threshold voltage 改變？）
+\subsection{$I_D$-$V_G$ and Transconductance}
+% A common method for examining nanowire electrical properties is to perform DC sweep.
+In n-type transistor, the binding of negative charged bio-molecule induce surface-near silicon ions discharged and thus lower the threshold voltage.
+It is straightforward to think of these binding molecules as an additional voltage source at the gate with its value depends on the concentration.
+This is one of the assumption what we have mentioned in the last chapter.
+
+In \cite{DN17}, the team plot the $I_D$-$V_G$ curves and study how the curve changes with the concentration of bio-molecules.
+We observe that in the plot with a log-scale for the y-axis, curves with different concentration exhibit a same rising trend.
+These curves are different with others by a constant fold when $I_D$ is low (less than 100nA).
+By applying the weak inversion current equation of MOSFET, we may use a $\Delta v_g$ to represent the concentration effect.
+\begin{align}
+    & I_D = I_{0} e^{\kappa(V_{GS} - V_{th}) / \phi_t}
+    & I_D = I_{0} e^{\kappa(V_{GS} - (V_{th} - \Delta v_g)) / \phi_t}
+    \rightarrow & I_D = I_0 e^{\Delta v_g / \phi_t} e^{\kappa(V_{GS} - V_{th}) / \phi_t}
+\end{align}
+
+
+
+ % as the $\Delta v_g$ in following $I_D$ equations.
+
+
+
+
 
 % With the MOSFET model of weak and strong inversion, we have the $I_d$ equations of MOSFET:
 % \begin{align}

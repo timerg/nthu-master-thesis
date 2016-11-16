@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1474524680 "chap3.tex" "chap3.pdf" "chap3" 1474524680
+["pdflatex"] 1479199843 "chap3.tex" "chap3.pdf" "chap3" 1479199843
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/avantgar/pagd7t.tfm" 1136768653 2492 c3c1cdcee2dde7695628464fd5bab43c ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/avantgar/pagk7t.tfm" 1136768653 2676 c20dcd567e2e4f4440ff29ff94d2f867 ""
@@ -9,8 +9,8 @@
   "/usr/local/texlive/2015/texmf-var/web2c/xetex/xelatex.fmt" 1462692603 3445943 19b128c32713cc6ee877e8432432055a ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
   "chap3.aux" 1462714680 8 a94a2480d3289e625eea47cd1b285758 ""
-  "chap3.tex" 1474524679 5277 fed884323cbb54861e72ae55b3f4c08d ""
+  "chap3.tex" 1479199843 9585 354413e7f418076bd8c1b9cc334508b4 ""
   "images/drawing.pdf_tex" 0 -1 0 ""
   (generated)
-  "chap3.log"
   "chap3.pdf"
+  "chap3.log"

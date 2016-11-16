@@ -12,7 +12,7 @@ main.toc
 Makefile
 *.png
 *.svg
-
+main.synctex.gz
 *.bbl
 *.lof
 

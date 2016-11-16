@@ -17,29 +17,32 @@ And according to them, the nanowire use thick gate dielectric and have non-regul
 
 \section{Introduction}
 In this project, we design a nanowire readout circuit with two modes that perform large signal (DC) and small signal (AC) measurement.
-The DC mode do DC sweep.
-It bias nanowire under a drain current ($I_d$) and finds corresponding gate-to-source voltage ($V_{gs}$).
-The AC mode detects and amplifies the current variance of nanowire.
-We also combines these two function to try a method for solving the disparity problem.
+In DC mode, one can use the circuit to perform a DC sweep of drain current ($I_D$) to show how the gate voltage ($V_{G}$) changes, or gives nanowire a constant $I_D$ and measures the $V_{G}$ response to different solution concentration.
+In AC mode, the circuit detects and amplifies the current variance of nanowire with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
+We also combine two modes to implement a proposed method that may mitigate the disparity problem.
 
-\subsection*{Method for solving the disparity problem}
-It base on two assumptions.
+\subsection*{Dealing with the disparity problem}
+The proposed method base on two assumptions.
 \begin{enumerate}
-    \item The nanowire transconductance is proportional to the drain-to-source current (Id).
-    \item The changing of the concentration of targeted biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
+    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) is proportional to $I_D$.
+    \item The changing of the concentration of bio-molecule can be viewed as a voltage signal input to the gate end of a transistor.
 \end{enumerate}
 The first assumption implies one can control the nanowire transconductance by the biasing Id.
 The second assumption means that as long as different nanowire elements have a same transconductance, the output current induced by a concentration difference should be same.
-We testify these assumption in chapter 3.
 
-We implement the method through our read-out circuit with large signal mode (LS) and small signal mode (SS).
-In the beginning of each measurement event, we applied the LS mode to initialized the drain current and gate voltage of nanowire.
-This is to standardize the transconductance of every nanowire.
-With nanowire biased under these $I_d$ and $V_{gs}$, the circuit turn to the SS.
+The method works as follows:
+In the beginning of each measurement event, we set circuit under DC mode and perform a DC sweep.
+By handling the sweep results with numerical method, we keep all nanowire elements under a selected transconductance by controlling their $I_D$ and corresponded $V_G$.
+This complete the initial stage.
+It then follows by the measurement stage where the AC mode is used, all elements should behave uniformly based on assumption 2.
+In the end of the stage, we return to DC mode to reset $I_D$ of the elements.
+The circuit adjusts their $V_G$ to do so.
+In the beginning of each measurement stage, an element always has a same $I_D$ value and so does its $g_m$ value according to the assumption 1.
+
 
 Some minutiae is reviewed in chapter 5.
-Currently the operation in the first mode is fully manual.
-In the future work this needs to be modified and may requires digital circuit assistance.
+Currently, most operations are manual.
+We hope to make them automatic in the future, which may require digital circuit assistance.
 
 
 \section{Design Flow and Chapter Layout}
@@ -51,16 +54,10 @@ Most of those are the drain current of nanowire sweeping along the gate voltage 
 We present some of the raw data and the analysis results in this part.
 
 Chapter 3 gives a brief description of nanowire structure.
-It is then followed by our own nanowire measurement based on the information in the previous chapter.
-The measurement includes:
+It is then followed by some analysis of data from biology experiment and electrical measurement.
+The biology experiment are done by Prof.Yang's team while electrical measurement are performed by ourselves.
 
-\begin{enumerate}
-\item Comparison between front gate and back gate
-\item Nanowire transconductance
-\item Nanowire drain-to-source resistance ($R_{NW}$)
-\end{enumerate}
-
-Chapter 4 is an ``accessory".
+Chapter 4 is an ``accessory''.
 We construct an discrete circuit which was designed for ion-sensitive field-effect transistor (ISFET) \cite{SF1}.
 The purpose of this process is to practice the constant current method.
 The outcomes are deficient and it is its reference value which we spotlight.
@@ -81,9 +78,6 @@ The outcomes are deficient and it is its reference value which we spotlight.
 \end{figure}
 
 
-
-\section{Contribution to Knowledge}
-Our
 % This circuit has two operation mode.
 % One is the ``Gate Voltage Tracing (GVT)" mode, and the other is the ``Current Variance Measure (CVM)" mode.
 
