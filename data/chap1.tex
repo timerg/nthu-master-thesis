@@ -24,20 +24,24 @@ We also combine two modes to implement a proposed method that may mitigate the d
 \subsection*{Dealing with the disparity problem}
 The proposed method base on two assumptions.
 \begin{enumerate}
-    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) is proportional to $I_D$.
+    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and independent on $V_{GS}$.
     \item The changing of the concentration of bio-molecule can be viewed as a voltage signal input to the gate end of a transistor.
 \end{enumerate}
 The first assumption implies one can control the nanowire transconductance by the biasing Id.
 The second assumption means that as long as different nanowire elements have a same transconductance, the output current induced by a concentration difference should be same.
 
 The method works as follows:
-In the beginning of each measurement event, we set circuit under DC mode and perform a DC sweep.
+
+\textbf{Initial stage}: In the beginning of each measurement event, we set circuit under DC mode and perform a DC sweep.
 By handling the sweep results with numerical method, we keep all nanowire elements under a selected transconductance by controlling their $I_D$ and corresponded $V_G$.
-This complete the initial stage.
-It then follows by the measurement stage where the AC mode is used, all elements should behave uniformly based on assumption 2.
+
+\textbf{Measurement stage:} This is where the AC mode is used.
+Since the transconductance of all elements are same, they should behave uniformly based on assumption 2.
 In the end of the stage, we return to DC mode to reset $I_D$ of the elements.
 The circuit adjusts their $V_G$ to do so.
-In the beginning of each measurement stage, an element always has a same $I_D$ value and so does its $g_m$ value according to the assumption 1.
+
+In the beginning of each measurement stage, an element always has a same $I_D$ but different $V_G$.
+Based on assumption 1, its transconductance is kept constant.
 
 
 Some minutiae is reviewed in chapter 5.

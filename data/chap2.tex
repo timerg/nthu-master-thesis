@@ -1,52 +1,25 @@
-\chapter{Literature Review \&}
+\chapter{Literature Review \& Theory Description}
 As previously mentioned in the introduction section, the read-out circuit we proposed has two operation mode (DC and AC).
 The DC mode control the drain current ($I_D$) of nanowire while the AC mode is for current variance measurement.
 Each of them references different sources.
+In section 2.1, we first talk about the reason why we perform $I_D$-$V_G$ sweep.
+Then we review the reference of our DC mode circuit design.
+The references of AC mode circuit design is in section 2.2.
+For the last section, we discuss the two assumption mentioned in section 1.2.
 
-\section{DC Sweep and Source Follower}
+\section{DC Sweep: $I_D$-$V_G$ Curves}
 In this section, we review the knowledge and an article that is related to our design of large signal mode (DC).
 
 \subsection{$I_D$-$V_G$ and Transconductance}
-% A common method for examining nanowire electrical properties is to perform DC sweep.
-In n-type transistor, the binding of negative charged bio-molecule induce surface-near silicon ions discharged and thus lower the threshold voltage.
-It is straightforward to think of these binding molecules as an additional voltage source at the gate with its value depends on the concentration.
-This is one of the assumption what we have mentioned in the last chapter.
+A common method for examining nanowire electrical properties is to perform DC sweep.
+Among all kinds of sweep method, we choose the $I_D$-$V_G$ in respect of the physical characteristic.
+In n-type transistor, the binding of negative charged bio-molecules induces surface-near silicon ions discharged and thus lower the threshold voltage.
+It is straightforward to think of these binding molecules as an voltage signal input to the gate with its value depends on the concentration.
+This voltage signal effect nanowire in the same way $V_G$ does.
 
-In \cite{DN17}, the team plot the $I_D$-$V_G$ curves and study how the curve changes with the concentration of bio-molecules.
-We observe that in the plot with a log-scale for the y-axis, curves with different concentration exhibit a same rising trend.
-These curves are different with others by a constant fold when $I_D$ is low (less than 100nA).
-By applying the weak inversion current equation of MOSFET, we may use a $\Delta v_g$ to represent the concentration effect.
-\begin{align}
-    & I_D = I_{0} e^{\kappa(V_{GS} - V_{th}) / \phi_t}
-    & I_D = I_{0} e^{\kappa(V_{GS} - (V_{th} - \Delta v_g)) / \phi_t}
-    \rightarrow & I_D = I_0 e^{\Delta v_g / \phi_t} e^{\kappa(V_{GS} - V_{th}) / \phi_t}
-\end{align}
-
-
-
- % as the $\Delta v_g$ in following $I_D$ equations.
-
-
-
-
-
-% With the MOSFET model of weak and strong inversion, we have the $I_d$ equations of MOSFET:
-% \begin{align}
-%     \text{strong inversion:} \quad & I_d  = \mu C_{ox} \frac{W}{L}((V_{gs} - V_t)V_{ds} - \frac{V_{ds}^2}{2})\\
-%     \text{weak inversion:} \quad & I_d  = I_0e^{\kappa V_{gs}/\phi_t}(1 - e^{-V_{ds}/\phi_t})
-% \end{align}
-% We can also derive the $g_m$ and $g_d$:
-% \begin{align}
-%     \text{strong inversion:} \quad & g_m  = \sqrt{2 \mu C_{ox} (\frac{W}{L})I_{dsat}\\
-%                                  & g_d = \\
-%     \text{weak inversion:} \quad & I_d  = I_0e^{\kappa V_{gs}/\phi_t}(1 - e^{-V_{ds}/\phi_t})
-% \end{align}
-
-
-
-
-
-
+For our project, $I_D$-$V_G$ curve gives us a thumbnail.
+By finding the partial derivative of $I_D$ of $V_{G}$ to get the transconductance,
+we can know how the concentration affects $I_D$ when nanowire is biased under constant $V_{GS}$ and $V_{DS}$ (Fig.\ref{fig:DN17Fig6d}).
 
 
 \subsection{Source Follower}
@@ -144,10 +117,10 @@ Unfortunately, $C_s$ can be large since the output end of source follower usuall
 In that case, the parasitic capacitors may attenuate the signal.
 
 We want to build another circuit structure that can not only performs ac signal measurement but also immunes from parasitic capacitance affect.
-This is achieved by reviewing those works that try to measure the parasitic capacitance first.
+We started by reviewing those works that try to measure the parasitic capacitance.
 Below, the works from two teams aims to measure drain-to-source resistance ($R_{NW}$) and drain-to-source capacitance ($C_{NW}$).
-Base on the reviews, we adopted and modified the method from one of it (2.2.2).
-This will be described briefly in section 2.2.3 and thoroughly in chapter 5.
+The focus of the review is on the function and design theory of their read-out circuit.
+
 
 \subsection{RC Time Delay Measuring}
 The measurement system for ZnO-nanowire based sensor array from \cite{Juv1} applies the Time-over-Threshold techniques to its read-out circuit (Fig.\ref{fig:tot1}).
@@ -165,7 +138,7 @@ It seems that the design may only be applied to a complete-resistor or complete-
 
 The recent publicans \cite{Juv2} by the team is more elaborate and have measurement of complex element (An element composed of both resistor and capacitor).
 In Fig.\ref{fig:tot2}, nanowire append between point A and B.
-The charing current is able to be applied from Mp1 or Mp2, which is determined by the ``sel" signal with the aid from the MUXs.
+The charing current is able to be applied from Mp1 or Mp2, which is determined by the ``sel'' signal with the aid from the MUXs.
 This is simply mean to perform a reverse measurement and we ignore it by assume sel = 1 and point B is virtually ground.
 Now, we can see that the circuit design concept is actually same.
 The current charge both $C_{int}$ and $C_{NW}$.
@@ -261,7 +234,6 @@ Method 1 has a lower power consumption. However, it is under estimated since the
 \begin{table}[!htb]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
-    \label{tb:LVtable}
     \begin{tabular}{l|cp{4cm}}
         & \cite{Juv2} & \cite{Jlockin}\\
         \hline
@@ -282,6 +254,7 @@ Method 1 has a lower power consumption. However, it is under estimated since the
         Power consumption & 14.82uW & 2mW\\
     \end{tabular}
     \caption{Specification Summary}
+    \label{tb:LVtable}
     }
 \end{table}
 
@@ -300,11 +273,83 @@ Besides, our circuit measure the $g_m$ instead of $R_{NW}$.
 The value can be smaller than $R_{NW}$.
 In fact, we can even control the $I_d$ of nanowire to lower the $g_m$ further.
 
-Another reason that make method 2 more attractive is because the method is more flexible.
+Another reason that makes method 2 more attractive is because it is more flexible.
 One can simply add other analog blocks such as noise filter or amplifier to it.
 
 Overall, method 1 has advantage in detecting range and accuracy while method 2 has better noise suppression and flexibility.
 
+
+
+\section{Two assumption for }
+In chapter 1, to deal with disparity problem, we assume that
+\begin{enumerate}
+    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and independent on $V_{GS}$.
+    \item The changing of the concentration of bio-molecule can be viewed as a voltage signal input to the gate end of a transistor.
+\end{enumerate}
+We discuss them in this section.
+
+\subsection{Transconductance and $I_D$}
+With the MOSFET model of weak and strong inversion, we have the $I_D$ equations of MOSFET:
+\setlength{\mathindent}{1.5cm}
+
+\begin{align}
+    \text{weak inversion:} \quad I_D   = & I_0e^{\kappa V_{GS}/\phi_t}(1 - e^{-V_{DS}/\phi_t})\\
+                                       = & I_0e^{\kappa V_{GS}/\phi_t} \quad \text{where $V_{DS} > 4 \phi_t$ } \\
+    \text{strong inversion:} \quad I_D = & \mu C_{ox} \frac{W}{L}((V_{GS} - V_{th})V_{DS} - \frac{V_{DS}^2}{2}) \\
+                                       = & \mu C_{ox} \frac{W}{L}(V_{GS} - V_{th})^2 \quad \text{where $V_{DS} > V_{GS} - V_{th}$} \label{eq:ID_Strong}
+\end{align}
+
+$C_{ox}$ is the oxide capacitance and $\mu$ is the electron mobility.
+Both of them depends on doping concentration.
+$W$ and $L$ are the width and length of the transistor.
+$\phi_t$ is the thermal voltage depending on temperature.
+The $\kappa$ is the gate coupling coefficient.
+It will be discuss in the next paragraph.
+To be noted that we ignore the short channel effect, which doesn't effect our discussion since we always keep $V_{DS}$ constant.
+
+We then derive the $g_m$:
+\begin{align}
+    \text{weak inversion:} \quad g_m & = \frac{\kappa I_D}{\phi_t}\\ \label{eq:gm_weak}
+    \text{strong inversion:} \quad g_m & = \sqrt{2 \mu C_{ox} (\frac{W}{L})I_{D}} \\ \label{eq:gm_strong}
+\end{align}
+
+For the strong inversion, the Eq.\ref{eq:gm_strong} shows that the assumption 1 is correct.
+However, the assumption is not completely right for transistor in weak inversion.
+According to the Eq.\ref{eq:gm_weak}, the $g_m$ is effect not only by $I_D$ but also by the $\kappa$.
+It is a non-linear parameter effected by $V_G$ and other factors.
+Its value is range from 0.4 to 0.9.
+In our circuit, this problem is currently left unsolved.
+We present its effect in chapter 6.
+
+
+\subsection{A Simple Model for Concentration Affect}
+In \cite{DN17}, the team plot the $I_D$-$V_G$ curves and study how the curve changes with the concentration of bio-molecules.
+We observe that in the plot (Fig.\ref{fig:DN17Fig6d}) with a log-scale for the y-axis, curves with different concentration exhibit a same rising trend when the $I_D$ is low (< 100nA).
+Each curve seems to be different with the other by a constant fold.
+By applying the weak inversion current equation of MOSFET, we found that the assumption can explain this concentration effect.
+
+\begin{align}
+    & I_D1 = I_{0} e^{\kappa(V_{GS} - V_{th}) / \phi_t} \\
+    & I_D2 = I_{0} e^{\kappa(V_{GS} - (V_{th} - v_c)) / \phi_t} \\
+    \rightarrow & I_D2 = f(v_c) \times I_D1 \quad \text{where} \quad f(\Delta v_g) = e^{v_c / \phi_t} \label{eq:vc}
+\end{align}
+
+$I_D1$ and $I_D2$ are the current of two nanowire elements placed in solutions of different concentration.
+The ($v_c$) is a concentration related variable we create for modeling the concentration effect.
+The Eq.\ref{eq:vc} implies that when nanowire are in weak inversion region, their $\log I_D$ difference is independent from $V_g$.
+\begin{align}
+    \log I_D2 - \log I_D1 = \log \frac{I_D2}{I_D1} = \log f(v_c) = v_c / \phi_t
+\end{align}
+
+As for strong inversion region which refer to the large current section in Fig.\ref{fig:DN17Fig6d}, the difference of the curves diminish as $V_G$ increasing.
+The strong inversion equation (Eq.\ref{eq:IDStrong}) shows that if $V_{GS}$ is far larger then $v_c$, the concnetration effect can be ignored.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=8cm]{images/chapter2/DN18Fig3D.png}
+    \caption{Concentration-dependent electric response($I_D-V_G$) of biotin-modified poly-Si NWFET following biotin–streptavidin interaction.\cite{DN17}}
+    \label{fig:DN17Fig6d}
+\end{figure}
 
 
 

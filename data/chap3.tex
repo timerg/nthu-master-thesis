@@ -2,10 +2,7 @@
 In this chapter, we present the experiment data and some analysis which are the foundation of our circuit design.
 The first section gives a brief description of the our silicon nanowire element.
 The second section provides the data of the biology experiments.
-These data are use for ensure that the SNR of nanowire is lower enough.
-% We analyze the {\color{red} standard deviation} of those data and ensure
-The last section presents the data of the electrical measurement.
-Our circuit design spec are base on the analysis from this section.
+The last section presents the data of the electrical measurement, on which our circuit design spec are based.
 
 \section{Brief Description of Nanowire Structure}
 The nanowire we use is made by Prof.Yang's team (National Chiao Tong University)\cite{C5}.
@@ -51,7 +48,8 @@ We present an example below:
         \includegraphics[scale=0.3]{images/chapter3/208_devices/L2-10_log.png}
         (b)
     \end{minipage}
-    \caption{}
+    \caption{Concentration-dependent $I_D$-$V_G$ curves of two equivalent nanowire elements.
+    In (a), the measurement result of 1fM and 100fM bio-molecule solution is distinguishable. There is no overlap between two curves. This is not true in (b).}
     \label{fig:SD_sucandfail}
 \end{figure}
 
@@ -64,11 +62,14 @@ The element of (a) is able to do so if it is biased at gate voltage larger than 
 
 \begin{figure}[!htbp]
         \includegraphics[width=1\textwidth]{images/chapter3/128_allT_mag.png}
-    \caption{}
+    \caption{Concentration-dependent $I_D$-$V_G$ curves.
+    Since the bio-molecule is negative-charged, the lower the concentration is, the higher the curve is.
+    To be noticed, the 10fM curve is closer to the curve of 1pM than 100aM.
+     }
     \label{fig:SD_allT}
 \end{figure}
 
-In Fig.\ref{fig:SD_allT}, the $I_D$ increase with the biomolecule concentration.
+In Fig.\ref{fig:SD_allT}, the $I_D$ increase with the bio-molecule concentration.
 One can find that there are only few ``space'' between PBS buffer and solution containing biomolecule with concentration of 100aM.
 Hence the 100aM should be the limit of detection.
 
@@ -77,13 +78,9 @@ We calculate the noise rate: ${SD} / {Mean}$ which seems independent of concentr
 {\color{red}These implies that the ``resolution'' for detecting concentration ranging from 100aM to 10fM may be better than the that ranging from 10fM to 1pM.}
 \begin{figure}[!htbp]
         \includegraphics[width=1\textwidth]{images/chapter3/128_allT_error.png}
-    \caption{}
+    \caption{The noise rate of Fig.\ref{fig:SD_allT}. The noise rate is obtained by dividing SD by Mean.}
     \label{fig:SD_allT2}
 \end{figure}
-
-
-
-
 
 \subsection*{Appropriate Bias Gate Voltage}
 In \cite{C6}, the team found that ``the induced change of current ($I_D$) following biomolecule was dependent on the applied gate voltage (VG)''.
@@ -169,39 +166,18 @@ We therefore suggest that this section should be the best region under which nan
 
 
 \section{Electrical Measurements}
-This section presents the results.
+This section presents the data analysis results.
+The data are obtained from our own measurements with the source meter (Keithley 2602).
+To exclude the ion effect, we placed nanowire elements in dd-water instead of bio-molecule solution.
+And their poly-silicon channel surfaces are only processed with {\color{red}OH ions.}
 
 \subsection*{Front Gate and Back Gate}
-Two gates are available: floating gate (liquid gate) and back-gate.
+Our nanowire has two gates available: floating gate (liquid gate) and back-gate.
 We choose floating gate as the operation gate in spite of some advantages that back-gate has.
 One of them is the ability to lower the 1/f noise \cite{C7, C8}.
 However, this only happens in a very high gate voltage, which is not practical in the integrated circuit design.
 Moreover, the floating gate induces larger drain-current.
 In other words, it has higher transconductance. And a high transconductance leads to a stronger feedback ability in our design.
-
-% \begin{figure}[!htbp]
-%     \centering
-%     {\fontfamily{pag}\selectfont\textbf{
-%         \def\svgwidth{5.0cm}
-%         \fontsize{6}{7}\selectfont
-%         \input {images/FgBg_Compare_Id_dev.pdf_tex}
-%     }}
-%     \fontsize{6}{7}\selectfont
-%     \caption{}
-%     \label{fig:res}
-% \end{figure}
-%
-% \begin{figure}[!htbp]
-%     \centering
-%     {\fontfamily{pag}\selectfont\textbf{
-%         \def\svgwidth{5.0cm}
-%         \fontsize{6}{7}\selectfont
-%         \input {images/FgBg_Compare_Id.pdf_tex}
-%     }}
-%     \fontsize{6}{7}\selectfont
-%     \caption{}
-%     \label{fig:res}
-% \end{figure}
 
 
 \begin{figure}[!htbp]
@@ -221,7 +197,7 @@ In other words, it has higher transconductance. And a high transconductance lead
         \input {images/FgBg_Compare_Id_dev.pdf_tex}
         (b)
     \end{minipage}
-    \caption{}
+    \caption{Comparison between electrical respone of floating gate and back gate. (a) $I_D$-$V_G$  (b) Transconductance ($g_m$) versus $V_G$}
     \label{fig:IdVgandgbsId}
 \end{figure}
 

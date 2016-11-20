@@ -4,20 +4,23 @@
 \contentsline {section}{\numberline {1.1}Motivation}{1}
 \contentsline {section}{\numberline {1.2}Introduction}{2}
 \contentsline {section}{\numberline {1.3}Design Flow and Chapter Layout}{3}
-\contentsline {chapter}{\numberline {2}Literature Review \&}{4}
-\contentsline {section}{\numberline {2.1}DC Sweep and Source Follower}{4}
+\contentsline {chapter}{\numberline {2}Literature Review \& Theory Description}{4}
+\contentsline {section}{\numberline {2.1}DC Sweep: $I_D$-$V_G$ Curves}{4}
 \contentsline {subsection}{\numberline {2.1.1}$I_D$-$V_G$ and Transconductance}{4}
 \contentsline {subsection}{\numberline {2.1.2}Source Follower}{5}
 \contentsline {section}{\numberline {2.2}Small Signal (AC) Measurement Method Review}{7}
 \contentsline {subsection}{\numberline {2.2.1}RC Time Delay Measuring}{8}
 \contentsline {subsection}{\numberline {2.2.2}Complex Impedance Solving}{10}
 \contentsline {subsection}{\numberline {2.2.3}Comparison and Conclusion}{11}
-\contentsline {chapter}{\numberline {3}Nanowire Structure and Measurement}{13}
-\contentsline {section}{\numberline {3.1}Brief Description of Nanowire Structure}{13}
-\contentsline {section}{\numberline {3.2}Biology Experiment}{14}
-\contentsline {section}{\numberline {3.3}Electrical Measurements}{18}
-\contentsline {subsection}{\numberline {3.3.1}Parameters}{19}
-\contentsline {chapter}{\numberline {4}Discrete Circuitry Design}{23}
-\contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{24}
-\contentsline {section}{\numberline {5.1}Signal Acquisition Method}{24}
-\contentsline {chapter}{\numberline {6}Discussion and Conclusions}{25}
+\contentsline {section}{\numberline {2.3}Two assumption for }{12}
+\contentsline {subsection}{\numberline {2.3.1}Transconductance and $I_D$}{13}
+\contentsline {subsection}{\numberline {2.3.2}A Simple Model for Concentration Affect}{14}
+\contentsline {chapter}{\numberline {3}Nanowire Structure and Measurement}{16}
+\contentsline {section}{\numberline {3.1}Brief Description of Nanowire Structure}{16}
+\contentsline {section}{\numberline {3.2}Biology Experiment}{17}
+\contentsline {section}{\numberline {3.3}Electrical Measurements}{21}
+\contentsline {subsection}{\numberline {3.3.1}Parameters}{21}
+\contentsline {chapter}{\numberline {4}Discrete Circuitry Design}{26}
+\contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{27}
+\contentsline {section}{\numberline {5.1}Signal Acquisition Method}{27}
+\contentsline {chapter}{\numberline {6}Discussion and Conclusions}{28}

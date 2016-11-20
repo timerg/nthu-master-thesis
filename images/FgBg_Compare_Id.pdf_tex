@@ -66,6 +66,6 @@
     \put(0.15690515,0.38496949){\makebox(0,0)[rb]{\smash{10-6}}}%
     \put(0.15690515,0.50626733){\makebox(0,0)[rb]{\smash{10-5}}}%
     \put(0.15690515,0.62756517){\makebox(0,0)[rb]{\smash{10-4}}}%
-    \put(0.0449806,0.3849695){\rotatebox{90}{\makebox(0,0)[b]{\smash{Derivative(Id)}}}}%
+    \put(0.0449806,0.3849695){\rotatebox{90}{\makebox(0,0)[b]{\smash{$I_D$(A)}}}}%
   \end{picture}%
 \endgroup%

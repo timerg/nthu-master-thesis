@@ -50,7 +50,7 @@
   \makeatother%
   \begin{picture}(1,0.6672213)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{FgBg_Compare_Id_dev.pdf}}%
-    \put(0.47509707,0.0780366){\makebox(0,0)[b]{\smash{Vg(V)}}}%
+    \put(0.47509707,0.0780366){\makebox(0,0)[b]{\smash{$V_G$(V)}}}%
     \put(0.17354409,0.12579034){\makebox(0,0)[b]{\smash{0}}}%
     \put(0.32429284,0.12579034){\makebox(0,0)[b]{\smash{1}}}%
     \put(0.47509707,0.12579034){\makebox(0,0)[b]{\smash{2}}}%
@@ -67,6 +67,6 @@
     \put(0.15690515,0.43349971){\makebox(0,0)[rb]{\smash{10-6}}}%
     \put(0.15690515,0.53056018){\makebox(0,0)[rb]{\smash{10-5}}}%
     \put(0.15690515,0.62756517){\makebox(0,0)[rb]{\smash{10-4}}}%
-    \put(0.0449806,0.3849695){\rotatebox{90}{\makebox(0,0)[b]{\smash{Derivative(Id)}}}}%
+    \put(0.0449806,0.3849695){\rotatebox{90}{\makebox(0,0)[b]{\smash{$g_m$ ($\frac{\partial I_D}{\partial V_G}$)}}}}%
   \end{picture}%
 \endgroup%
