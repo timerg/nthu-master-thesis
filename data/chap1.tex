@@ -1,85 +1,77 @@
 \chapter{Introduction}
 \section{Motivation}
-Poly-silicon nanowire(SiNW) is an interesting and promising one-dimensional nano-structures.
-Many research of fabrication and electrical properties have been conducted \cite{C25th}.
-It was first introduced to the biosensor field in 2001\cite{C2001} and has become a promising candidate for various features such as high surface-to-volume ratio, ultra sensitivity, label-free electrical detection and  real-time measurement.
+Poly-silicon nanowire(SiNW) is a well-studied and promising one-dimensional nanostructures.
+As reported by \cite{C25th}, there have been a lot of valuable research on fabrication and electrical properties.
+It was first introduced to the biosensor field in 2001\cite{C2001} and has become a promising candidate for various features such as high surface-to-volume ratio, ultra sensitivity, label-free electrical detection and real-time measurement.
 
-Although there has been some great advances on nanowire structure design \cite{R1}, the work of systems-level engineering is still insufficient.
-Systems designed for specific purpose can help the device to meet practical needs such as noise reduction, real-time measuring and conversion to digital output.
+Although there have been substantial advances on nanowire structure design \cite{R1}, the work of systems-level engineering is still insufficient.
+Systems designed for a specific purpose can help the device to meet practical needs such as noise reduction, real-time measurement, and analog-to-digital conversion.
 Moreover, there are still several challenges that may be overcome through a better signal acquisition system \cite{R1}.
 
-One of the challenges is that the mass production of robust nanowire is still improbable.
-Element disparity may be a main reason among others.
-This problem also happens to the measurement of our own nanowire (Fig.~\ref{fig:disparity}).
+One of the challenges is that the mass production of robust nanowire elements is still improbable.
+Element disparity may be the main reason among others.
+This problem also happens to the measurement of our nanowire (Fig.~\ref{fig:disparity}).
 The nanowire we use is made by Professor Yang's team (National Chiao Tong University).
-And according to them, the nanowire use thick gate dielectric and have non-regular cross-sectional shape, which result in uncertainties of fabrication \cite{C6}.
+And according to them, the nanowire use thick gate dielectric and have non-regular cross-sectional shape, which results in uncertainties of fabrication \cite{C6}.
 
 
 \section{Introduction}
-In this project, we design a nanowire readout circuit with two modes that perform large signal (DC) and small signal (AC) measurement.
+In this project, we design a nanowire read-out circuit with two modes.
 In DC mode, one can use the circuit to perform a DC sweep of drain current ($I_D$) to show how the gate voltage ($V_{G}$) changes, or gives nanowire a constant $I_D$ and measures the $V_{G}$ response to different solution concentration.
-In AC mode, the circuit detects and amplifies the current variance of nanowire with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
+In AC mode, the circuit detects and amplifies the current variance of the nanowire with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
 We also combine two modes to implement a proposed method that may mitigate the disparity problem.
 
-\subsection*{Dealing with the disparity problem}
-The proposed method base on two assumptions.
+\subsection*{Dealing with the disparity problem} \label{section:twqAssumption}
+The proposed method base on two assumptions:
 \begin{enumerate}
     \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and independent on $V_{GS}$.
-    \item The changing of the concentration of bio-molecule can be viewed as a voltage signal input to the gate end of a transistor.
+    \item The changing of the concentration of biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
 \end{enumerate}
-The first assumption implies one can control the nanowire transconductance by the biasing Id.
+The first assumption implies one can control the nanowire transconductance by its $I_D$.
 The second assumption means that as long as different nanowire elements have a same transconductance, the output current induced by a concentration difference should be same.
 
 The method works as follows:
 
-\textbf{Initial stage}: In the beginning of each measurement event, we set circuit under DC mode and perform a DC sweep.
+\textbf{Initial stage}: At the beginning of each measurement event, we perform a DC sweep with the circuit in DC mode.
 By handling the sweep results with numerical method, we keep all nanowire elements under a selected transconductance by controlling their $I_D$ and corresponded $V_G$.
 
-\textbf{Measurement stage:} This is where the AC mode is used.
-Since the transconductance of all elements are same, they should behave uniformly based on assumption 2.
-In the end of the stage, we return to DC mode to reset $I_D$ of the elements.
+\textbf{Measurement stage:} We put the circuit in AC mode at this stage.
+Since the transconductance of all elements is same, they should behave uniformly based on assumption 2.
+At the end of the stage, we return to DC mode to reset $I_D$ of the elements.
 The circuit adjusts their $V_G$ to do so.
 
-In the beginning of each measurement stage, an element always has a same $I_D$ but different $V_G$.
+At the beginning of each measurement stage, an element always has a same $I_D$ but different $V_G$.
 Based on assumption 1, its transconductance is kept constant.
 
 
-Some minutiae is reviewed in chapter 5.
+The minutiae are reviewed in chapter 5.
 Currently, most operations are manual.
 We hope to make them automatic in the future, which may require digital circuit assistance.
 
-
 \section{Design Flow and Chapter Layout}
-There are six chapters in this thesis, which are sorted according to the design flow.
+In this thesis, there are six chapters sorted according to the design flow.
 
-Chapter 2 are divided into two part.
-The first part is the literature review. {\color{red}...} The other is the analysis of measurement data from Yang's team.
+Chapter 2 reviews the basic theories and the literature that are related to our work.
 Most of those are the drain current of nanowire sweeping along the gate voltage (Id-Vg curves).
 We present some of the raw data and the analysis results in this part.
 
 Chapter 3 gives a brief description of nanowire structure.
-It is then followed by some analysis of data from biology experiment and electrical measurement.
-The biology experiment are done by Prof.Yang's team while electrical measurement are performed by ourselves.
+It is then followed by two sections about some measurement and data analysis.
+The data of the first one is from the biological experiments while the second one is from the electrical measurement.
+We use the analysis results to design the read-out circuit.
 
 Chapter 4 is an ``accessory''.
-We construct an discrete circuit which was designed for ion-sensitive field-effect transistor (ISFET) \cite{SF1}.
+This chapter contains the discrete circuit which was designed for ion-sensitive field-effect transistor (ISFET) \cite{SF1}.
+We construct it and perform some electrical measurement.
 The purpose of this process is to practice the constant current method.
-The outcomes are deficient and it is its reference value which we spotlight.
+The outcomes are deficient, and it is its reference value which we spotlight.
 
-{\color{red}Chapter 5}
+Chapter 5 talks about the schematic, design process and the simulation results of the read-out circuit.
+
+Chapter 6 presents the measurement results of our integrated circuit and the conclusion of this project.
 
 
-\begin{figure}[!htbp]
-    \centering
-    {\fontfamily{pag}\selectfont\textbf{
-        \def\svgwidth{5.0cm}
-        \fontsize{6}{7}\selectfont
-        \input {images/drawing-1.pdf_tex}
-    }}
-    \fontsize{6}{7}\selectfont
-    \caption{Design Flow}
-    \label{fig:designFlow}
-\end{figure}
+
 
 
 % This circuit has two operation mode.

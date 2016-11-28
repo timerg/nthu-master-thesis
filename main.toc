@@ -10,17 +10,23 @@
 \contentsline {subsection}{\numberline {2.1.2}Source Follower}{5}
 \contentsline {section}{\numberline {2.2}Small Signal (AC) Measurement Method Review}{7}
 \contentsline {subsection}{\numberline {2.2.1}RC Time Delay Measuring}{8}
-\contentsline {subsection}{\numberline {2.2.2}Complex Impedance Solving}{10}
+\contentsline {subsection}{\numberline {2.2.2}Complex Impedance Solving}{9}
 \contentsline {subsection}{\numberline {2.2.3}Comparison and Conclusion}{11}
-\contentsline {section}{\numberline {2.3}Two assumption for }{12}
+\contentsline {section}{\numberline {2.3}Two assumption for Dealing with Disparity Problem}{13}
 \contentsline {subsection}{\numberline {2.3.1}Transconductance and $I_D$}{13}
 \contentsline {subsection}{\numberline {2.3.2}A Simple Model for Concentration Affect}{14}
 \contentsline {chapter}{\numberline {3}Nanowire Structure and Measurement}{16}
 \contentsline {section}{\numberline {3.1}Brief Description of Nanowire Structure}{16}
 \contentsline {section}{\numberline {3.2}Biology Experiment}{17}
-\contentsline {section}{\numberline {3.3}Electrical Measurements}{21}
-\contentsline {subsection}{\numberline {3.3.1}Parameters}{21}
+\contentsline {section}{\numberline {3.3}Electrical Measurements}{20}
+\contentsline {subsection}{\numberline {3.3.1}Front Gate and Back Gate}{20}
+\contentsline {subsection}{\numberline {3.3.2}Transconductance}{23}
+\contentsline {subsection}{\numberline {3.3.3}Drain-to-source impedance ($r_{ds}$)}{24}
+\contentsline {section}{\numberline {3.4}Disparity}{24}
 \contentsline {chapter}{\numberline {4}Discrete Circuitry Design}{26}
+\contentsline {section}{\numberline {4.1}Circuit Description}{26}
+\contentsline {section}{\numberline {4.2}Transforming the design from p-type measuring into n-type measuring}{26}
+\contentsline {section}{\numberline {4.3}Measurement Results and Conclusion}{26}
 \contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{27}
 \contentsline {section}{\numberline {5.1}Signal Acquisition Method}{27}
 \contentsline {chapter}{\numberline {6}Discussion and Conclusions}{28}

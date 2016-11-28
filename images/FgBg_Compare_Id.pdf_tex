@@ -56,8 +56,8 @@
     \put(0.47509707,0.12579034){\makebox(0,0)[b]{\smash{2}}}%
     \put(0.62590126,0.12579034){\makebox(0,0)[b]{\smash{3}}}%
     \put(0.77665005,0.12579034){\makebox(0,0)[b]{\smash{4}}}%
-    \put(0.81436491,0.38496949){\makebox(0,0)[lb]{\smash{Floating-Gate}}}%
-    \put(0.81436491,0.3539656){\makebox(0,0)[lb]{\smash{Back-Gate}}}%
+    \put(0.81436491,0.38496949){\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.81436491,0.3539656){\makebox(0,0)[lb]{\smash{}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{FgBg_Compare_Id.pdf}}%
     \put(0.79328899,0.41447588){\makebox(0,0)[lb]{\smash{Lines}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{FgBg_Compare_Id.pdf}}%

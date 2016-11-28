@@ -1,16 +1,16 @@
 \chapter{Nanowire Structure and Measurement}
 In this chapter, we present the experiment data and some analysis which are the foundation of our circuit design.
-The first section gives a brief description of the our silicon nanowire element.
+The first section gives a brief description of our silicon nanowire element.
 The second section provides the data of the biology experiments.
-The last section presents the data of the electrical measurement, on which our circuit design spec are based.
+The last section presents the data of the electrical measurement, on which our circuit design spec depends.
 
 \section{Brief Description of Nanowire Structure}
 The nanowire we use is made by Prof.Yang's team (National Chiao Tong University)\cite{C5}.
-A sectional view of the nanowire structure is given below.
+Fig.\ref{fig:drawing} is the sectional view of the nanowire structure.
 The fabrication process is based on the poly-silicon sidewall spacer technique.
 The n-Type doped poly-SiNW FET has 2 to 10 poly-silicon channels.
 Each channel is 80nm in width and 2µm in length.
-Large portion of the channel surface is exposed to environment.
+A Large portion of the channel surface is exposed to environment.
 The exposed region, through several post-process, capture the DNA probe and serve as the sensing site for DNA molecules.\cite{C5, C6}
 
 \begin{figure}[!htbp]
@@ -34,7 +34,6 @@ We want to ensure that such noise should not be greater than the signal.
 To be more specific, we examine whether the Id-Vg curves of different concentration overlap with each other or not.
 We present an example below:
 
-
 \begin{figure}[!htbp]
     \centering
     \begin{minipage}[t]{0.4\textwidth}
@@ -49,7 +48,7 @@ We present an example below:
         (b)
     \end{minipage}
     \caption{Concentration-dependent $I_D$-$V_G$ curves of two equivalent nanowire elements.
-    In (a), the measurement result of 1fM and 100fM bio-molecule solution is distinguishable. There is no overlap between two curves. This is not true in (b).}
+    In (a), the measurement result of 1fM and 100fM biomolecule solution is distinguishable. There is no overlap between two curves. This is not true in (b).}
     \label{fig:SD_sucandfail}
 \end{figure}
 
@@ -58,47 +57,59 @@ The two curves in the (a) are distinguishable from the other after gate voltage 
 They are not distinguishable in the (b) since they overlap each other.
 We thus assert that the element of (b) can't detect the concentration difference between 1fM and 100fM.
 The noise is stronger than the signal (The signal means the $I_D$ difference caused by the concentration difference).
-The element of (a) is able to do so if it is biased at gate voltage larger than 1.4v or drain current larger than 1E-11.
+The element of (a) can do so if it is biased at gate voltage larger than 1.4v or drain current larger than 1E-11.
 
 \begin{figure}[!htbp]
         \includegraphics[width=1\textwidth]{images/chapter3/128_allT_mag.png}
     \caption{Concentration-dependent $I_D$-$V_G$ curves.
-    Since the bio-molecule is negative-charged, the lower the concentration is, the higher the curve is.
+    Since the biomolecule is negative-charged, the lower the concentration is, the higher the curve is.
     To be noticed, the 10fM curve is closer to the curve of 1pM than 100aM.
      }
     \label{fig:SD_allT}
 \end{figure}
 
-In Fig.\ref{fig:SD_allT}, the $I_D$ increase with the bio-molecule concentration.
-One can find that there are only few ``space'' between PBS buffer and solution containing biomolecule with concentration of 100aM.
+In Fig.\ref{fig:SD_allT}, $I_D$ increase with the biomolecule concentration.
+One can find that there is only a few ``space'' between PBS buffer and solution containing biomolecule with the concentration of 100aM.
 Hence the 100aM should be the limit of detection.
 
-It is worth noting that there are more space between 100aM and 10fM than the space between 10fM and 1 pico mole(pM).
-We calculate the noise rate: ${SD} / {Mean}$ which seems independent of concentration (Fig.\ref{fig:SD_allT2}).
-{\color{red}These implies that the ``resolution'' for detecting concentration ranging from 100aM to 10fM may be better than the that ranging from 10fM to 1pM.}
+It is worth noting that there is more space between 100aM and 10fM than the space between 10fM and 1pM.
+And the noise rate: ${SD} / {Mean}$ is independent of concentration (Fig.\ref{fig:SD_allT2}).
+Hence we say that the ``resolution'' for detecting concentration ranging from 100aM to 10fM may be better than the that ranging from 10fM to 1pM.
 \begin{figure}[!htbp]
         \includegraphics[width=1\textwidth]{images/chapter3/128_allT_error.png}
     \caption{The noise rate of Fig.\ref{fig:SD_allT}. The noise rate is obtained by dividing SD by Mean.}
     \label{fig:SD_allT2}
 \end{figure}
 
-\subsection*{Appropriate Bias Gate Voltage}
-In \cite{C6}, the team found that ``the induced change of current ($I_D$) following biomolecule was dependent on the applied gate voltage (VG)''.
+\subsection*{Appropriate operation region} \label{section:biasVg}
+In \cite{C6}, the team found that ``the induced change of current ($I_D$) following biomolecule was dependent on the applied gate voltage (VG)'' (Fig.).
+In other words, a ``biomolecule concentration resolution'' seems to depend on $V_G$
 The team tried to find a bias gate voltage range which can induce more current response.
-By taking noise into consideration, we proposed that one should choose the region with more ``noise tolerance''.
-We define the noise tolerance as below:
+In our opinion, the induced change of current ($I_D$) following biomolecule is not directly dependent on $V_G$.
+Based on the our assumption 2 (section\ref{section:twqAssumption}), it depends on the transconductance.
+The phenomenon is found by $I_D$-$V_G$ curves, which means the $V_G$ also affect the $I_D$ which cause different transconductance.
+
+Furthermore, we think the noise effect should be taken into consideration.
+Some kinds of noise have  positive correlations with transconductance.
+
+Still, we want find an appropriate operation region of nanowire that has the largest concentration resolution.
+We proposed a comprehensive method that one should choose the operation region with more ``noise tolerance''.
+The noise tolerance is defined as:
 \setlength{\mathindent}{2cm}
 \begin{align}
     noise \quad tolerance = \frac{I_D1 - SD1 - (I_D2 + SD2)}{I_D2}
 \end{align}
 $I_D$ and $SD$ are the mean and standard deviation of a curve.
-The larger the noise tolerance implies there are more space between two curves.
+The larger the noise tolerance implies there is more space between two curves.
+And more space implies the less chance of overlapping between to concentration curves may happens.
 
-The Fig.\ref{fig:SD_Device}(c), (f), (i) are the noise tolerance of Fig.\ref{fig:SD_Device}(a), (d), (g).
-The Fig.\ref{fig:SD_Device}(b), (e), (h) are the noise rate respectively.
-We observe a rising trend in both noise rate and noise tolerance as gate voltage decrease.
-Moreover, a small peak appears in (c) and (f) located around the section where transistor switches from weak inversion region to strong inversion region.
-We therefore suggest that this section should be the best region under which nanowire should be operated.
+We present analysis results from three nanowire elements.
+The Fig.\ref{fig:SD_Device}(a), (c), (e) are the $I_D$-$V_G$ curves of three elements and the Fig.\ref{fig:SD_Device}(b), (d), (f) are the noise tolerance respectively.
+One can observe in (b) and (d) that there is first a rising trend then followed by a drop as gate voltage decrease.
+The drop doesn't exist in (f) may because the weak inversion is too narrow.
+The transistor enters into the reverse region before the drop appears.
+The highest points of (b) and (d) locate in the weak inversion region and is close to the transition region (The region between strong inversion and weak inversion region).
+We therefore suggest that in this section nanowire should has the largest concentration resolution.
 
 
 \begin{figure}[!hbtp]
@@ -106,56 +117,38 @@ We therefore suggest that this section should be the best region under which nan
     \begin{minipage}[t][20cm][t]{1\textwidth}
         \begin{minipage}[t]{0.3\textwidth}
             \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-7_log.png}
+            \includegraphics[width=1.8\textwidth]{images/chapter3/208_devices/L2-7_log.png}
             (a)
         \end{minipage}
         \hfill
         \begin{minipage}[t]{0.3\textwidth}
             \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-7_error.png}
+            \includegraphics[width=1.6\textwidth]{images/chapter3/208_devices/L2-7_margin.png}
             (b)
-        \end{minipage}
-        \hfill
-        \begin{minipage}[t]{0.3\textwidth}
-            \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-7_margin.png}
-            (c)
         \end{minipage}
         \vfill
         \begin{minipage}[t]{0.3\textwidth}
             \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-8_log.png}
-            (d)
+            \includegraphics[width=1.8\textwidth]{images/chapter3/208_devices/L2-8_log.png}
+            (c)
         \end{minipage}
         \hfill
         \begin{minipage}[t]{0.3\textwidth}
             \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-8_error.png}
+            \includegraphics[width=1.6\textwidth]{images/chapter3/208_devices/L2-8_margin.png}
+            (d)
+        \end{minipage}
+        \vfill
+        \begin{minipage}[t]{0.3\textwidth}
+            \centering
+            \includegraphics[width=1.8\textwidth]{images/chapter3/208_devices/L2-12_log.png}
             (e)
         \end{minipage}
         \hfill
         \begin{minipage}[t]{0.3\textwidth}
             \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-8_margin.png}
+            \includegraphics[width=1.6\textwidth]{images/chapter3/208_devices/L2-12_margin.png}
             (f)
-        \end{minipage}
-        \vfill
-        \begin{minipage}[t]{0.3\textwidth}
-            \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-12_log.png}
-            (g)
-        \end{minipage}
-        \hfill
-        \begin{minipage}[t]{0.3\textwidth}
-            \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-12_error.png}
-            (h)
-        \end{minipage}
-        \hfill
-        \begin{minipage}[t]{0.3\textwidth}
-            \centering
-            \includegraphics[width=1.5\textwidth]{images/chapter3/208_devices/L2-12_margin.png}
-            (i)
         \end{minipage}
 
     \end{minipage}
@@ -167,46 +160,46 @@ We therefore suggest that this section should be the best region under which nan
 
 \section{Electrical Measurements}
 This section presents the data analysis results.
-The data are obtained from our own measurements with the source meter (Keithley 2602).
-To exclude the ion effect, we placed nanowire elements in dd-water instead of bio-molecule solution.
+The data are obtained from our measurements with the source meter (Keithley 2602).
+To exclude the ion effect, we placed nanowire elements in dd-water instead of biomolecule solution.
 And their poly-silicon channel surfaces are only processed with {\color{red}OH ions.}
 
-\subsection*{Front Gate and Back Gate}
+\subsection{Front Gate and Back Gate}
 Our nanowire has two gates available: floating gate (liquid gate) and back-gate.
-We choose floating gate as the operation gate in spite of some advantages that back-gate has.
-One of them is the ability to lower the 1/f noise \cite{C7, C8}.
-However, this only happens in a very high gate voltage, which is not practical in the integrated circuit design.
-Moreover, the floating gate induces larger drain-current.
-In other words, it has higher transconductance. And a high transconductance leads to a stronger feedback ability in our design.
-
+We choose floating gate as the operation gate mainly because the floating gate can induce larger drain-current.
+In other words, it has higher transconductance (Fig.\ref{fig:IdVgandgbsId}).
+In our circuit design, nanowire is placed in a feedback loop where its transconductance is proportional to the loop gain (chapter 5).
 
 \begin{figure}[!htbp]
     \centering
-    \begin{minipage}[t][0.1\textheight]{1\textwidth}
+    \begin{minipage}[t][0.1\textheight]{0.4\textheight}
         \centering
-        \def\svgwidth{10cm}
+        \def\svgwidth{14cm}
         \fontsize{6}{15}\selectfont
         \input {images/FgBg_Compare_Id.pdf_tex}
         (a)
     \end{minipage}
-    \vfill
-    \begin{minipage}[t][0.1\textheight]{1\textwidth}
+    \hfill
+    \begin{minipage}[t][0.1\textheight]{0.4\textheight}
         \centering
-        \def\svgwidth{10cm}
+        \def\svgwidth{14cm}
         \fontsize{6}{15}\selectfont
         \input {images/FgBg_Compare_Id_dev.pdf_tex}
         (b)
     \end{minipage}
-    \caption{Comparison between electrical respone of floating gate and back gate. (a) $I_D$-$V_G$  (b) Transconductance ($g_m$) versus $V_G$}
+    \caption{Comparison between the DC sweep of voltage on the floating gate and back gate. (a) $I_D$ (b) Transconductance ($g_m$): the derivative of $I_D$}. The traansconductance of the floating gate is larger than the back gate.
     \label{fig:IdVgandgbsId}
 \end{figure}
 
-\subsection{Parameters}
-The most crucial parameter for our circuit design is the transconductance (gm).
-{\color{red}
-    The gm is acquired by finding the relation between drain-to-source current ($I_d$) and gate-source voltage ($V_g$), and perform differentiation: $\frac{\partial I_d}{\partial V_g}$.
-    use standard PBS as
-}
+
+There are some advantages of back-gate.
+One of them is the ability to lower the 1/f noise \cite{C7, C8}.
+However, this only happens in a very high gate voltage, which is not practical in the integrated circuit design.
+
+\subsection{Transconductance}
+The most crucial parameter for our circuit design is the transconductance ($g_m$).
+We acquire it by finding the partial derivative of $I_D$ of $V_{G}$.
+Since in section.\ref{section:IdGm} we proved that $g_m$ is related to $I_D$, we plot the $g_m$-$I_D$ curve to reveal their relation (Fig.\ref{fig:pIdVg}(b)).
 
 \begin{figure}[!htbp]
     \centering
@@ -221,45 +214,56 @@ The most crucial parameter for our circuit design is the transconductance (gm).
         \includegraphics[width=0.6\textwidth,natwidth=610,natheight=442]{images/pIdgbs.png}
         (b)
     \end{minipage}
-    \caption{}
+    \caption{Eelectrical response of a nanowire element. (a) Sweep $V_G$ and measure the $I_D$ changes. And by finding the transconductance ($g_m$): the derivative of $I_D$ of $V_G$, we plot (b) the $g_m$-$I_D$ curve}
     \label{fig:pIdVg}
 \end{figure}
 
-The Id-Derivative figures indicates there is a ``linear region'' where gm is proportional to Id.
-This property implies the transconductance can be controlled in simple way.
-As mentioned in introduction, we may find specific bias Id for distinct elements and adjust their transconductance to a same value.
+The $g_m$-$I_D$ plot indicates that there is a ``linear region'' where $g_m$ is proportional to $I_D$.
+This corresponds to our induction (Eq.\ref{eq:gm_weak}).
+We can recognize that our nanowire element is operated in weak inversion region when $I_D$ is less than 10$\mu$A.
+Therefore, by the section.\ref{section:biasVg}, we decide our the $I_D$ of our nanowire should be operated below 10$\mu$A.
 
-
-
-We also prove that the transconductance under this region is unaffected by the drain-source voltage variance.
+We also proved that the transconductance under this region is unaffected by the $V_{DS}$.
 
 \begin{figure}[!htbp]
     \centering
-    % {\fontfamily{pag}\selectfont\textbf{
-        % \def\svgwidth{10cm}
-        % \fontsize{6}{10}\selectfont
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{images/pIdgbs_Vd.png}
-    % }}
-    \fontsize{6}{10}\selectfont
+    \includegraphics[width=0.8\textwidth]{images/pIdgbs_Vd.png}
     \caption{Id-transconductance with Vds variance}
     \label{fig:Idgbs_Vd}
 \end{figure}
 
+\subsection{Drain-to-source impedance ($r_{ds}$)}
+In our circuit design, we keep $V_{DS}$ constant.
+By the measurement in last section, 0.7 is enough to keep nanowire in saturation region for $V_G$ range from 0v to 3v.
+However, due to the fabrication variance, the value varies from 0.75v to 1v.
 
-
+We concern about how the $I_D$ effect $r_{ds}$.
+The way we obtained $r_{ds}$ is as follows:
+\begin{enumerate}
+    \item Perform $I_D$-$V_G$ sweep with two different $V_D$.
+    \item Find the difference of $I_D$ at each $V_G$ sweep point and divide it by the difference of $V_D$.
+\end{enumerate}
+The result is as Fig.\ref{fig:rds}
 
 \begin{figure}[!htbp]
     \centering
-    % {\fontfamily{pag}\selectfont\textbf{
-    \def\svgwidth{10cm}
-    \fontsize{6}{10}\selectfont
-    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642] {images/pDisparity.png}
-    % }}
-    \fontsize{6}{10}\selectfont
-    \caption{Distinct element with a line idicate they have same transconductance}
+    \includegraphics[width=0.8\textwidth]{images/chapter3/rds_I.png}
+    \caption{Id-transconductance with Vds variance}
+    \label{fig:rds}
+\end{figure}
+
+
+\section{Disparity}
+We measured two nanowire elements which lie on the same wafer and are immersed with the same testing PBS solution.
+Below the $g_m$-$I_D$ plot (Fig.\ref{fig:disparity}) shows that even the environment is same, two elements exhibit different electrical response.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth] {images/pDisparity.png}
+    \caption{Dusparity problem casue nanowire elements with same environment can exhibit different electrical responses.}
     \label{fig:disparity}
 \end{figure}
-By measuring two nanowire element which lie on the same wafer and are immersed with the same testing PBS solution
+
 
 
 

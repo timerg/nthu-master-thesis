@@ -1,2 +1,30 @@
 \chapter{Discrete Circuitry Design}
+This chapter contains the discrete circuit which has been briefly reviewed in section \ref{section:SF}.
+We build this circuit to practice the constant current method.
+
+
+\section{Circuit Description}
+The circuit is divided into two sections: the circuit body and the biasing current source ($I_b$).
+
+The circuit body section is a source follower structure.
+The input of the circuit is at the gate ($G$) of the core transistor, where the output is at its source ($S$).
+
+The $I_D$ of the transistor is always equal to $I_b$ since there is no other current path.
+And the $V_{DS}$ is always equal to the potential difference across the resistor ($R_b$).
+Two OP is connected as unity gain buffer.
+They connected serially with $R_b$ and cause the voltage at drain end $D$ follows the voltage at $S$.
+
+As for the $I_b$, it is in fact a current scale down circuit.
+By concerning the OP as ideal, the node $i_{out}$ is same with $i_0$.
+And the output current is $N$-fold to the input current ($I_s$).
+
+\section{Transforming the design from p-type measuring into n-type measuring}
+Different from the ISFET in \cite{SF1}, our element is n-type.
+We transform the circuit as in Fig.
+
+\section{Discrete Element}
+For the OP, we use tlc2264 made by Texas Insrument (TI).
+This OP element can perform rail-to-rail 
+
+\section{Measurement Results and Conclusion}
 
