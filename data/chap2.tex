@@ -59,7 +59,7 @@ Below show the schematic where two op-amp based unit gain buffer are added to fo
     \label{fig:ISFET}
 \end{figure}
 
-An issue needed to be awared is the impedance matching between the element and the current source circuit.
+An issue needed to be aware is the impedance matching between the element and the current source circuit.
 The output impedance of current source should be much larger than the input impedance of the biasing element.
 The equation for the output impedance of source follower is:
 
@@ -70,11 +70,11 @@ The equation for the output impedance of source follower is:
 \end{align}
 The output impedance of the current source circuit is:
 \begin{equation} \label{eq:rcs}
-    N\times R_i
+    N\times R_s
 \end{equation}
 
-$R_i$ is the impedance of the right-bottom current source in Fig.\ref{fig:ISFET}.
-In the integrated circuit, $R_i$ is not ideal but usually close to the $r_{ds}$ of a single MOSFET.
+$R_s$ is the impedance of the right-bottom current source in Fig.\ref{fig:ISFET}.
+In the integrated circuit, $R_s$ is not ideal but usually close to the $r_{ds}$ of a single MOSFET.
 
 As mentioned, Eq.\ref{eq:rcs} should be far larger than Eq.\ref{eq:rsf2}.
 However, $g_m$ is proportional to $I_d$, which means Eq.\ref{eq:rsf2} is inversely proportional to N.
@@ -281,7 +281,7 @@ Overall, Method 2 has the advantage in detecting range and accuracy while Method
 
 
 
-\section{Two assumption for Dealing with Disparity Problem}
+\section{Two assumption for Dealing with Disparity Problem} \label{sec:assumpDiscuss}
 In chapter 1, to deal with disparity problem, we assume that:
 \begin{enumerate}
     \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and independent on $V_{GS}$.
@@ -343,7 +343,7 @@ The Eq.\ref{eq:vc} implies that when nanowire is in weak inversion region, its $
 \end{align}
 
 As for strong inversion region which refer to the large current section in Fig.\ref{fig:DN17Fig6d}, the difference of the curves diminish as $V_G$ increasing.
-The strong inversion equation (Eq.\ref{eq:IDStrong}) shows that if $V_{GS}$ is far larger then $v_c$, the concentration effect can be ignored.
+The strong inversion equation (Eq.\ref{eq:ID_Strong}) shows that if $V_{GS}$ is far larger then $v_c$, the concentration effect can be ignored.
 
 \begin{figure}[!htbp]
     \centering
@@ -351,6 +351,8 @@ The strong inversion equation (Eq.\ref{eq:IDStrong}) shows that if $V_{GS}$ is f
     \caption{Concentration-dependent electric response($I_D-V_G$) of biotin-modified poly-Si NWFET following biotin–streptavidin interaction.\cite{DN17}}
     \label{fig:DN17Fig6d}
 \end{figure}
+
+We will further prove the two assumptions by the data of biology experiment in section.\ref{section:disparityBio}.
 
 
 

@@ -7,21 +7,28 @@ The last section presents the data of the electrical measurement, on which our c
 \section{Brief Description of Nanowire Structure}
 The nanowire we use is made by Prof.Yang's team (National Chiao Tong University)\cite{C5}.
 Fig.\ref{fig:drawing} is the sectional view of the nanowire structure.
-The fabrication process is based on the poly-silicon sidewall spacer technique.
-The n-Type doped poly-SiNW FET has 2 to 10 poly-silicon channels.
+The fabrication process is based on the poly silicon sidewall spacer technique.
+The n-Type doped poly-SiNW FET has two to ten poly silicon channels.
 Each channel is 80nm in width and 2µm in length.
 A Large portion of the channel surface is exposed to environment.
 The exposed region, through several post-process, capture the DNA probe and serve as the sensing site for DNA molecules.\cite{C5, C6}
 
+
 \begin{figure}[!htbp]
     \centering
-    {\fontfamily{pag}\selectfont\textbf{
-        \def\svgwidth{5.0cm}
-        \fontsize{6}{7}\selectfont
-        \input {images/drawing.pdf_tex}
-    }}
-    \fontsize{6}{7}\selectfont
-    \caption{Nanowire Structure}
+    \begin{minipage}[t]{0.4\textwidth}
+        \includegraphics[width=1\linewidth]{images/chapter3/Nw.png}
+        \raggedleft
+        (a)
+    \end{minipage}
+    \vfill
+    \vfill
+    \begin{minipage}[t]{0.4\textwidth}
+        \includegraphics[width=1\linewidth]{images/chapter3/Nw_section.png}
+        \raggedleft
+        (b)
+    \end{minipage}
+    \caption{Nanowire Structure.  (a) A nanowire element with two poly silicon channels. (b) is the sectional view of the cutting plane in (a). }
     \label{fig:drawing}
 \end{figure}
 
@@ -33,7 +40,7 @@ With each measurement repeated three times, we find the mean and standard deviat
 We want to ensure that such noise should not be greater than the signal.
 To be more specific, we examine whether the Id-Vg curves of different concentration overlap with each other or not.
 We present an example below:
-
+%ghas
 \begin{figure}[!htbp]
     \centering
     \begin{minipage}[t]{0.4\textwidth}
@@ -81,7 +88,7 @@ Hence we say that the ``resolution'' for detecting concentration ranging from 10
     \label{fig:SD_allT2}
 \end{figure}
 
-\subsection*{Appropriate operation region} \label{section:biasVg}
+\subsection{Appropriate operation region} \label{section:biasVg}
 In \cite{C6}, the team found that ``the induced change of current ($I_D$) following biomolecule was dependent on the applied gate voltage (VG)'' (Fig.).
 In other words, a ``biomolecule concentration resolution'' seems to depend on $V_G$
 The team tried to find a bias gate voltage range which can induce more current response.
@@ -112,7 +119,8 @@ The highest points of (b) and (d) locate in the weak inversion region and is clo
 We therefore suggest that in this section nanowire should has the largest concentration resolution.
 
 
-\begin{figure}[!hbtp]
+
+\begin{figure}[h!]
     \centering
     \begin{minipage}[t][20cm][t]{1\textwidth}
         \begin{minipage}[t]{0.3\textwidth}
@@ -155,6 +163,30 @@ We therefore suggest that in this section nanowire should has the largest concen
     \caption{}
     \label{fig:SD_Device}
 \end{figure}
+\FloatBarrier
+
+\subsection{$g_m$-$I_D$ Plot} \label{section:disparityBio}
+We plot the $g_m$-$I_D$ curve with the data in Fig.\ref{fig:SD_allT}.
+It clearly proves our two assumptions for dealing the disparity problem, which we have discussed in section.\ref{sec:assumpDiscuss}.
+
+\begin{figure}[htb]
+        \includegraphics[width=1\textwidth]{images/chapter3/Id_Dev_bio.png}
+    \caption{The $g_m$-$I_D$ curve obtained by the $I_D$-$V_G$ curve in Fig.\ref{fig:SD_allT}. The curves start splitting after $I_D$ > 1$\mu$A where the element may enter into strong inversion region.}
+    \label{fig:gmId}
+\end{figure}
+
+In Fig.\ref{fig:gmId}, when $I_D$ is from 0.1nA to 1$\mu$A, we can observe that the $g_m$ of nanowire is almost independent of concentration and merely depends on $I_D$.
+In fact, the curves start splitting after $I_D$ > 1$\mu$A.
+It means the element is no longer in weak inversion region but enters into strong inversion region.
+And we should not operate our nanowire elements in that region.
+
+
+
+
+
+
+
+
 
 
 
@@ -162,7 +194,7 @@ We therefore suggest that in this section nanowire should has the largest concen
 This section presents the data analysis results.
 The data are obtained from our measurements with the source meter (Keithley 2602).
 To exclude the ion effect, we placed nanowire elements in dd-water instead of biomolecule solution.
-And their poly-silicon channel surfaces are only processed with {\color{red}OH ions.}
+And there is no DNA probe on the poly-Si channel surfaces.
 
 \subsection{Front Gate and Back Gate}
 Our nanowire has two gates available: floating gate (liquid gate) and back-gate.
@@ -253,13 +285,13 @@ The result is as Fig.\ref{fig:rds}
 \end{figure}
 
 
-\section{Disparity}
+\section{Disparity Problem exists}
 We measured two nanowire elements which lie on the same wafer and are immersed with the same testing PBS solution.
-Below the $g_m$-$I_D$ plot (Fig.\ref{fig:disparity}) shows that even the environment is same, two elements exhibit different electrical response.
+Below, the $g_m$-$I_D$ plot (Fig.\ref{fig:disparity}) shows that even the environment is same, two elements exhibit different electrical response.
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.8\textwidth] {images/pDisparity.png}
+    \includegraphics[width=0.67\textwidth] {images/pDisparity.png}
     \caption{Dusparity problem casue nanowire elements with same environment can exhibit different electrical responses.}
     \label{fig:disparity}
 \end{figure}
