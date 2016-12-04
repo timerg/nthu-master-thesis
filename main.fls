@@ -231,9 +231,10 @@ INPUT images/../images/chapter4/SFdiscrete_old.png
 INPUT images/../images/chapter4/SFdiscrete_schematic.png
 INPUT images/nthu-logo.pdf
 INPUT images/nthu-logo.pdf
-INPUT images/nthu-logo.pdf
 INPUT images/chapter4/SF.png
-INPUT images/../images/chapter4/SF_impedanceMatching.png
+INPUT images/nthu-logo.pdf
+INPUT images/../images/chapter4/SF_impedance.png
+INPUT images/nthu-logo.pdf
 INPUT data/chap5.tex
 INPUT data/chap5.tex
 INPUT images/nthu-logo.pdf

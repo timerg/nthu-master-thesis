@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {4.1}Transforming the design from p-type measuring into n-type measuring}{27}
 \contentsline {section}{\numberline {4.2}Circuit Description}{28}
 \contentsline {section}{\numberline {4.3}Discrete Element}{29}
-\contentsline {section}{\numberline {4.4}Measurement Results and Conclusion}{29}
-\contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{31}
-\contentsline {section}{\numberline {5.1}Signal Acquisition Method}{31}
-\contentsline {chapter}{\numberline {6}Discussion and Conclusions}{32}
+\contentsline {section}{\numberline {4.4}Circuit Performance and Conclusion}{29}
+\contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{32}
+\contentsline {section}{\numberline {5.1}Signal Acquisition Method}{32}
+\contentsline {chapter}{\numberline {6}Discussion and Conclusions}{33}

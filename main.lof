@@ -24,6 +24,6 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces The schematic of read-out circuit from \cite {SF1}. The ISFET is a p-type element. It is controlled by the current source $I_b$ whose sub-circuit is shown at right.\relax }}{27}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces The our circuit schematic transformed from Fig.\G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `SF_schematic_old' on page 28 undefined}. The center transistor is a n-type element. It is controlled by the current source $I_b$ whose sub-circuit is shown at right.\relax }}{28}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces The measuremet result (``SF\_measurement'') compares with the direct $I_D$-$V_G$ sweep (``Id-Vg sweep'').\relax }}{30}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Impedance of \relax }}{30}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Input impedance of transistor (``1/gm'') and output impedance of Ib circuit (``Rs''). The former is found by the derivative of $I_D$ of $V_{Gs}$. The latter is obtained by Eq.4.1\hbox {}.\relax }}{30}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

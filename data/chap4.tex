@@ -21,29 +21,29 @@ Hence we transform the circuit as Fig.\ref{fig:SF_schematic}.
 
 
 \section{Circuit Description}
-The circuit is divided into two sections: the circuit body and the biasing current source ($I_b$).
+The circuit is divided into two sections: the circuit body and the biasing current source (Ib).
 
 \subsection*{Circuit Body}
 The circuit body section is a source follower structure.
 The input of the circuit is at the floating gate ($G$) of the center transistor, where the output is at its source ($S$).
 
-The $I_D$ of the transistor is controlled by the $I_b$.
+The $I_D$ of the transistor is controlled by the Ib.
 The leakage current flowing into the negative input of OP2 is less than 0.1nA.
-Thus the $I_D$ of the transistor should always be same as $I_b$.
+Thus the $I_D$ of the transistor should always be same as bias current $I_b$.
 
 The $V_{DS}$ is always equal to the potential difference ($I_0 \times R_0$) across the resistor $R_0$.
 This is achieved by two OP-based unity gain buffer.
 They connected serially with $R_b$ and cause the voltage at drain end $D$ follows the voltage at $S$.
 
 
-\subsection*{biasing current source ($I_b$)}
-The $I_b$ is in fact a current scale down circuit.
+\subsection*{biasing current source (Ib)}
+The Ib is in fact a current scale down circuit.
 By concerning the OP as ideal, the node $OP+$ has the same voltage with $OP-$.
 This equalize the potential difference across two resistors whose resistance are different by $N$-fold.
-As the result, the current $I_b$ and $I_s$ are also different by $N$-fold.
+As the result, the current of Ib and Is are also different by $N$-fold.
 $I_b = I_s / N$.
 
-{\color{red}The capacitor is for time delay.}
+The capacitor is for filtering. It filter the high frequency noise out to create a stable output current.
 
 
 \section{Discrete Element}
@@ -51,19 +51,18 @@ We use tlc2264 made by Texas Instrument (TI) as our OP.
 This OP element has working voltage of $\pm 5v$ and can perform rail-to-rail output operation.
 Its gain (Large-signal differential voltage amplification rate) is 170 for the output load greater than 50k.
 
-For the current source $I_s$ and $I_0$, we use lm334 made by National Semiconductor.
+For the current source Is and I0, we use lm334 made by National Semiconductor.
 It is a 3-terminal adjustable current sources with wide dynamic voltage range of 1v to 40v and current accuracy of $\pm 3\%$.
-In out experiment, the output current is fixed at $1\mu A$ where its output impedance is 1.2G$\Omega$.
+In out experiment, the current $I_s$ is fixed at $1\mu A$ where its output impedance is $1.2G\Omega$.
 
-\section{Measurement Results and Conclusion}
-
-We performed $I_D$-$V_G$ sweep by changing the $N$ value with a variable resistor.
-The $N$ ranges from 1 to 1000.
-The $I_b$ circuit produces output current from $1\mu A$ to $1n A$.
-
+\section{Circuit Performance and Conclusion}
+We examined the performance of our circuit by plotting its $I_D$-$V_G$ curve.
 The $I_0$, $R_0$ and $V_G$ were kept constant.
-We found the output voltage at $S$ and Subtracted this value from $V_G$ to get the respective $V_{GS}$.
-We also measured the voltage across the N\*R resistor to find the $I_D$.
+We swept the $I_D$ by changing the $N$ value with a variable resistor.
+The $N$ ranges from 1 to 1000.
+And the Ib circuit should produces bias current $I_b$ from $1\mu A$ to $1n A$.
+
+We measured the output voltage at $S$ and subtracted this value from $V_G$ to get the respective $V_{GS}$.
 These two value gave result to the $I_D$-$V_G$ curve in Fig.\ref{fig:SF_result}.
 
 The measurement result shows that when $I_D$ is larger than $10n A$, the circuit is functional.
@@ -72,11 +71,11 @@ The $I_D$-$V_G$ curve obtained by the circuit is same as the one obtained by dir
 The circuit fails when $I_D$ is smaller than $10n A$.
 This is caused by the unmatched impedance, which we have discussed in section.\ref{section:SF}.
 
-The output impedance of $I_b$ circuit is:
+The output impedance of Ib circuit is:
 \begin{equation} \label{eq:rcs2_again}
     N\times R_s
 \end{equation}
-$R_s$ is the output impedance of current source $I_s$ which equals to 1.2G\Omega.
+$R_s$ is the output impedance of current source Is which equals to $1.2G\Omega$.
 And the input impedance of transistor is:
 \begin{equation} \label{eq:rsf2_again}
     \frac{1}{g_m}
@@ -95,12 +94,16 @@ We plot the $I_D$-Impedance plot in Fig.\ref{fig:SF_imp}.
 \begin{figure}[!htbp]
    \centering
    \includegraphics[width=0.8\textwidth]{../images/chapter4/SF_impedance.png}
-   \caption{Input impedance of transistor (``1/gm'') and output impedance of $I_b$ circuit (``Rs''). The former is found by the derivative of $I_D$ of $V_{Gs}$. The latter is obtained by Eq.\ref{eq:rcs2_again}.}
+   \caption{Input impedance of transistor (``1/gm'') and output impedance of Ib circuit (``Rs''). The former is found by the derivative of $I_D$ of $V_{Gs}$. The latter is obtained by Eq.\ref{eq:rcs2_again}.}
    \label{fig:SF_imp}
 \end{figure}
 
 Fig.\ref{fig:SF_imp} proves that the $R_s$ is close to the input impedance of transistor around $I_D = 10n A$.
-It results in the  
+The result is that we overestimate the $I_b$.
+
+Overall, the constant current method is feasible.
+What one needs to noticed when applying the constant current method is the impedance matching.
+In source follower structure, its current input impedance varies with the bias current.
+The varying range effect the dynamic range and need more design concern.
 
 
-% And the output impedance is 1.2G$\ohm$
