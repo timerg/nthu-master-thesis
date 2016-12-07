@@ -31,5 +31,5 @@
 \contentsline {section}{\numberline {4.3}Discrete Element}{29}
 \contentsline {section}{\numberline {4.4}Circuit Performance and Conclusion}{29}
 \contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{32}
-\contentsline {section}{\numberline {5.1}Signal Acquisition Method}{32}
+\contentsline {section}{\numberline {5.1}Main}{32}
 \contentsline {chapter}{\numberline {6}Discussion and Conclusions}{33}

@@ -91,7 +91,7 @@ Strong signal attenuation exists, which are mainly caused by low-frequency noise
 The drift problem is dealt with through signal processing techniques while noise problems are left untreated.
 
 
-\section{Small Signal (AC) Measurement Method Review}
+\section{Small Signal (AC) Measurement Method Review}  \label{sec:AC}
 In the previous section, the source follower we mentioned exhibited compelling advantages as a signal processing structure of nano-device.
 However, the structure overcomes obstacles when being applied to the small signal detection.
 Parasitic capacitors and resistors can severely influence the results.
@@ -193,7 +193,7 @@ It use a lock-in amplifier to realize both resistive and capacitive impedance me
 \begin{figure}[!htbp]
         \centering
         \includegraphics[width=13cm]{images/chapter2/lockin.png}
-        \caption{(b) Block diagram of the lock-in amplifier in \cite{Jlockin}}
+        \caption{Block diagram of the lock-in amplifier in \cite{Jlockin}}
         \label{fig:lockin}
 \end{figure}
 
@@ -266,18 +266,19 @@ If one want to avoid the effect of the parasitic capacitor, he should apply a $C
 However, it is not practical in integrated design because the chip size is limited.
 
 Method 2 uses a TIA to measure resistance and capacitance together first and then resolve the complex value.
-We notice that the capacitance value is much larger than the resistance value.
-This difference may be revised downward in our silicon nanowire case.
-The resistance can be more than 100M.
-However, since $C_{NW}$ is parallel to $R_{NW}$, we wonder that one may the C value.
-Besides, our circuit measure the $g_m$ instead of $R_{NW}$.
-The value can be smaller than $R_{NW}$.
-In fact, we can even control the $I_d$ of the nanowire to lower the $g_m$ further.
+We can write the complex impedance value as:
+\begin{align}
+      \frac{R_{NW}}{1 + i2\pi f R_{NW} C_{NW}} \label{eq:comlex}
+\end{align}
+In Eq.\ref{eq:comlex}, $i$ is the imaginary unit and $f$ is the signal frequency.
+The equation can be simplified as $R_{NW}$ when $i2\pi f R_{NW} C_{NW} < 0.1$.
+The simplification can be applied when the signal frequency or $C_{NW} R_{NW}$ is small enough.
+Thus, one needs to select the appropriate signal frequency or to determine the $R_{NW}$ detecting range.
 
 Another reason that makes Method 2 more attractive is that it is more flexible.
 One can add other analog blocks such as noise filter or amplifier to it.
 
-Overall, Method 2 has the advantage in detecting range and accuracy while Method 2 has better noise suppression and flexibility.
+Overall, Method 1 has the advantage in detecting range and accuracy while Method 2 has better noise suppression and flexibility.
 
 
 
