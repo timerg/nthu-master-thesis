@@ -22,14 +22,14 @@
 \contentsline {subsection}{\numberline {3.2.2}$g_m$-$I_D$ Plot}{21}
 \contentsline {section}{\numberline {3.3}Electrical Measurements}{22}
 \contentsline {subsection}{\numberline {3.3.1}Front Gate and Back Gate}{23}
-\contentsline {subsection}{\numberline {3.3.2}Transconductance}{23}
-\contentsline {subsection}{\numberline {3.3.3}Drain-to-source impedance ($r_{ds}$)}{23}
-\contentsline {section}{\numberline {3.4}Disparity Problem exists}{26}
+\contentsline {subsection}{\numberline {3.3.2}Transconductance}{24}
+\contentsline {subsection}{\numberline {3.3.3}Drain-to-source impedance ($r_{ds}$)}{25}
+\contentsline {section}{\numberline {3.4}Disparity Problem exists}{25}
 \contentsline {chapter}{\numberline {4}Discrete Circuitry Design}{27}
 \contentsline {section}{\numberline {4.1}Transforming the design from p-type measuring into n-type measuring}{27}
 \contentsline {section}{\numberline {4.2}Circuit Description}{28}
 \contentsline {section}{\numberline {4.3}Discrete Element}{29}
 \contentsline {section}{\numberline {4.4}Circuit Performance and Conclusion}{29}
 \contentsline {chapter}{\numberline {5}Integrated Circuitry Design}{32}
-\contentsline {section}{\numberline {5.1}Main}{32}
+\contentsline {section}{\numberline {5.1}Architecture}{32}
 \contentsline {chapter}{\numberline {6}Discussion and Conclusions}{33}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  7 DEC 2016 15:20
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  7 DEC 2016 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1190,7 +1190,7 @@ Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [12]
-Overfull \hbox (33.2079pt too wide) in paragraph at lines 308--308
+Overfull \hbox (33.2079pt too wide) in paragraph at lines 302--302
 [] 
  []
 
@@ -1311,7 +1311,7 @@ File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
  <use  "images/FgBg_Compare_Id.pdf"  page2>
 File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
  <use  "images/FgBg_Compare_Id.pdf"  page3>)
-Overfull \hbox (125.1963pt too wide) in paragraph at lines 70--213
+Overfull \hbox (68.29079pt too wide) in paragraph at lines 70--213
  [][] 
  []
 
@@ -1322,32 +1322,33 @@ File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
  <use  "images/FgBg_Compare_Id_dev.pdf"  page2>
 File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
  <use  "images/FgBg_Compare_Id_dev.pdf"  page3>)
-Overfull \hbox (125.1963pt too wide) in paragraph at lines 71--221
+Overfull \hbox (68.29079pt too wide) in paragraph at lines 71--221
  [][] 
  []
 
-File: images/pIdVg.png Graphic file (type QTm)
-<use  "images/pIdVg.png" >
-File: images/pIdgbs.png Graphic file (type QTm)
- <use  "images/pIdgbs.png" >
-File: images/pIdgbs_Vd.png Graphic file (type QTm)
- <use  "images/pIdgbs_Vd.png" >
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [23]
+File: images/pIdVg.png Graphic file (type QTm)
+ <use  "images/pIdVg.png" >
+File: images/pIdgbs.png Graphic file (type QTm)
+ <use  "images/pIdgbs.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [24]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [25]
+File: images/pIdgbs_Vd.png Graphic file (type QTm)
+ <use  "images/pIdgbs_Vd.png" >
 File: images/chapter3/rds_I.png Graphic file (type QTm)
  <use  "images/chapter3/rds_I.png" >
 File: images/pDisparity.png Graphic file (type QTm)
  <use  "images/pDisparity.png" >) (./data/chap4.tex
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [25]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1422,7 +1423,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  20484 strings out of 493706
  412259 string characters out of 6145770
- 447436 words of memory out of 5000000
+ 446436 words of memory out of 5000000
  23585 multiletter control sequences out of 15000+600000
  10505 words of font info for 72 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191

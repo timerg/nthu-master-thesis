@@ -15,8 +15,8 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces The noise rate of Fig.3.3\hbox {}. The noise rate is obtained by dividing SD by Mean.\relax }}{19}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces \relax }}{21}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces The $g_m$-$I_D$ curve obtained by the $I_D$-$V_G$ curve in Fig.3.3\hbox {}. The curves start splitting after $I_D$ > 1$\mu $A where the element may enter into strong inversion region.\relax }}{22}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparison between the DC sweep of voltage on the floating gate and back gate. (a) $I_D$ (b) Transconductance ($g_m$): the derivative of $I_D$\relax }}{24}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Eelectrical response of a nanowire element. (a) Sweep $V_G$ and measure the $I_D$ changes. And by finding the transconductance ($g_m$): the derivative of $I_D$ of $V_G$, we plot (b) the $g_m$-$I_D$ curve\relax }}{25}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparison between the DC sweep of voltage on the floating gate and back gate. (a) $I_D$ (b) Transconductance ($g_m$): the derivative of $I_D$. The traansconductance of the floating gate is larger than the back gate.\relax }}{23}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Eelectrical response of a nanowire element. (a) Sweep $V_G$ and measure the $I_D$ changes. And by finding the transconductance ($g_m$): the derivative of $I_D$ of $V_G$, we plot (b) the $g_m$-$I_D$ curve\relax }}{24}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Id-transconductance with Vds variance\relax }}{25}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Id-transconductance with Vds variance\relax }}{26}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Dusparity problem casue nanowire elements with same environment can exhibit different electrical responses.\relax }}{26}

@@ -2,12 +2,16 @@
 This chapter presents the design of the read-out circuit and the simulation results.
 
 
-\section{Main}
+\section{Architecture}
 The review of source follower in section.\ref{section:SF} suggests the constant current method for the circuit of DC measurement.
 The data analysis from chapter 3 supports it by the linear relation between $I_D$ and $g_m$.
 However, the section.\ref{sec:AC} shows that source follower is not suitable for AC measurement.
 It alternatively recommends the circuit in Fig.\ref{fig:lockin} which measures ac current signal and converts it into voltage output.
-This circuit is appealing because of its noise suppression, simplicity and flexibility. 
+This circuit is appealing because of its noise suppression, simplicity and flexibility.
+
+We combined these two method into one circuit structure and will introduce it in the section below.
+
+
 
 % with a transimpedance as front-end
 % As stated in chapter 2,
