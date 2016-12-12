@@ -21,21 +21,23 @@ In DC mode, one can use the circuit to perform a DC sweep of drain current ($I_D
 In AC mode, the circuit detects and amplifies the current variance of the nanowire with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
 We also combine two modes to implement a proposed method that may mitigate the disparity problem.
 
-\subsection*{Dealing with the disparity problem} \label{section:twqAssumption}
+\subsection*{Dealing with the Disparity Problem} \label{section:twqAssumption}
 The proposed method base on two assumptions:
 \begin{enumerate}
     \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and independent on $V_{GS}$.
-    \item The changing of the concentration of biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
+    \item The concentration difference of biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
 \end{enumerate}
 The first assumption implies one can control the nanowire transconductance by its $I_D$.
 The second assumption means that as long as different nanowire elements have a same transconductance, the output current induced by a concentration difference should be same.
 
 The method works as follows:
 
-\textbf{Initial stage}: At the beginning of each measurement event, we perform a DC sweep with the circuit in DC mode.
+\paragraph*{Initial stage}
+ At the beginning of each measurement event, we perform a DC sweep with the circuit in DC mode.
 By handling the sweep results with numerical method, we keep all nanowire elements under a selected transconductance by controlling their $I_D$ and corresponded $V_G$.
 
-\textbf{Measurement stage:} We put the circuit in AC mode at this stage.
+\paragraph*{Measurement stage}
+We put the circuit in AC mode at this stage.
 Since the transconductance of all elements is same, they should behave uniformly based on assumption 2.
 At the end of the stage, we return to DC mode to reset $I_D$ of the elements.
 The circuit adjusts their $V_G$ to do so.

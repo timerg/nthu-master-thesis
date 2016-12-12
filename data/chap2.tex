@@ -119,6 +119,13 @@ The focus of the review is on the function and design theory of their read-out c
 
 
 \subsection{RC Time Delay Measuring}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=10cm]{images/chapter2/uv1.png}
+    \caption{(a) Schematic of \cite{Juv1}.}
+    \label{fig:tot1}
+\end{figure}
+
 The measurement system for ZnO-nanowire based sensor array from \cite{Juv1} applies the Time-over-Threshold techniques to its read-out circuit (Fig.\ref{fig:tot1}).
 The circuit alternatively charges an on-chip capacitor ($C_{int}$) with a constant current and discharges it through the nano-material resistance (nanowire).
 An inverter with its output switches from on to off when the capacitor is charged to its input threshold voltage, and vice versa.
@@ -132,7 +139,14 @@ Most of the results are the measurement of using a concrete resistor as the subs
 The only nanowire experiment given at last doesn't have good performance.
 It seems that the design may only be applied to a pure resistance or pure capacitance type element.
 
+
 The recent publican \cite{Juv2} by the team is more elaborate and contains the measurement of complex elements (An element composed of a discrete resistor and a discrete capacitor).
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=12cm]{images/chapter2/uv2.png}
+    \caption{Schematic of \cite{Juv2}.}
+    \label{fig:tot2}
+\end{figure}
 
 In Fig.\ref{fig:tot2}, nanowire append between point A and B.
 The charging current can be applied from Mp1 or Mp2, which is determined by the ``sel'' signal with the aid from the MUXs.
@@ -156,34 +170,6 @@ $C_{base}$ are the $C_{int}$ plus parasitic capacitance and $R_{par}$ the parasi
 These parasitic elements come from the transistor in the integrated circuit block such as MUX and Mp.
 It must be noticed that we don't concern the hysteresis of the Schmitt trigger here owing to simplicity.
 
-\begin{figure}[!htbp]
-    \begin{minipage}[t][0.1\textheight]{0.6\textwidth}
-        \centering
-        \includegraphics[width=8cm]{images/chapter2/uv1.png}
-        \caption{(a) Schematic of \cite{Juv1}}
-        \label{fig:tot1}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t][0.1\textheight]{0.4\textwidth}
-        \centering
-        \includegraphics[width=7cm]{images/chapter2/uv2.png}
-        \caption{(b) Schematic of \cite{Juv2}}
-        \label{fig:tot2}
-    \end{minipage}
-    \fontsize{6}{7}\selectfont
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    {\fontfamily{pag}\selectfont\textbf{
-        \def\svgwidth{5.0cm}
-        \fontsize{6}{7}\selectfont
-        \input {images/drawing-1.pdf_tex}
-    }}
-    \fontsize{6}{7}\selectfont
-    \caption{Draw mos with (Cgd + Cd) and rds is modeled by Rnw and Cnw}
-    \label{fig:tot_mos}
-\end{figure}
 
 \subsection{Complex Impedance Solving}
 The nanowire-based hydrogen sensor measurement system from \cite{Jlockin} adopts another method.
@@ -217,14 +203,14 @@ A mixer which is a linear multiplier performs the demodulation.
 With a radio frequency (RF) input and the input local oscillator (LO) input, it produce an output signal that consists of signals with frequencies $f_{RF} + f_{LO}$ and $f_{RF} - f_{LO}$.
 Incidentally, the signal is immune from the perturbation of low-frequency noise which is a common problem for the biosensor.
 
-\subsection{Comparison and Conclusion}
+\subsection{Comparison and Conclusion} \label{sec:ch2CC}
 We compare Method 1 (Sec.2.2.1) and Method 2 (Sec.2.2.2) here.
 Both of them focus on detecting the $R_{NW}$ difference.
 According to the comparison table below (\ref{tb:LVtable}), we can see the resistor measurement range of Method 1 is different from Method 2 by a large extent.
-This may because the minimum bias current of nanowire provided by the circuits are different.
-The minimum current in Method 1 is limited by the pmos(I charge) and the leakage current.
+This may because the maximum and minimum bias current of nanowire provided by the circuits are different.
+The current in Method 1 is limited by the pmos(I charge) and the leakage current.
 In Method 2, it is limited by the TIA.
-Our method adopts this TIA block and will discuss this problem in chapter 5.
+Our method adopts this TIA block and will discuss this problem in section.\ref{sec:Ibias}.
 
 Method 2 perform well when it comes to noise suppression.
 In fact, the circuit in Method 1 doesn't provide noise reduction ability.
@@ -286,7 +272,7 @@ Overall, Method 1 has the advantage in detecting range and accuracy while Method
 In chapter 1, to deal with disparity problem, we assume that:
 \begin{enumerate}
     \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and independent on $V_{GS}$.
-    \item The changing of the concentration of biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
+    \item The concentration difference of biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
 \end{enumerate}
 We discuss them in this section.
 
@@ -295,7 +281,7 @@ With the MOSFET model of weak and strong inversion, we have the $I_D$ equations 
 \setlength{\mathindent}{1.5cm}
 
 \begin{align}
-    \text{weak inversion:} \quad I_D   = & I_0e^{\kappa V_{GS}/\phi_t}(1 - e^{-V_{DS}/\phi_t})\\
+    \text{weak inversion:} \quad I_D   = & I_0e^{\kappa V_{GS}/\phi_t}(1 - e^{-V_{DS}/\phi_t})\\  \label{eq:Ikappa}
                                        = & I_0e^{\kappa V_{GS}/\phi_t} \quad \text{where $V_{DS} > 4 \phi_t$ } \\
     \text{strong inversion:} \quad I_D = & \mu C_{ox} \frac{W}{L}((V_{GS} - V_{th})V_{DS} - \frac{V_{DS}^2}{2}) \\
                                        = & \mu C_{ox} \frac{W}{L}(V_{GS} - V_{th})^2 \quad \text{where $V_{DS} > V_{GS} - V_{th}$} \label{eq:ID_Strong}
