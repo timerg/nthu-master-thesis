@@ -1,10 +1,10 @@
 \chapter{Literature Review \& Theory Description}
 As previously mentioned in the introduction section, the read-out circuit we proposed has two operation mode (DC and AC).
-The DC mode control the drain current ($I_D$) of nanowire while the AC mode is for current variance measurement.
+The DC Sweep mode control the drain current ($I_D$) of nanowire while the Transient Sweep mode is for current variance measurement.
 Each of them references different sources.
 In section 2.1, we first talk about the reason why we perform $I_D$-$V_G$ sweep.
-Then we review the reference of our DC mode circuit design.
-The references of AC mode circuit design is in section 2.2.
+Then we review the reference of our DC Sweep mode circuit design.
+The references of the Transient Sweep mode circuit design is in section 2.2.
 In the last section, we discuss the two assumptions mentioned in section 1.2.
 
 \section{DC Sweep: $I_D$-$V_G$ Curves}
@@ -16,7 +16,7 @@ Among all kinds of sweep method, we choose the $I_D$-$V_G$ in respect of the phy
 In the n-type transistor, the binding of negatively charged biomolecules induces surface-near silicon ions discharged and thus lower the threshold voltage.
 It is straightforward to think of these binding molecules as a voltage signal input to the gate with its value depends on the concentration.
 And this voltage signal effect nanowire in the same way $V_G$ does.
-So by plotting $I_D$-$V_{G}$  curves, we can have a thumbnail of how concentration affects the $I_D$.
+So by plotting $I_D$-$V_G$  curves, we can have a thumbnail of how concentration affects the $I_D$.
 
 
 \subsection{Source Follower} \label{section:SF}
@@ -207,7 +207,7 @@ Incidentally, the signal is immune from the perturbation of low-frequency noise 
 We compare Method 1 (Sec.2.2.1) and Method 2 (Sec.2.2.2) here.
 Both of them focus on detecting the $R_{NW}$ difference.
 According to the comparison table below (\ref{tb:LVtable}), we can see the resistor measurement range of Method 1 is different from Method 2 by a large extent.
-This may because the maximum and minimum bias current of nanowire provided by the circuits are different.
+This may because the bias current of nanowire that caprovided by the circuits are different.
 The current in Method 1 is limited by the pmos(I charge) and the leakage current.
 In Method 2, it is limited by the TIA.
 Our method adopts this TIA block and will discuss this problem in section.\ref{sec:Ibias}.

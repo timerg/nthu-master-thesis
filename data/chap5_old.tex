@@ -1,0 +1,224 @@
+\chapter{Integrated Circuitry Design}
+This chapter presents the design of the read-out circuit and the simulation results.
+
+
+\section{Architecture}
+The review of source follower in section.\ref{section:SF} suggests the constant current method for the circuit of DC measurement.
+The data analysis from chapter 3 supports it by the linear relation between $I_D$ and $g_m$.
+However, the section.\ref{sec:AC} shows that source follower is not suitable for AC measurement.
+It alternatively recommends the circuit in Fig.\ref{fig:lockin} which measures ac current signal and converts it into voltage output.
+This circuit is appealing because of its noise suppression, simplicity and flexibility.
+
+We combined these two method into one circuit structure and introduce them below.
+
+\subsection{Circuit Schematic: First Stage}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth] {images/chapter5/DCMode.png}
+    \caption{}
+    \label{fig:DCmode}
+\end{figure}
+
+\paragraph*{DC mode}
+Fig.\ref{fig:DCmode} is the first stage of our read-out circuit connected in DC mode.
+As in the source follower, there is a bias current source (Ibias) for controlling the $I_D$.
+The difference is that the Ibias inputs the current into drain instead of source.
+In addition to this, we apply the TIA from section.\ref{sec:AC} (\cite{Jlockin}).
+Its output connects to a rail-to-rail OP amplifier, which forms a negative feedback loop.
+When the $I_D$ is greater than the current of Ibias, it lowers the output voltage of TIA and raise the gate voltage $V_G$.
+And vice versa.
+This is to say that the feedback mechanism forces the $I_D$ be equal to the current of Ibias by adjusting the $V_G$.
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{minipage}[t]{0.4\textwidth}
+        \includegraphics[width=1\textwidth] {images/chapter5/ACMode.png}
+        \raggedleft
+        (a)
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.4\textwidth}
+        \includegraphics[width=1\textwidth] {images/chapter5/ACMode_sine.png}
+        \raggedleft
+        (b)
+    \end{minipage}
+    \caption{}
+    \label{fig:ACmode}
+\end{figure}
+
+\paragraph*{AC mode}
+In Fig.\ref{fig:ACmode}(a), the switch in Fig.\ref{fig:DCmode} turns to a simple voltage source (Vg) which bias nanowire with the gate voltage.
+The OP is nonfunctional with its output connected floating.
+When performing measurement, we directly find how the solution concentration changes the output voltage ($V_{out}$).
+This output voltage will input into the second stage circuit which is for the amplification.
+
+\paragraph*{Dealing with the Disparity Problem}
+As mentioned in chapter 1, we combine DC mode and AC mode to perform a disparity-resisting measurement.
+Assuming there are two nanowire elements having disparity problem.
+Initially, they are applied with DC mode to perform the $I_D$-$V_G$ sweeping.
+We calculate their $g_m$ by the derivative of $I_D$ of $V_G$ and find the $g_m$-$I_D$ relation of these elements.
+Then we select a $g_m$ value.
+For the two elements, this value corresponds to two $I_D$.
+And these two $I_D$ corresponds to two $V_G$.
+We set the Ibias and Vg to these values.
+Finally, after these initialization steps, we add the measuring solutions and detect the difference of $V_{out}$.
+Since elements have same $g_m$, they should produce same voltage differences.
+Before the next measuring solutions is added, we return to DC mode to find new $V_G$.
+This reset $I_D$ of the elements to the value of Ibias, which also reset the $g_m$ to the value we selected.
+
+\paragraph*{Another Usage of AC mode}
+There is another way to perform measurement with AC mode, which resembles the method in \cite{Jlockin}.
+This method measures the $g_m$ of nanowire.
+As in Fig.\ref{fig:ACmode}(b), the source of nanowire is applied with an ac signal ($v_s$).
+An ac output in $V_{out}$ is equal to $v_sg_m \times R_{TIA}$.
+The values of Ibias and Vg can be arbitrary.
+But one need to be aware that the values should not saturate the output of TIA or the second stage circuit.
+
+Below, we talk about some design concept.
+
+\subsubsection{Detecting Range Improvement (AC mode)} \label{sec:Ibias}
+In section.\ref{sec:ch2CC} about the TIA subcricuit as Fig.\ref{fig:TIA_old}(a), we mentioned that the detecting range of $R_{NW}$ is limited.
+There are same limits in our circuit which detects the current variance of nanowire.
+We now discuss the causes of these limits and show the strategies we use.
+To be noticed that the TIA block is a two-stage differential input and single output op-amp in the flowing discussion.
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{minipage}[t]{0.4\textwidth}
+        \includegraphics[width=1.1\textwidth] {images/chapter5/TIA_olda.png}
+        (a)
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.4\textwidth}
+        \includegraphics[width=1\textwidth] {images/chapter5/TIA_old.png}
+        (b)
+    \end{minipage}
+    \caption{\textbf{(a)} The transimpedance block (TIA) of the readout circuit from \cite{Jlockin}. The circuit input a voltage signal into resistive nanowire element $R_{NW}$.
+            To compare it with our circuit (Fig.\ref{fig:TIA}), we transform the voltage input into an equivalent current input in \textbf{(b)}. The $I_{NW} = (V_{Ref} - V_{in})/R_{NW}$ and $\Delta i = \Delta vi /R_{NW}$}
+    \label{fig:TIA_old}
+\end{figure}
+
+\paragraph*{Lower Limit:}
+According to Fig.\ref{fig:TIA_old}(b), the TIA output voltage is:
+\begin{equation}
+    V_{TIA} = V_{Ref} + I_{NW}R_{TIA} + \Delta iR_{TIA}
+    \label{eq:TIA_old}
+\end{equation}
+Two reasons which result in the lower limit of the detecting range relate to a large offset current $I_{NW}$.
+One is that the output current provided by the TIA is restricted by design.
+The other is that the restriction of the current flowing through the resistor $R_{TIA}$:
+\begin{align}
+    \frac{V_{Ref}}{R_{TIA}} < I_{NW} < \frac{VDD - V_{Ref}}{R_{TIA}}
+\end{align}
+Both reasons leads to the output saturation of TIA.
+
+A naive way to handle the first reason is to increase the output current which TIA can provide.
+The side effects of this method are the increases in power consumption and chip area.
+As for the second reason, using smaller $R_{TIA}$ can ease the restriction on $I_{NW}$ and reduce the lower limit.
+Unfortunately, it reduces the upper limit as well.
+This will be discussed in the paragraph of ``upper limit''.
+
+Our strategy for decreasing the lower limit is by utilizing the bias current source of nanowire.
+According to Fig.\ref{fig:TIA}, the Eq.\ref{eq:TIA_old} is transformed into:
+\begin{equation}
+    V_{TIA} = V_{Ref} + (I_{NW} - I_{bias}) R_{TIA} + \Delta iR_{TIA}
+    \label{eq:TIA}
+\end{equation}
+Now we can diminish the large $I_{NW}$ by Ibias.
+In conclusion, the large offset current cause the saturation of the output of TIA.
+We use the biasing current source to diminish that offset current, which increase the detecting range.
+
+\begin{figure}[!htbp]
+    \centering
+        \includegraphics[width=0.4\textwidth] {images/chapter5/TIA.png}
+    \caption{}
+    \label{fig:TIA}
+\end{figure}
+\paragraph*{Upper Limit:}
+The upper limit issues from the output resolution.
+If the signal $\Delta iR_{TIA}$ from Eq.\ref{fig:TIA} is too small, it may be defeated by the noise.
+One may be raise up the SNR by using large $R_{TIA}$.
+However, the chip area constrain the size of resistors.
+In our circuit design, we cannot make the resistance value out of $100k\Omega$.
+Furthermore, even if the resistor can be greater, one need to concern for the noise brought by the large resistance.
+
+Our strategy is to boost the SNR of TIA by designing its input MOSFETs in a large area.
+And we also amplify the output signal through the second stage circuit.
+
+\subsubsection{Input impedance Matching (DC mode)}
+From the chapter 4, we learned that for the constant current method, the impedance matching between current source Ibias and nanowire element is important.
+The matching decides the limit of the biasing current.
+Here we calculate the input impedance of the circuit.
+
+\begin{figure}[!htbp]
+    \centering
+        \includegraphics[width=0.4\textwidth] {images/chapter5/input_imp.png}
+    \caption{}
+    \label{fig:input_imp}
+\end{figure}
+In Fig.\ref{fig:input_imp}, by applying and input voltage $\Delta v_x$, we find the $\Delta i_x$.
+The input impedance of the circuit is $\Delta v_x / \Delta i_x$.
+\begin{align}
+      \Delta i_x &= \quad i_D + i_{TIA} \\
+      i_D &= \quad \frac{\Delta v_x}{r_{ds}} + \Delta v_xA_{TIA}A_{OP}g_m\\
+      i_{TIA} &= \quad \frac {\Delta v_x}{R_{TIA} / (1 + A_{TIA})} \\
+      \Delta v_x / \Delta i_x  &= \quad (\frac{1}{r_{ds}} + \frac{1 + A_{TIA})}{R_{TIA}})^{-1} \label{eq:input_imp}
+\end{align}
+The $A_{TIA}$ is the gain of the opAmp in TIA block.
+The $A_{OP}$ is the gain of OP.
+The $r_ds$ is the drain-to-source resistance of nanowire which is large than $100k\Omega$.
+From the Eq.\ref{eq:input_imp}, we conclude that the input impedance of the circuit is equal to:
+\begin{equation}
+        \frac{1/g_m}{A_{TIA}\times A_{OP}}|| r_{ds} || \frac{R_{TIA}}{1 + A_{TIA})}
+\end{equation}
+
+In our design, the Ibias is an simple pmos.
+Its output impedance roughly ranges from $1M\Omega$ to $1G\Omega$.
+Since the $r_{ds}$ is large than $100k\Omega$.
+The input impedance is clearly smaller than 1/100 fold of the $r_{ds}$, which means the impedance matching successes.
+
+The result above seems implies that our design can achieve a lower biasing current than the circuit in chapter 4.
+Unfortunately, it is not true.
+A portion of the current given by Ibias leaks into the $R_{TIA}$.
+We calculate the current ratio between $i_{TIA}$ and $i_D$:
+\begin{align}
+    \frac{i_D}{i_{TIA}} =  R_{TIA} \times g_m \times A_{OP}
+\end{align}
+Another section will shows that this value may not be over 10k (80dB) due to the stability.
+Thus we can see that when $g_m$ is getting lower than $0.1\mu$, the ratio is smaller than 100 and the leakage current is not ignorant anymore.
+This limit of the biasing current is same with the one of the circuit in chapter 4(Fig.\ref{fig:SF_imp}).
+
+\subsection{Architecture: Second Stage}
+We discuss the second stage circuit in this section.
+To be noted that the second stage circuit is only for AC mode.
+
+\begin{figure}[!htbp]
+    \centering
+        \includegraphics[width=1\textwidth] {images/chapter5/Second.png}
+    \caption{}
+    \label{fig:secondStage}
+\end{figure}
+Fig.\ref{fig:secondStage} is the block diagram of the second stage circuit.
+The analog subtractor shifts the voltage of the $V_{in}$ from $V_{Ref}$ to $V_z$.
+It follows by a resistor-based non-inverting amplifier composed of an two-stage differential OpAmp, two switches and three resistors.
+The switches select the amplification rate among 100, 10 and 1.
+
+
+
+% \subsection{Design Spec and Calculation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+% with a transimpedance as front-end
+% As stated in chapter 2,

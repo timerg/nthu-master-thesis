@@ -16,9 +16,9 @@ And according to them, the nanowire use thick gate dielectric and have non-regul
 
 
 \section{Introduction}
-In this project, we design a nanowire read-out circuit with two modes.
-In DC mode, one can use the circuit to perform a DC sweep of drain current ($I_D$) to show how the gate voltage ($V_{G}$) changes, or gives nanowire a constant $I_D$ and measures the $V_{G}$ response to different solution concentration.
-In AC mode, the circuit detects and amplifies the current variance of the nanowire with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
+In this project, we design a nanowire read-out circuit with two modes: DC Sweep mode and Transient Measurement mode.
+In the DC Sweep mode, one can use the circuit to perform a DC sweep of drain-to-source current ($I_D$) to show how the gate voltage ($V_G$) changes, or gives nanowire a constant $I_D$ and measures the $V_{G}$ response to different solution concentration.
+In the Transient Measurement mode, the circuit detects and amplifies the variance of ($I_D$) with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
 We also combine two modes to implement a proposed method that may mitigate the disparity problem.
 
 \subsection*{Dealing with the Disparity Problem} \label{section:twqAssumption}
@@ -33,13 +33,13 @@ The second assumption means that as long as different nanowire elements have a s
 The method works as follows:
 
 \paragraph*{Initial stage}
- At the beginning of each measurement event, we perform a DC sweep with the circuit in DC mode.
+At the beginning of each measurement event, we perform a DC sweep with the DC Sweep mode.
 By handling the sweep results with numerical method, we keep all nanowire elements under a selected transconductance by controlling their $I_D$ and corresponded $V_G$.
 
 \paragraph*{Measurement stage}
-We put the circuit in AC mode at this stage.
+We put the circuit in the Transient Measurement mode at this stage.
 Since the transconductance of all elements is same, they should behave uniformly based on assumption 2.
-At the end of the stage, we return to DC mode to reset $I_D$ of the elements.
+At the end of the stage, we return to the DC Sweep mode to reset $I_D$ of the elements.
 The circuit adjusts their $V_G$ to do so.
 
 At the beginning of each measurement stage, an element always has a same $I_D$ but different $V_G$.

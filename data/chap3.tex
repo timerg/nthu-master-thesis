@@ -1,8 +1,9 @@
 \chapter{Nanowire Structure and Measurement}
 In this chapter, we present the experiment data and some analysis which are the foundation of our circuit design.
 The first section gives a brief description of our silicon nanowire element.
-The second section provides the data of the biology experiments.
-The last section presents the data of the electrical measurement, on which our circuit design spec depends.
+The second section analyzes the data of the biology experiments.
+The third section presents the data of the electrical measurement.
+The last section provides the design spec based on the information given by the previous sections.
 
 \section{Brief Description of Nanowire Structure}
 The nanowire we use is made by Prof.Yang's team (National Chiao Tong University)\cite{C5}.
@@ -21,8 +22,7 @@ The exposed region, through several post-process, capture the DNA probe and serv
         \raggedleft
         (a)
     \end{minipage}
-    \vfill
-    \vfill
+    \hfill
     \begin{minipage}[t]{0.4\textwidth}
         \includegraphics[width=1\linewidth]{images/chapter3/Nw_section.png}
         \raggedleft
@@ -40,7 +40,6 @@ With each measurement repeated three times, we find the mean and standard deviat
 We want to ensure that such noise should not be greater than the signal.
 To be more specific, we examine whether the Id-Vg curves of different concentration overlap with each other or not.
 We present an example below:
-%ghas
 \begin{figure}[!htbp]
     \centering
     \begin{minipage}[t]{0.4\textwidth}
@@ -89,33 +88,31 @@ Hence we say that the ``resolution'' for detecting concentration ranging from 10
 \end{figure}
 
 \subsection{Appropriate operation region} \label{section:biasVg}
-In \cite{C6}, the team found that ``the induced change of current ($I_D$) following biomolecule was dependent on the applied gate voltage (VG)'' (Fig.).
+In \cite{C6}, the team found that ``the induced change of current ($I_D$) following biomolecule was dependent on the applied gate voltage (VG)''.
 In other words, a ``biomolecule concentration resolution'' seems to depend on $V_G$
 The team tried to find a bias gate voltage range which can induce more current response.
-In our opinion, the induced change of current ($I_D$) following biomolecule is not directly dependent on $V_G$.
-Based on the our assumption 2 (section\ref{section:twqAssumption}), it depends on the transconductance.
-The phenomenon is found by $I_D$-$V_G$ curves, which means the $V_G$ also affect the $I_D$ which cause different transconductance.
 
-Furthermore, we think the noise effect should be taken into consideration.
-Some kinds of noise have  positive correlations with transconductance.
+We also want to operate the nanowire under the condition that the element has the largest concentration resolution.
+Differently, we suppose that one should find the appropriate operation region instead of bias $V_G$ range.
+And we take the noise effect in to consideration.
+The comprehensive method we proposed below proved that nanowire has the largest concentration resolution when operated in the weak inversion region adjacent to the transition region.
 
-Still, we want to find an appropriate operation region of nanowire that has the largest concentration resolution.
-We proposed a comprehensive method that one should choose the operation region with more ``noise tolerance''.
+Our method is that we choose the operation region with more ``noise tolerance''.
 The noise tolerance is defined as:
 \setlength{\mathindent}{2cm}
 \begin{align}
     noise \quad tolerance = \frac{I_D1 - SD1 - (I_D2 + SD2)}{I_D2}
 \end{align}
-$I_D$ and $SD$ are the mean and standard deviation of a curve.
+$I_D$ and $SD$ are the mean and standard deviation of several $I_D$-$V_G$ curves obtained in a same experimental condition.
 The larger the noise tolerance implies there is more space between two curves.
-And more space implies the less chance of overlapping between to concentration curves may happens.
+And more space implies the less chance of overlapping that may happen between two concentration curves.
 
-We present analysis results from three nanowire elements.
-Fig.\ref{fig:SD_Device}(a), (c), (e) are the $I_D$-$V_G$ curves of three elements and Fig.\ref{fig:SD_Device}(b), (d), (f) are the noise tolerance respectively.
+We present analysis results from three nanowire elements in Fig.\ref{fig:SD_Device}.
+Figure (a), (c), (e) are the $I_D$-$V_G$ curves of three elements and Fig.\ref{fig:SD_Device}(b), (d), (f) are the noise tolerance respectively.
 One can observe in (b) and (d) that there is first a rising trend then followed by a drop as gate voltage decreases.
-The drop doesn't exist in (f) may because the weak inversion is too narrow.
-The transistor enters into the reverse region before the drop appears.
-The highest points of (b) and (d) locate in the weak inversion region and is close to the transition region (The region between strong inversion and weak inversion region).
+The drop doesn't exist in (f) may because the measurement failed before the drop appears (The failure is becuase the $I_D$ is too small to be detected.).
+But one can still observe the rising trend.
+The highest points of (b) and (d) locates in the weak inversion region and is adjacent to the transition region (The region between strong inversion and weak inversion region).
 We therefore suggest that in this section nanowire should has the largest concentration resolution.
 
 
@@ -298,7 +295,7 @@ The result is as Fig.\ref{fig:rds}
 \end{figure}
 
 
-\section{Disparity Problem exists}
+\subsection{Disparity Problem exists}
 We measured two nanowire elements which lie on the same wafer and are immersed with the same testing PBS solution.
 Below, the $g_m$-$I_D$ plot (Fig.\ref{fig:disparity}) shows that even the environment is same, two elements exhibit different electrical response.
 
@@ -310,11 +307,11 @@ Below, the $g_m$-$I_D$ plot (Fig.\ref{fig:disparity}) shows that even the enviro
 \end{figure}
 
 
+\FloatBarrier
 
+\section{Conclusion and Design Spec} \label{sec:spec3}
 
-\section{Conclusion and Design Spec}
-
-Table.\ref{tb:NWcharacter} concludes the electrical characteristics of our nanowire.
+Table.\ref{tb:NWcharacter} summarizes the electrical characteristics of our nanowire.
 \begin{table}[h!bp]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
@@ -330,7 +327,7 @@ Table.\ref{tb:NWcharacter} concludes the electrical characteristics of our nanow
     }
 \end{table}
 
-We hence decide the detecting spec of the DC mode as in the table.\ref{tb:DCspec}.
+We hence decide the detecting spec for the DC Sweep mode as in the table.\ref{tb:DCspec}.
 \begin{table}[!htbp]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
@@ -339,13 +336,18 @@ We hence decide the detecting spec of the DC mode as in the table.\ref{tb:DCspec
         \hline
         $100n A$ - $30\mu A$ & $200n $ - $20\mu$ \\
     \end{tabular}
-    \caption{Detecting Spec of DC mode}
+    \caption{Detecting Spec for the DC Sweep mode}
     \label{tb:DCspec}
     }
 \end{table}
 
-As for the AC mode, section.\ref{section:biasVg} suggests that the element should operated in the weak inversion region adjacent to the strong inversion region.
-The table.\ref{tb:CdV} tells that the minimum equivalent input voltage ($\Delta V_G$) brought by concentration difference is $20mV$.
+As for the Transient Measurement mode, section.\ref{section:biasVg} suggests that the element should be operated in the weak inversion region adjacent to the strong inversion region.
+And the table.\ref{tb:CdV} tells that the minimum equivalent input voltage ($\Delta V_G$) brought by concentration difference is $20mV$.
+To reach a better resolution, we require the input referred noise (referred to the gate) of our circuit to be less than 10\% of this value ($< 2mV$).
+We also require the total input current to output voltage ratio to be $5M$.
+This is because the minimum $g_m$ is $200n$ and the minimum current difference is $4n A$ ($20mV \times 200n$).
+We expect the output voltage larger than $20mV$.
+
 We integrate these informatino in table.\ref{tb:ACinput}.
 \begin{table}[!htbp]
     {\fontfamily{}\fontsize{10}{14}\selectfont
@@ -355,20 +357,20 @@ We integrate these informatino in table.\ref{tb:ACinput}.
         \hline
         $600n A$ - $5\mu A$ & $1\mu $ - $10\mu$ & $20mV$\\
     \end{tabular}
-    \caption{The summation of the nanowire characteristics when applied with AC mode circuit}
+    \caption{The summation of the nanowire characteristics when applied with the Transient Measurement mode circuit}
     \label{tb:ACinput}
     }
 \end{table}
-The Spec for AC mode circuit is as in table.\ref{tb:ACSpec}.
+The Spec for the Transient Measurement mode circuit is as in table.\ref{tb:ACSpec}.
 \begin{table}[!htbp]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
     \begin{tabular}{c|c}
         Input referred Noise(V) & Amplification Rate (max) \\
         \hline
-        $< 2m V$ & $10^7(\frac{V}{A})$\\
+        $< 2m V$ & $5E6(\frac{V}{A})$\\
     \end{tabular}
-    \caption{Spec of AC mode circuit}
+    \caption{Spec for the Transient Measurement mode circuit}
     \label{tb:ACSpec}
     }
 \end{table}

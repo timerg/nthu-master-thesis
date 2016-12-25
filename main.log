@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  12 DEC 2016 13:57
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  20 DEC 2016 13:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -951,29 +951,35 @@ File: ppxetex.def 2015/05/11 v0.4x Pdfpages driver for XeTeX (AM)
 \AM@templatesizebox=\box47
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (./main.aux)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (./main.aux
+
+LaTeX Warning: Label `fig:Nblockvg' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 56.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 57.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 57.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    ... okay on input line 57.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -981,66 +987,66 @@ LaTeX Font Info:    ... okay on input line 56.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 56.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 56.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 56.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 56.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 56.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 56.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 56.
-LaTeX Font Info:    Redeclaring math accent \check on input line 56.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 56.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 56.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 56.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 56.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 57.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 57.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 57.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 57.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 57.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 57.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 57.
+LaTeX Font Info:    Redeclaring math accent \check on input line 57.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 57.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 57.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 57.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 57.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 56.
+(Font)              `operators' in the math version `normal' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 56.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 57.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 56.
+(Font)              `operators' in the math version `bold' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 56.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 57.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 56.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 56.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 56.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 56.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 56.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 57.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 56.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 56.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 56.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 56.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 57.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box48
  (./data/cover.tex)
-Overfull \hbox (21.95845pt too wide) in paragraph at lines 26--60
+Overfull \hbox (21.95845pt too wide) in paragraph at lines 26--61
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--60
+Underfull \hbox (badness 10000) in paragraph at lines 26--61
 
  []
 
@@ -1065,7 +1071,11 @@ LaTeX Font Info:    Calculating math sizes for size <14> on input line 4.
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [3
 
-])
+]
+Overfull \vbox (8.448pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [4])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
@@ -1073,7 +1083,7 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [4] (./main.lof
+ <use  "images/nthu-logo.pdf" > [5] (./main.lof
 Overfull \hbox (9.19864pt too wide) in paragraph at lines 9--9
  [][] []\EU1/lmr/m/n/12 Concentration-dependent electric response($\OML/cmm/m/it/14.4 I[] \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 V[]$\EU1/lmr/m/n/12 ) of biotin-modified 
  []
@@ -1089,17 +1099,27 @@ Overfull \hbox (40.18661pt too wide) in paragraph at lines 13--13
  []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
-<use  "images/nthu-logo.pdf" > [5
+<use  "images/nthu-logo.pdf" > [6
 
 ]
+Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
-LaTeX Warning: Reference `SF_schematic_old' on page 30 undefined on input line 24.
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [7]
+Overfull \hbox (15.40855pt too wide) in paragraph at lines 33--33
+ [][] []\EU1/lmr/m/n/12 The dc simulation results of TIA. The x-axis represents positive/negative 
+ []
 
 
 Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [6])
+ <use  "images/nthu-logo.pdf" > [8]
+Overfull \hbox (4.06224pt too wide) in paragraph at lines 47--47
+ [][] []\EU1/lmr/m/n/12 Five corners output DC response (vout) and derivative ($\OML/cmm/m/it/14.4 dvout\OT1/cmr/m/n/14.4 /\OML/cmm/m/it/14.4 dvin$\EU1/lmr/m/n/12 ) 
+ []
+
+)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
@@ -1107,7 +1127,7 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [7] (./data/chap1.tex
+ <use  "images/nthu-logo.pdf" > [9] (./data/chap1.tex
 Chapter 1.
 File: images/nthu-logo.pdf Graphic file (type QTm)
 <use  "images/nthu-logo.pdf" > [1
@@ -1205,13 +1225,13 @@ File: images/chapter3/Nw_section.png Graphic file (type QTm)
  <use  "images/chapter3/Nw_section.png" >
 File: images/chapter3/208_devices/L2-8_log.png Graphic file (type QTm)
  <use  "images/chapter3/208_devices/L2-8_log.png" >
-Overfull \hbox (74.28375pt too wide) in paragraph at lines 48--50
+Overfull \hbox (74.28375pt too wide) in paragraph at lines 47--49
  [][] 
  []
 
 File: images/chapter3/208_devices/L2-10_log.png Graphic file (type QTm)
 <use  "images/chapter3/208_devices/L2-10_log.png" >
-Overfull \hbox (74.28375pt too wide) in paragraph at lines 54--56
+Overfull \hbox (74.28375pt too wide) in paragraph at lines 53--55
  [][] 
  []
 
@@ -1219,19 +1239,14 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 <use  "images/nthu-logo.pdf" > [16
 
 ]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [17]
 File: images/chapter3/128_allT_mag.png Graphic file (type QTm)
  <use  "images/chapter3/128_allT_mag.png" >
 File: images/chapter3/128_allT_error.png Graphic file (type QTm)
  <use  "images/chapter3/128_allT_error.png" >
-Overfull \hbox (12.08537pt too wide) in paragraph at lines 92--98
-\EU1/lmr/m/n/12 was dependent on the applied gate voltage (VG)” (Fig.). In other words, a “biomolecule
- []
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
-
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [17]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1242,37 +1257,37 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [19]
 File: images/chapter3/208_devices/L2-7_log.png Graphic file (type QTm)
  <use  "images/chapter3/208_devices/L2-7_log.png" >
-Overfull \hbox (102.43134pt too wide) in paragraph at lines 128--130
+Overfull \hbox (102.43134pt too wide) in paragraph at lines 125--127
  [][] 
  []
 
 File: images/chapter3/208_devices/L2-7_margin.png Graphic file (type QTm)
 <use  "images/chapter3/208_devices/L2-7_margin.png" >
-Overfull \hbox (76.82399pt too wide) in paragraph at lines 134--136
+Overfull \hbox (76.82399pt too wide) in paragraph at lines 131--133
  [][] 
  []
 
 File: images/chapter3/208_devices/L2-8_log.png Graphic file (type QTm)
 <use  "images/chapter3/208_devices/L2-8_log.png" >
-Overfull \hbox (102.43134pt too wide) in paragraph at lines 140--142
+Overfull \hbox (102.43134pt too wide) in paragraph at lines 137--139
  [][] 
  []
 
 File: images/chapter3/208_devices/L2-8_margin.png Graphic file (type QTm)
 <use  "images/chapter3/208_devices/L2-8_margin.png" >
-Overfull \hbox (76.82399pt too wide) in paragraph at lines 146--148
+Overfull \hbox (76.82399pt too wide) in paragraph at lines 143--145
  [][] 
  []
 
 File: images/chapter3/208_devices/L2-12_log.png Graphic file (type QTm)
 <use  "images/chapter3/208_devices/L2-12_log.png" >
-Overfull \hbox (102.43134pt too wide) in paragraph at lines 152--154
+Overfull \hbox (102.43134pt too wide) in paragraph at lines 149--151
  [][] 
  []
 
 File: images/chapter3/208_devices/L2-12_margin.png Graphic file (type QTm)
 <use  "images/chapter3/208_devices/L2-12_margin.png" >
-Overfull \hbox (76.82399pt too wide) in paragraph at lines 158--160
+Overfull \hbox (76.82399pt too wide) in paragraph at lines 155--157
  [][] 
  []
 
@@ -1300,7 +1315,7 @@ File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
  <use  "images/FgBg_Compare_Id.pdf"  page2>
 File: images/FgBg_Compare_Id.pdf Graphic file (type QTm)
  <use  "images/FgBg_Compare_Id.pdf"  page3>)
-Overfull \hbox (68.29079pt too wide) in paragraph at lines 70--226
+Overfull \hbox (68.29079pt too wide) in paragraph at lines 70--223
  [][] 
  []
 
@@ -1311,7 +1326,7 @@ File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
  <use  "images/FgBg_Compare_Id_dev.pdf"  page2>
 File: images/FgBg_Compare_Id_dev.pdf Graphic file (type QTm)
  <use  "images/FgBg_Compare_Id_dev.pdf"  page3>)
-Overfull \hbox (68.29079pt too wide) in paragraph at lines 71--234
+Overfull \hbox (68.29079pt too wide) in paragraph at lines 71--231
  [][] 
  []
 
@@ -1340,11 +1355,11 @@ File: images/pDisparity.png Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [26]) (./data/chap4.tex
+ <use  "images/nthu-logo.pdf" > [26]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [27]
+ <use  "images/nthu-logo.pdf" > [27]) (./data/chap4.tex
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1354,32 +1369,26 @@ File: images/../images/chapter4/SFdiscrete_old.png Graphic file (type QTm)
 <use  "images/../images/chapter4/SFdiscrete_old.png" >
 File: images/../images/chapter4/SFdiscrete_schematic.png Graphic file (type QTm)
  <use  "images/../images/chapter4/SFdiscrete_schematic.png" >
-
-LaTeX Warning: Reference `SF_schematic_old' on page 29 undefined on input line 18.
-
-
-LaTeX Warning: Reference `SF_schematic_old' on page 29 undefined on input line 18.
-
 File: images/nthu-logo.pdf Graphic file (type QTm)
-<use  "images/nthu-logo.pdf" > [29
+ <use  "images/nthu-logo.pdf" > [29
 
 ]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [30]
+File: images/chapter4/SF.png Graphic file (type QTm)
+ <use  "images/chapter4/SF.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [31]
-File: images/chapter4/SF.png Graphic file (type QTm)
- <use  "images/chapter4/SF.png" >
 File: images/../images/chapter4/SF_impedance.png Graphic file (type QTm)
- <use  "images/../images/chapter4/SF_impedance.png" >
+ <use  "images/../images/chapter4/SF_impedance.png" >) (./data/chap5.tex
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [32]) (./data/chap5.tex
+ <use  "images/nthu-logo.pdf" > [32]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1399,9 +1408,13 @@ Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [35]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [36]
 File: images/chapter5/TIA_olda.png Graphic file (type QTm)
  <use  "images/chapter5/TIA_olda.png" >
-Overfull \hbox (17.07243pt too wide) in paragraph at lines 89--91
+Overfull \hbox (17.07243pt too wide) in paragraph at lines 93--95
 [][]
  []
 
@@ -1410,62 +1423,190 @@ File: images/chapter5/TIA_old.png Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [36]
+ <use  "images/nthu-logo.pdf" > [37]
 File: images/chapter5/TIA.png Graphic file (type QTm)
  <use  "images/chapter5/TIA.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [37]
-File: images/chapter5/input_imp.png Graphic file (type QTm)
- <use  "images/chapter5/input_imp.png" >
+File: images/chapter5/TIA_block.png Graphic file (type QTm)
+ <use  "images/chapter5/TIA_block.png" >
+File: images/chapter5/TIA_sch.png Graphic file (type QTm)
+ <use  "images/chapter5/TIA_sch.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [38]
+File: images/chapter5/postSim/TIA_dc.png Graphic file (type QTm)
+ <use  "images/chapter5/postSim/TIA_dc.png" >
+File: images/chapter5/postSim/TIA_ac.png Graphic file (type QTm)
+ <use  "images/chapter5/postSim/TIA_ac.png" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [39]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [40]
+File: images/../images/chapter5/feedbackBlock.png Graphic file (type QTm)
+ <use  "images/../images/chapter5/feedbackBlock.png" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [41]
+File: images/chapter5/postSim/feedbackMechanism.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/feedbackMechanism.PNG" >
+File: images/chapter5/input_imp.png Graphic file (type QTm)
+ <use  "images/chapter5/input_imp.png" >
+Overfull \hbox (3.12602pt too wide) in paragraph at lines 281--283
+[]\EU1/lmr/m/n/12 In Fig.5.10[], we apply an input voltage $\OT1/cmr/m/n/14.4 ^^A\OML/cmm/m/it/14.4 v[]$ \EU1/lmr/m/n/12 and find the $\OT1/cmr/m/n/14.4 ^^A\OML/cmm/m/it/14.4 i[]$\EU1/lmr/m/n/12 . The input impedance
+ []
+
+
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [42]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [43]
+File: images/../images/chapter5/LoopGain.png Graphic file (type QTm)
+ <use  "images/../images/chapter5/LoopGain.png" >
+File: images/chapter5/OP_block.png Graphic file (type QTm)
+ <use  "images/chapter5/OP_block.png" >
+File: images/chapter5/OP_sch.png Graphic file (type QTm)
+ <use  "images/chapter5/OP_sch.png" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [44]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [45]
+File: images/chapter5/postSim/DCIcompare_all.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/DCIcompare_all.PNG" >
+File: images/chapter5/postSim/stability_1p_fs.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/stability_1p_fs.PNG" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [46]
+File: images/chapter5/mirror.PNG Graphic file (type QTm)
+ <use  "images/chapter5/mirror.PNG" >
 File: images/chapter5/Second.png Graphic file (type QTm)
  <use  "images/chapter5/Second.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [39]) (./data/chap6.tex
+ <use  "images/nthu-logo.pdf" > [47]
+File: images/../images/chapter5/Subtractor.png Graphic file (type QTm)
+ <use  "images/../images/chapter5/Subtractor.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [40]
+ <use  "images/nthu-logo.pdf" > [48]
+File: images/chapter5/postSim/subtractor_5_xx.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/subtractor_5_xx.PNG" >
+File: images/chapter5/postSim/subtractor_5_zz.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/subtractor_5_zz.PNG" >
+File: images/chapter5/ResAmp.png Graphic file (type QTm)
+ <use  "images/chapter5/ResAmp.png" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [49]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [50]
+File: images/chapter5/postSim/ResAmp_1.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/ResAmp_1.PNG" >
+File: images/chapter5/postSim/ResAmp_10.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/ResAmp_10.PNG" >
+File: images/chapter5/postSim/ResAmp_100.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/ResAmp_100.PNG" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [51]
+Overfull \hbox (1.3515pt too wide) in paragraph at lines 608--619
+ [][] 
+ []
+
+
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [52]
+File: images/chapter5/NWROC_block_vg.png Graphic file (type QTm)
+ <use  "images/chapter5/NWROC_block_vg.png" >
+File: images/../images/chapter5/postSim/totalGain.PNG Graphic file (type QTm)
+ <use  "images/../images/chapter5/postSim/totalGain.PNG" >
+File: images/../images/chapter5/postSim/noise.png Graphic file (type QTm)
+ <use  "images/../images/chapter5/postSim/noise.png" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [53]
+File: images/chapter5/NWROC_block_vs.png Graphic file (type QTm)
+ <use  "images/chapter5/NWROC_block_vs.png" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [54]
+File: images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG" >
+File: images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG" >
+File: images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG" >
+File: images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG" >) (./data/chap6.tex
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [55]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [56]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [57]
 Chapter 6.
 )
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [41
+ <use  "images/nthu-logo.pdf" > [58
 
 ] (./main.bbl
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [42
+ <use  "images/nthu-logo.pdf" > [59
 
 
 ]) (./data/acknowledgement.tex
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [43])
+ <use  "images/nthu-logo.pdf" > [60])
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [44
+ <use  "images/nthu-logo.pdf" > [61
 
 ] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20509 strings out of 493706
- 412696 string characters out of 6145770
- 447617 words of memory out of 5000000
- 23604 multiletter control sequences out of 15000+600000
- 10513 words of font info for 73 fonts, out of 8000000 for 9000
+ 20640 strings out of 493706
+ 415478 string characters out of 6145770
+ 448943 words of memory out of 5000000
+ 23692 multiletter control sequences out of 15000+600000
+ 10521 words of font info for 74 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 52i,14n,69p,10463b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,18n,69p,10463b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (53 pages).
+Output written on main.pdf (72 pages).
