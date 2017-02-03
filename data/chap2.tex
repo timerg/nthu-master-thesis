@@ -42,7 +42,7 @@ The transfer function can be derived as:
                            & \approx 1 \qquad \text{ for } \quad r_{ds}g_m >> 1
 \end{align}
 $g_m$ is the transconductance ($\frac{\partial I_d}{\partial V_{gs}}$) and $r_{ds}$ is the drain-to-source resistance.
-Although we haven't seen the structure being applied to the nanowire, there have been several applications in the read-out circuits of ISFET (Ion-sensitive Field-effect Transistor)\cite{SF1, SF2} for a long time.
+Although we have not seen the structure being applied to the nanowire, there have been several applications in the read-out circuits of ISFET (Ion-sensitive Field-effect Transistor)\cite{SF1, SF2} for a long time.
 
 The read-out circuit in \cite{SF1} employed ISFET as a biological transducer that converts detected bio-signals into electrical signals, which resembles our nanowire biosensor.
 It adopts the source follower structure as its analog front-end.
@@ -96,7 +96,7 @@ The drift problem is dealt with by signal processing techniques while noise prob
 
 \section{Small Signal (AC) Measurement Method Review}  \label{sec:AC}
 In the previous section, the source follower we mentioned exhibited compelling advantages as a signal processing structure of nano-device.
-However, the structure overcomes obstacles when being applied to the small signal detection.
+However, the structure faces obstacles when being applied to the small signal detection.
 Parasitic capacitors and resistors can severely influence the results.
 
 \begin{figure}[ht]
@@ -107,18 +107,18 @@ Parasitic capacitors and resistors can severely influence the results.
     \label{fig:SF_pC}
 \end{figure}
 
-As in figure \ref{fig:SF_pC} where the parasitic elements are included, we modified the transfer function Eq.(\ref{eq:sfTF}) as:
+As the parasitic elements are included in figure \ref{fig:SF_pC}, we modify the transfer function Eq.(\ref{eq:sfTF}) as:
 \begin{align}
     \frac{V_{out}}{V_{in}} = \frac{r_{ds}(sC_{gs} + gm)}{1 + r_{ds}(gm + s(C_{gs}+C_s))}
 \end{align}
-The equation can be similar to Eq.(\ref{eq:sfTF}) which roughly equals to 1 as long as $C_s$ is far more smaller than $C_{gs}$.
-Unfortunately, $C_s$ can be large for the output end of source follower usually connects to a next stage input or a pad.
+The equation can be similar to Eq.(\ref{eq:sfTF}) which roughly equals to 1 as long as $C_s$ is far smaller than $C_{gs}$.
+Unfortunately, $C_s$ can be as large as the output of the source follower is connected to a next stage input or a pad.
 In that case, the parasitic capacitors may attenuate the signal.
 
-We want to build another circuit structure that can not only performs AC signal measurement but also immunes from parasitic capacitance.
-We started by reviewing those works that try to measure the parasitic capacitance.
-Below, the works from two teams aim to measure drain-to-source resistance ($R_{NW}$) and drain-to-source capacitance ($C_{NW}$).
-The focus of the review is on the function and design theory of their read-out circuit.
+We want to build another circuit structure that can not only perform AC signal measurement but also disregard parasitic capacitance.
+We started by reviewing the works trying to measure the parasitic capacitance.
+Below, the works from two teams aim to measure the drain-to-source resistance ($R_{NW}$) and the drain-to-source capacitance ($C_{NW}$).
+The review focuses on the function and design theory of their read-out circuits.
 
 
 \subsection{RC Time Delay Measuring}
@@ -129,21 +129,21 @@ The focus of the review is on the function and design theory of their read-out c
     \label{fig:tot1}
 \end{figure}
 
-The measurement system for ZnO-nanowire based sensor array from \cite{Juv1} applies the Time-over-Threshold techniques to its read-out circuit (Fig.\ref{fig:tot1}).
+The measurement system for ZnO-nanowire based sensor array from \cite{Juv1} applies the Time-over-Threshold technique to its read-out circuit (Fig.\ref{fig:tot1}).
 The circuit alternatively charges an on-chip capacitor ($C_{int}$) with a constant current and discharges it through the nano-material resistance (nanowire).
 An inverter with its output switches from on to off when the capacitor is charged to its input threshold voltage, and vice versa.
 This behavior converts information of nanowire such as capacitance and resistance into time information.
-Both $C_{int}$ and $C_{NW}$ effect charging time and together with the $R_{NW}$ effect the discharging time.
+Both $C_{int}$ and $C_{NW}$ affect charging time, while the $R_{NW}$ affect the discharging time.
 
-The work presented in \cite{Juv1} doesn't have enough explanation about how do they interpret the capacitance and resistance information.
+The work presented in \cite{Juv1} does not have enough explanation of how they interpret the capacitance and resistance information.
 It merely mentioned that a microcontroller is responsible for the calculation.
-Besides, the work lacks simulation and experiment of using complex elements as measured target.
-Most of the results are the measurement of using a concrete resistor as the substitute for nanowire and regard the $C_{NW}$ as 0p.
-The only nanowire experiment given at last doesn't have good performance.
-It seems that the design may only be applied to a pure resistance or pure capacitance type element.
+Besides, the work lacks simulation and experiment of measuring complex devices.
+Most of the results are the measurement a concrete resistor as the substitute for nanowire, and $C_{NW}$ is regarded as $0pF$.
+The only nanowire experiment does not have good performance.
+It seems that the design may only be applied to a device with pure resistance or pure capacitance.
 
 
-The recent publican \cite{Juv2} by the team is more elaborate and contains the measurement of complex elements (An element composed of a discrete resistor and a discrete capacitor).
+The recent publican \cite{Juv2} by the team is more elaborate and contains the measurement of complex devices (A device composed of a discrete resistor and a discrete capacitor).
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=12cm]{images/chapter2/uv2.png}
@@ -151,17 +151,17 @@ The recent publican \cite{Juv2} by the team is more elaborate and contains the m
     \label{fig:tot2}
 \end{figure}
 
-In Fig.\ref{fig:tot2}, nanowire append between point A and B.
-The charging current can be applied from Mp1 or Mp2, which is determined by the ``sel'' signal with the aid from the MUXs.
+In Fig.\ref{fig:tot2}, nanowire appends between point A and B.
+The charging current can be applied from Mp1 or Mp2, which is determined by the ``sel'' signal with the aid from MUXs.
 We simply assume sel = 1 and point B is virtually ground.
-(When the sel = 0, the circuit measures the element with a reversed biasing current.)
-Now, we can see that the circuit design concept is same with \cite{Juv1}.
+(When the sel = 0, the circuit measures the device with a reversed biasing current.)
+Now, we can see that the circuit design concept is the same as \cite{Juv1}.
 The current charge both $C_{int}$ and $C_{NW}$.
-When the voltage at A exceed the threshold voltage, the output switches to off and feedback to turn off the Mp1.
-(To be noted that a Schmitt trigger replaces the inverter at the output stage in \cite{Juv1}.)
+When the voltage at A exceed the threshold voltage, the output switches off and causes Mp1 to turn off.
+(It is notable that the inverter at the output stage in \cite{Juv1} is replaces by a Schmitt trigger in \cite{Juv2})
 Then the capacitor discharges through nanowire ($r_{ds}$).
 
-The right-bottom plot in Fig.\ref{fig:tot2} defines $T_0$ as the charging time and $T_1$ as the discharging time.
+The bottom-right plot in Fig.\ref{fig:tot2} defines $T_0$ as the charging time and $T_1$ as the discharging time.
 The calculation of the $R_{NW}$ and $C_{NW}$  can be simplified as:
 \setlength{\mathindent}{2cm}
 \begin{align}
@@ -171,13 +171,12 @@ The calculation of the $R_{NW}$ and $C_{NW}$  can be simplified as:
 \end{align}
 $C_{base}$ are the $C_{int}$ plus parasitic capacitance and $R_{par}$ the parasitic resistance.
 These parasitic elements come from the transistor in the integrated circuit block such as MUX and Mp.
-It must be noticed that we don't concern the hysteresis of the Schmitt trigger here owing to simplicity.
+It is notable that we do not consider the hysteresis of the Schmitt trigger here owing to simplicity.
 
 
 \subsection{Complex Impedance Solving}
-The nanowire-based hydrogen sensor measurement system from \cite{Jlockin} adopts another method.
-It treat
-It use a lock-in amplifier to realize both resistive and capacitive impedance measurement.
+The nanowire-based hydrogen sensor measurement system in \cite{Jlockin} adopts another method.
+It uses a lock-in amplifier to realize both resistive and capacitive impedance measurement.
 
 \begin{figure}[!htbp]
         \centering
@@ -186,10 +185,11 @@ It use a lock-in amplifier to realize both resistive and capacitive impedance me
         \label{fig:lockin}
 \end{figure}
 
-As the previous method, it treats nanowire as a complexed one-dimensional element. The nanowire is modeled as a parallel aligned resistor and a capacitor.
-The system supplies a sinusoidal voltage signal to one end of the element.
-Another end of the element is grounded virtually by a transimpedance amplifier (TIA).
-The TIA then converts the current variance into voltage output which contains complex impedance information.
+As the previous method, it treats nanowire as a one-dimensional device with complex impedance.
+The nanowire is modelled as a resistor and a capacitor in parallel connection.
+The system applies a sinusoidal voltage signal to one end of the device.
+Another end of the device is virtually grounded by a transimpedance amplifier (TIA).
+The TIA then converts the current variance into a voltage output which depends on the complex impedance of the nanowire.
 The resistance is in the real part while the capacitance is in the virtual part.
 \setlength{\mathindent}{5.5cm}
 \begin{align}
@@ -203,23 +203,23 @@ The BP removes high-order harmonic interferences.
 Then the signal is demodulated.
 The resistive and capacitive impedance values are resolved through two channels: I and Q with their phase different by 90 degrees.
 A mixer which is a linear multiplier performs the demodulation.
-With a radio frequency (RF) input and the input local oscillator (LO) input, it produce an output signal that consists of signals with frequencies $f_{RF} + f_{LO}$ and $f_{RF} - f_{LO}$.
-Incidentally, the signal is immune from the perturbation of low-frequency noise which is a common problem for the biosensor.
+With a radio frequency (RF) input and a local oscillator (LO) input, it produce an output signal that consists of signals with frequencies $f_{RF} + f_{LO}$ and $f_{RF} - f_{LO}$.
+Incidentally, the signal is immune to the perturbation of low-frequency noise which is a common problem for the biosensor.
 
 \subsection{Comparison and Conclusion} \label{sec:ch2CC}
-We compare Method 1 (Sec.2.2.1) and Method 2 (Sec.2.2.2) here.
+We compare the Method 1 (Sec.2.2.1) and Method 2 (Sec.2.2.2) here.
 Both of them focus on detecting the $R_{NW}$ difference.
 According to the comparison table below (\ref{tb:LVtable}), we can see the resistor measurement range of Method 1 is different from Method 2 by a large extent.
-This may because the bias current of nanowire that caprovided by the circuits are different.
+This is because the biasing current of nanowires that the circuits provide are limited differently.
 The current in Method 1 is limited by the pmos(I charge) and the leakage current.
 In Method 2, it is limited by the TIA.
 Our method adopts this TIA block and will discuss this problem in section.\ref{sec:Ibias}.
 
-Method 2 perform well when it comes to noise suppression.
-In fact, the circuit in Method 1 doesn't provide noise reduction ability.
+Method 2 performs well when it comes to noise suppression.
+In fact, the circuit in Method 1 does not provide noise reduction ability.
 The particular structure it uses (The article \cite{Juv1} mentioned it as M4N approach) is the one responsible for that.
 
-Method 1 has a lower power consumption. However, it doesn't include the power of microcontroller and may underestimate.
+Method 1 has lower power consumption. However, it does not include the power of microcontroller and may be underestimated.
 
 \begin{table}[!htb]
     {\fontfamily{}\fontsize{10}{14}\selectfont
@@ -251,10 +251,10 @@ Method 1 has a lower power consumption. However, it doesn't include the power of
 In our project, capacitance measurement is not our object.
 But we still need to consider the parasitic capacitor effect in our circuit design.
 Method 1 converts the resistance information into time (frequency) information.
-If one want to avoid the effect of the parasitic capacitor, he should apply a $C_{int}$ that is much larger than $C_{NW}$.
+If one wants to avoid the effect of the parasitic capacitor, he should apply a $C_{int}$ that is much larger than $C_{NW}$.
 However, it is not practical in integrated design because the chip size is limited.
 
-Method 2 uses a TIA to measure resistance and capacitance together first and then resolve the complex value.
+Method 2 uses a TIA to measure resistance and capacitance together first and then resolves the complex value.
 We can write the complex impedance value as:
 \begin{align}
       \frac{R_{NW}}{1 + i2\pi f R_{NW} C_{NW}} \label{eq:comlex}
@@ -265,7 +265,7 @@ The simplification can be applied when the signal frequency or $C_{NW} R_{NW}$ i
 Thus, one needs to select the appropriate signal frequency or to determine the $R_{NW}$ detecting range.
 
 Another reason that makes Method 2 more attractive is that it is more flexible.
-One can add other analog blocks such as noise filter or amplifier to it.
+One can add other analog blocks such as a noise filter or an amplifier to it.
 
 Overall, Method 1 has the advantage in detecting range and accuracy while Method 2 has better noise suppression and flexibility.
 
@@ -274,20 +274,19 @@ Overall, Method 1 has the advantage in detecting range and accuracy while Method
 \section{Two assumption for Dealing with Disparity Problem} \label{sec:assumpDiscuss}
 In chapter 1, to deal with disparity problem, we assume that:
 \begin{enumerate}
-    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and independent on $V_{GS}$.
-    \item The concentration difference of biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
+    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and is independent of $V_{GS}$.
+    \item The changing of the biomolecule concentration can be viewed as a voltage signal input to the gate end of a transistor.
 \end{enumerate}
 We discuss them in this section.
 
 \subsection{Transconductance and $I_D$} \label{section:IdGm}
 With the MOSFET model of weak and strong inversion, we have the $I_D$ equations of MOSFET:
 \setlength{\mathindent}{1.5cm}
-
 \begin{align}
-    \text{weak inversion:} \quad I_D   = & I_0e^{\kappa V_{GS}/\phi_t}(1 - e^{-V_{DS}/\phi_t})\\  \label{eq:Ikappa}
+    \text{weak inversion:} \quad I_D   = & I_0e^{\kappa V_{GS}/\phi_t}(1 - e^{-V_{DS}/\phi_t})  \label{eq:Ikappa} \\
                                        = & I_0e^{\kappa V_{GS}/\phi_t} \quad \text{where $V_{DS} > 4 \phi_t$ } \\
     \text{strong inversion:} \quad I_D = & \mu C_{ox} \frac{W}{L}((V_{GS} - V_{th})V_{DS} - \frac{V_{DS}^2}{2}) \\
-                                       = & \mu C_{ox} \frac{W}{L}(V_{GS} - V_{th})^2 \quad \text{where $V_{DS} > V_{GS} - V_{th}$} \label{eq:ID_Strong}
+                                       = \mu C_{ox} \frac{W}{L}(V_{GS} - V_{th})^2 &\quad \text{where $V_{DS} > V_{GS} - V_{th}$} \label{eq:ID_Strong}
 \end{align}
 
 $C_{ox}$ is the oxide capacitance and $\mu$ is the electron mobility.
@@ -296,45 +295,44 @@ $W$ and $L$ are the width and length of the transistor.
 $\phi_t$ is the thermal voltage depending on temperature.
 The $\kappa$ is the gate coupling coefficient.
 It will be discuss in the next paragraph.
-To be noted that we ignore the short channel effect, which doesn't effect our discussion since we always keep $V_{DS}$ constant.
+To be noted that we ignore the short channel effect, which does not effect our discussion since we always keep $V_{DS}$ constant.
 
 We then derive $g_m$:
 \begin{align}
-    \text{weak inversion:} \quad g_m & = \frac{\kappa I_D}{\phi_t}\\ \label{eq:gm_weak}
-    \text{strong inversion:} \quad g_m & = \sqrt{2 \mu C_{ox} (\frac{W}{L})I_{D}} \\ \label{eq:gm_strong}
+    \text{weak inversion:} \quad g_m & = \frac{\kappa I_D}{\phi_t} \label{eq:gm_weak} \\
+    \text{strong inversion:} \quad g_m & = \sqrt{2 \mu C_{ox} (\frac{W}{L})I_{D}} \label{eq:gm_strong}
 \end{align}
 
 For the strong inversion, the Eq.(\ref{eq:gm_strong}) shows that the assumption 1 is correct.
 However, the assumption is not completely right for transistor in weak inversion.
-According to the Eq.(\ref{eq:gm_weak}), the $g_m$ is effect not only by $I_D$ but also by the $\kappa$.
-It is a non-linear parameter effected by $V_G$ and other factors.
-Its value is range from 0.4 to 0.9.
+According to the Eq.(\ref{eq:gm_weak}), the $g_m$ is affected not only by $I_D$ but also by $\kappa$.
+It is a non-linear parameter affected by $V_G$ and other factors.
+Its value ranges from 0.4 to 0.9.
 In our circuit, this problem is currently left unsolved.
 We present its effect in chapter 6.
 
 
-\subsection{A Simple Model for Concentration Affect}
+\subsection{A Simple Model for Concentration Effect}
 In \cite{DN17}, the team plot the $I_D$-$V_G$ curves and study how the curve changes with the concentration of biomolecules.
-We observe that in the plot (Fig.\ref{fig:DN17Fig6d}) with a log scale for the y-axis, curves with different concentration exhibit a same rising trend when $I_D$ is low (< 100nA).
-Each curve seems to be different with the other by a constant fold.
+We observe that in the plot (Fig.\ref{fig:DN17Fig6d}) with a log scale for the y-axis, curves with different concentrations exhibit the same rising trend when $I_D$ is low (< 100nA).
+Each curve seems to be different from each other by a constant shift.
 By applying the weak inversion current equation of MOSFET, we found that the assumption can explain this concentration effect.
 
 \begin{align}
-    & I_D1 = I_{0} e^{\kappa(V_{GS} - V_{th}) / \phi_t} \\
-    & I_D2 = I_{0} e^{\kappa(V_{GS} - (V_{th} - v_c)) / \phi_t} \\
-    \rightarrow & I_D2 = f(v_c) \times I_D1 \quad \text{where} \quad f(\Delta v_g) = e^{v_c / \phi_t} \label{eq:vc}
+    & I_{D1} = I_{0} e^{\kappa(V_{GS} - V_{th}) / \phi_t} \\
+    & I_{D2} = I_{0} e^{\kappa(V_{GS} - (V_{th} - v_c)) / \phi_t} \\
+    \rightarrow & I_{D2} = f(v_c) \times I_{D1} \quad \text{where} \quad f(\Delta v_g) = e^{v_c / \phi_t} \label{eq:vc}
 \end{align}
 
-The $I_D1$ and $I_D2$ are the current of two nanowire elements placed in solutions of different concentration.
+The $I_{D1}$ and $I_{D2}$ are the current of two nanowire devices immersed in solutions with different concentrations.
 The ($v_c$) is a concentration related variable we create.
 The Eq.(\ref{eq:vc}) implies that when nanowire is in weak inversion region, its $\log I_D$ difference is independent of $V_g$.
 \begin{align}
-    \log I_D2 - \log I_D1 = \log \frac{I_D2}{I_D1} = \log f(v_c) = v_c / \phi_t
+    \log I_{D2} - \log I_{D1} = \log \frac{I_{D2}}{I_{D1}} = \log f(v_c) = v_c / \phi_t
 \end{align}
 
-As for strong inversion region which refer to the large current section in Fig.\ref{fig:DN17Fig6d}, the difference of the curves diminish as $V_G$ increasing.
-The strong inversion equation Eq.(\ref{eq:ID_Strong}) shows that if $V_{GS}$ is far larger then $v_c$, the concentration effect can be ignored.
-
+As for the strong inversion region corresponding to the large current segments in Fig.\ref{fig:DN17Fig6d}, the difference among the curves diminish as $V_G$ increases.
+This is reasonable when $V_{GS}$ is far larger than $v_c$ and the concentration effect becomes ignorable.
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=8cm]{images/chapter2/DN18Fig3D.png}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  3 FEB 2017 19:29
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  3 FEB 2017 23:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -953,11 +953,7 @@ File: ppxetex.def 2015/05/11 v0.4x Pdfpages driver for XeTeX (AM)
 Package: placeins 2005/04/18  v 2.2
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
-) (./main.aux
-
-LaTeX Warning: Label `fig:Nblockvg' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -1199,11 +1195,6 @@ Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [12]
-Overfull \hbox (33.2079pt too wide) in paragraph at lines 291--291
-[] 
- []
-
-
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1596,15 +1587,12 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 20640 strings out of 493706
- 415479 string characters out of 6145770
- 448969 words of memory out of 5000000
- 23692 multiletter control sequences out of 15000+600000
+ 20641 strings out of 493706
+ 415493 string characters out of 6145770
+ 448942 words of memory out of 5000000
+ 23693 multiletter control sequences out of 15000+600000
  10521 words of font info for 74 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  52i,18n,69p,10463b,426s stack positions out of 5000i,500n,10000p,200000b,80000s

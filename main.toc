@@ -13,8 +13,8 @@
 \contentsline {subsection}{\numberline {2.2.2}Complex Impedance Solving}{10}
 \contentsline {subsection}{\numberline {2.2.3}Comparison and Conclusion}{12}
 \contentsline {section}{\numberline {2.3}Two assumption for Dealing with Disparity Problem}{13}
-\contentsline {subsection}{\numberline {2.3.1}Transconductance and $I_D$}{13}
-\contentsline {subsection}{\numberline {2.3.2}A Simple Model for Concentration Affect}{14}
+\contentsline {subsection}{\numberline {2.3.1}Transconductance and $I_D$}{14}
+\contentsline {subsection}{\numberline {2.3.2}A Simple Model for Concentration Effect}{14}
 \contentsline {chapter}{\numberline {3}Nanowire Structure and Measurement}{16}
 \contentsline {section}{\numberline {3.1}Brief Description of Nanowire Structure}{16}
 \contentsline {section}{\numberline {3.2}Biology Experiment}{17}
