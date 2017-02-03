@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  20 DEC 2016 13:12
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  3 FEB 2017 19:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1187,19 +1187,19 @@ Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [11]
-LaTeX Font Info:    Try loading font information for EU1+ on input line 222.
-LaTeX Font Info:    No file EU1.fd. on input line 222.
+LaTeX Font Info:    Try loading font information for EU1+ on input line 225.
+LaTeX Font Info:    No file EU1.fd. on input line 225.
 
 
 LaTeX Font Warning: Font shape `EU1//m/n' undefined
-(Font)              using `EU1/lmr/m/n' instead on input line 222.
+(Font)              using `EU1/lmr/m/n' instead on input line 225.
 
 
 Overfull \vbox (8.58pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [12]
-Overfull \hbox (33.2079pt too wide) in paragraph at lines 288--288
+Overfull \hbox (33.2079pt too wide) in paragraph at lines 291--291
 [] 
  []
 
@@ -1602,8 +1602,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  20640 strings out of 493706
- 415478 string characters out of 6145770
- 448943 words of memory out of 5000000
+ 415479 string characters out of 6145770
+ 448969 words of memory out of 5000000
  23692 multiletter control sequences out of 15000+600000
  10521 words of font info for 74 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191

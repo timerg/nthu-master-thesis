@@ -1,10 +1,10 @@
 \chapter{Literature Review \& Theory Description}
 As previously mentioned in the introduction section, the read-out circuit we proposed has two operation mode (DC and AC).
 The DC Sweep mode control the drain current ($I_D$) of nanowire while the Transient Sweep mode is for current variance measurement.
-Each of them references different sources.
+Each of them refers to different sources.
 In section 2.1, we first talk about the reason why we perform $I_D$-$V_G$ sweep.
-Then we review the reference of our DC Sweep mode circuit design.
-The references of the Transient Sweep mode circuit design is in section 2.2.
+Then we review the literature related to our DC Sweep mode circuit design.
+The literature related to the Transient Sweep mode circuit design is in section 2.2.
 In the last section, we discuss the two assumptions mentioned in section 1.2.
 
 \section{DC Sweep: $I_D$-$V_G$ Curves}
@@ -12,10 +12,15 @@ In this section, we review the knowledge and an article that is related to our d
 
 \subsection{$I_D$-$V_G$ and Transconductance}
 A common method for examining nanowire electrical properties is to perform DC sweep.
-Among all kinds of sweep method, we choose the $I_D$-$V_G$ in respect of the physical characteristic.
-In the n-type transistor, the binding of negatively charged biomolecules induces surface-near silicon ions discharged and thus lower the threshold voltage.
-It is straightforward to think of these binding molecules as a voltage signal input to the gate with its value depends on the concentration.
-And this voltage signal effect nanowire in the same way $V_G$ does.
+Among different sweeping methods, we choose the $I_D$-$V_G$ in respect of the physical characteristic.
+The reason can be described by correlating our nanowire device with the n-type transistor.
+(The S/D of our nanowire device are n-doping.)
+For the n-type transistor, the threshold voltage is lowered when the substrate voltage becomes more positive.
+The lower substrate voltage results in the larger $I_D$.
+{\color{red}For the nanowire device, the substrate is the gate.}
+When negatively charged biomolecules bind on the gate of nanowire, they decrease the surface potential.
+Therefore, it is straightforward to think of these binding molecules as a voltage signal input to the gate with its value dependent on the concentration.
+Moreover, this voltage signal affect the nanowire device in the same way as $V_G$ does.
 So by plotting $I_D$-$V_G$  curves, we can have a thumbnail of how concentration affects the $I_D$.
 
 
@@ -37,19 +42,15 @@ The transfer function can be derived as:
                            & \approx 1 \qquad \text{ for } \quad r_{ds}g_m >> 1
 \end{align}
 $g_m$ is the transconductance ($\frac{\partial I_d}{\partial V_{gs}}$) and $r_{ds}$ is the drain-to-source resistance.
-Although we haven't seen the structure be applied to nanowire, there have been several applications in the read-out circuits of ISFET (Ion-sensitive Field-effect Transistor)\cite{SF1, SF2} for a long time.
+Although we haven't seen the structure being applied to the nanowire, there have been several applications in the read-out circuits of ISFET (Ion-sensitive Field-effect Transistor)\cite{SF1, SF2} for a long time.
 
-
-
-The read-out circuit in \cite{SF1} applied ISFET as a biological transducer that converts detected bio-signal into the electrical signal, which resembles our nanowire biosensor.
-Its adopt source follower structure as its  analog front-end.
-The bio-signal induced voltage difference at the ISFET gate-end is converted to the source-end.
-This structure requires a biasing current source which may have to be stable, noiseless or wide-range on demand.
-Since the bias current is usually under micro-scale even nano-scale, it is impractical to use an external current source merely.
-The article used two resistors and an op-amp to design a current scale down circuit.
-Bias current decreases in proportional to the resistance ratio (N) of one resistor to another.
-Moreover, by keeping Vds at a constant value (0.5v), the circuit also removes the short channel effect.
-Below show the schematic where two op-amp based unit gain buffer are added to force the voltage at drain-end follows the source-end.
+The read-out circuit in \cite{SF1} employed ISFET as a biological transducer that converts detected bio-signals into electrical signals, which resembles our nanowire biosensor.
+It adopts the source follower structure as its analog front-end.
+The potential change induces by the biomolecules at the gate of ISFET is converted to the source.
+This structure requires a biasing current which needs to be stable, noiseless or wide-range on demand.
+Since the biasing current is usually under micro-scale or even nano-scale, it is impractical to use an external current source.
+The article \cite{SF1} used two resistors and an op-amp to design a current scale down circuit.
+As in Fig.\ref{fig:ISFET}, bias current decreases in proportional to the resistance ratio (N) as the current source circuit $I_B$.
 
 \begin{figure}[h]
     \centering
@@ -58,37 +59,39 @@ Below show the schematic where two op-amp based unit gain buffer are added to fo
     \caption{ISFET readout circuit in \cite{SF1}}
     \label{fig:ISFET}
 \end{figure}
+The circuit in Fig.\ref{fig:ISFET} also removes the short channel effect by keeping $V_{DS}$ at a constant value (0.5v).
+It adopts two op-amp based unit gain buffer to force the voltage at drain follows the source.
 
-An issue needed to be aware is the impedance matching between the element and the current source circuit.
-The output impedance of current source should be much larger than the input impedance of the biasing element.
-The equation for the output impedance of source follower is:
+Attention should be paid to the impedance matching between the nano-device and the current source circuit.
+The output impedance of current source should be much larger than the input impedance of the device.
+The output impedance of the ISFET as a source follower is:
 
 \begin{align}
     & \frac{r_{ds}}{1 + g_mr_{ds}}\\
 \intertext{This equation can be simplified as:}
     & \frac{1}{g_m} \qquad \text{ for } \quad g_mr_{ds} >> 1 \label{eq:rsf2}
 \end{align}
-The output impedance of the current source circuit is:
+The output impedance of the current source $I_B$ is:
 \begin{equation} \label{eq:rcs}
-    N\times R_s
+    N\times Z_{DS}
 \end{equation}
 
-$R_s$ is the impedance of the right-bottom current source in Fig.\ref{fig:ISFET}.
-In the integrated circuit, $R_s$ is not ideal but usually close to the $r_{ds}$ of a single MOSFET.
+$Z_{DS}$ is the impedance of the current source $I_{DS}$ in Fig.\ref{fig:ISFET}.
+In the integrated circuit, $Z_{DS}$ is non-ideal but usually close to the $r_{ds}$ of a single MOSFET.
 
-As mentioned, Eq.\ref{eq:rcs} should be far larger than Eq.\ref{eq:rsf2}.
-However, $g_m$ is proportional to $I_d$, which means Eq.\ref{eq:rsf2} is inversely proportional to N.
-When the bias current decreases, the output impedance decreases while the input impedance at the ISFET source-end increases.
-Therefore, there is a lower boundary of the bias current.
+As mentioned, Eq.(\ref{eq:rcs}) should be far larger than Eq.(\ref{eq:rsf2}).
+However, $g_m$ is proportional to $I_B$, which means Eq.(\ref{eq:rsf2}) is inversely proportional to N.
+When the biasing current decreases, the output impedance of $I_B$ decreases while the input impedance at the source of ISFET increases.
+This relationship determines the current.
 We observed this boundary when we construct this circuit with discrete elements.
 These will be presented and discussed in chapter 4.
 
 The source follower structure provides a direct signal transition method.
 It is a good candidate for the read-out circuit with the aim of detecting transconductance or threshold voltage variance.
-Nevertheless, post-processing such as amplification and filtering are necessary.
-The experiment results in the article are untreated.
-Strong signal attenuation exists, which are mainly caused by low-frequency noise and ISFET drift \cite{Drift}.
-The drift problem is dealt with through signal processing techniques while noise problems are left untreated.
+Nevertheless, post-processing such as amplification and filtering is necessary.
+The experiment results in \cite{SF1} are untreated.
+Significant signal attenuation exists, which is mainly caused by low-frequency noise and ISFET drift \cite{Drift}.
+The drift problem is dealt with by signal processing techniques while noise problems are left untreated.
 
 
 \section{Small Signal (AC) Measurement Method Review}  \label{sec:AC}
@@ -104,11 +107,11 @@ Parasitic capacitors and resistors can severely influence the results.
     \label{fig:SF_pC}
 \end{figure}
 
-As in figure \ref{fig:SF_pC} where the parasitic elements are included, we modified the transfer function Eq.\ref{eq:sfTF} as:
+As in figure \ref{fig:SF_pC} where the parasitic elements are included, we modified the transfer function Eq.(\ref{eq:sfTF}) as:
 \begin{align}
     \frac{V_{out}}{V_{in}} = \frac{r_{ds}(sC_{gs} + gm)}{1 + r_{ds}(gm + s(C_{gs}+C_s))}
 \end{align}
-The equation can be similar to Eq.\ref{eq:sfTF} which roughly equals to 1 as long as $C_s$ is far more smaller than $C_{gs}$.
+The equation can be similar to Eq.(\ref{eq:sfTF}) which roughly equals to 1 as long as $C_s$ is far more smaller than $C_{gs}$.
 Unfortunately, $C_s$ can be large for the output end of source follower usually connects to a next stage input or a pad.
 In that case, the parasitic capacitors may attenuate the signal.
 
@@ -256,7 +259,7 @@ We can write the complex impedance value as:
 \begin{align}
       \frac{R_{NW}}{1 + i2\pi f R_{NW} C_{NW}} \label{eq:comlex}
 \end{align}
-In Eq.\ref{eq:comlex}, $i$ is the imaginary unit and $f$ is the signal frequency.
+In Eq.(\ref{eq:comlex}), $i$ is the imaginary unit and $f$ is the signal frequency.
 The equation can be simplified as $R_{NW}$ when $i2\pi f R_{NW} C_{NW} < 0.1$.
 The simplification can be applied when the signal frequency or $C_{NW} R_{NW}$ is small enough.
 Thus, one needs to select the appropriate signal frequency or to determine the $R_{NW}$ detecting range.
@@ -301,9 +304,9 @@ We then derive $g_m$:
     \text{strong inversion:} \quad g_m & = \sqrt{2 \mu C_{ox} (\frac{W}{L})I_{D}} \\ \label{eq:gm_strong}
 \end{align}
 
-For the strong inversion, the Eq.\ref{eq:gm_strong} shows that the assumption 1 is correct.
+For the strong inversion, the Eq.(\ref{eq:gm_strong}) shows that the assumption 1 is correct.
 However, the assumption is not completely right for transistor in weak inversion.
-According to the Eq.\ref{eq:gm_weak}, the $g_m$ is effect not only by $I_D$ but also by the $\kappa$.
+According to the Eq.(\ref{eq:gm_weak}), the $g_m$ is effect not only by $I_D$ but also by the $\kappa$.
 It is a non-linear parameter effected by $V_G$ and other factors.
 Its value is range from 0.4 to 0.9.
 In our circuit, this problem is currently left unsolved.
@@ -324,13 +327,13 @@ By applying the weak inversion current equation of MOSFET, we found that the ass
 
 The $I_D1$ and $I_D2$ are the current of two nanowire elements placed in solutions of different concentration.
 The ($v_c$) is a concentration related variable we create.
-The Eq.\ref{eq:vc} implies that when nanowire is in weak inversion region, its $\log I_D$ difference is independent of $V_g$.
+The Eq.(\ref{eq:vc}) implies that when nanowire is in weak inversion region, its $\log I_D$ difference is independent of $V_g$.
 \begin{align}
     \log I_D2 - \log I_D1 = \log \frac{I_D2}{I_D1} = \log f(v_c) = v_c / \phi_t
 \end{align}
 
 As for strong inversion region which refer to the large current section in Fig.\ref{fig:DN17Fig6d}, the difference of the curves diminish as $V_G$ increasing.
-The strong inversion equation (Eq.\ref{eq:ID_Strong}) shows that if $V_{GS}$ is far larger then $v_c$, the concentration effect can be ignored.
+The strong inversion equation Eq.(\ref{eq:ID_Strong}) shows that if $V_{GS}$ is far larger then $v_c$, the concentration effect can be ignored.
 
 \begin{figure}[!htbp]
     \centering

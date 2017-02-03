@@ -1,21 +1,20 @@
 \chapter{Introduction}
 \section{Motivation}
-Poly-silicon nanowire(SiNW) is a well-studied and promising one-dimensional nanostructures.
-As reported by \cite{C25th}, there have been a lot of valuable research on fabrication and electrical properties.
-It was first introduced to the biosensor field in 2001\cite{C2001} and has become a promising candidate for various features such as high surface-to-volume ratio, ultra sensitivity, label-free electrical detection and real-time measurement.
+Poly-silicon nanowire(SiNW) is a well-studied and promising one-dimensional nanostructure.
+It was first introduced to the biosensor field in 2001\cite{C2001} and has become a potential candidate for various features such as high surface-to-volume ratio, ultra sensitivity, label-free electrical detection and real-time measurement.
 
-Although there have been substantial advances on nanowire structure design \cite{R1}, the work of systems-level engineering is still insufficient.
+Although there have been substantial advances on nanowire structure design \cite{R1}, the work on the systems-level engineering is still insufficient.
 Systems designed for a specific purpose can help the device to meet practical needs such as noise reduction, real-time measurement, and analog-to-digital conversion.
 Moreover, there are still several challenges that may be overcome through a better signal acquisition system \cite{R1}.
 
-One of the challenges is that the mass production of robust nanowire elements is still improbable.
-Element disparity may be the main reason among others.
+One of the challenges is that the mass production of robust nanowire device is still improbable.
+Device disparity may be the main reason among others.
 This problem also happens to the measurement of our nanowire (Fig.~\ref{fig:disparity}).
 The nanowire we use is made by Professor Yang's team (National Chiao Tong University).
-And according to them, the nanowire use thick gate dielectric and have non-regular cross-sectional shape, which results in uncertainties of fabrication \cite{C6}.
+And according to them, the nanowire uses thick gate dielectric and have non-regular cross-sectional shape, which results in the problem of fabrication uncertainty \cite{C6}.
 
 
-\section{Introduction}
+\section{Design Overview}
 In this project, we design a nanowire read-out circuit with two modes: DC Sweep mode and Transient Measurement mode.
 In the DC Sweep mode, one can use the circuit to perform a DC sweep of drain-to-source current ($I_D$) to show how the gate voltage ($V_G$) changes, or gives nanowire a constant $I_D$ and measures the $V_{G}$ response to different solution concentration.
 In the Transient Measurement mode, the circuit detects and amplifies the variance of ($I_D$) with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
@@ -28,27 +27,27 @@ The proposed method base on two assumptions:
     \item The concentration difference of biomolecule can be viewed as a voltage signal input to the gate end of a transistor.
 \end{enumerate}
 The first assumption implies one can control the nanowire transconductance by its $I_D$.
-The second assumption means that as long as different nanowire elements have a same transconductance, the output current induced by a concentration difference should be same.
+The second assumption means that as long as different nanowire elements have the same transconductance, the output current induced by a concentration difference should be same.
 
 The method works as follows:
 
 \paragraph*{Initial stage}
 At the beginning of each measurement event, we perform a DC sweep with the DC Sweep mode.
-By handling the sweep results with numerical method, we keep all nanowire elements under a selected transconductance by controlling their $I_D$ and corresponded $V_G$.
+By analyzing the sweep results with numerical method, we keep all nanowire devices under a selected transconductance by controlling their $I_D$ and corresponding $V_G$.
 
 \paragraph*{Measurement stage}
-We put the circuit in the Transient Measurement mode at this stage.
-Since the transconductance of all elements is same, they should behave uniformly based on assumption 2.
+We bias the circuit in the Transient Measurement mode at this stage.
+Since the transconductance of all devices are same, they should behave uniformly based on assumption 2.
 At the end of the stage, we return to the DC Sweep mode to reset $I_D$ of the elements.
 The circuit adjusts their $V_G$ to do so.
 
-At the beginning of each measurement stage, an element always has a same $I_D$ but different $V_G$.
+At the beginning of each measurement stage, a device always has the same $I_D$ but different $V_G$.
 Based on assumption 1, its transconductance is kept constant.
 
 
-The minutiae are reviewed in chapter 5.
+The other details are reviewed in chapter 5.
 Currently, most operations are manual.
-We hope to make them automatic in the future, which may require digital circuit assistance.
+We hope to make them automatic in the future, which may require digital circuits.
 
 \section{Design Flow and Chapter Layout}
 In this thesis, there are six chapters sorted according to the design flow.
