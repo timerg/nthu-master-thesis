@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  3 FEB 2017 23:12
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  5 FEB 2017 13:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1230,10 +1230,30 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 <use  "images/nthu-logo.pdf" > [16
 
 ]
-File: images/chapter3/128_allT_mag.png Graphic file (type QTm)
- <use  "images/chapter3/128_allT_mag.png" >
-File: images/chapter3/128_allT_error.png Graphic file (type QTm)
- <use  "images/chapter3/128_allT_error.png" >
+Invalid UTF-8 byte or sequence at line 69 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 69 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 69 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 69 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 69 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 69 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 69 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 69 replaced by U+FFFD.
+File: images/chapter3/128_allT_mag.eps Graphic file (type eps)
+ <images/chapter3/128_allT_mag.eps>
+Underfull \hbox (badness 1789) in paragraph at lines 73--73
+[]\EU1/lmr/bx/n/12 Figure 3.3: |\EU1/lmr/m/n/12 Concentration-dependent $\OML/cmm/m/it/12 I[]$\EU1/lmr/m/n/12 -$\OML/cmm/m/it/12 V[]$ \EU1/lmr/m/n/12 curves with concentration of
+ []
+
+Invalid UTF-8 byte or sequence at line 85 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 85 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 85 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 85 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 85 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 85 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 85 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 85 replaced by U+FFFD.
+File: images/chapter3/128_allT_error.eps Graphic file (type eps)
+<images/chapter3/128_allT_error.eps>
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1285,13 +1305,22 @@ Overfull \hbox (76.82399pt too wide) in paragraph at lines 155--157
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+Invalid UTF-8 byte or sequence at line 170 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 170 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 170 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 170 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 170 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 170 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 170 replaced by U+FFFD.
+File: images/chapter3/Id_Dev_bio.eps Graphic file (type eps)
+<images/chapter3/Id_Dev_bio.eps>
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [20]
-File: images/chapter3/Id_Dev_bio.png Graphic file (type QTm)
- <use  "images/chapter3/Id_Dev_bio.png" >
+Overfull \vbox (1.33456pt too high) has occurred while \output is active []
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1321,24 +1350,21 @@ Overfull \hbox (68.29079pt too wide) in paragraph at lines 71--231
  [][] 
  []
 
-File: images/pIdVg.png Graphic file (type QTm)
-<use  "images/pIdVg.png" >
-File: images/pIdgbs.png Graphic file (type QTm)
- <use  "images/pIdgbs.png" >
-File: images/pIdgbs_Vd.png Graphic file (type QTm)
- <use  "images/pIdgbs_Vd.png" >
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [23]
+File: images/pIdVg.png Graphic file (type QTm)
+ <use  "images/pIdVg.png" >
+File: images/pIdgbs.png Graphic file (type QTm)
+ <use  "images/pIdgbs.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [24]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [25]
+File: images/pIdgbs_Vd.png Graphic file (type QTm)
+ <use  "images/pIdgbs_Vd.png" >
 File: images/chapter3/rds_I.png Graphic file (type QTm)
  <use  "images/chapter3/rds_I.png" >
 File: images/pDisparity.png Graphic file (type QTm)
@@ -1346,11 +1372,15 @@ File: images/pDisparity.png Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [26]
+ <use  "images/nthu-logo.pdf" > [25]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [27]) (./data/chap4.tex
+ <use  "images/nthu-logo.pdf" > [26]) (./data/chap4.tex
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [27]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1360,26 +1390,47 @@ File: images/../images/chapter4/SFdiscrete_old.png Graphic file (type QTm)
 <use  "images/../images/chapter4/SFdiscrete_old.png" >
 File: images/../images/chapter4/SFdiscrete_schematic.png Graphic file (type QTm)
  <use  "images/../images/chapter4/SFdiscrete_schematic.png" >
+Overfull \hbox (1.7767pt too wide) in paragraph at lines 24--25
+\EU1/lmr/m/n/12 The circuit is divided into two sections: the constant-voltage circuit and the constant-
+ []
+
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [29
+<use  "images/nthu-logo.pdf" > [29
 
 ]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [30]
-File: images/chapter4/SF.png Graphic file (type QTm)
- <use  "images/chapter4/SF.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [31]
-File: images/../images/chapter4/SF_impedance.png Graphic file (type QTm)
- <use  "images/../images/chapter4/SF_impedance.png" >) (./data/chap5.tex
+Invalid UTF-8 byte or sequence at line 70 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 70 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 70 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 70 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 70 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 70 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 70 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 70 replaced by U+FFFD.
+File: images/chapter4/SF.eps Graphic file (type eps)
+ <images/chapter4/SF.eps>
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [32]
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 95 replaced by U+FFFD.
+File: images/../images/chapter4/SF_impedance.eps Graphic file (type eps)
+ <images/../images/chapter4/SF_impedance.eps>) (./data/chap5.tex
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1484,18 +1535,22 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [46]
 File: images/chapter5/mirror.PNG Graphic file (type QTm)
  <use  "images/chapter5/mirror.PNG" >
-File: images/chapter5/Second.png Graphic file (type QTm)
- <use  "images/chapter5/Second.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [47]
+File: images/chapter5/Second.png Graphic file (type QTm)
+ <use  "images/chapter5/Second.png" >
 File: images/../images/chapter5/Subtractor.png Graphic file (type QTm)
  <use  "images/../images/chapter5/Subtractor.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [48]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [49]
 File: images/chapter5/postSim/subtractor_5_xx.PNG Graphic file (type QTm)
  <use  "images/chapter5/postSim/subtractor_5_xx.PNG" >
 File: images/chapter5/postSim/subtractor_5_zz.PNG Graphic file (type QTm)
@@ -1505,21 +1560,17 @@ File: images/chapter5/ResAmp.png Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [49]
+ <use  "images/nthu-logo.pdf" > [50]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [50]
+ <use  "images/nthu-logo.pdf" > [51]
 File: images/chapter5/postSim/ResAmp_1.PNG Graphic file (type QTm)
  <use  "images/chapter5/postSim/ResAmp_1.PNG" >
 File: images/chapter5/postSim/ResAmp_10.PNG Graphic file (type QTm)
  <use  "images/chapter5/postSim/ResAmp_10.PNG" >
 File: images/chapter5/postSim/ResAmp_100.PNG Graphic file (type QTm)
  <use  "images/chapter5/postSim/ResAmp_100.PNG" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [51]
 Overfull \hbox (1.3515pt too wide) in paragraph at lines 608--619
  [][] 
  []
@@ -1529,6 +1580,10 @@ Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [52]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [53]
 File: images/chapter5/NWROC_block_vg.png Graphic file (type QTm)
  <use  "images/chapter5/NWROC_block_vg.png" >
 File: images/../images/chapter5/postSim/totalGain.PNG Graphic file (type QTm)
@@ -1538,13 +1593,13 @@ File: images/../images/chapter5/postSim/noise.png Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [53]
+ <use  "images/nthu-logo.pdf" > [54]
 File: images/chapter5/NWROC_block_vs.png Graphic file (type QTm)
  <use  "images/chapter5/NWROC_block_vs.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [54]
+ <use  "images/nthu-logo.pdf" > [55]
 File: images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG Graphic file (type QTm)
  <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG" >
 File: images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG Graphic file (type QTm)
@@ -1556,32 +1611,32 @@ File: images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [55]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
-File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [56]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [57]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [58]
 Chapter 6.
 )
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [58
+ <use  "images/nthu-logo.pdf" > [59
 
 ] (./main.bbl
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [59
+ <use  "images/nthu-logo.pdf" > [60
 
 
 ]) (./data/acknowledgement.tex
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [60])
+ <use  "images/nthu-logo.pdf" > [61])
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [61
+ <use  "images/nthu-logo.pdf" > [62
 
 ] (./main.aux)
 
@@ -1589,12 +1644,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 20641 strings out of 493706
- 415493 string characters out of 6145770
- 448942 words of memory out of 5000000
- 23693 multiletter control sequences out of 15000+600000
- 10521 words of font info for 74 fonts, out of 8000000 for 9000
+ 20638 strings out of 493706
+ 415396 string characters out of 6145770
+ 448946 words of memory out of 5000000
+ 23692 multiletter control sequences out of 15000+600000
+ 10513 words of font info for 73 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  52i,18n,69p,10463b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (72 pages).
+Output written on main.pdf (73 pages).

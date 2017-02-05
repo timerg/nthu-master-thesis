@@ -65,8 +65,8 @@ We thus assert that the element of (b) can't detect the concentration difference
 The noise is stronger than the signal (The signal means the $I_D$ difference caused by the concentration difference).
 The element of (a) can do so if it is biased at gate voltage larger than 1.4v or drain current larger than 1E-11.
 
-\begin{figure}[!htb]
-        \includegraphics[width=1\textwidth]{images/chapter3/128_allT_mag.png}
+\begin{figure}[!htbp]
+        \includegraphics[width=1\textwidth]{images/chapter3/128_allT_mag.eps}
     \caption{Concentration-dependent $I_D$-$V_G$ curves with concentration of Na\_PB(Buffer solution only), 100aM, 10pM, 1pM.
     Since the biomolecule is negative-charged, the lower the concentration is, the higher the curve is.
     To be noticed, the 10fM curve is closer to the curve of 1pM than 100aM.
@@ -82,7 +82,7 @@ It is worth noting that there is more space between 100aM and 10fM than the spac
 And the noise rate: ${SD} / {Mean}$ is independent of concentration (Fig.\ref{fig:SD_allT2}).
 Hence we say that the ``resolution'' for detecting concentration ranging from 100aM to 10fM may be better than the that ranging from 10fM to 1pM.
 \begin{figure}[!htbp]
-        \includegraphics[width=1\textwidth]{images/chapter3/128_allT_error.png}
+    \includegraphics[width=1\textwidth]{images/chapter3/128_allT_error.eps}
     \caption{The noise rate of Fig.\ref{fig:SD_allT}. The noise rate is obtained by dividing SD by Mean.}
     \label{fig:SD_allT2}
 \end{figure}
@@ -160,14 +160,14 @@ We therefore suggest that in this section nanowire should has the largest concen
     \caption{}
     \label{fig:SD_Device}
 \end{figure}
-\FloatBarrier
+% \FloatBarrier
 
 \subsection{$g_m$-$I_D$ Plot} \label{section:disparityBio}
 We plot the $g_m$-$I_D$ curve with the data in Fig.\ref{fig:SD_allT}.
 It clearly proves our two assumptions for dealing the disparity problem, which we have discussed in section.\ref{sec:assumpDiscuss}.
 
 \begin{figure}[htb]
-        \includegraphics[width=1\textwidth]{images/chapter3/Id_Dev_bio.png}
+    \includegraphics[width=1\textwidth]{images/chapter3/Id_Dev_bio.eps}
     \caption{The $g_m$-$I_D$ curve obtained by the $I_D$-$V_G$ curve in Fig.\ref{fig:SD_allT}. The curves start splitting after $I_D$ > 1$\mu$A where the element may enter into strong inversion region.}
     \label{fig:gmId}
 \end{figure}
