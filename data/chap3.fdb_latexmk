@@ -1,16 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1479199843 "chap3.tex" "chap3.pdf" "chap3" 1479199843
+["pdflatex"] 1486544691 "chap3.tex" "chap3.pdf" "chap3" 1486544693
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
-  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/avantgar/pagd7t.tfm" 1136768653 2492 c3c1cdcee2dde7695628464fd5bab43c ""
-  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/avantgar/pagk7t.tfm" 1136768653 2676 c20dcd567e2e4f4440ff29ff94d2f867 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
-  "/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pag.fd" 1137110629 1198 5c4323b7f5663c36f6bf0c9dc1c979c0 ""
   "/usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf" 1428852030 31983 18aeec08f48baa3cf3508d538dd5f459 ""
   "/usr/local/texlive/2015/texmf-var/web2c/xetex/xelatex.fmt" 1462692603 3445943 19b128c32713cc6ee877e8432432055a ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
   "chap3.aux" 1462714680 8 a94a2480d3289e625eea47cd1b285758 ""
-  "chap3.tex" 1479199843 9585 354413e7f418076bd8c1b9cc334508b4 ""
-  "images/drawing.pdf_tex" 0 -1 0 ""
+  "chap3.tex" 1486544662 18080 f2b8d19d301ce2a50392c92bdab46263 ""
   (generated)
-  "chap3.pdf"
   "chap3.log"
+  "chap3.pdf"

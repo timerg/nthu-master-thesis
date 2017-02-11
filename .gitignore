@@ -15,4 +15,10 @@ Makefile
 main.synctex.gz
 *.bbl
 *.lof
-
+main.toc
+main.synctex.gz
+main.log
+main.lof
+main.fls
+main.fdb_latexmk
+main.aux

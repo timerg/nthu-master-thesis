@@ -1,0 +1,81 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'pDisparity.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{320bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.5)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{pDisparity.pdf}}%
+    \put(0.20450325,0.04612){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.2374515,0.06325249){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.25150999,0.06325249){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{7}}}%
+    \put(0.42034752,0.04612){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.4532975,0.06325249){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.467355,0.06325249){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.63619251,0.04612){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.66914253,0.06325249){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.6832,0.06325249){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.85203751,0.04612){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.88498749,0.06325249){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.89904503,0.06325249){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.0563845,0.19343){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.08933275,0.21056){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.103392,0.21056){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.0563845,0.33437851){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.08933275,0.35151){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.103392,0.35151){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.0563845,0.47532773){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.08933275,0.49245923){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{-}}}%
+    \put(0.103392,0.49245923){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.55846748,0.00599998){\color[rgb]{0,0,0.17647059}\makebox(0,0)[b]{\smash{Id(A)}}}%
+    \put(0.036,0.29282875){\color[rgb]{0,0,0.17647059}\rotatebox{90}{\makebox(0,0)[b]{\smash{Derivative(Id)}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{pDisparity.pdf}}%
+    \put(0.83888252,0.4189075){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{Nw.2-7}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{pDisparity.pdf}}%
+    \put(0.83888252,0.3811075){\color[rgb]{0,0,0.17647059}\makebox(0,0)[lb]{\smash{Nw.2-8}}}%
+  \end{picture}%
+\endgroup%

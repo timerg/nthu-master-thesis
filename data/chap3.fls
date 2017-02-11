@@ -6,8 +6,3 @@ INPUT chap3.tex
 OUTPUT chap3.log
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pag.fd
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pag.fd
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/avantgar/pagk7t.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/avantgar/pagd7t.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/avantgar/pagd7t.tfm

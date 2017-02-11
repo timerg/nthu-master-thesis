@@ -2,32 +2,31 @@
 This chapter presents the design of the read-out circuit and the post-simulation results.
 
 
-\section{First Stage Circuit Design}
-The review of the source follower in section.\ref{section:SF} suggests the constant current method for the circuit of DC Sweep mode.
+\section{Fronted Circuit Design}
+The review of the source follower in section.\ref{section:SF} suggests the constant current method for the circuit of DC-Sweep mode.
 The data analysis from chapter 3 supports it by the linear relation between $I_D$ and $g_m$.
-However, the section.\ref{sec:AC} shows that source follower is not suitable for AC measurement.
-It alternatively recommends the circuit in Fig.\ref{fig:lockin} which measures the transient current signal and converts it into the voltage output.
+However, section.\ref{sec:AC} shows that source follower is not suitable for transient measurement.
+It alternatively recommends the circuit in Fig.\ref{fig:lockin} which measures the transient current signal and converts it into a voltage output.
 
-The first stage circuit combined these two methods into one circuit structure with two modes available: the DC Sweep mode and the Transient Measurement mode.
+The fronted circuit combined these two methods into one circuit structure with two modes available: the DC-Sweep mode and the Transient Measurement mode.
 
-\subsection{DC Sweep mode}
+\subsection{The DC-Sweep mode}
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.4\textwidth] {images/chapter5/DCMode.png}
-    \caption{}
+    \caption{The fronted circuit operated in DC-Sweep mode.}
     \label{fig:DCmode}
 \end{figure}
-Fig.\ref{fig:DCmode} is the first stage circuit operated in the DC Sweep mode.
-The switch turns the circuit into DC Sweep mode by connecting with the gate of nanowire.
+Fig.\ref{fig:DCmode} is the fronted circuit operated in the DC-Sweep mode.
+The switch turns the circuit into the DC-Sweep mode by connecting the output of OP with the gate of nanowire.
 
-As in the source follower, our circuit contains a bias current source (Ibias) for controlling the $I_D$.
+As in the source follower, our circuit contains a biasing current source (Ibias) for controlling the $I_D$.
 The difference is that the Ibias inputs the current into drain instead of source.
-In addition to this, we apply the TIA from section.\ref{sec:AC} (\cite{Jlockin}).
-Its output connects to a rail-to-rail OP amplifier and forms a negative feedback loop.
-When $I_D$ is less than the current of Ibias, the output voltage of TIA falls and the gate voltage $V_G$ rises to increase $I_D$.
-On the contrary, output voltage of TIA rises and the gate voltage ($V_G$) drops if the current of Ibias is smaller than $I_D$.
-Finally, the feedback mechanism forces $I_D$ be equal to the current of Ibias by adjusting $V_G$.
-
+In addition, we employs the transimpedance amplifier (TIA) from section.\ref{sec:AC} (\cite{Jlockin}).
+Its output is connected to a rail-to-rail OP amplifier to form a negative feedback loop.
+When $I_D$ is less than Ibias, the output voltage of TIA falls and the gate voltage $V_G$ rises to increase $I_D$.
+On the contrary, output voltage of TIA rises and the gate voltage ($V_G$) drops if Ibias is smaller than $I_D$.
+Finally, the feedback mechanism forces $I_D$ to be the same as Ibias by adjusting $V_G$ automatically.
 
 
 \subsection{Transient Measurement mode} \label{sec:TrM}
@@ -45,47 +44,47 @@ Finally, the feedback mechanism forces $I_D$ be equal to the current of Ibias by
         \raggedleft
         (b)
     \end{minipage}
-    \caption{}
+    \caption{Two usage ((a), (b)) of the fronted circuit operatd in transient measurement mode.}
     \label{fig:ACmode}
 \end{figure}
 
-In Fig.\ref{fig:ACmode}(a), the switch turns to a simple voltage source (Vg) that provides the gate of nanowire constant voltage bias.
+In Fig.\ref{fig:ACmode}(a), the switch turns to a simple voltage source (Vg) that provides a constant gate voltage.
 The feedback OP is nonfunctional in this mode.
-When performing measurement, we directly find how the biomolecule concentration changes the output voltage ($V_{out}$).
-This output voltage will be input into the second stage circuit which is for the amplification.
+When performing measurement, we directly find how the output voltage ($V_{out}$) changes with the biomolecule concentration.
+This output voltage will be sent into a second stage circuit for further amplification.
 
 \paragraph*{Another Usage of Transient Measurement mode}
-There is another method to perform measurement with Transient Measurement mode, which resembles the measurement in \cite{Jlockin}.
-This method measures the $g_m$ of nanowire.
-As in Fig.\ref{fig:ACmode}(b), a sine wave signal with an amplitude of $v_s$ is input to the source end of nanowire.
-The output response ($V_{out}$) is a sine wave of the same frequency with its amplitude equals to $v_sg_m \times R_{TIA}$.
+There is another method to perform measurement with the Transient Measurement mode, which resembles the measurement in \cite{Jlockin}.
+This method measures the $g_m$ of the nanowire.
+As shown in Fig.\ref{fig:ACmode}(b), a sinusoidal signal with an amplitude of $v_s$ is sent to the source of the nanowire.
+The output response ($V_{out}$) is a sinusoidal signal at the same frequency with an amplitude equaling to $v_sg_m \times R_{TIA}$.
 The values of Ibias and Vg can be arbitrary.
-But one need to be aware that their values should not cause the saturation of the output of TIA or the second stage circuit.
+But one need to be aware that their values should not cause the output of TIA or the second-stage circuit to saturate.
 
 \subsection{Dealing with the Disparity Problem}
-As mentioned in chapter 1, we combine DC Sweep mode and Transient Measurement mode to perform a disparity-resisting measurement.
+As mentioned in chapter 1, we combine the DC-Sweep mode and Transient Measurement mode to perform a disparity-resisting measurement.
 
 \paragraph*{Method Procedure}
-Assuming there are two nanowire elements and the disparity problem exists between them.
-Initially, we use these element to perform the $I_D$-$V_G$ sweep in the DC Sweep mode.
-We use the sweep results to find the $g_m$ of each element. ($g_m = \frac{\partial I_D}{\partial V_G}$)
-When we turns to the Transient Measurement mode, we control these two elements under a same selected $g_m$ by setting the Ibias and Vg to the corresponding values.
-After we add the measuring solutions, a same voltage differences at the output ($V_{out}$) should be detected because they have the same $g_m$.
-Before the next measuring solutions is added, we return to DC Sweep mode again.
-This is for finding the new bias $V_G$ values to reset their $I_D$ to be same with Ibias.
-This implies that every times when we apply the Transient Measurement mode to the elements, they always have the same $I_D$ and $g_m$ as the initial one.
+Assuming there are two nanowire devices and the disparity problem exists between them.
+Initially, we use these element to perform the $I_D$-$V_G$ sweep in the DC-Sweep mode.
+We use the DC-Sweep results to find the $g_m$ of each device. ($g_m = \frac{\partial I_D}{\partial V_G}$)
+When we turns to the Transient Measurement mode, we bias these two devices under the same $g_m$ by setting Ibias and Vg correspondingly.
+After the buffer solutions, the same voltage difference at the output ($V_{out}$) should be detected because the two devices have the same $g_m$.
+Before a new solution is added, we return to the DC-Sweep mode again.
+This is for finding the new biasing $V_G$ to reset their $I_D$ to be the same as Ibias.
+This implies that every time when we enter the Transient Measurement mode, the devices always have the same $I_D$ and $g_m$ as those in the beginning of experiments.
 
 
 \subsection{Design Description}
 In this section, we first talk about the TIA block and focus on how we improve the detecting limits of this block.
 It is followed by the design of the TIA circuit.
-Then we analyze the feedback mechanism of the DC Sweep mode circuit and its input impedance.
+Then we analyze the feedback mechanism of the DC-Sweep mode and the input impedance of the circuit.
 After that, we discuss the stability issue.
 Finally, we show the design of the feedback OP block.
 
 \subsubsection{Strategies for lowering current detecting limits} \label{sec:Ibias}
-In section.\ref{sec:ch2CC} about the TIA subcircuit as Fig.\ref{fig:TIA_old}(a), we mentioned that the detecting range of $R_{NW}$ is limited by the $I_{NW}$ provided by TIA.
-We now discuss the causes of the upper and lower limits, and show the strategies we use against them.
+The TIA subcircuit in section.\ref{sec:ch2CC} is shown as Fig.\ref{fig:TIA_old}(a), we mentioned that the detecting range of $R_{NW}$ is limited by $I_{NW}$ provided by the TIA.
+We now discuss the causes of the upper and lower limits, and show the strategies we use to improve them.
 
 \begin{figure}[!htbp]
     \centering
@@ -109,7 +108,7 @@ In Fig.\ref{fig:TIA_old}(b), the TIA output voltage is:
     V_{TIA} = V_{Ref} + I_{NW}R_{TIA} + \Delta iR_{TIA}
     \label{eq:TIA_old}
 \end{equation}
-Two reasons which result in the lower limit of the detecting range relate to a large offset current $I_{NW}$.
+Two reasons relate to a large offset current $I_{NW}$.
 One is that the output current provided by the TIA is restricted by design.
 The other is that the restriction of the current flowing through the resistor $R_{TIA}$:
 \begin{align}
@@ -117,13 +116,13 @@ The other is that the restriction of the current flowing through the resistor $R
 \end{align}
 Both reasons lead to the output saturation of TIA.
 
-A naive way to handle the first one is to increase the output current which TIA can provide.
-The side effects of this method are the increases in power consumption and chip area.
-As for the second one, using smaller $R_{TIA}$ can ease the restriction on $I_{NW}$.
-Unfortunately, this is unpreferable because it reduces the current-to-voltage ratio of TIA.
+A naive way to handle the first one is to increase the maximum output current the TIA can provide.
+The disadvantage of this method is the increase in power consumption and chip area.
+As for the second one, using smaller $R_{TIA}$ can release the restriction on $I_{NW}$.
+Unfortunately, this is unpreferable because it reduces the current-to-voltage gain of the TIA.
 
-Our strategy for decreasing the lower limit is to utilize the bias current source (Ibias) of nanowire.
-As in Fig.\ref{fig:TIA}, the Eq.\ref{eq:TIA_old} is transformed into:
+Our strategy for decreasing the lower limit is to utilize the biasing current source (Ibias) of nanowire.
+As shown in Fig.\ref{fig:TIA}, Eq.(\ref{eq:TIA_old}) is transformed into:
 \begin{equation}
     V_{TIA} = V_{Ref} + (I_{NW} - I_{bias}) R_{TIA} + \Delta iR_{TIA}
     \label{eq:TIA}
@@ -131,7 +130,7 @@ As in Fig.\ref{fig:TIA}, the Eq.\ref{eq:TIA_old} is transformed into:
 Now we can diminish the large $I_{NW}$ by Ibias.
 
 In conclusion, the large offset current causes the saturation of the output of TIA.
-We use the biasing current source to diminish that offset current, hence increases the detecting range.
+We use the biasing current source to diminish that offset current, so as to increase the detection range.
 
 \begin{figure}[!htbp]
     \centering
@@ -140,15 +139,15 @@ We use the biasing current source to diminish that offset current, hence increas
     \label{fig:TIA}
 \end{figure}
 \paragraph*{Upper Limit:}
-The upper limit issues from the output resolution.
-When the input current signal $\Delta i$ in fig.\ref{fig:TIA} is too small, the output response may be defeated by the noise.
-This may be solved by raising up the SNR through a larger $R_{TIA}$.
+The upper limit depends on the output resolution.
+When the input current signal $\Delta i$ in Fig.\ref{fig:TIA} is too small, the output response may be defeated by the noise.
+This may be solved by increasing the SNR through a larger $R_{TIA}$.
 However, the chip area constrains the size of resistors.
-In our circuit design, we cannot make this resistance value out of $100k\Omega$.
+In our circuit design, it is hard to make a wide linear range resistor with resistance value out of $100k\Omega$.
 Furthermore, even if the resistor can be greater, one need to concern for the noise brought by the large resistance.
 
-Our strategy is to boost the SNR of TIA by designing its input MOSFETs in a large area.
-We also amplify the output signal through the second stage circuit.
+Our strategy is to boost the SNR of TIA by designing its input MOSFETs with a large area.
+We also amplify the output signal through the second-stage circuit.
 
 \subsubsection{TIA (Transimpedance Amplifier) Design}
 
@@ -168,22 +167,13 @@ We also amplify the output signal through the second stage circuit.
     \caption{(a)The transimpedance block and the (b) schematic}
     \label{fig:TIA_sch}
 \end{figure}
-Fig.\ref{fig:TIA_sch} is the circuit of our Transimpedance Amplifier circuit.
-We implement the operational amplifier in TIA with the two-stage differential pair single output structure.
-This structure prevails other structure such as folded cascode or single stage OP because:
+Fig.\ref{fig:TIA_sch} shows the Transimpedance Amplifier circuit.
+We implement the operational amplifier in TIA with the two-stage, differential-pair structure.
+This simple structure has merits such as large output current and wide output voltage range.
 
-\paragraph*{1. Larger output current tolerance}
-As we mentioned in the last section, one of the methods to decrease the lower limit is to increase the output current that TIA can provide.
-We use large size pmos and nmos at the output stage of OP.
-This allows the OP can tolerate a larger output current.
-Moreover, separation between the output stage and the input stage minimizes the effect of the substantial current variance on the OP gain.
-
-\paragraph*{2. Rail-to-Rail Output}
-The dynamic range of Vout limits the maximum of the input current.
-The structure can provide the greatest output dynamic range among others.
-
-The Fig.\ref{fig:TIA_postSim_dc} and Fig.\ref{fig:TIA_postSim_ac} show the dc and ac post-simulation of the TIA.
-The table.\ref{tb:TIAsim} is the summation of the simulation result.
+Fig.\ref{fig:TIA_postSim_dc} and Fig.\ref{fig:TIA_postSim_ac} show the dc and ac post-simulation of the TIA.
+Table.\ref{tb:TIAsim} summarises the simulation result.
+{\color{red}not done yet!!!}
 \begin{table}[!htb]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
@@ -201,7 +191,7 @@ The table.\ref{tb:TIAsim} is the summation of the simulation result.
 \begin{figure}[!htbp]
     \centering
         \includegraphics[width=1\textwidth] {images/chapter5/postSim/TIA_dc.png}
-    \caption{The dc simulation results of TIA. The x-axis represents positive/negative input current (log scale). \textbf{(a)} is the $V_{out}$ responsing to the positive input current while \textbf{(c)} is to the negative input current.
+    \caption{The dc simulation results of TIA. The x-axis represents positive/negative input current (log scale). \textbf{(a)} is the $V_{out}$ responding to the positive input current while \textbf{(c)} is to the negative input current.
                     \textbf{(b)} and \textbf{(d)} are the derivative of $V_{out}$ of input current ($\frac{\partial V_{out}}{\partial {I_{in}}}$) from \textbf{(a)} and \textbf{(c)} respectively.}
     \label{fig:TIA_postSim_dc}
 \end{figure}
@@ -212,15 +202,13 @@ The table.\ref{tb:TIAsim} is the summation of the simulation result.
     \label{fig:TIA_postSim_ac}
 \end{figure}
 
-\FloatBarrier
-
 \subsubsection{Feedback Mechanism} \label{sec:feedM}
-The DC Sweep mode circuit forms a negative feedback loop.
+The DC-Sweep mode circuit forms a negative feedback loop.
 Fig.\ref{fig:feedblock} is the block diagram of the circuit.
 \begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.7\textwidth] {../images/chapter5/feedbackBlock.png}
-    \caption{Block diagram of the DC Sweep mode. The $Iin$ refers to the Ibias and $Vout$ refers to the output voltage of OP, which is also the gate voltage of nanowire (Fig.\ref{fig:DCmode}). The $gm(I_D)$ is the transconductance of nanowire whose values depends on $I_D$.}
+    \caption{Block diagram of the DC-Sweep mode. The $Iin$ refers to the Ibias and $Vout$ refers to the output voltage of OP, which is also the gate voltage of nanowire (Fig.\ref{fig:DCmode}). The $gm(I_D)$ is the transconductance of nanowire whose values depends on $I_D$.}
     \label{fig:feedblock}
 \end{figure}
 
@@ -228,26 +216,27 @@ From the block diagram, we can compute the loop gain ($LG$) and the transfer fun
 \begin{align}
     R_A &= R_{TIA} \times A_{OP} \\
     LG &=  R_A \times g_m \\
-    TF &= \frac{V_{out}}{I_{in}} =  \frac{R_A}{1 + LG} \\
+    TF &= \frac{V_{out}}{I_{in}} =  \frac{R_A}{1 + LG} \label{eq:TF}\\
     &\approx \frac{1}{gm} \quad \text{If LG $\geq$ 100}
 \end{align}
-The transfer function suggests that if we want to obtained a $I_D$-$V_G$ sweeping results with the error less than \%1, our loop gain should be greater than 100.
+The transfer function suggests that if we want to obtain an $I_D$-$V_G$ sweeping curve with an error less than \%1, our loop gain should be greater than 100.
 According to chapter 3, the spec for $g_m$ detection ranges from $200n$ to $20u$.
-This implies that the $A_{OP}$ should be at least greater than 5k.
-We will show that the ultimate $A_{OP}$ is 10k in the next section.
+This implies that $A_{OP}$ should be at least greater than 5k.
+We will show in the next section that the $A_{OP}$ in the post-simulation is 10k.
 
-The post-simulation result is presented in Fig.\ref{fig:sim:TF}.
+{\color{red}Fig.\ref{fig:sim:TF} is the post-simulation result of the circuit.
+A simple mosfet substituted for nanowire device during the simulation.
+The $g_m$ of the mosfet is kept at values of $20\mu$, $2.02\mu$ and $226n$ to model the $g_m$ range of nanowire.}
 We performed AC analysis by sending a small current signal to $I_{in}$ and detected the AC response of $V_{out}$.
-Meanwhile the $g_m$ of nanowire is kept at certain values.
 Afterwards, we compared the $g_m$ values with the $\frac{I_{in}}{V_{out}}$.
-The comparison are summarized in table.\ref{tb:sim:TF}.
+The comparison are summarized in Table.\ref{tb:sim:TF}.
 
 
 
 \begin{figure}[!htb]
     \centering
         \includegraphics[width=1\textwidth] {images/chapter5/postSim/feedbackMechanism.PNG}
-    \caption{The simulation results of $\frac{\Delta v_{out}}{i_{in}}$}
+    \caption{The simulation results of $\frac{V_{out}}{I_{in}}$}
     \label{fig:sim:TF}
 \end{figure}
 
@@ -268,8 +257,8 @@ The comparison are summarized in table.\ref{tb:sim:TF}.
     }
 \end{table}
 
-\subsubsection{Input Impedance (DC Sweep mode)}
-From chapter 4, we have discussed the impedance matching between current source and nanowire element.
+\subsubsection{Input Impedance (DC-Sweep mode)}
+In chapter 4, we have discussed the impedance matching between the current source and the nanowire device.
 Here we compute the input impedance of the circuit.
 
 \begin{figure}[!htbp]
@@ -291,7 +280,7 @@ The $A_{TIA}$ is the gain of the opAmp in TIA block.
 The $A_{OP}$ is the gain of the feedback OP.
 The $r_ds$ is the drain-to-source resistance of nanowire, which is larger than $100k\Omega$.
 
-The Eq.\ref{eq:input_imp} can be rewritten into:
+The Eq.(\ref{eq:input_imp}) can be rewritten into:
 \begin{equation}
     \frac{Z_{in}}{1 + LG}
 \end{equation}
@@ -305,7 +294,7 @@ It is obvious that the input impedance is much smaller than the $r_{ds}$.
 The result tells that the impedance matching is fine.
 
 \subsubsection{Stability and Feedback OP Design} \label{sec:stabilityandOP}
-To decide the structure of the feedback OP, we must discuss the stability of the feedback loop in the DC Sweep mode.
+To decide the structure of the feedback OP, we must discuss the stability of the feedback loop in the DC-Sweep mode.
 The OP plays a crucial role in the stability issue because it not only decides the loop gain but also contains the dominant pole at its output.
 
 \begin{figure}[!htbp]
@@ -322,7 +311,7 @@ We can write the loop gain as:
     & w_z = \frac{g_m}{C_{gd}}
 \end{align}
 The parasitic capacitance $C_{gd}$, at the conservative estimate, has a maximum value of $1pF$ (The estimation is based on the fabrication information from \cite{DN17} and \cite{C6}).
-And because the lower bound of $g_m$ in our design spec (table.\ref{tb:DCspec}) is $200n$, the $w_z$ can be as small as 20k.
+And because the lower bound of $g_m$ in our design spec (Table.\ref{tb:DCspec}) is $200n$, the $w_z$ can be as small as 20k.
 To force the total loop gain to drop to 1 before $s > 2k$, we have to move the first dominant pole left.
 
 We choose the $w_{p1}$ as the first dominant pole.
@@ -366,7 +355,7 @@ This capacitance results in a lower slew rate, which is fine because the circuit
     }
 \end{table}
 
-\subsection{The Post-simulation Result of the DC Sweep mode circuit}
+\subsection{The Post-simulation Result of the DC-Sweep mode circuit}
 
 \subsubsection{DC Current (Ibias) Sweep}
 We swept the Current of Ibias and measured the output voltage of the feedback OP which is also the $V_G$.
@@ -395,7 +384,7 @@ We also appended a $1pF$ capacitance to model the $C_{gd}$.
 \begin{figure}[!htbp]
     \centering
         \includegraphics[width=1\textwidth] {images/chapter5/postSim/stability_1p_fs.PNG}
-    \caption{Results of the ac simulation of the loop gain and phase (Bode plot) with different $g_m$ value ($200n$, $2u$, $20u$). These $g_m$ value is selected according to the DC Sweep mode spec we set in chapter 3 (section.\ref{sec:spec3}).}
+    \caption{Results of the ac simulation of the loop gain and phase (Bode plot) with different $g_m$ value ($200n$, $2u$, $20u$). These $g_m$ value is selected according to the DC-Sweep mode spec we set in chapter 3 (section.\ref{sec:spec3}).}
     \label{fig:sim:loopsim}
 \end{figure}
 
@@ -410,12 +399,12 @@ We also appended a $1pF$ capacitance to model the $C_{gd}$.
         \hline
         Phase Margin & 80(deg) & 78(deg) & 81 (deg) \\
     \end{tabular}
-    \caption{The phase margin and loop gain of the first stage circuit}
+    \caption{The phase margin and loop gain of the fronted circuit}
     \label{tb:1staACsim}
     }
 \end{table}
 
-The table.\ref{tb:DCcompare} is for comparing the design spec and the simulation result.
+Table.\ref{tb:DCcompare} is for comparing the design spec and the simulation result.
 To be noted that the upper limit of $I_D$ and $g_m$ of our circuit is unclear because they depends on two factors.
 One is the gate voltage.
 Tbale.\ref{tb:OPsim} shows that the maximal gate voltage that the Feedback OP can provides is $2.6V$.
@@ -442,7 +431,7 @@ This current mirror structure has a maximum output current of $70\mu A$.
         \hline
         $g_m$ & $200n$ - $20\mu$ & $> 130n$ \\
     \end{tabular}
-    \caption{The comparison between the design spec and simulation result of the DC Sweep mode circuit.}
+    \caption{The comparison between the design spec and simulation result of the DC-Sweep mode circuit.}
     \label{tb:DCcompare}
     }
 \end{table}
@@ -561,7 +550,7 @@ When the subtractor sends a small signal $\Delta v$ into Vin, the output voltage
 \end{align}
 The $R_i$ can be  $110k\Omega$ or $9.2k\Omega$ ($10k\Omega||110k\Omega$).
 (When two switches is off, the circuit act like a unit-gain buffer.)
-Eq.\ref{eq:ResAmp} suggests that the $A_{Op2}$ should be larger than 1000 (60dB).
+Eq.(\ref{eq:ResAmp}) suggests that the $A_{Op2}$ should be larger than 1000 (60dB).
 Thus, the Op2 in Fig.\ref{fig:ResAmp} adopts the structure of two-stage differential pair (same with the operational amplifier in TIA block) due to its high gain and wide output dynamic range (rail-to-rail).
 
 One thing to note is that the derivation above views the $V_z$ as the virtual ground.
@@ -574,7 +563,7 @@ The $V_{Ref}$ is around $\pm 1V$ and is lower than $V_z$.
 
 Fig.\ref{fig:sim:ResAmp} presents the five corners post-simulation results of the amplifier.
 We swept the input and measured the output under three amplification rate.
-And table.\ref{tb:sim:ResAmp} is the summary table.
+And Table.\ref{tb:sim:ResAmp} is the summary table.
 
 \begin{figure}[!htbp]
     \begin{minipage}[t]{1\textwidth}
@@ -638,7 +627,7 @@ There simulation results are presented sperately below.
 
 The first usage is to detect the output response of input voltage signal at gate.
 The voltage signal is caused by the the biomolecule concentration.
-This measurement are usually preceded by the DC Sweep mode, which initialize the $I_D$ with the value of Ibias and set $g_m$ to a corresponding value.
+This measurement are usually preceded by the DC-Sweep mode, which initialize the $I_D$ with the value of Ibias and set $g_m$ to a corresponding value.
 Therefore, we replaced the transistor elements and Vg by a current signal Iin as in Fig.\ref{fig:Nblockvg}.
 And we apply an ac signal from Iin to perform the ac analysis.
 
@@ -665,7 +654,7 @@ The summary table (Table.\ref{tb:sim:vg}) computed the noise result by consideri
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
     \begin{tabular}{l|c|c}
-        & Design Spec (table.\ref{tb:ACSpec}) & Simulation Result \\
+        & Design Spec (Table.\ref{tb:ACSpec}) & Simulation Result \\
         \hline
         Amplification Rate (max)& $5E6$ & $1.03E7$\\
         \hline
@@ -684,13 +673,13 @@ The summary table (Table.\ref{tb:sim:vg}) computed the noise result by consideri
     \label{fig:Nblockvs}
 \end{figure}
 
-The second usage of the Transient Measurement mode circuit is to apply a sine wave voltage signal at the source of nanowire.
+The second usage of the Transient Measurement mode circuit is to apply a sinusoidal voltage signal at the source of nanowire.
 The Vg and Ibias are fixed at constant during the measurement.
 The output voltage is measured and used for computing the $g_m$ of the element.
 \begin{equation}
     g_m = frac{V_{out}}{v_s \times R_{TIA} \times A_{second}}
 \end{equation}
-The $v_s$ is the amplitude of the input sine wave.
+The $v_s$ is the amplitude of the input sinusoidal signal.
 And the $A_{second}$ is the amplification rate of the second stage circuit.
 
 One thing to be noted is the offset voltage of the output.
@@ -704,7 +693,7 @@ Since the output dynamic range of the resistor-based amplifier is from $0V$ to $
 
 Two simulation results presented below are the transient response of the output voltage when the $A_{amp}$ is 10 (Fig.\ref{fig:sim:sine10})and 100(Fig.\ref{fig:sim:sine100}).
 The $g_m$ of the transistor is swept in the same time.
-The input sine wave has frequency of $1k$Hz and amplitude of $20mV$.
+The input sinusoidal signal has frequency of $1k$Hz and amplitude of $20mV$.
 Their corresponding ac sweep is presented in Fig.\ref{fig:sim:sine10_ac} and Fig.\ref{fig:sim:sine100_ac}.
 This results show that the circuit bandwidth is about $10k$.
 
