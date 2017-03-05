@@ -3,7 +3,7 @@ In this chapter, we present the experiment data and some analysis which are the 
 The first section describes briefly the silicon nanowire in our experiments.
 The second section analyzes the data of the biology experiments.
 The third section presents the data of the electrical measurement.
-The last section provides the design spec based on the information given by the previous sections.
+The last section provides the design specification based on the information given by the previous sections.
 
 \section{Brief Description of Nanowire Structure}
 The nanowire we use is made by Prof.Yang's team (National Chiao Tong University)\cite{C5}.
@@ -44,13 +44,13 @@ We present an example below:
     \centering
     \begin{minipage}[t]{1\textwidth}
         \centering
-        \includegraphics[scale=0.35]{images/chapter3/208_devices/L2-8_log.eps}
+        \includegraphics[scale=0.4]{images/chapter3/208_devices/L2-8_log.eps}
         (a)
     \end{minipage}
     \vfill
     \begin{minipage}[t]{1\textwidth}
         \centering
-        \includegraphics[scale=0.35]{images/chapter3/208_devices/L2-10_log.eps}
+        \includegraphics[scale=0.4]{images/chapter3/208_devices/L2-10_log.eps}
         (b)
     \end{minipage}
     \caption{Concentration-dependent $I_D$-$V_G$ curves of two equivalent nanowire devices.
@@ -79,16 +79,16 @@ One can find that there is only a small separation between the curve for PBS buf
 Hence 100aM should be the limit of detection.
 
 It is worth noting that there is more significant difference between the curve for 100aM and 10fM than that between 10fM and 1pM.
-And the noise rate: ${SD} / {Mean}$ is independent of concentration (Fig.\ref{fig:SD_allT2}).
+Besides, Fig.\ref{fig:SD_allT2} shows that the normalized variation: ${SD} / {Mean}$ is independent of concentration.
 Hence, the analysis indicates that the ``resolution'' for detecting concentration ranging from 100aM to 10fM may be better than the that ranging from 10fM to 1pM.
 \begin{figure}[tb]
     \includegraphics[width=1\textwidth]{images/chapter3/128_allT_error.eps}
-    \caption{The noise rate of Fig.\ref{fig:SD_allT}. The noise rate is obtained by dividing SD by Mean.}
+    \caption{The normalized variation of Fig.\ref{fig:SD_allT}. The normalized variation is obtained by dividing SD by Mean.}
     \label{fig:SD_allT2}
 \end{figure}
 
 \subsection{Appropriate operation region} \label{section:biasVg}
-In \cite{C6}, the team found that ``the current change ($I_D$) induced by biomolecules was dependent on the applied gate voltage (VG)''.
+In \cite{C6}, the team found that the current change ($I_D$) induced by biomolecules was dependent on the applied gate voltage (VG).
 A device with a larger $I_D$ change means that the device is more sensitive to the concentration difference.
 Thus, the team tried to find a biasing gate voltage which concentration difference can induce more $I_D$ change.
 
@@ -98,10 +98,12 @@ And we take noise into consideration.
 The comprehensive method we proposed below proves that the nanowire should be operated in the weak inversion region adjacent to the transition region.
 
 Our method is that we choose the operation region with more ``noise tolerance''.
-The noise tolerance is defined as:
+The noise tolerance is defined as below:
 \setlength{\mathindent}{2cm}
 \begin{align}
-    noise \quad tolerance = \frac{I_{D1} - S{D1} - (I_{D2} + S{D2})}{I_{D2}}
+    \text{For} \quad & I_{D1} > I_{D2} \\
+    & \text{Noise Tolerance} = \frac{\text{Noiase Margin}}{I_{D2}} \\
+    & \text{Noise Margin} = (I_{D1} - S_{D1}) - (I_{D2} + S_{D2})
 \end{align}
 $I_D$ and $SD$ are the mean and standard deviation of several $I_D$-$V_G$ curves obtained in a same experimental condition.
 The larger the noise tolerance implies there is more space between two curves.
@@ -167,7 +169,7 @@ We therefore suggest that in this section nanowire should has better sensitivity
 
 \subsection{$g_m$-$I_D$ Plot} \label{section:disparityBio}
 We plot the $g_m$-$I_D$ curve for the data in Fig.\ref{fig:SD_allT}.
-The result in Fig.\ref{fig:gmId} clearly proves our two assumptions for dealing with the disparity problem, which we have discussed in section.\ref{sec:assumpDiscuss}.
+The result in Fig.\ref{fig:gmId} clearly proves our two assumptions for dealing with the device variability problem, which we have discussed in section.\ref{sec:assumpDiscuss}.
 
 \begin{figure}[htb]
     \includegraphics[width=1\textwidth]{images/chapter3/Id_Dev_bio.eps}
@@ -277,7 +279,7 @@ We also proved that the transconductance under this region is unaffected by $V_{
     \label{fig:Idgbs_Vd}
 \end{figure}
 
-\subsection{Drain-to-source impedance ($r_{ds}$)}
+\subsection{Drain-to-source impedance ($r_{ds}$)} \label{sec:ch3rds}
 In our circuit design, we keep $V_{DS}$ constant.
 According to the measurement data from Fig.\ref{fig:Idgbs_Vd}, $V_{DS}$ of 0.7V is enough to keep nanowire in saturation region for $V_G$ ranging from 0v to 3v.
 However, due to the fabrication variance, the value varies from 0.75v to 1v.
@@ -290,10 +292,11 @@ The way we obtained $r_{ds}$ is as follows:
 \end{enumerate}
 The result is presented in Fig.\ref{fig:rds}.
 It shows that the $r_{ds}$ is inversely proportional to $I_D$.
+Its value ranges from $40k \Omega$ to $30M \Omega$.
 This result becomes useful when we perform the analysis of impedance matching in chapter 5.
 
 
-\begin{figure}[!htbp]
+\begin{figure}[tbp]
     \centering
     \includegraphics[width=1\textwidth]{images/chapter3/rds_I.eps}
     \caption{$I_D$-$r_{ds}$ plot}
@@ -301,9 +304,11 @@ This result becomes useful when we perform the analysis of impedance matching in
 \end{figure}
 
 
-\subsection{Disparity Problem exists}
+\subsection{Device variability Problem exists}
 We measured two nanowire devices which lie on the same wafer and are immersed with the same testing PBS solution.
 Below, the $g_m$-$I_D$ plot (Fig.\ref{fig:disparity}) shows that even the environment is same, two devices exhibit different electrical responses.
+\emph{This problem causes issues such as non-uniform specification for measurement or bad quality assurance in a mass production.
+We try to diminish it by performing the variability-resisting measurement, which have been mentioned in chapter 1.}
 
 \begin{figure}[!htbp]
     \centering
@@ -311,14 +316,14 @@ Below, the $g_m$-$I_D$ plot (Fig.\ref{fig:disparity}) shows that even the enviro
     % \fontsize{5}{15}\selectfont
     % \input {images/chapter3/pDisparity.pdf}
     \includegraphics[width=1\textwidth] {images/chapter3/pDisparity.eps}
-    \caption{Disparity problem casue nanowire devices with same environment can exhibit different electrical responses.}
+    \caption{Device variability problem cause nanowire devices with same environment can exhibit different electrical responses.}
     \label{fig:disparity}
 \end{figure}
 
 
 \FloatBarrier
 
-\section{Conclusion and Design Spec} \label{sec:spec3}
+\section{Conclusion and Design Specification} \label{sec:spec3}
 
 Table.\ref{tb:NWcharacter} summarizes the electrical characteristics of our nanowire.
 \begin{table}[h!bp]
@@ -331,12 +336,12 @@ Table.\ref{tb:NWcharacter} summarizes the electrical characteristics of our nano
         weak inversion & $100n A$ - $10\mu A$ & $0 V$ - $2.5V$ & $200n $ - $20\mu$ & $50M\Omega$ - $200k\Omega$ \\
         strong inversion & $> 1\mu A$ & $> 2.2V$ & $20\mu$ - $30\mu$ & $< 200k\Omega $ \\
     \end{tabular}
-    \caption{Electrical characteristics. There are overlaps due to the device disparity}
+    \caption{Electrical characteristics. There are overlaps due to the device variability}
     \label{tb:NWcharacter}
     }
 \end{table}
 
-We hence decide the detecting spec for the DC Sweep mode as Table.\ref{tb:DCspec}.
+We hence decide the design specification for the DC-sweep mode as Table.\ref{tb:DCspec}.
 \begin{table}[!htbp]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
@@ -345,40 +350,50 @@ We hence decide the detecting spec for the DC Sweep mode as Table.\ref{tb:DCspec
         \hline
         $100n A$ - $30\mu A$ & $200n $ - $20\mu$ \\
     \end{tabular}
-    \caption{Detecting Spec for the DC Sweep mode}
+    \caption{Detecting specification for the DC-sweep mode}
     \label{tb:DCspec}
     }
 \end{table}
 
-As for the Transient Measurement mode, section.\ref{section:biasVg} suggests that the device should be operated in the weak inversion region adjacent to the strong inversion region.
-And Table.\ref{tb:CdV} indicates that the minimum voltage change ($\Delta V_G$) induced by concentration difference is $20mV$.
-To reach a better resolution, we require the input referred noise (referred to the gate) of our circuit to be less than 10\% of this value ($< 2mV$).
-We also require transimpedance for converting an input current to an output voltage to be $5M \Omega$.
-This is because the minimum $g_m$ is $200n$ and the minimum current difference is $4n A$ ($20mV \times 200n$).
-A transimpedance of $5M \Omega$ allows the output voltage to be larger than $20mV$.
+
+\emph{As for the Transient Measurement mode, section.\ref{section:biasVg} suggests that the device should be operated in the weak inversion region adjacent to the strong inversion region.
+And Table.\ref{tb:CdV} indicates that the voltage change ($\Delta V_G$) induced by concentration difference ranges from $20mV$ to $280mV$.
+These factors give result to the table of device characteristics for the transient measurement (Table.\ref{tb:ACinput}).}
+
+\emph{The design specification for the Transient Measurement mode is presented in Table.\ref{tb:ACSpec}.
+$\Delta I_D$ is the multiplication of $\Delta V_G$ and $g_m$ from Table.\ref{tb:ACinput}.
+The limitation of input referred noise (referred to the gate) is 10\% of the minimal $\Delta V_G$ ($< 2mV$) or 10\% of the minimal $\Delta I_D$ ($2n A$) .
+The transimpedance (input current to an output voltage) is $5M \Omega$.
+This is because the minimal $\Delta I_D$  is $20n A$ and a transimpedance of $5M \Omega$ allows the output voltage to be larger than $0.1 V$.
+The bandwidth is $1k$ Hz.
+The input signal $\Delta I_D$ is a very slow signal with the speed less than $10$ Hz.
+However, we implement a modulation method in chapter 5, which resembles the method adopted by \cite{JLockin}.
+The input signal is modulated to a higher frequency to avoid the low frequency noise.
+Thus, we determined that the bandwidth of the circuit should be at least $1k$ Hz.
+}
 
 \begin{table}[!htbp]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
     \begin{tabular}{c|c|c}
-        $I_D$ & $g_m$ & $\Delta V_G$ (min)\\
+        $I_D$ & $g_m$ & $\Delta V_G$ \\
         \hline
-        $600n A$ - $5\mu A$ & $1\mu $ - $10\mu$ & $20mV$\\
+        $600n A$ - $5\mu A$ & $1\mu $ - $10\mu$ & $20mV$ - $280mV$\\
     \end{tabular}
     \caption{The summation of the nanowire characteristics when applied with the Transient Measurement mode circuit}
     \label{tb:ACinput}
     }
 \end{table}
-The Spec for the Transient Measurement mode circuit is as in Table.\ref{tb:ACSpec}.
+
 \begin{table}[!htbp]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
     \begin{tabular}{c|c|c|c|c}
-        Input Current Range & Corresponding $g_m$ & Input referred Noise(V) & Transimpedance Gain (max) & Bandwidth\\
+        $\Delta I_D$&Input Referred Noise&Input Referred Noise&Transimpedance Gain (max)&Bandwidth\\
         \hline
-        $600n A$ - $5\mu A$ & $1\mu $ - $10\mu$  & $< 2m V$ & $5E6(\frac{V}{A})$ & 1k (Hz)\\
+        $20n A$ - $2.8\mu A$&$< 2m V$& $< 2n A$&$5E6(\frac{V}{A})$&$1k$ (Hz)\\
     \end{tabular}
-    \caption{Spec for the Transient Measurement mode circuit}
+    \caption{Specification for the Transient Measurement mode circuit}
     \label{tb:ACSpec}
     }
 \end{table}

@@ -1,9 +1,9 @@
 \chapter{Literature Review \& Theory Description}
 As previously mentioned in the introduction section, the read-out circuit we proposed has two operation mode (DC and AC).
-The DC Sweep mode control the drain current ($I_D$) of nanowire while the Transient Sweep mode is for current variance measurement.
+The DC-sweep mode control the drain current ($I_D$) of nanowire while the Transient Sweep mode is for current variance measurement.
 Each of them refers to different sources.
 In section 2.1, we first talk about the reason why we perform $I_D$-$V_G$ sweep.
-Then we review the literature related to our DC Sweep mode circuit design.
+Then we review the literature related to our DC-sweep mode circuit design.
 The literature related to the Transient Sweep mode circuit design is in section 2.2.
 In the last section, we discuss the two assumptions mentioned in section 1.2.
 
@@ -12,16 +12,10 @@ In this section, we review the knowledge and an article that is related to our d
 
 \subsection{$I_D$-$V_G$ and Transconductance}
 A common method for examining nanowire electrical properties is to perform DC sweep.
-Among different sweeping methods, we choose the $I_D$-$V_G$ in respect of the physical characteristic.
-The reason can be described by correlating our nanowire device with the n-type transistor.
-(The S/D of our nanowire device are n-doping.)
-For the n-type transistor, the threshold voltage is lowered when the substrate voltage becomes more positive.
-The lower substrate voltage results in the larger $I_D$.
-{\color{red}For the nanowire device, the substrate is the gate.}
-When negatively charged biomolecules bind on the gate of nanowire, they decrease the surface potential.
-Therefore, it is straightforward to think of these binding molecules as a voltage signal input to the gate with its value dependent on the concentration.
-Moreover, this voltage signal affect the nanowire device in the same way as $V_G$ does.
-So by plotting $I_D$-$V_G$  curves, we can have a thumbnail of how concentration affects the $I_D$.
+Among all kinds of sweep method, we choose the $I_D$-$V_G$ in respect of the physical characteristic.
+In the n-type transistor, the binding of negatively charged biomolecules induces surface-near silicon ions discharged and thus increase the threshold voltage.
+It is straightforward to think of these binding molecules as a voltage signal input to the gate with its value depends on the concentration.
+And this voltage signal effect nanowire in the same way $V_G$ does.So by plotting $I_D$-$V_G$  curves, we can have a thumbnail of how concentration affects the $I_D$.
 
 
 \subsection{Source Follower} \label{section:SF}
@@ -62,9 +56,9 @@ As in Fig.\ref{fig:ISFET}, bias current decreases in proportional to the resista
 The circuit in Fig.\ref{fig:ISFET} also removes the short channel effect by keeping $V_{DS}$ at a constant value (0.5v).
 It adopts two op-amp based unit gain buffer to force the voltage at drain follows the source.
 
-Attention should be paid to the impedance matching between the nano-device and the current source circuit.
-The output impedance of current source should be much larger than the input impedance of the device.
-The output impedance of the ISFET as a source follower is:
+Attention should be paid to the impedance matching between the device-under-test (DUT) and the current source circuit.
+The output impedance of current source should be much larger than the input impedance of the DUT.
+By using nanowire as the DUT, the input impedance of it is:
 
 \begin{align}
     & \frac{r_{ds}}{1 + g_mr_{ds}}\\
@@ -185,8 +179,8 @@ It uses a lock-in amplifier to realize both resistive and capacitive impedance m
         \label{fig:lockin}
 \end{figure}
 
-As the previous method, it treats nanowire as a one-dimensional device with complex impedance.
-The nanowire is modelled as a resistor and a capacitor in parallel connection.
+As the previous method, it treats nanowire as a device with complex impedance.
+The nanowire is modeled as a resistor and a capacitor in parallel connection.
 The system applies a sinusoidal voltage signal to one end of the device.
 Another end of the device is virtually grounded by a transimpedance amplifier (TIA).
 The TIA then converts the current variance into a voltage output which depends on the complex impedance of the nanowire.
@@ -217,7 +211,7 @@ Our method adopts this TIA block and will discuss this problem in section.\ref{s
 
 Method 2 performs well when it comes to noise suppression.
 In fact, the circuit in Method 1 does not provide noise reduction ability.
-The particular structure it uses (The article \cite{Juv1} mentioned it as M4N approach) is the one responsible for that.
+The particular structure it uses (The article \cite{Juv1} mentioned it as Micro-for-Nano (M4N) approach \cite{M4N}.) is the one responsible for that.
 
 Method 1 has lower power consumption. However, it does not include the power of microcontroller and may be underestimated.
 
@@ -255,14 +249,14 @@ If one wants to avoid the effect of the parasitic capacitor, he should apply a $
 However, it is not practical in integrated design because the chip size is limited.
 
 Method 2 uses a TIA to measure resistance and capacitance together first and then resolves the complex value.
-We can write the complex impedance value as:
+\emph{We can write the complex impedance value as:
 \begin{align}
       \frac{R_{NW}}{1 + i2\pi f R_{NW} C_{NW}} \label{eq:comlex}
 \end{align}
 In Eq.(\ref{eq:comlex}), $i$ is the imaginary unit and $f$ is the signal frequency.
 The equation can be simplified as $R_{NW}$ when $i2\pi f R_{NW} C_{NW} < 0.1$.
 The simplification can be applied when the signal frequency or $C_{NW} R_{NW}$ is small enough.
-Thus, one needs to select the appropriate signal frequency or to determine the $R_{NW}$ detecting range.
+Thus, one needs to select the appropriate signal frequency or to determine the $R_{NW}$ detecting range.}
 
 Another reason that makes Method 2 more attractive is that it is more flexible.
 One can add other analog blocks such as a noise filter or an amplifier to it.
