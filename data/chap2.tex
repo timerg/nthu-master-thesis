@@ -314,19 +314,19 @@ By applying the weak inversion current equation of MOSFET, we found that the ass
 
 \begin{align}
     & I_{D1} = I_{0} e^{\kappa(V_{GS} - V_{th}) / \phi_t} \\
-    & I_{D2} = I_{0} e^{\kappa(V_{GS} - (V_{th} - v_c)) / \phi_t} \\
-    \rightarrow & I_{D2} = f(v_c) \times I_{D1} \quad \text{where} \quad f(\Delta v_g) = e^{v_c / \phi_t} \label{eq:vc}
+    & I_{D2} = I_{0} e^{\kappa(V_{GS} - (V_{th} - \Delta v)) / \phi_t} \\
+    \rightarrow & I_{D2} = f(\Delta v) \times I_{D1} \quad \text{where} \quad f(\Delta v_g) = e^{\Delta v / \phi_t} \label{eq:vc}
 \end{align}
 
 The $I_{D1}$ and $I_{D2}$ are the current of two nanowire devices immersed in solutions with different concentrations.
-The ($v_c$) is a concentration related variable we create.
+The ($\Delta v$) is a concentration related variable we create.
 The Eq.(\ref{eq:vc}) implies that when nanowire is in weak inversion region, its $\log I_D$ difference is independent of $V_g$.
 \begin{align}
-    \log I_{D2} - \log I_{D1} = \log \frac{I_{D2}}{I_{D1}} = \log f(v_c) = v_c / \phi_t
+    \log I_{D2} - \log I_{D1} = \log \frac{I_{D2}}{I_{D1}} = \log f(\Delta v) = \Delta v / \phi_t
 \end{align}
 
 As for the strong inversion region corresponding to the large current segments in Fig.\ref{fig:DN17Fig6d}, the difference among the curves diminish as $V_G$ increases.
-This is reasonable when $V_{GS}$ is far larger than $v_c$ and the concentration effect becomes ignorable.
+This is reasonable when $V_{GS}$ is far larger than $\Delta v$ and the concentration effect becomes ignorable.
 
 We will further prove the two assumptions by the data of biology experiment in section.\ref{section:disparityBio}.
 

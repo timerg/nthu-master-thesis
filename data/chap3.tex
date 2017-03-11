@@ -389,9 +389,10 @@ Thus, we determined that the bandwidth of the circuit should be at least $1k$ Hz
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
     \begin{tabular}{c|c|c|c|c}
-        $\Delta I_D$&Input Referred Noise&Input Referred Noise&Transimpedance Gain (max)&Bandwidth\\
+        $\Delta I_D$&Input Referred Noise&Input Referred Noise&Transimpedance Gain &Bandwidth\\
+                   & (referred to $V_G$)& (referred to $I_D$)  & (max) & \\
         \hline
-        $20n A$ - $2.8\mu A$&$< 2m V$& $< 2n A$&$5E6(\frac{V}{A})$&$1k$ (Hz)\\
+        $20n A$ - $2.8\mu A$&$< 2m V$& $< 2n A$&$5E6(\frac{V}{A})$&$> 1k$ (Hz)\\
     \end{tabular}
     \caption{Specification for the Transient Measurement mode circuit}
     \label{tb:ACSpec}

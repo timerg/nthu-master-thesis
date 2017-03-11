@@ -174,15 +174,15 @@ This simple structure has merits such as large output current and wide output vo
 
 \begin{figure}[tbp]
     \centering
-        \includegraphics[width=1\textwidth] {images/chapter5/postSim/TIA_dc.png}
+        \includegraphics[width=0.9\textwidth] {images/chapter5/postSim/TIA_dc.jpg}
     \caption{The dc simulation results of TIA. The x-axis represents positive/negative input current (log scale). \textbf{(a)} is the $V_{out}$ responding to the positive input current while \textbf{(c)} is to the negative input current.
                     \textbf{(b)} and \textbf{(d)} are the derivative of $V_{out}$ of input current ($\frac{\partial V_{out}}{\partial {I_{in}}}$) from \textbf{(a)} and \textbf{(c)} respectively.}
     \label{fig:TIA_postSim_dc}
 \end{figure}
 \begin{figure}[tbp]
     \centering
-        \includegraphics[width=1\textwidth] {images/chapter5/postSim/TIA_ac.png}
-    \caption{The ac simulation results of TIA. The x-axis is the input signal frequency. \textbf{(a)} is the $V_{out}$ and \textbf{(b)} is the output-referred noise.}
+        \includegraphics[width=0.8\textwidth] {images/chapter5/postSim/TIA_ac.jpg}
+    \caption{The ac simulation results of TIA. The x-axis is the input signal frequency. \textbf{(a)} is the $V_{out}$ and \textbf{(b)} is the input-referred noise.}
     \label{fig:TIA_postSim_ac}
 \end{figure}
 
@@ -190,7 +190,7 @@ This simple structure has merits such as large output current and wide output vo
 \emph{Fig.\ref{fig:TIA_postSim_dc} and Fig.\ref{fig:TIA_postSim_ac} are the dc and ac post-simulation of the TIA.
 Fig.\ref{fig:TIA_postSim_dc} shows that the TIA has a constant transimpedance of $100k \Omega$ when the input current range is $6\mu A \sim -10\mu A$.
 Fig.\ref{fig:TIA_postSim_ac}(a) indicates that the bandwidth is $7M Hz$.
-Fig.\ref{fig:TIA_postSim_ac}(b) is the input referred noise.
+Fig.\ref{fig:TIA_postSim_ac}(b) is the input referred noise (referred to the gate of nanowire).
 In Table.\ref{tb:TIAsim}, these three parameters are compared with the specification given by Table.\ref{tb:ACSpec}.
 Other results such as biasing current, spec. of OP ... etc. are also provided in it.}
 
@@ -207,11 +207,12 @@ Other results such as biasing current, spec. of OP ... etc. are also provided in
         \hline
         \hline
         \multicolumn{3}{c}{Closed loop} \\
+        \hline
         & Post-simulation & Spec. from Table.\ref{tb:ACSpec} \\
         \hline
         Input Current range & from $6\mu A$ to $-10\mu A$ & $\pm$ $20n A$ - $2.8\mu A$\\
         \hline
-        Output Voltage range &$0.1V$ - $1.69V$ & - \\
+        Output Voltage range &$0.1V$ - $2.8V$ & - \\
         \hline
         Bandwidth &7M Hz & 1k Hz \\
         \hline
@@ -511,13 +512,13 @@ The circuit has an input dynamic range of $0.77V$ ($-0.57V \sim +0.2V$) while th
 \begin{figure}[!htbp]
     \centering
     \begin{minipage}[t]{1\textwidth}
-        \includegraphics[width=1\textwidth] {images/chapter5/postSim/subtractor_5_xx.PNG}
+        \includegraphics[width=0.9\textwidth] {images/chapter5/postSim/subtractor_5_xx.jpg}
         \raggedleft
         (a)
     \end{minipage}
     \vfill
     \begin{minipage}[t]{1\textwidth}
-        \includegraphics[width=1\textwidth] {images/chapter5/postSim/subtractor_5_zz.PNG}
+        \includegraphics[width=0.9\textwidth] {images/chapter5/postSim/subtractor_5_zz.jpg}
         \raggedleft
         (b)
     \end{minipage}
@@ -572,24 +573,28 @@ Fig.\ref{fig:sim:ResAmp} presents the five corners post-simulation results of th
 We swept the input and measured the output under three amplification gain.
 And Table.\ref{tb:sim:ResAmp} is the summary table.
 
+
 \begin{figure}[!htbp]
     \begin{minipage}[t]{1\textwidth}
         \centering
-        \includegraphics[width=0.8\textwidth] {images/chapter5/postSim/ResAmp_1.PNG}
+        \includegraphics[width=0.8\textwidth] {images/chapter5/postSim/ResAmp_1x.jpg}
         \raggedleft
         (a)
     \end{minipage}
-    \vfill
+    \hspace{8cm}
     \begin{minipage}[t]{1\textwidth}
         \centering
-        \includegraphics[width=0.8\textwidth] {images/chapter5/postSim/ResAmp_10.PNG}
+        \includegraphics[width=0.8\textwidth] {images/chapter5/postSim/ResAmp_10x.jpg}
         \raggedleft
         (b)
     \end{minipage}
-    \vfill
+    \caption*{}
+\end{figure}
+
+\begin{figure}[!htbp]
     \begin{minipage}[t]{1\textwidth}
         \centering
-        \includegraphics[width=0.8\textwidth] {images/chapter5/postSim/ResAmp_100.PNG}
+        \includegraphics[width=0.8\textwidth] {images/chapter5/postSim/ResAmp_100x.jpg}
         \raggedleft
         (c)
     \end{minipage}
@@ -606,7 +611,9 @@ And Table.\ref{tb:sim:ResAmp} is the summary table.
         \hline
         Error & < 7\% & < 0.7\% & < 0.02\% \\
         \hline
-        Bandwidth & $4k$ Hz & $24k$ Hz & $220k$ Hz\\
+        Bandwidth & $10.1k$ Hz & $24k$ Hz & $220k$ Hz\\
+        \hline
+        Phase Margin & $110$ degree & $110$ degree & $84$ degree \\
         \hline
         Input Dynamic Range & from $-9mV$ to $17mV$ & from $-0.11V$ to $0.14V$ & from $-0.5$ to $0.3V$\\
         \hline
@@ -621,7 +628,7 @@ And Table.\ref{tb:sim:ResAmp} is the summary table.
 
 \section{Post-simulation Result of the Transient Measurement mode}
 As mentioned in section.\ref{sec:TrM}, there are two usage of the Transient Measurement mode (Fig.\ref{fig:ACmode}).
-There simulation results are presented sperately below.
+There simulation results are presented separately below.
 
 \subsection{Detecting signals of biomolecules at the gate}
 
@@ -652,7 +659,7 @@ And we apply an ac signal from Iin to perform the ac analysis.
     \label{fig:sim:vgnoise}
 \end{figure}
 
-Fig.\ref{fig:sim:vgGain} presents the maximum gain that the circuit provides at five corners.
+Fig.\ref{fig:sim:vgGain} presents the maximal gain that the circuit provides at five corners.
 And Fig.\ref{fig:sim:vgnoise} shows the input referred noise.
 The design specification requires the gain to be greater than $5M$ and the voltage noise referred to the gate of nanowire to be smaller than $2mV$.
 The summary table (Table.\ref{tb:sim:vg}) computed the noise result by considering the $g_m$ as $200n$, which is the minimum $g_m$ that may exist in our measurement.
@@ -663,7 +670,12 @@ The summary table (Table.\ref{tb:sim:vg}) computed the noise result by consideri
     \begin{tabular}{l|c|c}
         & Design Spec. (Table.\ref{tb:ACSpec}) & Simulation Result \\
         \hline
-        Amplification Rate (max)& $5M$ & $10.3M$\\
+        \hline
+        Dynamic Input Current Range & $\pm 2.8\mu A$ & $6\mu A$-$-10\mu A$ \\
+        \hline
+        Maximal Amplification Rate ($\frac{V}{A}$)& $5M$ & $10.3M$\\
+        \hline
+        Bandwidth & $> 1k$Hz & $10.1k$Hz \\
         \hline
         Input Referred Noise & $< 2m V$ & $ = \frac{\sqrt{5.8E-20}}{200n}$ = $1.2m V$ @1Hz
     \end{tabular}
@@ -699,7 +711,7 @@ $g_m$ of the transistor is swept in the same time.
 According to the specification given in chapter 3 (Table.\ref{tb:ACSpec}), $g_m$ ranges from $1\mu$ to $10\mu$ in transient measurement.
 The input sinusoidal signal has a frequency of $1k$Hz and an amplitude of $20mV$.
 Their corresponding ac sweeps are presented in Fig.\ref{fig:sim:sine10_ac} and Fig.\ref{fig:sim:sine100_ac}.
-\emph{These results show that the circuit bandwidth is about $4k Hz$, which is caused by the last amplifier block.}
+\emph{These results show that the circuit bandwidth is about $10k Hz$, which is caused by the last amplifier block.}
 % 在紙本上註明一下之前說pole在source部分這件事是錯的
 
 
