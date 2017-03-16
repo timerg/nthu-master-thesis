@@ -231,7 +231,7 @@ Method 1 has lower power consumption. However, it does not include the power of 
         \hline
         SNR & > 45dB & - \\
         \hline
-        Input refered noise & - & 190 nV/sqrt(Hz) @ 5 kHz \\
+        Input referred noise & - & 190 nV/sqrt(Hz) @ 5 kHz \\
         \hline
         CMOS Technology & 0.13um & 0.18um\\
         \hline
@@ -288,7 +288,6 @@ Both of them depends on doping concentration.
 $W$ and $L$ are the width and length of the transistor.
 $\phi_t$ is the thermal voltage depending on temperature.
 The $\kappa$ is the gate coupling coefficient.
-It will be discuss in the next paragraph.
 To be noted that we ignore the short channel effect, which does not effect our discussion since we always keep $V_{DS}$ constant.
 
 We then derive $g_m$:
@@ -299,11 +298,31 @@ We then derive $g_m$:
 
 For the strong inversion, the Eq.(\ref{eq:gm_strong}) shows that the assumption 1 is correct.
 However, the assumption is not completely right for transistor in weak inversion.
-According to the Eq.(\ref{eq:gm_weak}), the $g_m$ is affected not only by $I_D$ but also by $\kappa$.
-It is a non-linear parameter affected by $V_G$ and other factors.
+According to the Eq.(\ref{eq:gm_weak}), the $g_m$ is affected not only by $I_D$ but also by the gate coupling coefficient $\kappa$.
+\emph{The gate coupling effect is illustrated in Fig.\ref{fig:gateCouple}.
+The $\kappa$ is the ratio of voltage divider:
+\begin{equation}
+    \kappa = \frac{C_i}{C_i + C_{dep}}
+\end{equation}
+The fact that $C_{dep}$ varies with $V_G$ make $\kappa$ be a anon-linear parameter.
 Its value ranges from 0.4 to 0.9.
-In our circuit, this problem is currently left unsolved.
-We present its effect in chapter 6.
+For our nanowire, the structure is different from MOSFET.
+The SiO2 insulator in MOSFET is replaced by the solvent.
+According to the famous Gouy-Chapman model, the potential difference in the solution affect the double layer capacitance in solution \cite{ElecChem}.
+Thus, it is still true that $V_G$ affect $gm$.}
+
+Based on the experience in MOSFET, the gate coupling effect is not destructive.
+$gm$ can still be approximated to.
+Therefore, in our circuit design, this problem is left unsolved and left for the future work.
+
+\begin{figure}[bt!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/chapter6/kappa.png}
+    \caption{The gate coupling effect in MOSFET \cite{bookOfUltra}}
+    \label{fig:gateCouple}
+\end{figure}
+
+
 
 
 \subsection{A Simple Model for Concentration Effect}

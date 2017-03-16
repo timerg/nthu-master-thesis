@@ -345,10 +345,10 @@ We hence decide the design specification for the DC-sweep mode as Table.\ref{tb:
 \begin{table}[!htbp]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
-    \begin{tabular}{c|c}
-        $I_D$ & $g_m$ \\
+    \begin{tabular}{c|c|c}
+        $I_D$ & $g_m$ & $V_G$\\
         \hline
-        $100n A$ - $30\mu A$ & $200n $ - $20\mu$ \\
+        $100n A$ - $30\mu A$ & $200n $ - $20\mu$ & $0.5V$ - $3V$\\
     \end{tabular}
     \caption{Detecting specification for the DC-sweep mode}
     \label{tb:DCspec}
@@ -362,7 +362,7 @@ These factors give result to the table of device characteristics for the transie
 
 \emph{The design specification for the Transient Measurement mode is presented in Table.\ref{tb:ACSpec}.
 $\Delta I_D$ is the multiplication of $\Delta V_G$ and $g_m$ from Table.\ref{tb:ACinput}.
-The limitation of input referred noise (referred to the gate) is 10\% of the minimal $\Delta V_G$ ($< 2mV$) or 10\% of the minimal $\Delta I_D$ ($2n A$) .
+The limitation of input referred noise (referred to the gate) is 10\% of the minimal $\Delta V_G$ ($< 2mV$) or 10\% of the minimal $\Delta I_D$ ($1\mu \times 20mV \times 10\%= 2n A$) .
 The transimpedance (input current to an output voltage) is $5M \Omega$.
 This is because the minimal $\Delta I_D$  is $20n A$ and a transimpedance of $5M \Omega$ allows the output voltage to be larger than $0.1 V$.
 The bandwidth is $1k$ Hz.
@@ -378,7 +378,7 @@ Thus, we determined that the bandwidth of the circuit should be at least $1k$ Hz
     \begin{tabular}{c|c|c}
         $I_D$ & $g_m$ & $\Delta V_G$ \\
         \hline
-        $600n A$ - $5\mu A$ & $1\mu $ - $10\mu$ & $20mV$ - $280mV$\\
+        $600n A$ - $10\mu A$ & $1\mu $ - $20\mu$ & $20mV$ - $280mV$\\
     \end{tabular}
     \caption{The summation of the nanowire characteristics when applied with the Transient Measurement mode circuit}
     \label{tb:ACinput}

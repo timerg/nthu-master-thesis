@@ -1,24 +1,67 @@
 \contentsline {chapter}{Abstract}{}
 \contentsline {chapter}{中文摘要}{}
-\contentsline {chapter}{\numberline {1}Circuit Results Discussion and Summary}{1}
-\contentsline {section}{\numberline {1.1}The Fronted Circuit and DC-sweep mode}{1}
-\contentsline {subsection}{\numberline {1.1.1}Ibias}{1}
-\contentsline {subsection}{\numberline {1.1.2}Ibias}{3}
-\contentsline {subsection}{\numberline {1.1.3}TIA}{3}
-\contentsline {subsection}{\numberline {1.1.4}OP}{3}
-\contentsline {subsection}{\numberline {1.1.5}Measurement with the DC-sweep Mode Circuit and the Low-current Defect Problem}{3}
-\contentsline {subsection}{\numberline {1.1.6}The Design and Layout Problems of OP}{9}
-\contentsline {subsubsection}{\numberline {1.1.6.1}The Possible Reasons for Insufficient Gain}{9}
-\contentsline {subsubsection}{\numberline {1.1.6.2}The Possible Reasons for Input Offset}{10}
-\contentsline {subsubsection}{\numberline {1.1.6.3}Improvement Methodology}{11}
-\contentsline {section}{\numberline {1.2}The Second Stage Circuit and Transient Measurement Mode}{11}
-\contentsline {subsection}{\numberline {1.2.1}The Second Stage Circuit}{11}
-\contentsline {subsubsection}{\numberline {1.2.1.1}Noise Oscillation Problem in Amplifier with Amplification Rate of 1 }{12}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Dynamic Input Range}{14}
-\contentsline {subsubsection}{\numberline {1.2.1.3}The Circuit Gain}{14}
-\contentsline {subsection}{\numberline {1.2.2}Transient Measurement Mode}{17}
-\contentsline {subsubsection}{\numberline {1.2.2.1}Bandwidth and Gain}{17}
-\contentsline {subsubsection}{\numberline {1.2.2.2}Input Referred Noise}{18}
-\contentsline {subsubsection}{\numberline {1.2.2.3}Modulating biomolecule signals from the source terminal}{18}
-\contentsline {subsubsection}{\numberline {1.2.2.4}Summary of Transient Measurement mode}{19}
-\contentsline {section}{\numberline {1.3}Dealing with the Device Variability Problem}{20}
+\contentsline {chapter}{\numberline {1}Literature Review \& Theory Description}{1}
+\contentsline {section}{\numberline {1.1}DC Sweep: $I_D$-$V_G$ Curves}{1}
+\contentsline {subsection}{\numberline {1.1.1}$I_D$-$V_G$ and Transconductance}{1}
+\contentsline {subsection}{\numberline {1.1.2}Source Follower}{2}
+\contentsline {section}{\numberline {1.2}Small Signal (AC) Measurement Method Review}{4}
+\contentsline {subsection}{\numberline {1.2.1}RC Time Delay Measuring}{5}
+\contentsline {subsection}{\numberline {1.2.2}Complex Impedance Solving}{7}
+\contentsline {subsection}{\numberline {1.2.3}Comparison and Conclusion}{8}
+\contentsline {section}{\numberline {1.3}Two assumption for Dealing with Disparity Problem}{10}
+\contentsline {subsection}{\numberline {1.3.1}Transconductance and $I_D$}{11}
+\contentsline {subsection}{\numberline {1.3.2}A Simple Model for Concentration Effect}{12}
+\contentsline {chapter}{\numberline {2}Nanowire Structure and Measurement}{14}
+\contentsline {section}{\numberline {2.1}Brief Description of Nanowire Structure}{14}
+\contentsline {section}{\numberline {2.2}Biology Experiment}{15}
+\contentsline {subsection}{\numberline {2.2.1}Appropriate operation region}{18}
+\contentsline {subsection}{\numberline {2.2.2}$g_m$-$I_D$ Plot}{19}
+\contentsline {section}{\numberline {2.3}Electrical Measurements}{21}
+\contentsline {subsection}{\numberline {2.3.1}Front Gate and Back Gate}{22}
+\contentsline {subsection}{\numberline {2.3.2}Transconductance}{22}
+\contentsline {subsection}{\numberline {2.3.3}Drain-to-source impedance ($r_{ds}$)}{22}
+\contentsline {subsection}{\numberline {2.3.4}Device variability Problem exists}{25}
+\contentsline {section}{\numberline {2.4}Conclusion and Design Specification}{27}
+\contentsline {chapter}{\numberline {3}Integrated Circuitry Design}{29}
+\contentsline {section}{\numberline {3.1}Fronted Circuit Design}{29}
+\contentsline {subsection}{\numberline {3.1.1}The DC-sweep mode}{29}
+\contentsline {subsection}{\numberline {3.1.2}Transient Measurement mode}{30}
+\contentsline {subsection}{\numberline {3.1.3}Dealing with the device variability Problem}{31}
+\contentsline {subsection}{\numberline {3.1.4}Design Description}{32}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Strategies for lowering current detecting limits}{32}
+\contentsline {subsubsection}{\numberline {3.1.4.2}TIA (Transimpedance Amplifier) Design}{34}
+\contentsline {subsubsection}{\numberline {3.1.4.3}Feedback Mechanism}{37}
+\contentsline {subsubsection}{\numberline {3.1.4.4}Input Impedance (DC-sweep mode)}{38}
+\contentsline {subsubsection}{\numberline {3.1.4.5}Stability and Feedback OP Design}{39}
+\contentsline {subsection}{\numberline {3.1.5}The Post-simulation Result of the DC-sweep mode circuit}{41}
+\contentsline {subsubsection}{\numberline {3.1.5.1}DC Current (Ibias) Sweep}{41}
+\contentsline {subsubsection}{\numberline {3.1.5.2}Bode Plot of Loop Gain and Phase}{41}
+\contentsline {section}{\numberline {3.2}The Second Stage Circuit}{44}
+\contentsline {subsection}{\numberline {3.2.1}The Analog Subtractor}{44}
+\contentsline {subsection}{\numberline {3.2.2}Non-inverting Resistor-based Amplifier}{45}
+\contentsline {section}{\numberline {3.3}Post-simulation Result of the Transient Measurement mode}{49}
+\contentsline {subsection}{\numberline {3.3.1}Detecting signals of biomolecules at the gate}{49}
+\contentsline {subsection}{\numberline {3.3.2}Modulating biomolecule signals from the source terminal}{51}
+\contentsline {chapter}{\numberline {4}Circuit Results Discussion and Summary}{55}
+\contentsline {section}{\numberline {4.1}The Fronted Circuit and DC-sweep mode}{55}
+\contentsline {subsection}{\numberline {4.1.1}Ibias}{55}
+\contentsline {subsection}{\numberline {4.1.2}TIA}{56}
+\contentsline {subsection}{\numberline {4.1.3}OP}{57}
+\contentsline {subsection}{\numberline {4.1.4}Measurement with the DC-sweep Mode Circuit and the Low-current Defect Problem}{57}
+\contentsline {subsection}{\numberline {4.1.5}The Layout Problems of OP}{63}
+\contentsline {subsubsection}{\numberline {4.1.5.1}The Possible Reasons for Insufficient Gain}{63}
+\contentsline {subsubsection}{\numberline {4.1.5.2}The Possible Reasons for Input Offset}{65}
+\contentsline {subsubsection}{\numberline {4.1.5.3}Improvement Methodology}{65}
+\contentsline {subsubsection}{\numberline {4.1.5.4}Summary of DC-sweep mode}{65}
+\contentsline {section}{\numberline {4.2}The Second Stage Circuit and Transient Measurement Mode}{66}
+\contentsline {subsection}{\numberline {4.2.1}The Second Stage Circuit}{66}
+\contentsline {subsubsection}{\numberline {4.2.1.1}The Noise Oscillation Problem in Amplifier with Amplification Rate of 1 }{67}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Dynamic Input Range}{71}
+\contentsline {subsubsection}{\numberline {4.2.1.3}The Circuit Gain}{72}
+\contentsline {subsection}{\numberline {4.2.2}Transient Measurement Mode}{72}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Bandwidth and Gain}{74}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Input Referred Noise}{74}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Modulating biomolecule signals from the source terminal}{75}
+\contentsline {subsubsection}{\numberline {4.2.2.4}Summary of Transient Measurement mode}{75}
+\contentsline {section}{\numberline {4.3}Dealing with the Device Variability Problem}{77}
+\contentsline {section}{\numberline {4.4}Conclusion and Future Work}{79}

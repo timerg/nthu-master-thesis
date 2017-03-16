@@ -1,53 +1,60 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
+Case mismatch error between cite keys JLockin and Jlockin
+---line 133 of file main.aux
+ : \citation{JLockin
+ :                  }
+I'm skipping whatever remains of this command
 The style file: abbrv.bst
-I found no \citation commands---while reading file main.aux
 Database file #1: data/thesis.bib
 I was expecting a `,' or a `}'---line 144 of file data/thesis.bib
  : 
  : title = {Potassium ion-sensitive field effect transistor},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 0 entries,
+Warning--empty title in Drift
+Warning--empty journal in Drift
+Warning--empty year in Drift
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            497 strings with 3708 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            601 strings with 6885 characters,
+and the built_in function-call counts, 6507 in all, are:
+= -- 584
+> -- 416
+< -- 5
++ -- 169
+- -- 150
+* -- 522
+:= -- 1079
+add.period$ -- 44
+call.type$ -- 15
+change.case$ -- 117
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 18
+duplicate$ -- 221
+empty$ -- 435
+format.name$ -- 150
+if$ -- 1342
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 15
+missing$ -- 17
+newline$ -- 77
+num.names$ -- 30
+pop$ -- 135
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 105
 quote$ -- 0
-skip$ -- 1
+skip$ -- 164
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 348
+swap$ -- 63
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
+type$ -- 56
+warning$ -- 3
+while$ -- 45
+width$ -- 17
+write$ -- 159
 (There were 2 error messages)
