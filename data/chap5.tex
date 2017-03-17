@@ -61,8 +61,8 @@ The output response ($V_{out}$) is a sinusoidal signal at the same frequency wit
 The values of Ibias and Vg can be arbitrary.
 But one need to be aware that their values should not cause the output of TIA or the second-stage circuit to saturate.
 
-\subsection{Dealing with the device variability Problem}
-As mentioned in chapter 1, we combine the DC-sweep mode and Transient Measurement mode to perform a variability-resisting measurement.
+\subsection{The Variability-resisting method}
+As mentioned in chapter 1, we combine the DC-sweep mode and Transient Measurement mode to implement the variability-resisting measurement method.
 
 \paragraph*{Method Procedure}
 Assuming there are two nanowire devices and the device variability problem exists between them.
@@ -142,11 +142,11 @@ We use the biasing current source to diminish that offset current, so as to incr
 The upper limit depends on the output resolution.
 When the input current signal $\Delta i$ in Fig.\ref{fig:TIA} is too small, the output response may be defeated by the noise.
 This may be solved by increasing the SNR through a larger $R_{TIA}$.
-\emph{However, the chip area constrains the size of resistors.
+{However, the chip area constrains the size of resistors.
 In our circuit design, it is hard to make a wide linear range resistor with resistance value out of $100k\Omega$.
-Furthermore, even if the resistor can be greater, one need to concern for the noise brought by the large resistance.}
+Furthermore, even if the resistor can be greater, one needs to concern for the noise brought by the large resistance.
 
-Our strategy is to boost the SNR of TIA by designing its input MOSFETs with a large area.
+Our strategy is to reduce the noise of TIA by designing its input MOSFETs with a large area.
 We also amplify the output signal through the second-stage circuit.
 
 \subsubsection{TIA (Transimpedance Amplifier) Design}
@@ -168,7 +168,7 @@ We also amplify the output signal through the second-stage circuit.
     \caption{(a)The transimpedance block and the (b) schematic}
     \label{fig:TIA_sch}
 \end{figure}
-\emph{Fig.\ref{fig:TIA_sch} shows the Transimpedance Amplifier circuit.
+\emphy{Fig.\ref{fig:TIA_sch} shows the Transimpedance Amplifier circuit.
 We implement the operational amplifier in TIA with the two-stage, differential-pair structure.
 This simple structure has merits such as large output current and wide output voltage range.}
 
@@ -187,7 +187,7 @@ This simple structure has merits such as large output current and wide output vo
 \end{figure}
 
 
-\emph{Fig.\ref{fig:TIA_postSim_dc} and Fig.\ref{fig:TIA_postSim_ac} are the dc and ac post-simulation of the TIA.
+\emphy{Fig.\ref{fig:TIA_postSim_dc} and Fig.\ref{fig:TIA_postSim_ac} are the dc and ac post-simulation of the TIA.
 Fig.\ref{fig:TIA_postSim_dc} shows that the TIA has a constant transimpedance of $100k \Omega$ when the input current range is $6\mu A \sim -10\mu A$.
 Fig.\ref{fig:TIA_postSim_ac}(a) indicates that the bandwidth is $7M Hz$.
 Fig.\ref{fig:TIA_postSim_ac}(b) is the input referred noise (referred to the gate of nanowire).
@@ -282,7 +282,7 @@ The input impedance of the circuit is $\Delta v_x / \Delta i_x$.
 The $A_{OP}$ is the gain of the feedback OP.
 The $r_ds$ is the drain-to-source resistance of nanowire, which is larger than $100k\Omega$.
 
-\emph{The OpAmp of TIA holds the gain of 1000 (60dB), which makes the $Z_{in}$ of 100.
+\emphy{The OpAmp of TIA holds the gain of 1000 (60dB), which makes the $Z_{in}$ of 100.
 The LG is greater than 5k from the last section.
 By the section.\ref{sec:ch3rds}, the $r_{ds}$ ranges from $40k \Omega$ to $30M \Omega$.
 Thus, the maximal input impedance of the feedback circuit is $6k \Omega$ ($\frac{30M \Omega}{5k \Omega}$).
@@ -367,7 +367,7 @@ This capacitance results in a lower slew rate, which is fine because the circuit
 \subsection{The Post-simulation Result of the DC-sweep mode circuit}
 
 \subsubsection{DC Current (Ibias) Sweep}
-\emph{We swept Ibias and measured the output voltage of the feedback OP which is also the gate voltage of SiNW in Fig.\ref{fig:DCmode}.
+\emphy{We swept Ibias and measured the output voltage of the feedback OP which is also the gate voltage of SiNW in Fig.\ref{fig:DCmode}.
 We also measured the $I_D$ of the transistor.
 (Because we don't have nanowire model, we performed the simulation by using an alternative mosfet.)
 In Fig.\ref{fig:sim:DCIcompare}(a), the curve of $I_{bias}$-$V_G$ is compared with the curve of $I_D$-$V_G$.
@@ -418,7 +418,10 @@ We also appended a $1pF$ capacitor to model the $C_{gd}$.
     }
 \end{table}
 
-\emph{Table.\ref{tb:DCpostComp} compares the design specification and the simulation result.
+
+
+\subsubsection{Summary}
+\emphy{Table.\ref{tb:DCpostComp} compares the design specification and the simulation result.
 It is notable that in fact the upper limits of $g_m$ is depends on two factors.
 One is the gate voltage.
 Table.\ref{tb:OPsim} shows that the maximal gate voltage that the Feedback OP can provides is $3V$.
@@ -508,9 +511,6 @@ This reason will be much clearer when we start discussing the amplifier circuit 
 We performed DC sweep on input ($V_X$) and $V_z$ at five corners to show the linear region of the circuit (Fig.\ref{fig:sim:subtractor}, Table.\ref{tb:Subtractor}).
 The circuit has an input dynamic range of $0.77V$ ($-0.57V \sim +0.2V$) while the dynamic range for $V_z$ is $0.38V$.
 
-\emph{In Fig.\ref{fig:sim:subtractor}(a), the result of ff corner exhibit poor upper input dynamic range. }
-
-
 \begin{figure}[!htbp]
     \centering
     \begin{minipage}[t]{1\textwidth}
@@ -565,7 +565,7 @@ When two switches is off, the circuit acts like an unit-gain buffer.
 Eq.(\ref{eq:ResAmp}) suggests that $A_{Op2}$ should be larger than 1000 (60dB).
 Thus, the Op2 in Fig.\ref{fig:secondStage} adopts the structure of a two-stage amplifier (same with the operational amplifier in TIA block) due to its high gain and wide output dynamic range.
 
-\emph{One thing to note is that the derivation above views the $V_z$ as the virtual ground.
+\emphy{One thing to note is that the derivation above views the $V_z$ as the virtual ground.
 $V_z$ is both the input and output offset voltage of the amplifier.
 It is usually applied with $1.3V$.
 As mentioned in the subtractor section (Section.\ref{sec:sub}), the subtractor increases the output dynamic range of the amplifier stage.
@@ -654,7 +654,7 @@ And we apply an ac signal from Iin to perform the ac analysis.
     \label{fig:sim:vgnoise}
 \end{figure}
 
-\emph{Fig.\ref{fig:sim:vgGain} presents the maximal gain that the circuit provides at five corners.
+\emphy{Fig.\ref{fig:sim:vgGain} presents the maximal gain that the circuit provides at five corners.
 Fig.\ref{fig:sim:vgnoise} shows the input referred noise.
 The design specification requires the gain to be greater than $5M$ and the voltage noise referred to the gate of nanowire to be smaller than $2mV$.
 The summary table (Table.\ref{tb:sim:vg}) computed the noise result by considering the $g_m$ as $200n$, which is the minimum $g_m$ that may exist in our measurement.}
@@ -680,7 +680,7 @@ This should be when the circuit has largest noise.
         \hline
         Bandwidth & $> 1k$Hz & $10.1k$Hz \\
         \hline
-        Input Referred Noise ($V_G$) & $< 2m V$ & $ = \frac{0.291n}{200n}$ = $1.46m V$ @1Hz
+        Input Referred Noise ($V_G$) & $< 2m V$ & $ = \frac{0.291n}{1\mu}$ = $0.29m V$ @1Hz
     \end{tabular}
     \caption{The summary table. The first three rows are the nanowire chracteristics when applied with the Transient Measurement mode.
     Others are the simulation results comparing with the design specification.}
@@ -715,7 +715,7 @@ $g_m$ of the transistor is swept in the same time.
 According to the specification given in chapter 3 (Table.\ref{tb:ACSpec}), $g_m$ ranges from $1\mu$ to $10\mu$ in transient measurement.
 The input sinusoidal signal has a frequency of $1k$Hz and an amplitude of $20mV$.
 Their corresponding ac sweeps are presented in Fig.\ref{fig:sim:sine10_ac} and Fig.\ref{fig:sim:sine100_ac}.
-\emph{These results show that the circuit bandwidth is about $10k Hz$, which is caused by the last amplifier block.}
+\emphy{These results show that the circuit bandwidth is about $10k Hz$, which is caused by the last amplifier block.}
 % 在紙本上註明一下之前說pole在source部分這件事是錯的
 
 

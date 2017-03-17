@@ -307,7 +307,7 @@ This result becomes useful when we perform the analysis of impedance matching in
 \subsection{Device variability Problem exists}
 We measured two nanowire devices which lie on the same wafer and are immersed with the same testing PBS solution.
 Below, the $g_m$-$I_D$ plot (Fig.\ref{fig:disparity}) shows that even the environment is same, two devices exhibit different electrical responses.
-\emph{This problem causes issues such as non-uniform specification for measurement or bad quality assurance in a mass production.
+\emphy{This problem causes issues such as non-uniform specification for measurement or bad quality assurance in a mass production.
 We try to diminish it by performing the variability-resisting measurement, which have been mentioned in chapter 1.}
 
 \begin{figure}[!htbp]
@@ -356,18 +356,18 @@ We hence decide the design specification for the DC-sweep mode as Table.\ref{tb:
 \end{table}
 
 
-\emph{As for the Transient Measurement mode, section.\ref{section:biasVg} suggests that the device should be operated in the weak inversion region adjacent to the strong inversion region.
+\emphy{As for the Transient Measurement mode, section.\ref{section:biasVg} suggests that the device should be operated in the weak inversion region adjacent to the strong inversion region.
 And Table.\ref{tb:CdV} indicates that the voltage change ($\Delta V_G$) induced by concentration difference ranges from $20mV$ to $280mV$.
 These factors give result to the table of device characteristics for the transient measurement (Table.\ref{tb:ACinput}).}
 
-\emph{The design specification for the Transient Measurement mode is presented in Table.\ref{tb:ACSpec}.
+\emphy{The design specification for the Transient Measurement mode is presented in Table.\ref{tb:ACSpec}.
 $\Delta I_D$ is the multiplication of $\Delta V_G$ and $g_m$ from Table.\ref{tb:ACinput}.
 The limitation of input referred noise (referred to the gate) is 10\% of the minimal $\Delta V_G$ ($< 2mV$) or 10\% of the minimal $\Delta I_D$ ($1\mu \times 20mV \times 10\%= 2n A$) .
 The transimpedance (input current to an output voltage) is $5M \Omega$.
 This is because the minimal $\Delta I_D$  is $20n A$ and a transimpedance of $5M \Omega$ allows the output voltage to be larger than $0.1 V$.
 The bandwidth is $1k$ Hz.
 The input signal $\Delta I_D$ is a very slow signal with the speed less than $10$ Hz.
-However, we implement a modulation method in chapter 5, which resembles the method adopted by \cite{JLockin}.
+However, we implement a modulation method in chapter 5, which resembles the method adopted by \cite{Jlockin}.
 The input signal is modulated to a higher frequency to avoid the low frequency noise.
 Thus, we determined that the bandwidth of the circuit should be at least $1k$ Hz.
 }

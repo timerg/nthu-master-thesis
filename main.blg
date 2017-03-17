@@ -1,12 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-Case mismatch error between cite keys JLockin and Jlockin
----line 133 of file main.aux
- : \citation{JLockin
- :                  }
-I'm skipping whatever remains of this command
-The style file: abbrv.bst
+The style file: unsrt.bst
 Database file #1: data/thesis.bib
 I was expecting a `,' or a `}'---line 144 of file data/thesis.bib
  : 
@@ -16,45 +11,45 @@ I'm skipping whatever remains of this entry
 Warning--empty title in Drift
 Warning--empty journal in Drift
 Warning--empty year in Drift
-You've used 15 entries,
-            2118 wiz_defined-function locations,
-            601 strings with 6885 characters,
-and the built_in function-call counts, 6507 in all, are:
-= -- 584
-> -- 416
+You've used 17 entries,
+            1791 wiz_defined-function locations,
+            566 strings with 7076 characters,
+and the built_in function-call counts, 4869 in all, are:
+= -- 381
+> -- 279
 < -- 5
-+ -- 169
-- -- 150
-* -- 522
-:= -- 1079
-add.period$ -- 44
-call.type$ -- 15
-change.case$ -- 117
++ -- 100
+- -- 83
+* -- 378
+:= -- 764
+add.period$ -- 50
+call.type$ -- 17
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 221
-empty$ -- 435
-format.name$ -- 150
-if$ -- 1342
+cite$ -- 20
+duplicate$ -- 209
+empty$ -- 443
+format.name$ -- 83
+if$ -- 1094
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 17
-newline$ -- 77
-num.names$ -- 30
-pop$ -- 135
+int.to.str$ -- 17
+missing$ -- 19
+newline$ -- 87
+num.names$ -- 17
+pop$ -- 60
 preamble$ -- 1
-purify$ -- 105
+purify$ -- 0
 quote$ -- 0
-skip$ -- 164
+skip$ -- 112
 stack$ -- 0
-substring$ -- 348
-swap$ -- 63
+substring$ -- 329
+swap$ -- 65
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 0
 warning$ -- 3
-while$ -- 45
-width$ -- 17
-write$ -- 159
-(There were 2 error messages)
+while$ -- 34
+width$ -- 19
+write$ -- 181
+(There was 1 error message)
