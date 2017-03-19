@@ -9,43 +9,45 @@ Moreover, there are still several challenges that may be overcome through a bett
 
 One of the challenges is that the mass production of robust nanowire device is still improbable.
 Device variability may be the main reason among others.
-This problem also happens to the measurement of our nanowire (Fig.~\ref{fig:disparity}).
+This problem also happens to the measurement of our nanowire.
 The nanowire we use is made by Professor Yang's team (National Chiao Tong University).
-And according to them, the nanowire uses thick gate dielectric and have non-regular cross-sectional shape, which results in the problem of fabrication uncertainty \cite{C6}.
+According to them, the nanowire uses thick gate dielectric and has non-regular cross-sectional shape, which result in the problem of fabrication uncertainty \cite{C6}.
 
 
 \section{Design Overview}
 In this project, we design a nanowire read-out circuit with two modes: DC-sweep mode and Transient Measurement mode.
-In the DC-sweep mode, one can use the circuit to perform a DC sweep of drain-to-source current ($I_D$) to show how the gate voltage ($V_G$) changes, or gives nanowire a constant $I_D$ and measures the $V_{G}$ response to different solution concentration.
-In the Transient Measurement mode, the circuit detects and amplifies the variance of drain current ($I_D$) with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
-We also combine two modes to implement a proposed method that may mitigate the device variability problem.
+In DC-sweep mode, one can use the circuit to perform a DC sweep of drain-to-source current ($I_D$) to show how the gate voltage ($V_G$) changes, or gives nanowire a constant $I_D$ and measures the $V_{G}$ response to different solution concentration.
+In Transient Measurement mode, the circuit detects and amplifies the variance of $I_D$ with constant bias voltages applied ($V_D$, $V_G$, $V_S$).
+We also combine two modes to implement our proposal: the variability-resisting method.
+This method of measurement may mitigate the device variability problem.
 
 \subsection*{Dealing with the Device Variability Problem: the Variability-resisting Method} \label{section:twqAssumption}
-We proposed a variability-resisting method of measurement.
-It is based on two assumptions:
+The variability-resisting method is based on two assumptions:
 \begin{enumerate}
-    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) depends on $I_D$ and independent on $V_{GS}$.
-    \item The change of biomolecule concentrations can induce potentail change on the surface of the gate of a nanowire.
+    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{GS}}$) is dependent on $I_D$ and independent of $V_{GS}$.
+    \item The change of biomolecule concentrations can induce potential change on the surface of the gate of a nanowire.
 \end{enumerate}
+(Since the source of nanowire is always grounded in this method, from now on $V_{GS}$ is simplified as $V_G$.)
 The first assumption implies one can control the nanowire transconductance by its $I_D$.
-The second assumption means that as long as different nanowire elements have the same transconductance, the output current induced by a concentration difference should be same.
+The second assumption means that as long as different nanowire elements have the same transconductance, the $I_D$ variance induced by a concentration difference should be same.
 
 The method works as follows:
 
 \paragraph*{Initial stage}
-At the beginning of each measurement event, we perform a DC sweep with the DC-sweep mode.
+At the beginning of each measurement event, we perform a DC sweep with DC-sweep mode.
 By analyzing the sweep results with numerical method, we keep all nanowire devices under a selected transconductance by controlling their $I_D$ and corresponding $V_G$.
 
+
 \paragraph*{Measurement stage}
-We bias the circuit in the Transient Measurement mode at this stage.
+We bias the circuit in Transient Measurement mode at this stage.
 Since the transconductance of all devices are same, they should behave uniformly based on assumption 2.
-At the end of the stage, we return to the DC-sweep mode to reset $I_D$ of the elements.
+At the end of the stage, we return to DC-sweep mode to reset $I_D$ of the elements.
 The circuit adjusts their $V_G$ to do so.
 
 At the beginning of each measurement stage, a device always has the same $I_D$ but different $V_G$.
 Based on assumption 1, its transconductance is kept constant.
 
-The other details are reviewed in chapter 5.
+Other details are reviewed in chapter 5.
 Currently, most operations are manual.
 We hope to make them automatic in the future, which may require digital circuits.
 
@@ -53,8 +55,6 @@ We hope to make them automatic in the future, which may require digital circuits
 In this thesis, there are six chapters sorted according to the design flow.
 
 Chapter 2 reviews the basic theories and the literature that are related to our work.
-Most of those are the drain current of nanowire sweeping along the gate voltage (Id-Vg curves).
-We present some of the raw data and the analysis results in this part.
 
 Chapter 3 gives a brief description of nanowire structure.
 It is then followed by two sections about some measurement and data analysis.
@@ -63,7 +63,7 @@ We use the analysis results to design the read-out circuit.
 
 Chapter 4 is an ``accessory''.
 This chapter contains the discrete circuit which was designed for ion-sensitive field-effect transistor (ISFET) \cite{SF1}.
-We construct it and perform some electrical measurement.
+It is constructed and some electrical measurements are performed
 The purpose of this process is to practice the constant-current constant-voltage method.
 The outcomes of this chapter underpin our integrated circuit design.
 

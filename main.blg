@@ -8,48 +8,45 @@ I was expecting a `,' or a `}'---line 144 of file data/thesis.bib
  : title = {Potassium ion-sensitive field effect transistor},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--empty title in Drift
-Warning--empty journal in Drift
-Warning--empty year in Drift
-You've used 17 entries,
+You've used 4 entries,
             1791 wiz_defined-function locations,
-            566 strings with 7076 characters,
-and the built_in function-call counts, 4869 in all, are:
-= -- 381
-> -- 279
-< -- 5
-+ -- 100
-- -- 83
-* -- 378
-:= -- 764
-add.period$ -- 50
-call.type$ -- 17
-change.case$ -- 14
+            477 strings with 4547 characters,
+and the built_in function-call counts, 1022 in all, are:
+= -- 71
+> -- 76
+< -- 0
++ -- 27
+- -- 23
+* -- 91
+:= -- 186
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 209
-empty$ -- 443
-format.name$ -- 83
-if$ -- 1094
+cite$ -- 4
+duplicate$ -- 34
+empty$ -- 83
+format.name$ -- 23
+if$ -- 209
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 19
-newline$ -- 87
-num.names$ -- 17
-pop$ -- 60
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 8
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 112
+skip$ -- 12
 stack$ -- 0
-substring$ -- 329
-swap$ -- 65
-text.length$ -- 5
+substring$ -- 60
+swap$ -- 4
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 34
-width$ -- 19
-write$ -- 181
+warning$ -- 0
+while$ -- 6
+width$ -- 5
+write$ -- 44
 (There was 1 error message)

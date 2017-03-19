@@ -9,7 +9,7 @@ This chapter presents the results of our read-out circuit and the summary of thi
     \label{fig:frontedCIrcuit}
 \end{figure}
 As in Fig.\ref{fig:frontedCIrcuit}(a), the fronted circuit includes a biasing current source (Ibias), transimpedance amplifier (TIA) and an operational amplifier (OP).
-These three circuit blocks combined with the nanowire device (SiNW) form a feedback structure, which is the DC-sweep mode of our circuit.
+These three circuit blocks combined with the nanowire device (SiNW) form a feedback structure, which is DC-sweep mode of our circuit.
 
 \subsection{Ibias}
 \begin{figure}[tbh!]
@@ -21,7 +21,7 @@ These three circuit blocks combined with the nanowire device (SiNW) form a feedb
 The Fig.\ref{fig:mirror_ch6} is the schematic of the Ibias circuit.
 The relation between the resistance of the external resistor and the biasing current is shown in Fig.\ref{fig:chip:mirror}.
 The Ibias circuit is able to provide a biasing current from $100n A$ to $50\mu A$ stably.
-It should be noted that this biasing current range binds the operational range of the DC-sweep mode circuit.
+It should be noted that this biasing current range binds the operational range of DC-sweep mode circuit.
 
 \begin{figure}[tbh!]
     \centering
@@ -77,7 +77,7 @@ We will discuss this problem in the following section.
     \label{fig:chip:OPGain}
 \end{figure}
 
-\subsection{Measurement with the DC-sweep Mode Circuit and the Low-current Defect Problem}
+\subsection{Measurement with DC-sweep Mode Circuit and the Low-current Defect Problem}
 \begin{figure}[tbh!]
     \centering
         \includegraphics[width=0.5\textwidth] {images/chapter6/DCMode.png}
@@ -85,7 +85,7 @@ We will discuss this problem in the following section.
     \label{fig:chip:DCmode}
 \end{figure}
 
-With the the DC-sweep mode circuit (Fig.\ref{fig:chip:DCmode}), Ibias is swept and $V_G$ and $I_D$ are measured to obtain the $I_D$-$V_G$ and $I_{bias}$-$V_G$ curves (Fig.\ref{fig:chip:IdIbiasVG}).
+With DC-sweep mode (Fig.\ref{fig:chip:DCmode}), Ibias is swept and $V_G$ and $I_D$ are measured to obtain the $I_D$-$V_G$ and $I_{bias}$-$V_G$ curves (Fig.\ref{fig:chip:IdIbiasVG}).
 The chip works well when $I_{bias}$ is larger than $1\mu A$.
 The overlap between two curves implies that $I_D$ follows $I_{bias}$ and $V_G$ consequently alters owing to the feedback mechanism.
 
@@ -98,7 +98,7 @@ We call this problem as low-current defect problem.
 \begin{figure}[tbh!]
     \centering
     \includegraphics[width=0.8\textwidth] {images/chapter6/gvt_0101Manual_IdVg.png}
-    \caption{The measurement result of the DC-sweep mode circuit. $I_{bias}$ is the biasing current. $I_D$ is the current flowing through the nanowire device.
+    \caption{The measurement result of DC-sweep mode circuit. $I_{bias}$ is the biasing current. $I_D$ is the current flowing through the nanowire device.
     One can observe a separation between two curves in low current section ($< 1\mu A$).}
     \label{fig:chip:IdIbiasVG}
 \end{figure}
@@ -115,7 +115,7 @@ We call this problem as low-current defect problem.
 We first suspected that it is caused by the insufficient gain of the feedback OP.
 According to the last section (Section.\ref{sec:ch6:OP}), the gain is about $1k$.
 The discussion in Section.\ref{sec:feedM} suggests that the feedback mechanism depends on the loop gain.
-The loop gain should be larger than 100 for the DC-sweep mode being functional.
+The loop gain should be larger than 100 for DC-sweep mode being functional.
 Based on Eq.(\ref{eq:TF_RA}) and Eq.(\ref{eq:TF_LG}), if $A_{OP}$ is $1k$, the loop gain drops below 100 when $g_m$ is less than $1\mu$.
 In other words, even though the gain of OP is 5 fold smaller than the gain we designed, the circuit should work well when $g_m$ is larger than $1\mu$.
 But in fact, the circuit fails for $gm$ below $5\mu$.
@@ -267,11 +267,11 @@ The chip does not meet the specification due to the low-current defect problem.
         \raggedleft
         (b)
     \end{minipage}
-    \caption{\textbf{(a)} The block diagram of the Transient Measurement mode circuit. \textbf{(b)} The schematic of the second stage circuit.}
+    \caption{\textbf{(a)} The block diagram of Transient Measurement circuit. \textbf{(b)} The schematic of the second stage circuit.}
     \label{fig:chip:ACschem}
 \end{figure}
 
-As in Fig.\ref{fig:chip:ACschem}, the Transient Measurement mode includes the second stage circuit and the Ibias and TIA from the fronted circuit.
+As in Fig.\ref{fig:chip:ACschem}, Transient Measurement mode includes the second stage circuit and the Ibias and TIA from the fronted circuit.
 An analog subtractor and a resistor-based amplifier are included in the second stage circuit.
 The input signal can be sent from the gate or the source of nanowire (SiNW).
 
@@ -470,7 +470,7 @@ This section presents some of its important properties (gain, noise and bandwidt
         \includegraphics[width=0.8\linewidth] {images/chapter6/Bw_100x.png}
         (b)
     \end{minipage}
-    \caption{The gain and bandwidth of the Transient Measurement circuit. The $A_{amp}$ is 10 in \textbf{(a)} and 100 in \textbf{(b)}.}
+    \caption{The gain and bandwidth of Transient Measurement circuit. The $A_{amp}$ is 10 in \textbf{(a)} and 100 in \textbf{(b)}.}
     \label{fig:chip:bw}
 \end{figure}
 The gain is the input current to output voltage ratio.
@@ -493,13 +493,13 @@ The spec. from chapter 3 allows for a maximal input current noise of $2n A$.
 \begin{figure}[tbh!p]
     \centering
     \includegraphics[width=0.8\linewidth] {images/chapter6/Noise.png}
-    \caption{Input referred noise of the Transient Measurement circuit.}
+    \caption{Input referred noise of Transient Measurement circuit.}
     \label{fig:chip:noise}
 \end{figure}
 
 
 \subsubsection{Modulating biomolecule signals from the source terminal} \label{sec:ch6:Modulating}
-The second usage of the Transient Measurement circuit is to apply a sinusoidal signal at the source of nanowire.
+The second usage of Transient Measurement mode is to apply a sinusoidal signal at the source of nanowire.
 In Fig.\ref{fig:chip:sin}, is obtained by this measurement method.
 The input is a sinusoidal signal with frequency of $500$Hz and the amplitude of $0.5V$.
 The nanowire was put under two solutions with different pH values in (a) and (b).
@@ -600,7 +600,7 @@ Thus, solution B increase $I_D$ and increases output voltage.
 Two devices have similar output response, which suggest our method is functional.
 But still the responses are not exactly same.
 The voltage difference appears in the are different by 8\% ($\frac{(|\Delta V_1 - \Delta V_2|)}{\Delta V_1}$).
-We can blame the inaccurate biasing current because the DC-sweep mode circuit fails in low current and the $V_G$ is manually adjusted to make the $I_D$ follows the biasing current.
+We can blame the inaccurate biasing current because DC-sweep mode circuit fails in low current and the $V_G$ is manually adjusted to make the $I_D$ follows the biasing current.
 Still there may be other reasons.
 
 Although we keep the devices under a same $gm$, the output signals can diverge if they receive incomparable input.
@@ -646,7 +646,7 @@ Still our circuit deals with the device variability problem, which does not be m
     \begin{tabular}{l|c|c|c}
         & \cite{Juv2} & \cite{Jlockin} & This work \\
         \hline
-        $\Delta I$ &  $120\mu A \sim 0.12n A$ & $850n A \sim 0.24n A$ &
+        $\Delta I$ &  $120\mu A \sim 0.12n A$ & $3\mu A \sim 60n A$ &
                 \begin{tabular}{@{}c@{}}
                     $3n A \sim 5.3\mu A$ \\ $-15\mu A\sim -3n A$
                 \end{tabular}
@@ -674,7 +674,7 @@ Another problem is the noise oscillation problem that happens when the $A_{amp}$
 This problem can be solved simply by fixing the insufficient phase margin.
 
 \paragraph{Introduce Filter and Better Experimental Process}
-The noise included in the Transient Measurement mode could be removed by simply introduce a bandpass filter.
+The noise included in Transient Measurement mode could be removed by simply introduce a bandpass filter.
 The problem of this is that the signal speed is still hard to be defined.
 Besides, currently we use pipetman to change the concentration of solution.
 This process can evoke undesired noise and sometimes may not be carried on smoothly.
