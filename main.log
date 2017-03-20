@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  20 MAR 2017 01:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  20 MAR 2017 12:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1284,31 +1284,40 @@ Overfull \hbox (4.9194pt too wide) in paragraph at lines 6--11
 \EU1/lmr/m/n/12 Poly-silicon nanowire (SiNW) is a well-studied and interesting one-dimensional nanos-
  []
 
-)
+) (./data/acknowledgement.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [1
 
 
-] (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
+])
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [2
 
-] (./main.lof
-Overfull \hbox (15.40855pt too wide) in paragraph at lines 8--8
+] (./main.toc
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [3
+
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+Overfull \vbox (8.448pt too high) has occurred while \output is active []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [4] (./main.lof
+Overfull \hbox (15.40855pt too wide) in paragraph at lines 4--4
  [][] []\EU1/lmr/m/n/12 The dc simulation results of TIA. The x-axis represents positive/negative 
  []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
-<use  "images/nthu-logo.pdf" > [3
+<use  "images/nthu-logo.pdf" > [5
 
 ]
+Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
-LaTeX Warning: Reference `sec:spec3' on page 13 undefined on input line 14.
-
-)
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [6])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
@@ -1316,170 +1325,168 @@ LaTeX Warning: Reference `sec:spec3' on page 13 undefined on input line 14.
 Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [4] (./data/chap5.tex
+ <use  "images/nthu-logo.pdf" > [7] (./data/chap6.tex
 Chapter 1.
-
-LaTeX Warning: Reference `section:SF' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Reference `sec:AC' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Reference `fig:lockin' on page 1 undefined on input line 9.
-
-File: images/chapter5/DCMode.png Graphic file (type QTm)
-<use  "images/chapter5/DCMode.png" >
-
-LaTeX Warning: Reference `sec:AC' on page 1 undefined on input line 25.
-
+File: images/chapter6/FrontedCircuit.png Graphic file (type QTm)
+<use  "images/chapter6/FrontedCircuit.png" >
 File: images/nthu-logo.pdf Graphic file (type QTm)
-<use  "images/nthu-logo.pdf" > [1
+ <use  "images/nthu-logo.pdf" > [1
 
 
 ]
-File: images/chapter5/ACMode.png Graphic file (type QTm)
- <use  "images/chapter5/ACMode.png" >
-File: images/chapter5/ACMode_sine.png Graphic file (type QTm)
- <use  "images/chapter5/ACMode_sine.png" >
+File: images/chapter5/mirror.PNG Graphic file (type QTm)
+ <use  "images/chapter5/mirror.PNG" >
+File: images/chapter6/Ibias.png Graphic file (type QTm)
+ <use  "images/chapter6/Ibias.png" >
+
+LaTeX Warning: Reference `fig:mirror_ch6' on page 2 undefined on input line 44.
+
+
+Overfull \hbox (3.8402pt too wide) in paragraph at lines 51--60
+\EU1/lmr/m/n/12 The Fig.1.3[](a) and (c) show that the dynamic input current range of TIA is $\OT1/cmr/m/n/12 +5\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ^^VA \OMS/cmsy/m/n/12 ^^X
+ []
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [2]
+File: images/chapter6/Trimp_I+.png Graphic file (type QTm)
+ <use  "images/chapter6/Trimp_I+.png" >
+File: images/chapter6/Trimp_I-.png Graphic file (type QTm)
+ <use  "images/chapter6/Trimp_I-.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [3]
-
-LaTeX Warning: Reference `sec:ch2CC' on page 4 undefined on input line 86.
-
-File: images/chapter5/TIA_olda.png Graphic file (type QTm)
-<use  "images/chapter5/TIA_olda.png" >
-Overfull \hbox (19.20665pt too wide) in paragraph at lines 92--94
-[][]
- []
-
-File: images/chapter5/TIA_old.png Graphic file (type QTm)
-<use  "images/chapter5/TIA_old.png" >
+File: images/chapter6/Problem_OPGain.png Graphic file (type QTm)
+ <use  "images/chapter6/Problem_OPGain.png" >
+File: images/chapter6/DCMode.png Graphic file (type QTm)
+ <use  "images/chapter6/DCMode.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [4]
-File: images/chapter5/TIA.png Graphic file (type QTm)
- <use  "images/chapter5/TIA.png" >
+File: images/chapter6/gvt_0101Manual_IdVg.png Graphic file (type QTm)
+ <use  "images/chapter6/gvt_0101Manual_IdVg.png" >
+File: images/chapter6/gvt_0101Manual_gmId.png Graphic file (type QTm)
+ <use  "images/chapter6/gvt_0101Manual_gmId.png" >
+
+LaTeX Warning: Reference `sec:feedM' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Reference `eq:TF_RA' on page 5 undefined on input line 136.
+
+
+LaTeX Warning: Reference `eq:TF_LG' on page 5 undefined on input line 136.
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [5]
-File: images/chapter5/TIA_block.png Graphic file (type QTm)
- <use  "images/chapter5/TIA_block.png" >
-File: images/chapter5/TIA_sch.png Graphic file (type QTm)
- <use  "images/chapter5/TIA_sch.png" >
-File: images/chapter5/postSim/TIA_ac.jpg Graphic file (type QTm)
- <use  "images/chapter5/postSim/TIA_ac.jpg" >
+
+LaTeX Warning: Text page 6 contains only floats.
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [6]
-File: images/chapter5/postSim/TIA_dc.jpg Graphic file (type QTm)
- <use  "images/chapter5/postSim/TIA_dc.jpg" >
-
-LaTeX Warning: Reference `tb:ACSpec' on page 7 undefined on input line 200.
-
-LaTeX Font Info:    Try loading font information for EU1+ on input line 205.
-LaTeX Font Info:    No file EU1.fd. on input line 205.
-
-LaTeX Font Warning: Font shape `EU1//m/n' undefined
-(Font)              using `EU1/lmr/m/n' instead on input line 205.
-
-
-LaTeX Warning: Reference `tb:ACSpec' on page 7 undefined on input line 217.
-
-
+File: images/chapter6/gvt_0101Manual_VopiProblem.png Graphic file (type QTm)
+ <use  "images/chapter6/gvt_0101Manual_VopiProblem.png" >
+File: images/chapter6/OP_schematic.png Graphic file (type QTm)
+ <use  "images/chapter6/OP_schematic.png" >
+File: images/chapter6/TrOP_layout.PNG Graphic file (type QTm)
+ <use  "images/chapter6/TrOP_layout.PNG" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [7]
-File: images/../images/chapter5/feedbackBlock.png Graphic file (type QTm)
- <use  "images/../images/chapter5/feedbackBlock.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [8]
-File: images/chapter5/input_imp.png Graphic file (type QTm)
- <use  "images/chapter5/input_imp.png" >
+
+LaTeX Warning: Text page 9 contains only floats.
+
+
+Overfull \vbox (0.7399pt too high) has occurred while \output is active []
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [9]
+LaTeX Font Info:    Try loading font information for EU1+ on input line 252.
+LaTeX Font Info:    No file EU1.fd. on input line 252.
 
-LaTeX Warning: Reference `sec:ch3rds' on page 10 undefined on input line 293.
 
-File: images/../images/chapter5/LoopGain.png Graphic file (type QTm)
-<use  "images/../images/chapter5/LoopGain.png" >
+LaTeX Font Warning: Font shape `EU1//m/n' undefined
+(Font)              using `EU1/lmr/m/n' instead on input line 252.
 
-LaTeX Warning: Reference `tb:DCspec' on page 10 undefined on input line 319.
+File: images/chapter6/NWROC_block.png Graphic file (type QTm)
+<use  "images/chapter6/NWROC_block.png" >
+File: images/chapter6/Second.png Graphic file (type QTm)
+ <use  "images/chapter6/Second.png" >
+Overfull \hbox (2.60799pt too wide) in paragraph at lines 269--282
+[][]  [] 
+ []
 
 
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [10]
-File: images/chapter5/OP_block.png Graphic file (type QTm)
- <use  "images/chapter5/OP_block.png" >
-File: images/chapter5/OP_sch.png Graphic file (type QTm)
- <use  "images/chapter5/OP_sch.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [11]
-File: images/chapter5/postSim/DCIcompare_all.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/DCIcompare_all.PNG" >
-File: images/chapter5/postSim/stability_1p_fs.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/stability_1p_fs.PNG" >
-
-LaTeX Warning: Reference `sec:spec3' on page 12 undefined on input line 407.
-
-
-LaTeX Warning: Reference `sec:spec3' on page 12 undefined on input line 407.
-
-
+File: images/chapter6/CVMVsMeas.png Graphic file (type QTm)
+ <use  "images/chapter6/CVMVsMeas.png" >
+File: images/chapter6/Subtractor_noise.png Graphic file (type QTm)
+ <use  "images/chapter6/Subtractor_noise.png" >
+File: images/chapter6/Amp_PM.PNG Graphic file (type QTm)
+ <use  "images/chapter6/Amp_PM.PNG" >
+File: images/chapter6/Amp_PM_5p.PNG Graphic file (type QTm)
+ <use  "images/chapter6/Amp_PM_5p.PNG" >
+File: images/chapter6/SeconStage_feed.png Graphic file (type QTm)
+ <use  "images/chapter6/SeconStage_feed.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [12]
-
-LaTeX Warning: Text page 13 contains only floats.
-
-
-Overfull \vbox (3.20023pt too high) has occurred while \output is active []
-
-
+File: images/../images/chapter6/Amp_pm_5p_10x.PNG Graphic file (type QTm)
+ <use  "images/../images/chapter6/Amp_pm_5p_10x.PNG" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [13]
-File: images/chapter5/mirror.PNG Graphic file (type QTm)
- <use  "images/chapter5/mirror.PNG" >
-File: images/chapter5/Second.png Graphic file (type QTm)
- <use  "images/chapter5/Second.png" >
+File: images/chapter6/SubtractorXin.png Graphic file (type QTm)
+ <use  "images/chapter6/SubtractorXin.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [14]
-File: images/../images/chapter5/Subtractor.png Graphic file (type QTm)
- <use  "images/../images/chapter5/Subtractor.png" >
+Overfull \vbox (7.56012pt too high) has occurred while \output is active []
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [15]
+File: images/chapter6/SubtractorZoffset.png Graphic file (type QTm)
+ <use  "images/chapter6/SubtractorZoffset.png" >
+File: images/chapter6/SubtractorXin_scope.png Graphic file (type QTm)
+ <use  "images/chapter6/SubtractorXin_scope.png" >
+File: images/chapter6/SecondStageAmp10x.png Graphic file (type QTm)
+ <use  "images/chapter6/SecondStageAmp10x.png" >
+File: images/chapter6/SecondStageAmp100x.png Graphic file (type QTm)
+ <use  "images/chapter6/SecondStageAmp100x.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [16]
-File: images/chapter5/postSim/subtractor_5_xx.jpg Graphic file (type QTm)
- <use  "images/chapter5/postSim/subtractor_5_xx.jpg" >
-File: images/chapter5/postSim/subtractor_5_zz.jpg Graphic file (type QTm)
- <use  "images/chapter5/postSim/subtractor_5_zz.jpg" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1488,71 +1495,64 @@ Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [18]
-File: images/chapter5/postSim/ResAmp_1x.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/ResAmp_1x.PNG" >
-File: images/chapter5/postSim/ResAmp_10x.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/ResAmp_10x.PNG" >
-File: images/chapter5/postSim/ResAmp_100x.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/ResAmp_100x.PNG" >
-Overfull \hbox (1.3515pt too wide) in paragraph at lines 607--620
- [][] 
- []
+File: images/chapter6/Bw_10x.png Graphic file (type QTm)
+ <use  "images/chapter6/Bw_10x.png" >
+File: images/chapter6/Bw_100x.png Graphic file (type QTm)
+ <use  "images/chapter6/Bw_100x.png" >
+
+LaTeX Warning: Reference `fig:sim:vgnoise' on page 19 undefined on input line 497.
 
 
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [19]
-Overfull \vbox (62.00482pt too high) has occurred while \output is active []
-
-
+File: images/chapter6/Noise.png Graphic file (type QTm)
+ <use  "images/chapter6/Noise.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [20]
-File: images/chapter5/NWROC_block_vg.png Graphic file (type QTm)
- <use  "images/chapter5/NWROC_block_vg.png" >
-File: images/../images/chapter5/postSim/totalGain.PNG Graphic file (type QTm)
- <use  "images/../images/chapter5/postSim/totalGain.PNG" >
-File: images/../images/chapter5/postSim/noise.png Graphic file (type QTm)
- <use  "images/../images/chapter5/postSim/noise.png" >
-Overfull \hbox (3.10849pt too wide) in paragraph at lines 660--664
-[]\EU1/lmr/m/n/12 Fig.1.20[] presents the maximal gain that the circuit provides at five corners. Fig.1.21[]
+File: images/chapter6/Sin_1u.png Graphic file (type QTm)
+ <use  "images/chapter6/Sin_1u.png" >
+File: images/chapter6/Sin_1p8u.png Graphic file (type QTm)
+ <use  "images/chapter6/Sin_1p8u.png" >
+Overfull \hbox (6.20473pt too wide) in paragraph at lines 576--577
+\EU1/lmr/m/n/12 This section presents the measurement with the proposed variability-resisting method. 
  []
-
-
-LaTeX Warning: Reference `tb:ACinput' on page 21 undefined on input line 665.
-
-
-LaTeX Warning: Reference `tb:ACSpec' on page 21 undefined on input line 671.
 
 
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [21]
-File: images/chapter5/NWROC_block_vs.png Graphic file (type QTm)
- <use  "images/chapter5/NWROC_block_vs.png" >
+
+LaTeX Warning: Reference `section:biasVg' on page 22 undefined on input line 581.
+
+File: images/chapter6/DeviceVar_IdVg.png Graphic file (type QTm)
+<use  "images/chapter6/DeviceVar_IdVg.png" >
+File: images/chapter6/DeviceVar_gmId.png Graphic file (type QTm)
+ <use  "images/chapter6/DeviceVar_gmId.png" >
+File: images/chapter6/DeviceVar_scope.png Graphic file (type QTm)
+ <use  "images/chapter6/DeviceVar_scope.png" >
+
+LaTeX Warning: Reference `sec:assumpDiscuss' on page 22 undefined on input line 624.
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [22]
 
-LaTeX Warning: Reference `tb:ACSpec' on page 23 undefined on input line 718.
+LaTeX Warning: Reference `section:SF' on page 23 undefined on input line 628.
 
 
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [23]
-File: images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG" >
-File: images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG" >
-File: images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG" >
-File: images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG" >)
+File: images/chapter6/layout.PNG Graphic file (type QTm)
+ <use  "images/chapter6/layout.PNG" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
@@ -1560,14 +1560,14 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [25] (./main.bbl) (./data/acknowledgement.tex
+ <use  "images/nthu-logo.pdf" > [25])
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [26
-
-
-])
+ <use  "images/nthu-logo.pdf" > [26] (./main.bbl)
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [27
+
 
 ] (./main.aux)
 
@@ -1580,18 +1580,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 145 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 31407 strings out of 493706
- 662813 string characters out of 6145770
- 666042 words of memory out of 5000000
- 34287 multiletter control sequences out of 15000+600000
+ 31487 strings out of 493706
+ 665383 string characters out of 6145770
+ 663892 words of memory out of 5000000
+ 34371 multiletter control sequences out of 15000+600000
  10028 words of font info for 67 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 55i,14n,69p,10463b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,69p,10463b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (32 pages).
+Output written on main.pdf (35 pages).

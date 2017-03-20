@@ -1,22 +1,28 @@
 \contentsline {chapter}{Abstract}{}
-\contentsline {chapter}{\numberline {1}Integrated Circuitry Design}{1}
-\contentsline {section}{\numberline {1.1}Fronted Circuit Design}{1}
-\contentsline {subsection}{\numberline {1.1.1}DC-sweep mode}{1}
-\contentsline {subsection}{\numberline {1.1.2}Transient Measurement mode}{2}
-\contentsline {subsection}{\numberline {1.1.3}The Variability-resisting method}{3}
-\contentsline {subsection}{\numberline {1.1.4}Design Description}{4}
-\contentsline {subsubsection}{\numberline {1.1.4.1}Strategies for lowering current detecting limits}{4}
-\contentsline {subsubsection}{\numberline {1.1.4.2}TIA (Transimpedance Amplifier) Design}{6}
-\contentsline {subsubsection}{\numberline {1.1.4.3}Feedback Mechanism}{8}
-\contentsline {subsubsection}{\numberline {1.1.4.4}Input Impedance (DC-sweep mode)}{9}
-\contentsline {subsubsection}{\numberline {1.1.4.5}Stability and Feedback OP Design}{10}
-\contentsline {subsection}{\numberline {1.1.5}The Post-simulation Result of DC-sweep mode circuit}{12}
-\contentsline {subsubsection}{\numberline {1.1.5.1}DC Current (Ibias) Sweep}{12}
-\contentsline {subsubsection}{\numberline {1.1.5.2}Bode Plot of Loop Gain and Phase}{12}
-\contentsline {subsubsection}{\numberline {1.1.5.3}Summary}{14}
-\contentsline {section}{\numberline {1.2}The Second Stage Circuit}{15}
-\contentsline {subsection}{\numberline {1.2.1}The Analog Subtractor}{16}
-\contentsline {subsection}{\numberline {1.2.2}Non-inverting Resistor-based Amplifier}{17}
-\contentsline {section}{\numberline {1.3}Post-simulation Result of Transient Measurement mode}{20}
-\contentsline {subsection}{\numberline {1.3.1}Detecting signals of biomolecules at the gate}{21}
-\contentsline {subsection}{\numberline {1.3.2}Modulating biomolecule signals from the source terminal}{23}
+\contentsline {chapter}{\numberline {1}Circuit Results Discussion and Summary}{1}
+\contentsline {section}{\numberline {1.1}The Fronted Circuit and DC-sweep mode}{1}
+\contentsline {subsection}{\numberline {1.1.1}Ibias}{2}
+\contentsline {subsection}{\numberline {1.1.2}TIA}{2}
+\contentsline {subsection}{\numberline {1.1.3}OP}{4}
+\contentsline {subsection}{\numberline {1.1.4}Measurement with DC-sweep Mode Circuit and the Low-current Defect Problem}{4}
+\contentsline {subsection}{\numberline {1.1.5}The Layout Problems of OP}{7}
+\contentsline {subsubsection}{\numberline {1.1.5.1}The Possible Reasons for Insufficient Gain}{8}
+\contentsline {subsubsection}{\numberline {1.1.5.2}The Possible Reasons for Input Offset}{10}
+\contentsline {subsubsection}{\numberline {1.1.5.3}Improvement Methodology}{10}
+\contentsline {subsubsection}{\numberline {1.1.5.4}Summary of DC-sweep mode}{10}
+\contentsline {section}{\numberline {1.2}The Second Stage Circuit and Transient Measurement Mode}{11}
+\contentsline {subsection}{\numberline {1.2.1}The Second Stage Circuit}{11}
+\contentsline {subsubsection}{\numberline {1.2.1.1}The Noise Oscillation Problem in Amplifier with Amplification Rate of 1 }{12}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Dynamic Input Range}{15}
+\contentsline {subsubsection}{\numberline {1.2.1.3}The Circuit Gain}{16}
+\contentsline {subsection}{\numberline {1.2.2}Transient Measurement Mode}{19}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Bandwidth and Gain}{19}
+\contentsline {subsubsection}{\numberline {1.2.2.2}Input Referred Noise}{20}
+\contentsline {subsubsection}{\numberline {1.2.2.3}Modulating biomolecule signals from the source terminal}{20}
+\contentsline {subsubsection}{\numberline {1.2.2.4}Summary of Transient Measurement mode}{21}
+\contentsline {section}{\numberline {1.3}Dealing with the Device Variability Problem}{22}
+\contentsline {section}{\numberline {1.4}Conclusion and Future Work}{24}
+\contentsline {subsection}{\numberline {1.4.1}Future Work}{25}
+\contentsline {paragraph}{\numberline {1.4.1.0.1}Problems in the Circuit Design}{25}
+\contentsline {paragraph}{\numberline {1.4.1.0.2}Introduce Filter and Better Experimental Process}{25}
+\contentsline {paragraph}{\numberline {1.4.1.0.3}The $\Delta V$ Problem}{26}

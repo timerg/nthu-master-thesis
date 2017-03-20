@@ -441,7 +441,7 @@ According to our electrical measurement, this is the maximal $g_m$ value that ou
 
 \begin{figure}[!htbp]
     \centering
-        \includegraphics[width=0.4\textwidth] {images/chapter5/mirror.PNG}
+        \includegraphics[width=0.45\textwidth] {images/chapter5/mirror.PNG}
     \caption{The current mirror structure of the current source Ibias.}
     \label{fig:mirror}
 \end{figure}
@@ -464,22 +464,37 @@ According to our electrical measurement, this is the maximal $g_m$ value that ou
     }
 \end{table}
 
-
+\FloatBarrier
 \section{The Second Stage Circuit}
-
-We discuss the second stage circuit in this section.
-It is notable that the second stage circuit is only used for the transient measurement mode.
-
-\begin{figure}[!htbp]
+\FloatBarrier
+\begin{figure}[!h]
     \centering
-        \includegraphics[width=1\textwidth] {images/chapter5/Second.png}
+    \includegraphics[width=0.8\textwidth] {images/chapter5/Second.png}
     \caption{Block diagram of the second stage circuit}
     \label{fig:secondStage}
 \end{figure}
+
+We discuss the second stage circuit in this section.
+The second stage circuit is only used for the transient measurement mode.
+
+
+
+\begin{table}[!b]
+    {\fontfamily{}\fontsize{10}{14}\selectfont
+    \centering
+    \begin{tabular}{l||c||c||c}
+        switch 1 | switch 2 & on|on & on|off & off|off \\
+        \hline
+        amplification rate  & 100   & 10     & 1 \\
+    \end{tabular}
+    \caption{Switches 1 and 2 select the amplification rate among 100, 10 and 1.}
+    \label{tb:AmpRate}
+    }
+\end{table}
 Fig.\ref{fig:secondStage} shows the block diagram of the second stage circuit.
 The analog subtractor shifts the voltage of $V_{in}$ from $V_{Ref}$ to $V_z$.
 It is followed by a resistor-based non-inverting amplifier composed of a two-stage differential operational amplifier, two switches and three resistors.
-The switches select the amplification gain among 100, 10 and 1.
+The switches select the amplification rate among 100, 10 and 1 (Table.\ref{tb:AmpRate}).
 
 \subsection{The Analog Subtractor} \label{sec:sub}
 
@@ -496,7 +511,7 @@ The output voltage equals to:
     V_x - V_{Ref} + V_z
 \end{equation}
 
-A voltage signal $\Delta v$ sent to vx induces a current change ($\Delta i_d$) in Mx.
+If a voltage signal $\Delta v$ sent to vx, it induces a current change ($\Delta i_d$) in Mx.
 This current is mirrored to the diode-connected Mz by the cascode current mirror formed by M1 $\sim$ M4.
 $\Delta i_d$ changes the gate voltage of Mz, and this voltage is buffered to the output by the source follower M5.
 
@@ -508,10 +523,10 @@ $\Delta i_d$ changes the gate voltage of Mz, and this voltage is buffered to the
 One reason for employing this block is that the $V_{Ref}$ is an internal voltage reference which may drift with the process variation.
 We prefer the output offset voltage of the circuit to be constant and controllable.
 Therefore, we shift it to $V_z$ controlled by an external voltage source.
-Another reason is to increase the output dynamic range of the next amplifier stage.
+Another reason is to increase the output dynamic range of the next-stage amplifier.
 This reason will be much clearer when we start discussing the amplifier circuit in the next section.
 
-We performed DC sweep on input ($V_X$) and $V_z$ at five corners to show the linear region of the circuit (Fig.\ref{fig:sim:subtractor}, Table.\ref{tb:Subtractor}).
+The DC sweep is performed on input ($V_X$) and $V_z$ at five corners to show the linear region of the circuit (Fig.\ref{fig:sim:subtractor}, Table.\ref{tb:Subtractor}).
 The circuit has an input dynamic range of $0.77V$ ($-0.57V \sim +0.2V$) while the dynamic range for $V_z$ is $0.38V$.
 
 \begin{figure}[!htbp]
@@ -568,32 +583,22 @@ When two switches is off, the circuit acts like an unit-gain buffer.
 Eq.(\ref{eq:ResAmp}) suggests that $A_{Op2}$ should be larger than 1000 (60dB).
 Thus, the Op2 in Fig.\ref{fig:secondStage} adopts the structure of a two-stage amplifier (same with the operational amplifier in TIA block) due to its high gain and wide output dynamic range.
 
-\emphy{One thing to note is that the derivation above views the $V_z$ as the virtual ground.
-$V_z$ is both the input and output offset voltage of the amplifier.
-It is usually applied with $1.3V$.
-As mentioned in the subtractor section (Section.\ref{sec:sub}), the subtractor increases the output dynamic range of the amplifier stage.
-If the subtractor is removed, the output offset voltage of this stage would be $V_{Ref}$, which is much lower ($\sim 0.8V$), and is changeable due to the process variation.}
 
-Fig.\ref{fig:sim:ResAmp} presents the five corners post-simulation results of the amplifier.
-We swept the input and measured the output under three amplification gain.
-And Table.\ref{tb:sim:ResAmp} is the summary table.
-
-
-\begin{figure}[!htb]
-    \begin{minipage}[t]{1\textwidth}
+\begin{figure}[tb]
+    \begin{minipage}[t]{0.47\textwidth}
         \centering
-        \includegraphics[width=0.6\textwidth] {images/chapter5/postSim/ResAmp_1x.PNG}
+        \includegraphics[width=1\textwidth] {images/chapter5/postSim/ResAmp_1x.PNG}
         (a)
     \end{minipage}
-    \hspace{8cm}
-    \begin{minipage}[t]{1\textwidth}
+    % \hspace{8cm}
+    \begin{minipage}[t]{0.47\textwidth}
         \centering
-        \includegraphics[width=0.6\textwidth] {images/chapter5/postSim/ResAmp_10x.PNG}
+        \includegraphics[width=1\textwidth] {images/chapter5/postSim/ResAmp_10x.PNG}
         (b)
     \end{minipage}
     \begin{minipage}[t]{1\textwidth}
         \centering
-        \includegraphics[width=0.6\textwidth] {images/chapter5/postSim/ResAmp_100x.PNG}
+        \includegraphics[width=0.47\textwidth] {images/chapter5/postSim/ResAmp_100x.PNG}
         (c)
     \end{minipage}
     \caption{Five corners output DC response (vout) and derivative ($dvout/dvin$) when being operated under the amplification rate of (a)1, (b)10, (c)100.}
@@ -601,7 +606,7 @@ And Table.\ref{tb:sim:ResAmp} is the summary table.
 \end{figure}
 
 
-\begin{table}[!htb]
+\begin{table}[!hb]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
     \begin{tabular}{l|c|c|c}
@@ -622,7 +627,22 @@ And Table.\ref{tb:sim:ResAmp} is the summary table.
     }
 \end{table}
 
-\FloatBarrier
+
+\emphy{One thing to note is that the derivation above views the $V_z$ as the virtual ground.
+$V_z$ is both the input and output offset voltage of the amplifier.
+It is usually applied with $1.1V$.
+As mentioned in the subtractor section (Section.\ref{sec:sub}), the subtractor increases the output dynamic range of the amplifier stage.
+If the subtractor is removed, the output offset voltage of this stage would be $V_{Ref}$, which is much lower ($\sim 0.8V$), and is changeable due to the process variation.}
+
+Fig.\ref{fig:sim:ResAmp} presents the five corners post-simulation results of the amplifier and Table.\ref{tb:sim:ResAmp} is the summary table.
+We swept the input and measured the output under three amplification gain.
+
+
+
+
+
+
+% \FloatBarrier
 
 \section{Post-simulation Result of Transient Measurement mode}
 As mentioned in section.\ref{sec:TrM}, there are two usage of Transient Measurement mode (Fig.\ref{fig:ACmode}).
@@ -639,9 +659,9 @@ There simulation results are presented separately below.
 
 The first usage is to detect the output response of input voltage signal at gate.
 The voltage signal is caused by the the biomolecule concentration.
-This measurement are usually preceded by DC-sweep mode, which initialize the $I_D$ with the value of Ibias and set $g_m$ to a corresponding value.
+This measurement is usually preceded by DC-sweep mode, which initializes the $I_D$ with the value of Ibias and set $g_m$ to a corresponding value.
 Therefore, we replaced the transistor by a current signal Iin as in Fig.\ref{fig:Nblockvg}.
-And we apply an ac signal from Iin to perform the ac analysis.
+The ac signal is applied from Iin to perform the ac analysis.
 
 \begin{figure}[!htb]
     \centering
@@ -652,7 +672,7 @@ And we apply an ac signal from Iin to perform the ac analysis.
 
 \begin{figure}[!htb]
     \centering
-        \includegraphics[width=1\textwidth] {../images/chapter5/postSim/noise.png}
+        \includegraphics[width=0.7\textwidth] {../images/chapter5/postSim/noise.png}
     \caption{The input referred noise when the amplification rate of the second stage is 100.}
     \label{fig:sim:vgnoise}
 \end{figure}
@@ -660,11 +680,10 @@ And we apply an ac signal from Iin to perform the ac analysis.
 \emphy{Fig.\ref{fig:sim:vgGain} presents the maximal gain that the circuit provides at five corners.
 Fig.\ref{fig:sim:vgnoise} shows the input referred noise.
 The design specification requires the gain to be greater than $5M$ and the voltage noise referred to the gate of nanowire to be smaller than $2mV$.
-The summary table (Table.\ref{tb:sim:vg}) computed the noise result by considering the $g_m$ as $200n$, which is the minimum $g_m$ that may exist in our measurement.}
+The summary table (Table.\ref{tb:sim:vg}) computed the noise result by considering the $g_m$ as $1\mu$, which is the minimum $g_m$ that may exist in our measurement.}
 
-To be noted that in the simulation of Fig.\ref{fig:sim:vgnoise}, Ibias provides $10\mu A$ which is the largest biasing current in transient measurement mode (Table.\ref{tb:ACinput}).
-This should be when the circuit has largest noise.
-\begin{table}[!htbp]
+
+\begin{table}[!htb]
     {\fontfamily{}\fontsize{10}{14}\selectfont
     \centering
     \begin{tabular}{l|c|c}
@@ -691,6 +710,9 @@ This should be when the circuit has largest noise.
     }
 \end{table}
 
+To be noted that in the simulation of Fig.\ref{fig:sim:vgnoise}, Ibias provides $10\mu A$ which is the largest biasing current in transient measurement mode (Table.\ref{tb:ACinput}).
+This should be when the circuit has largest noise.
+
 \subsection{Modulating biomolecule signals from the source terminal}
 \begin{figure}[!htbp]
     \centering
@@ -705,7 +727,8 @@ The output voltage is measured and used for computing the $g_m$ of the element.
 \begin{equation}
     g_m = \frac{V_{out}}{v_s \times R_{TIA} \times A_{second}}
 \end{equation}
-The $v_s$ is the amplitude of the input sinusoidal signal, and $A_{second}$ is the voltage gain of the second stage circuit.
+$v_s$ is the amplitude of the input sinusoidal signal.
+$A_{second}$ is the voltage gain of the second stage circuit and $R_{TIA}$ is the transimpedance of TIA in the froted circuit.
 
 One thing to be noted is the offset voltage of the output.
 The biomolecule concentration difference changes the $I_D$ of nanowire.
@@ -738,7 +761,7 @@ Their corresponding ac sweeps are presented in Fig.\ref{fig:sim:sine10_ac} and F
 \begin{figure}[!htbp]
     \centering
         \includegraphics[width=1\textwidth] {images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG}
-    \caption{The transient analysis. The gain of $A_{amp}$ is 100. The $g_m$ is swept from $1\mu$ to $6\mu$. There are two curves have the output saturation problem. This is because of the offset current flowing through $R_{TIA}$. One may solve it by increasing the current provided by Ibias.}
+    \caption{The transient analysis. The gain of $A_{amp}$ is 100. The $g_m$ is swept from $1\mu$ to $6\mu$. There are two curves have the output saturation problem. This is because of the offset current flowing through $R_{TIA}$. It can be solved by increasing the current provided by Ibias.}
     \label{fig:sim:sine100}
 \end{figure}
 \begin{figure}[!htbp]

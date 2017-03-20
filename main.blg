@@ -8,45 +8,45 @@ I was expecting a `,' or a `}'---line 144 of file data/thesis.bib
  : title = {Potassium ion-sensitive field effect transistor},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 4 entries,
+You've used 2 entries,
             1791 wiz_defined-function locations,
-            477 strings with 4547 characters,
-and the built_in function-call counts, 1022 in all, are:
-= -- 71
-> -- 76
+            465 strings with 4022 characters,
+and the built_in function-call counts, 650 in all, are:
+= -- 46
+> -- 46
 < -- 0
-+ -- 27
-- -- 23
-* -- 91
-:= -- 186
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 4
++ -- 16
+- -- 14
+* -- 68
+:= -- 115
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 34
-empty$ -- 83
-format.name$ -- 23
-if$ -- 209
+cite$ -- 2
+duplicate$ -- 18
+empty$ -- 53
+format.name$ -- 14
+if$ -- 133
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 4
-newline$ -- 23
-num.names$ -- 4
-pop$ -- 8
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 2
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 12
+skip$ -- 6
 stack$ -- 0
-substring$ -- 60
-swap$ -- 4
+substring$ -- 54
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 6
-width$ -- 5
-write$ -- 44
+while$ -- 4
+width$ -- 3
+write$ -- 24
 (There was 1 error message)
