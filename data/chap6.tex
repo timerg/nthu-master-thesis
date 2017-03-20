@@ -31,7 +31,7 @@ These three circuit blocks combined with the nanowire device (SiNW) form a feedb
         \includegraphics[width=1\textwidth] {images/chapter5/mirror.PNG}
         \raggedleft
     \end{minipage}
-    % \vfill
+    \hfill
     \centering
     \begin{minipage}[t]{0.5\textwidth}
         \includegraphics[width=1\textwidth]{images/chapter6/Ibias.png}
@@ -46,7 +46,7 @@ The relation between the resistance of the external resistor and the biasing cur
 The Ibias circuit is able to provide a biasing current from $100n A$ to $50\mu A$ stably.
 It should be noted that this biasing current range binds the operational range of DC-sweep mode circuit.
 
-\FloatBarrier
+
 \subsection{TIA}
 The Fig.\ref{fig:chip:TIA}(a) and (c) show that the dynamic input current range of TIA is $+5.3\mu A \sim -15\mu A$.
 The Fig.\ref{fig:chip:TIA}(b) and (d) are the respective derivative ($\frac{\partial V_{out}}{\partial I_{in}}$)
@@ -60,13 +60,13 @@ It is assured that the variance does not disturb the important properties of who
 
 \begin{figure}[tbh!]
     \centering
-    \begin{minipage}[t]{0.8\textwidth}
+    \begin{minipage}[t]{0.65\textwidth}
         \includegraphics[width=1\textwidth]{images/chapter6/Trimp_I+.png}
         \raggedleft
     \end{minipage}
     \hfill
     \centering
-    \begin{minipage}[t]{0.8\textwidth}
+    \begin{minipage}[t]{0.65\textwidth}
         \includegraphics[width=1\textwidth]{images/chapter6/Trimp_I-.png}
         \raggedleft
     \end{minipage}
@@ -75,10 +75,8 @@ It is assured that the variance does not disturb the important properties of who
     \label{fig:chip:TIA}
 \end{figure}
 
-
-
-
 \subsection{OP} \label{sec:ch6:OP}
+
 A sinusoidal signal is sent to the negative input of OP and the output signal is measured in Fig.\ref{fig:chip:OPGain}.
 It shows that the gain of the feedback OP is only about $1k$.
 However, the gain of OP was designed to be more than $5k$.
@@ -97,7 +95,7 @@ We will discuss this problem in the following section.
 \subsection{Measurement with DC-sweep Mode Circuit and the Low-current Defect Problem}
 \begin{figure}[h!tb]
     \centering
-        \includegraphics[width=0.5\textwidth] {images/chapter6/DCMode.png}
+        \includegraphics[width=0.3\textwidth] {images/chapter6/DCMode.png}
     \caption{DC-sweep mode circuit}
     \label{fig:chip:DCmode}
 \end{figure}
@@ -105,26 +103,24 @@ We will discuss this problem in the following section.
 With DC-sweep mode (Fig.\ref{fig:chip:DCmode}), Ibias is swept and $V_G$ and $I_D$ are measured to obtain the $I_D$-$V_G$ and $I_{bias}$-$V_G$ curves (Fig.\ref{fig:chip:IdIbiasVG}).
 The chip works well when $I_{bias}$ is larger than $1\mu A$.
 The overlap between two curves implies that $I_D$ follows $I_{bias}$ and $V_G$ consequently alters owing to the feedback mechanism.
-
-When current becomes low, the circuit fails to prompt nanowire to follow the biasing current.
-This phenomenon could be reasonable because lower $I_D$ implies lower $g_m$ and the feedback ability of the circuit may be not strong enough to push the gate of nanowire.
-However we expected this happens for $g_m$ below $200n$.
-The Fig.\ref{fig:chip:gmId} indicates that the this happens when $g_m$ is less than $5\mu$ instead.
-We call this problem as low-current defect problem.
-
-\begin{figure}[tbh!]
+\begin{figure}[bt!]
     \centering
-    \includegraphics[width=0.8\textwidth] {images/chapter6/gvt_0101Manual_IdVg.png}
+    \includegraphics[width=0.7\textwidth] {images/chapter6/gvt_0101Manual_IdVg.png}
     \caption{The measurement result of DC-sweep mode circuit. $I_{bias}$ is the biasing current. $I_D$ is the current flowing through the nanowire device.
     One can observe a separation between two curves in low current section ($< 1\mu A$).}
     \label{fig:chip:IdIbiasVG}
 \end{figure}
 
+When current becomes low, the circuit fails to prompt nanowire to follow the biasing current.
+This phenomenon could be reasonable because lower $I_D$ implies lower $g_m$ and the feedback ability of the circuit may be not strong enough to push the gate of nanowire.
+However, we expected this happens for $g_m$ below $200n$.
+The Fig.\ref{fig:chip:gmId} indicates that the this happens when $g_m$ is less than $5\mu$ instead.
+We call this problem as low-current defect problem.
 \begin{figure}[tbh!]
     \centering
-        \includegraphics[width=0.7\textwidth] {images/chapter6/gvt_0101Manual_gmId.png}
+    \includegraphics[width=0.6\textwidth] {images/chapter6/gvt_0101Manual_gmId.png}
     \caption{The $g_m$-$I_D$ curve. It is obtained from the $I_D$-$V_G$ curve in Fig.\ref{fig:chip:IdIbiasVG}.
-            ``Circuit fails'' means the two curves in Fig.\ref{fig:chip:IdIbiasVG} are separated where ``circuit works'' means they are overlapped.}
+    ``Circuit fails'' means the two curves in Fig.\ref{fig:chip:IdIbiasVG} are separated where ``circuit works'' means they are overlapped.}
     \label{fig:chip:gmId}
 \end{figure}
 
