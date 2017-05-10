@@ -18,7 +18,7 @@ It is straightforward to think of these binding molecules as a voltage signal in
 And this voltage signal effects nanowire in the same way $V_G$ does.
 So by plotting $I_D$-$V_G$ curves, we can have a thumbnail of how concentration affects the $I_D$.
 
-\subsection{Source Follower} \label{section:SF}
+\subsection{The Source Follower Structure} \label{section:SF}
 
 \begin{figure}[h]
     \centering
@@ -274,31 +274,24 @@ The simplification can be applied when the signal frequency or $C_{NW} R_{NW}$ i
 Since our goal is to ignore the capacitance and merely detect the resistance (or transconductance), Method 2 is more suitable for us.
 Because it is easier to separate capacitive and resistive measurement by Method 2 than by Method 1.
 
-
-% Another reason that makes Method 2 more attractive is that it is more flexible.
-% One can add other analog blocks such as a noise filter or an amplifier to it.
-
-
-
-
-
 \section{Two assumption for Dealing with Device Variability Problem} \label{sec:assumpDiscuss}
 In chapter 1, to deal with device variability problem, we assume that:
 \begin{enumerate}
-    \item The nanowire transconductance ($g_m = \frac{\partial I_D}{\partial V_{G}}$) is dependent on $I_D$ and independent of $V_{G}$.
+    \item The transconductance ($g_m = \frac{\partial I_D}{\partial V_{G}}$) of nanowire in weak inversion is linearly dependent on $I_D$ and independent of $V_{G}$.
     \item The change of the biomolecule concentration can induce potential change on the surface of the gate of a nanowire..
 \end{enumerate}
 We discuss them in this section.
 
 \subsection{Transconductance and $I_D$} \label{section:IdGm}
-With the MOSFET model of weak and strong inversion, we have the $I_D$ equations of MOSFET:
+With the MOSFET model of weak and strong inversion, we have the $I_D$ equations of MOSFET :
 \setlength{\mathindent}{1.5cm}
 \begin{align}
     \text{weak inversion:} \quad I_D   = & I_0e^{\kappa V_{GS}/\phi_t}(1 - e^{-V_{DS}/\phi_t})  \label{eq:Ikappa} \\
                                        = & I_0e^{\kappa V_{GS}/\phi_t} \quad \text{where $V_{DS} > 4 \phi_t$ } \\
     \text{strong inversion:} \quad I_D = & \mu C_{ox} \frac{W}{L}((V_{GS} - V_{th})V_{DS} - \frac{V_{DS}^2}{2}) \\
-                                       = \mu C_{ox} \frac{W}{L}(V_{GS} - V_{th})^2 &\quad \text{where $V_{DS} > V_{GS} - V_{th}$} \label{eq:ID_Strong}
+                                       = \frac{1}{2} \mu C_{ox} & \frac{W}{L}(V_{GS} - V_{th})^2 \text{ }\text{ where $V_{DS} > V_{GS} - V_{th}$} \label{eq:ID_Strong}
 \end{align}
+
 
 $V_{GS}$ is the gate-to-source voltage ($V_{GS} = V_G - V_S$).
 It will be written as $V_G$ in the following paragraphs since source is considered to be grounded.
@@ -315,34 +308,53 @@ We then derive $g_m$:
     \text{strong inversion:} \quad g_m & = \sqrt{2 \mu C_{ox} (\frac{W}{L})I_{D}} \label{eq:gm_strong}
 \end{align}
 
-For the strong inversion, the Eq.(\ref{eq:gm_strong}) shows that the assumption 1 is correct.
-However, the assumption is not completely right for transistor in weak inversion.
-According to the Eq.(\ref{eq:gm_weak}), the $g_m$ is affected not only by $I_D$ but also by the gate coupling coefficient $\kappa$.
-The gate coupling effect is illustrated in Fig.\ref{fig:gateCouple}.
+The Eq.(\ref{eq:gm_weak}) shows that the $g_m$ in weak inversion is affected by the gate coupling effect.
+This effect is illustrated in Fig.\ref{fig:gateCouple}.
 The $\kappa$ is actually the ratio of voltage divider:
 \begin{equation}
-    \kappa = \frac{C_i}{C_i + C_{dep}}
+    \kappa = \frac{C_{ox}}{C_{ox} + C_{dep}}
 \end{equation}
-The fact that $C_{dep}$ varies with $V_G$ makes $\kappa$ a anon-linear parameter.
+The fact that $C_{dep}$ varies with $V_G$ makes $\kappa$ a non-linear parameter.
 Its value ranges from 0.4 to 0.9.
-For nanowire, its structure is different from MOSFET.
-The SiO2 insulator in MOSFET is replaced by the solvent.
+The structure of nanowire is different from MOSFET and is illustrated in Fig.\ref{fig:gateCouple_NW}
+The SiO2 insulator in MOSFET is replaced by the solvent and the $C_{ox}$ becomes $C_{sol}$.
 According to the famous Gouy-Chapman model, the potential difference in the solution affect the double layer capacitance in solution \cite{ElecChem}.
 Thus, it is still true that $V_G$ affect $gm$.
+Nevertheless, it is convinced that the $\kappa$ value is very close to 1 because $C_{sol}$ is much greater that $C_{dep}$.
+This will be discussed later.
 
-Based on the experience in MOSFET, the gate coupling effect is not destructive.
-$gm$ can still be approximated to.
-Therefore, in our circuit design, this problem is left unsolved and left for the future work.
+As for the strong inversion, $g_m$ linearly depends on $\sqrt{I_D}$ and independent of $V_G$.
+However, in nanowire, the $C_{ox}$ is replaced by $C_{sol}$ and is affected by $V_G$ and the solvent concentration.
+Therefore, the assumption 1 cannot be applied to nanowire in strong inversion region.
 
 \begin{figure}[bt!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{images/chapter6/kappa.png}
-    \caption{The gate coupling effect in MOSFET \cite{bookOfUltra}}
+    \includegraphics[width=0.8\linewidth]{images/chapter2/kappa.png}
+    \caption{The gate coupling effect in MOSFET \cite{bookOfUltra}.}
     \label{fig:gateCouple}
+\end{figure}
+\begin{figure}[bt!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/chapter2/kappa_liquid.png}
+    \caption{The gate coupling effect in nanowire.}
+    \label{fig:gateCouple_NW}
 \end{figure}
 
 
-
+\subsubsection*{Estimation of $C_{sol}$}
+$C_{sol}$ can be estimated by applying the famous Gouy–Chapman–Stern model \cite{bookOfElecMethod}.
+The model explains the double-layer capacitance ($C_{DL}$), which is the structure appears on the contact surface between liquid and metal or solid particle.
+The capacitance is considered to be two capacitors in series:
+\begin{equation}
+    \frac{1}{C_{DL}} = \frac{1}{C_{stern}} + \frac{1}{C_D}
+\end{equation}
+$C_{stern}$ represents the capacitor in the stern layer and $C_D$ represents the capacitor in diffusion layer.
+For DNA solution and PBS as buffer, the relative permittivity is 8 \cite{dnaepisilon} and debye length is about 0.7nm.
+$C_{stern}$ is therefore roughly 97$\mu/cm^2$.
+As for $C_D$, the value is hard to know since it relates to ion concentration and fluid potential.
+However, the model implies that $C_{DL}$ is mostly dominated by $C_{stern}$.
+Only if the solution contains scarce solvent, $C_D$ should be taken into consideration.
+It is clearly not our case because the PBS buffer we use has high ion concentration.
 
 \subsection{A Simple Model for Concentration Effect}
 In \cite{DN17}, the team plots the $I_D$-$V_G$ curves and study how the curves change with the concentration of biomolecules.
@@ -351,9 +363,9 @@ Each curve seems to be different from each other by a constant shift.
 We found that this concentration effect can be explained by applying the weak inversion current equation of MOSFET.
 
 \begin{align}
-    & I_{D1} = I_{0} e^{\kappa(V_{G} - V_{th}) / \phi_t} \\
-    & I_{D2} = I_{0} e^{\kappa(V_{G} - (V_{th} - \Delta v)) / \phi_t} \\
-    \rightarrow & I_{D2} = f(\Delta v) \times I_{D1} \quad \text{where} \quad f(\Delta v_g) = e^{\Delta v / \phi_t} \label{eq:vc}
+    & I_{D1} = I_{0} e^{\kappa(V_{G}) / \phi_t} \\
+    & I_{D2} = I_{0} e^{\kappa(V_{G} + \Delta v) / \phi_t} \\
+    \rightarrow & I_{D2} = f(\Delta v) \times I_{D1} \quad \text{where} \quad f(\Delta v) = e^{\Delta v / \phi_t} \label{eq:vc}
 \end{align}
 
 The $I_{D1}$ and $I_{D2}$ are the current of two nanowire devices immersed in solutions with different concentrations.

@@ -280,7 +280,7 @@ The input impedance of the circuit is $\Delta v_x / \Delta i_x$.
     & \Delta I_x = \frac{\Delta V_x}{r_{ds}} + I_{SiNW} \\
     & I_{SiNW} = \frac{\Delta V_x}{r_{ds}} LG \\
     \rightarrow \quad & \Delta I_x = \frac{\Delta V_x}{r_{ds}} + \frac{\Delta V_x}{r_{ds}} LG \\
-    \rightarrow \quad & \frac{\Delta V_x}{\Delta I_x} = \frac{r_ds}{1 + LG} \label{eq:input_imp} \\
+    \rightarrow \quad & \frac{\Delta V_x}{\Delta I_x} = \frac{r_{ds}}{1 + LG} \label{eq:input_imp} \\
     \text{where}\quad & LG = R_{TIA}A_{OP} g_m
     %   \Delta v_x / \Delta i_x  &= \quad (\cancel{\frac{1}{r_{ds}}} + A_{TIA}A_{OP}g_m + \frac{1 + A_{TIA}}{R_{TIA}})^{-1} \\
     %    &= \frac{R_{TIA}}{(1 + A_{TIA})(1 + R_{TIA}{A_{OP}g_m})}  \label{eq:input_imp}
@@ -305,7 +305,7 @@ The OP plays a crucial role in the stability issue because it not only decides t
 \begin{figure}[!htbp]
     \centering
         \includegraphics[width=0.4\textwidth] {../images/chapter5/LoopGain.png}
-    \caption{}
+    \caption{The illustration of the loop gain test with several poles and zero marked.}
     \label{fig:loopgain}
 \end{figure}
 
@@ -316,12 +316,19 @@ We can write the loop gain as:
     & w_z = \frac{g_m}{C_{gd}}
 \end{align}
 The parasitic capacitance $C_{gd}$, at the conservative estimate, has a maximal value of $1pF$ (The estimation is based on the fabrication information in \cite{DN17} and \cite{C6}).
-And because the lower bound of $g_m$ in our design specification (Table.\ref{tb:DCspec}) is $200n$, the $w_z$ can be as small as $20k (rad/s)$.
+Because the lower bound of $g_m$ in our design specification (Table.\ref{tb:DCspec}) is $200n$, the $w_z$ can be as small as $20k (rad/s)$.
 To force the total loop gain to drop to 1 before $s > 2k (rad/s)$, we have to reduce the first dominant pole frequency.
 
 We choose $w_{p1}$ as the first dominant pole.
 From section.\ref{sec:feedM}, we learned that the $A_{OP}$ should be larger than $5k$.
 Thus, we choose a folded cascode structure which provides high output impedance and gain.
+
+To be noted that the resistor $R_s$ introduces another pole.
+The value of $R_s$ is equivalent to the output impedance of the feedback OP.
+This pole can be dominant if its value is larger than $100M \Omega$.
+This may happen because the folded cascode structure has larger output impedance.
+Therefore, in the chip measurement (chapter 6), we add an external unit-gain buffer to the output of OP.
+This buffer reduces the $R_s$ to about $100 \Omega$.
 
 \begin{figure}[!htbp]
     \centering
@@ -403,7 +410,7 @@ We also appended a $1pF$ capacitor to model the $C_{gd}$.
 
 \begin{figure}[!htb]
     \centering
-        \includegraphics[width=1\textwidth] {images/chapter5/postSim/stability_1p_fs.PNG}
+        \includegraphics[width=1\textwidth] {images/chapter5/postSim/stability_1p.PNG}
     \caption{Results of the ac simulation of the loop gain and phase (Bode plot) with different $g_m$ value ($200n$, $2u$, $20u$). These $g_m$ value is selected according to DC-sweep mode specification we set in chapter 3 (section.\ref{sec:spec3}).}
     \label{fig:sim:loopsim}
 \end{figure}
@@ -455,7 +462,7 @@ According to our electrical measurement, this is the maximal $g_m$ value that ou
         \hline
         $I_D$ & $100n A$ - $30\mu A$ & $20n A$ - $70\mu A$ \\
         \hline
-        $g_m$ & $200n A$ - $20\mu A$& $130n$ - $50\mu$\\
+        $g_m$ & $200n $ - $20\mu $& $130n$ - $50\mu$\\
         \hline
         $V_G$ & $0.5V$ - $3V$ &  $0.45V$ - $3V$\\
     \end{tabular}
@@ -516,8 +523,8 @@ This current is mirrored to the diode-connected Mz by the cascode current mirror
 $\Delta i_d$ changes the gate voltage of Mz, and this voltage is buffered to the output by the source follower M5.
 
 \begin{align}
-    & \Delta v_{out} = \Delta v_{x}\frac{g_{mx}}{g_{mz}} - V_{Ref}\frac{g_my}{g_m5} + V_z\\
-    & \Delta v_{out} = \Delta v_{x} - V_{Ref} \quad \text{For $g_{mx} = g_{mz}$; $g_{my} = g_{m5}$}
+    & \Delta v_{out} = \Delta v_{x}\frac{gm_x}{gm_z} - V_{Ref}\frac{gm_y}{gm_5} + V_z\\
+    & \Delta v_{out} = \Delta v_{x} - V_{Ref} \quad \text{For $gm_x = gm_z$; $gm_y = gm_5$}
 \end{align}
 
 One reason for employing this block is that the $V_{Ref}$ is an internal voltage reference which may drift with the process variation.
@@ -618,7 +625,7 @@ Thus, the Op2 in Fig.\ref{fig:secondStage} adopts the structure of a two-stage a
         \hline
         Phase Margin & $110$ degree & $110$ degree & $84$ degree \\
         \hline
-        Input Dynamic Range & from $-9mV$ to $17mV$ & from $-0.11V$ to $0.14V$ & from $-0.5$ to $0.3V$\\
+        Input Dynamic Range & from $-9mV$ to $17mV$ & from $-0.11V$ to $0.14V$ & from $-1.06$ to $1.9V$\\
         \hline
         Output Dynamic Range & \multicolumn{3}{c}{$0.1V$ - $3V$}\\
     \end{tabular}

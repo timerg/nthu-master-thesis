@@ -11,45 +11,46 @@ I'm skipping whatever remains of this entry
 Warning--empty title in Drift
 Warning--empty journal in Drift
 Warning--empty year in Drift
-You've used 17 entries,
+Warning--empty year in bookOfElecMethod
+You've used 19 entries,
             1791 wiz_defined-function locations,
-            566 strings with 7076 characters,
-and the built_in function-call counts, 4869 in all, are:
-= -- 381
-> -- 279
+            576 strings with 7406 characters,
+and the built_in function-call counts, 5163 in all, are:
+= -- 404
+> -- 291
 < -- 5
-+ -- 100
-- -- 83
-* -- 378
-:= -- 764
-add.period$ -- 50
-call.type$ -- 17
-change.case$ -- 14
++ -- 105
+- -- 86
+* -- 388
+:= -- 813
+add.period$ -- 56
+call.type$ -- 19
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 209
-empty$ -- 443
-format.name$ -- 83
-if$ -- 1094
+cite$ -- 23
+duplicate$ -- 227
+empty$ -- 476
+format.name$ -- 86
+if$ -- 1160
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 19
-newline$ -- 87
-num.names$ -- 17
-pop$ -- 60
+int.to.str$ -- 19
+missing$ -- 22
+newline$ -- 97
+num.names$ -- 19
+pop$ -- 71
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 112
+skip$ -- 118
 stack$ -- 0
 substring$ -- 329
-swap$ -- 65
+swap$ -- 67
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 34
-width$ -- 19
-write$ -- 181
+warning$ -- 4
+while$ -- 36
+width$ -- 21
+write$ -- 200
 (There was 1 error message)

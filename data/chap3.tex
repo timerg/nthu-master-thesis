@@ -5,16 +5,23 @@ The second section analyzes the data of the biology experiments.
 The third section presents the data of the electrical measurement.
 The last section provides the design specification based on the information given by the previous sections.
 
-\section{Brief Description of Nanowire Structure}
+\section{Brief Description of Nanowire}
+\subsection{The Fabrication Process and Structure of Nanowire}
+
 The nanowire we use is made by Prof.Yang's team (National Chiao Tong University)\cite{C5}.
 Fig.\ref{fig:drawing} is the cross-sectional view of the nanowire structure.
-The fabrication process is based on the poly-silicon sidewall spacer technique.
-The n-Type doped poly-SiNW FET has two to ten poly-silicon channels.
+The poly-SiNW FET has two to ten poly-silicon channels.
 Each channel is 80nm in width and 2µm in length.
-A Large portion of the channel surface is exposed to the environment.
-The exposed region, through several post-process steps, captures the DNA probe and serves as the sensing site for DNA molecules.\cite{C5, C6}
-
-
+The fabrication process is based on the poly-silicon sidewall spacer technique (Fig.\ref{fid:proccess}).
+The bottom of nanowire is a p-type Si serving as back-gate and starting material.
+It is covered by the oxide layer and a nitride layer.
+The nitride is to prevent the current from leaking into the back-gate.
+After three layers were formed, TEOS-dummy gate was placed.
+Then a 100nm a-Si is deposited on the device.
+The annealing step is performed.
+This step causes the a-Si to turn into poly-Si and the S/D doping.
+Finally, with the Reactive-Ion Etching (RIE), the nanowire is formed.
+Through several post-process steps, the poly-Si of nanowire captures the DNA probe and serves as the sensing site for DNA molecules.\cite{C5, C6}
 \begin{figure}[!htbp]
     \centering
     \begin{minipage}[t]{0.4\textwidth}
@@ -31,6 +38,33 @@ The exposed region, through several post-process steps, captures the DNA probe a
     \caption{Nanowire Structure.  \textbf{(a)} A nanowire device with two poly-silicon channels. \textbf{(b)} The sectional view of the cutting plane in (a). }
     \label{fig:drawing}
 \end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/chapter3/NwFigProccess.png}
+    \caption{The fabrication process of the nanowire. This figure is plotted by Prof.Yang's team \cite{DN17}.}
+    \label{fig:proccess}
+\end{figure}
+
+\subsection{The Two Gates of nanowire and the Working Concept}
+There are two gates in our nanowire (Fig.\ref{fig:NWdgate}).
+The back-gate which has been mentioned in the last paragraph is the silicon substrate at the bottom.
+The other one is the floating-gate which locates at the nanowire surface.
+The gate bias voltage is provided from an AgCl reference electrode immersed in the DNA solution.
+
+Both of the gates send a positive electrical field to the nanowire.
+This field stimulates the silicon atoms in nanowire and increases the free electrons.
+In other words, when the gate bias rises, the current flowing thorough nanowire ($I_D$) increases.
+Since the DNA molecule is negative charged, the higher the DNA concentration is, the larger the $I_D$ is.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/chapter3/NW_phys.png}
+    \caption{}
+    \label{fig:NWdgate}
+\end{figure}
+
+
 
 
 \section{Biology Experiment}
@@ -208,9 +242,9 @@ The data are obtained from our measurements with the source meter (Keithley 2602
 To exclude the effect of ions, we placed nanowire devices in the distilled deionized water instead of biomolecule solution.
 And there is no DNA probe on the surfaces of poly-silicon channel.
 
-\subsection{Front Gate and Back Gate}
-Our nanowire has two gates available: floating gate (liquid gate) and back-gate.
-We choose floating gate as the operation gate mainly because the floating gate can induce a larger drain current.
+\subsection{Floating-gate and Back-gate}
+Our nanowire has two gates available: floating-gate (liquid gate) and back-gate.
+We choose floating-gate as the operation gate mainly because the floating-gate can induce a larger drain current.
 In other words, it has higher transconductance (Fig.\ref{fig:IdVgandgbsId}).
 In our circuit design, nanowire is placed in a feedback loop where its transconductance is proportional to the loop gain (chapter 5).
 
@@ -229,7 +263,7 @@ In our circuit design, nanowire is placed in a feedback loop where its transcond
         \raggedleft
         (b)
     \end{minipage}
-    \caption{Comparison between the DC sweep of voltage on the floating gate and back gate. \textbf{(a)} $I_D$. \textbf{(b)} Transconductance ($g_m$). The $I_D$ and $gm$ of the floating gate are larger than the back gate.}
+    \caption{Comparison between the DC sweep of voltage on the floating gate and . \textbf{(a)} $I_D$. \textbf{(b)} Transconductance ($g_m$). The $I_D$ and $gm$ of the floating gate are larger than the back-gate.}
     \label{fig:IdVgandgbsId}
 \end{figure}
 

@@ -22,5 +22,8 @@ main.lof
 main.fls
 main.fdb_latexmk
 main.aux
+main.pdf
 *.eps
 *.jpg
+
+EqGen
