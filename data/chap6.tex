@@ -11,19 +11,7 @@ This chapter presents the results of our read-out circuit and the summary of thi
 As in Fig.\ref{fig:frontedCIrcuit}(a), the fronted circuit includes a biasing current source (Ibias), transimpedance amplifier (TIA) and an operational amplifier (OP).
 These three circuit blocks combined with the nanowire device (SiNW) form a feedback structure, which is DC-sweep mode of our circuit.
 
-\subsection{Ibias}
-% \begin{figure}[tbh!]
-%     \centering
-%         \includegraphics[width=0.25\textwidth] {images/chapter5/mirror.PNG}
-%     \caption{The Ibias circuit}
-%     \label{fig:mirror_ch6}
-% \end{figure}
-% \begin{figure}[h!tb]
-%     \centering
-%     \includegraphics[width=0.5\textwidth]{images/chapter6/Ibias.png}
-%     \caption{The relation between biasing current ($I_{bias}$) and resistance of the external resistor}
-%     \label{fig:chip:mirror}
-% \end{figure}
+\subsection{The Output Current Range of Ibias Circuit}
 
 \begin{figure}[tbh!]
     \centering
@@ -41,13 +29,13 @@ These three circuit blocks combined with the nanowire device (SiNW) form a feedb
     \label{fig:chip:mirror}
 \end{figure}
 
-The Fig.\ref{fig:mirror_ch6}(a) is the schematic of the Ibias circuit.
+The Fig.\ref{fig:chip:mirror}(a) is the schematic of the Ibias circuit.
 The relation between the resistance of the external resistor and the biasing current is shown in Fig.\ref{fig:chip:mirror}(b).
 The Ibias circuit is able to provide a biasing current from $100n A$ to $50\mu A$ stably.
 It should be noted that this biasing current range binds the operational range of DC-sweep mode circuit.
 
 
-\subsection{TIA}
+\subsection{The Chip Measurement Results of TIA}
 The Fig.\ref{fig:chip:TIA}(a) and (c) show that the dynamic input current range of TIA is $+5.3\mu A \sim -15\mu A$.
 The Fig.\ref{fig:chip:TIA}(b) and (d) are the respective derivative ($\frac{\partial V_{out}}{\partial I_{in}}$)
 As illustrated in these figures, the transimpedance of TIA is $103k$.
@@ -75,7 +63,7 @@ It is assured that the variance does not disturb the important properties of who
     \label{fig:chip:TIA}
 \end{figure}
 
-\subsection{OP} \label{sec:ch6:OP}
+\subsection{The Chip Measurement Results of the Feedback OP} \label{sec:ch6:OP}
 
 A sinusoidal signal is sent to the negative input of OP and the output signal is measured in Fig.\ref{fig:chip:OPGain}.
 It shows that the gain of the feedback OP is only about $1k$.
@@ -463,6 +451,8 @@ The exact gain values are summarized in the Table.\ref{tb:chip:ampGain}.
 The second stage circuit and the TIA from the fronted circuit compose the circuit of Transient Measurement Mode.
 This section presents some of its important properties (gain, noise and bandwidth).
 
+
+
 \subsubsection{Bandwidth and Gain}
 
 \begin{figure}[tbh!p]
@@ -505,6 +495,37 @@ The spec. from chapter 3 allows for a maximal input current noise of $2n A$.
     \label{fig:chip:noise}
 \end{figure}
 
+\subsubsection{The Detection Range}
+The spec. of our design demand a detection range for input current of $\pm 20n A \sim \pm 2.8\mu A$.
+The upper bound of the current detection is decided by the TIA circuit, which is $5.3\mu A$ and $15 \mu A$.
+The lower bound mainly relates to the noise.
+We find the lower bound by sending a pulse input to the gate of nanowire.
+This input voltage induced a current variance ($\Delta I_D$) and resulted in a pulse signal at output.
+We then used oscilloscope to see how low the $\Delta I_D$ can be when it is still possible to detect it through the output.
+
+\begin{figure}[tbh!p]
+    \centering
+    \begin{minipage}[t]{1\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth] {images/chapter6/VinToVout_scope_0425_150mV.png}
+        (a)
+    \end{minipage}
+    \centering
+    \begin{minipage}[t]{1\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth] {images/chapter6/VinToVout_scope_0425_20mV.png}
+        (b)
+    \end{minipage}
+    \caption{}
+    \label{fig:chip:DR_scope}
+\end{figure}
+
+The Fig.\ref{fig:chip:DR_scope}(a) and (b) are the output signals when the amplitude of input pulse signals are $150m V$ and $20m V$ respectively.
+The current variance induced in two cases are $28n A$ and $2.8n A$
+The high and low value can be barely distinguished in \ref{fig:chip:DR_scope}(b).
+Therefore, we say the lower bound of our circuit is $\pm 2.8n A$. (The positive input and negative)
+This matches the noise measurement in the last section.
+The noise is $0.3n A$ and the detecting range is ten-fold larger than that value.
 
 \subsubsection{Modulating biomolecule signals from the source terminal} \label{sec:ch6:Modulating}
 The second usage of Transient Measurement mode is to apply a sinusoidal signal at the source of nanowire.
@@ -553,7 +574,7 @@ Although there is the noise oscillation problem, the performance of the circuit 
         \hline
         Dynamic Input Current Range($\Delta I_D$) & $\pm 20n A$ - $\pm 2.8\mu A$ &
         \begin{tabular}{@{}c@{}}
-            $3n A \sim 5.3\mu A$ \\ $-15\mu A\sim -3n A$
+            $2.8n A \sim 5.3\mu A$ \\ $-15\mu A\sim -2.8n A$
         \end{tabular}\\
         \hline
         Input Referred Noise (A) &$< 2n A$ & $< 0.3n A$ @ $1$Hz\\

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  10 MAY 2017 16:04
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  10 MAY 2017 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1290,609 +1290,49 @@ Overfull \hbox (4.9194pt too wide) in paragraph at lines 6--11
 
 ] (./main.toc [3
 
-]
-Overfull \vbox (8.448pt too high) has occurred while \output is active []
-
- [4]
-Overfull \vbox (8.448pt too high) has occurred while \output is active []
-
- [5])
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
- [6] (./main.lof
-Overfull \hbox (2.33904pt too wide) in paragraph at lines 11--11
- [][] []\EU1/lmr/m/n/12 Concentration-dependent electric response($\OML/cmm/m/it/12 I[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 V[]$\EU1/lmr/m/n/12 ) of biotin-modified 
+ [4] (./main.lof
+Overfull \hbox (15.40855pt too wide) in paragraph at lines 4--4
+ [][] []\EU1/lmr/m/n/12 The dc simulation results of TIA. The x-axis represents positive/negative 
  []
 
-
-Overfull \hbox (2.00412pt too wide) in paragraph at lines 16--16
- \EU1/lmr/m/n/12 devices. In \EU1/lmr/bx/n/12 (a)\EU1/lmr/m/n/12 , the measurement result of 1fM and 100fM biomolecule 
- []
-
-
-Overfull \hbox (35.19368pt too wide) in paragraph at lines 17--17
- [][] []\EU1/lmr/m/n/12 Concentration-dependent $\OML/cmm/m/it/12 I[]$\EU1/lmr/m/n/12 -$\OML/cmm/m/it/12 V[]$ \EU1/lmr/m/n/12 curves with concentration of Na_PB(Buffer 
- []
-
-[7
+[5
 
 ]
 Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
- [8]
-Overfull \hbox (15.40855pt too wide) in paragraph at lines 39--39
- [][] []\EU1/lmr/m/n/12 The dc simulation results of TIA. The x-axis represents positive/negative 
- []
-
-
-Overfull \vbox (8.448pt too high) has occurred while \output is active []
-
- [9]
-Overfull \hbox (15.40855pt too wide) in paragraph at lines 62--62
- [][] []\EU1/lmr/m/n/12 The dc simulation results of TIA. The x-axis represents positive/negative 
- []
-
-
-Overfull \vbox (8.448pt too high) has occurred while \output is active []
-
- [10]
-Overfull \vbox (8.448pt too high) has occurred while \output is active []
-
- [11])
+ [6])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
 
 Overfull \vbox (8.448pt too high) has occurred while \output is active []
 
- [12] (./data/chap1.tex
+ [7] (./data/chap6.tex
 Chapter 1.
-[1
-
-
-]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [2]) (./data/chap2.tex
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [3]
-Chapter 2.
-[4
-
-]
-File: images/chapter2/SourceFollower.png Graphic file (type QTm)
- <use  "images/chapter2/SourceFollower.png" >
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [5]
-File: images/chapter2/ISFET.png Graphic file (type QTm)
- <use  "images/chapter2/ISFET.png" >
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [6]
-File: images/chapter2/SourceFollower_wi_parasiticCap.png Graphic file (type QTm)
- <use  "images/chapter2/SourceFollower_wi_parasiticCap.png" >
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [7]
-File: images/chapter2/uv1.png Graphic file (type QTm)
- <use  "images/chapter2/uv1.png" >
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [8]
-File: images/chapter2/uv2.png Graphic file (type QTm)
- <use  "images/chapter2/uv2.png" >
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [9]
-File: images/chapter2/lockin.png Graphic file (type QTm)
- <use  "images/chapter2/lockin.png" >
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [10]
-LaTeX Font Info:    Try loading font information for EU1+ on input line 204.
-LaTeX Font Info:    No file EU1.fd. on input line 204.
-
-
-LaTeX Font Warning: Font shape `EU1//m/n' undefined
-(Font)              using `EU1/lmr/m/n' instead on input line 204.
-
-
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [11]
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [12]
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [13]
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [14]
-File: images/chapter2/kappa.png Graphic file (type QTm)
- <use  "images/chapter2/kappa.png" >
-File: images/chapter2/kappa_liquid.png Graphic file (type QTm)
- <use  "images/chapter2/kappa_liquid.png" >
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [15]
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [16]
-File: images/chapter2/DN18Fig3D.png Graphic file (type QTm)
- <use  "images/chapter2/DN18Fig3D.png" >) (./data/chap3.tex
-Overfull \vbox (8.58pt too high) has occurred while \output is active []
-
- [17]
-Chapter 3.
-
-LaTeX Warning: Reference `fid:proccess' on page 18 undefined on input line 15.
-
-File: images/chapter3/Nw.png Graphic file (type QTm)
-<use  "images/chapter3/Nw.png" >
-File: images/chapter3/Nw_section.png Graphic file (type QTm)
- <use  "images/chapter3/Nw_section.png" > [18
-
-]
-File: images/chapter3/NwFigProccess.png Graphic file (type QTm)
- <use  "images/chapter3/NwFigProccess.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [19]
-File: images/chapter3/NW_phys.png Graphic file (type QTm)
- <use  "images/chapter3/NW_phys.png" >
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
-File: images/chapter3/208_devices/L2-8_log.eps Graphic file (type eps)
- <images/chapter3/208_devices/L2-8_log.eps>
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
-File: images/chapter3/208_devices/L2-10_log.eps Graphic file (type eps)
- <images/chapter3/208_devices/L2-10_log.eps>
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [20]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [21]
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-File: images/chapter3/128_allT_mag.eps Graphic file (type eps)
- <images/chapter3/128_allT_mag.eps>
-Underfull \hbox (badness 1789) in paragraph at lines 107--107
-[]\EU1/lmr/bx/n/12 Figure 3.5: |\EU1/lmr/m/n/12 Concentration-dependent $\OML/cmm/m/it/12 I[]$\EU1/lmr/m/n/12 -$\OML/cmm/m/it/12 V[]$ \EU1/lmr/m/n/12 curves with concentration of
- []
-
-Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
-File: images/chapter3/128_allT_error.eps Graphic file (type eps)
-<images/chapter3/128_allT_error.eps>
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [22]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [23]
-Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
-File: images/chapter3/208_devices/L2-7_log.eps Graphic file (type eps)
- <images/chapter3/208_devices/L2-7_log.eps>
-Overfull \hbox (31.72258pt too wide) in paragraph at lines 152--154
- [][] 
- []
-
-Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
-File: images/chapter3/208_devices/L2-7_margin.eps Graphic file (type eps)
-<images/chapter3/208_devices/L2-7_margin.eps>
-Overfull \hbox (31.72258pt too wide) in paragraph at lines 158--161
- [][] 
- []
-
-
-Overfull \hbox (2.60799pt too wide) in paragraph at lines 150--162
-[][]  [] 
- []
-
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
-File: images/chapter3/208_devices/L2-8_log.eps Graphic file (type eps)
-<images/chapter3/208_devices/L2-8_log.eps>
-Overfull \hbox (31.72258pt too wide) in paragraph at lines 165--167
- [][] 
- []
-
-Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
-File: images/chapter3/208_devices/L2-8_margin.eps Graphic file (type eps)
-<images/chapter3/208_devices/L2-8_margin.eps>
-Overfull \hbox (31.72258pt too wide) in paragraph at lines 171--174
- [][] 
- []
-
-
-Overfull \hbox (2.60799pt too wide) in paragraph at lines 163--175
-[][]  [] 
- []
-
-Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
-File: images/chapter3/208_devices/L2-12_log.eps Graphic file (type eps)
-<images/chapter3/208_devices/L2-12_log.eps>
-Overfull \hbox (31.72258pt too wide) in paragraph at lines 178--180
- [][] 
- []
-
-Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
-File: images/chapter3/208_devices/L2-12_margin.eps Graphic file (type eps)
-<images/chapter3/208_devices/L2-12_margin.eps>
-Overfull \hbox (31.72258pt too wide) in paragraph at lines 184--187
- [][] 
- []
-
-
-Overfull \hbox (2.60799pt too wide) in paragraph at lines 176--188
-[][]  [] 
- []
-
-Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
-File: images/chapter3/Id_Dev_bio.eps Graphic file (type eps)
-<images/chapter3/Id_Dev_bio.eps>
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [24]
-
-LaTeX Warning: Text page 25 contains only floats.
-
-
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [25]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [26]
-File: images/chapter3/FgBg_Compare_Id.eps Graphic file (type eps)
- <images/chapter3/FgBg_Compare_Id.eps>
-File: images/chapter3/FgBg_Compare_Id_dev.eps Graphic file (type eps)
- <images/chapter3/FgBg_Compare_Id_dev.eps>
-File: images/chapter3/pIdVg.eps Graphic file (type eps)
- <images/chapter3/pIdVg.eps>
-File: images/chapter3/pIdgbs.eps Graphic file (type eps)
- <images/chapter3/pIdgbs.eps>
-File: images/chapter3/pIdgbs_Vd.eps Graphic file (type eps)
- <images/chapter3/pIdgbs_Vd.eps>
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [27]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [28]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [29]
-File: images/chapter3/rds_I.eps Graphic file (type eps)
- <images/chapter3/rds_I.eps>
-File: images/chapter3/pDisparity.eps Graphic file (type eps)
- <images/chapter3/pDisparity.eps>
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [30]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [31]
-Overfull \hbox (20.21442pt too wide) in paragraph at lines 419--425
- [][] 
- []
-
-) (./data/chap4.tex
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [32]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [33]
-Chapter 4.
-File: images/../images/chapter4/SFdiscrete_old.png Graphic file (type QTm)
-<use  "images/../images/chapter4/SFdiscrete_old.png" >
-File: images/../images/chapter4/SFdiscrete_schematic.png Graphic file (type QTm)
- <use  "images/../images/chapter4/SFdiscrete_schematic.png" >
-Overfull \hbox (1.7767pt too wide) in paragraph at lines 24--25
-\EU1/lmr/m/n/12 The circuit is divided into two sections: the constant-voltage circuit and the constant-
- []
-
-[34
-
-]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [35]
-File: images/chapter4/LM334.png Graphic file (type QTm)
- <use  "images/chapter4/LM334.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [36]
-Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
-File: images/chapter4/SF.eps Graphic file (type eps)
- <images/chapter4/SF.eps>
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
-File: images/../images/chapter4/SF_impedance.eps Graphic file (type eps)
- <images/../images/chapter4/SF_impedance.eps>) (./data/chap5.tex
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [37]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [38]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [39]
-Chapter 5.
-File: images/chapter5/DCMode.png Graphic file (type QTm)
-<use  "images/chapter5/DCMode.png" > [40
-
-]
-File: images/chapter5/ACMode.png Graphic file (type QTm)
- <use  "images/chapter5/ACMode.png" >
-File: images/chapter5/ACMode_sine.png Graphic file (type QTm)
- <use  "images/chapter5/ACMode_sine.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [41]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [42]
-File: images/chapter5/TIA_olda.png Graphic file (type QTm)
- <use  "images/chapter5/TIA_olda.png" >
-Overfull \hbox (19.20665pt too wide) in paragraph at lines 92--94
-[][]
- []
-
-File: images/chapter5/TIA_old.png Graphic file (type QTm)
-<use  "images/chapter5/TIA_old.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [43]
-File: images/chapter5/TIA.png Graphic file (type QTm)
- <use  "images/chapter5/TIA.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [44]
-File: images/chapter5/TIA_block.png Graphic file (type QTm)
- <use  "images/chapter5/TIA_block.png" >
-File: images/chapter5/TIA_sch.png Graphic file (type QTm)
- <use  "images/chapter5/TIA_sch.png" >
-File: images/chapter5/postSim/TIA_ac.jpg Graphic file (type QTm)
- <use  "images/chapter5/postSim/TIA_ac.jpg" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [45]
-File: images/chapter5/postSim/TIA_dc.jpg Graphic file (type QTm)
- <use  "images/chapter5/postSim/TIA_dc.jpg" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [46]
-File: images/../images/chapter5/feedbackBlock.png Graphic file (type QTm)
- <use  "images/../images/chapter5/feedbackBlock.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [47]
-File: images/chapter5/input_imp.png Graphic file (type QTm)
- <use  "images/chapter5/input_imp.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [48]
-File: images/../images/chapter5/LoopGain.png Graphic file (type QTm)
- <use  "images/../images/chapter5/LoopGain.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [49]
-File: images/chapter5/OP_block.png Graphic file (type QTm)
- <use  "images/chapter5/OP_block.png" >
-File: images/chapter5/OP_sch.png Graphic file (type QTm)
- <use  "images/chapter5/OP_sch.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [50]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [51]
-File: images/chapter5/postSim/DCIcompare_all.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/DCIcompare_all.PNG" >
-File: images/chapter5/postSim/stability_1p.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/stability_1p.PNG" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [52]
-File: images/chapter5/mirror.PNG Graphic file (type QTm)
- <use  "images/chapter5/mirror.PNG" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [53]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [54]
-File: images/chapter5/Second.png Graphic file (type QTm)
- <use  "images/chapter5/Second.png" >
-File: images/../images/chapter5/Subtractor.png Graphic file (type QTm)
- <use  "images/../images/chapter5/Subtractor.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [55]
-File: images/chapter5/postSim/subtractor_5_xx.jpg Graphic file (type QTm)
- <use  "images/chapter5/postSim/subtractor_5_xx.jpg" >
-File: images/chapter5/postSim/subtractor_5_zz.jpg Graphic file (type QTm)
- <use  "images/chapter5/postSim/subtractor_5_zz.jpg" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [56]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [57]
-File: images/chapter5/postSim/ResAmp_1x.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/ResAmp_1x.PNG" >
-File: images/chapter5/postSim/ResAmp_10x.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/ResAmp_10x.PNG" >
-File: images/chapter5/postSim/ResAmp_100x.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/ResAmp_100x.PNG" >
-Underfull \hbox (badness 10000) in paragraph at lines 595--611
-[][] []
- []
-
-
-Overfull \hbox (6.35152pt too wide) in paragraph at lines 619--632
- [][] 
- []
-
-
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [58]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [59]
-File: images/chapter5/NWROC_block_vg.png Graphic file (type QTm)
- <use  "images/chapter5/NWROC_block_vg.png" >
-File: images/../images/chapter5/postSim/totalGain.PNG Graphic file (type QTm)
- <use  "images/../images/chapter5/postSim/totalGain.PNG" >
-File: images/../images/chapter5/postSim/noise.png Graphic file (type QTm)
- <use  "images/../images/chapter5/postSim/noise.png" >
-Overfull \hbox (3.10849pt too wide) in paragraph at lines 687--691
-[]\EU1/lmr/m/n/12 Fig.5.20[] presents the maximal gain that the circuit provides at five corners. Fig.5.21[]
- []
-
-
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [60]
-File: images/chapter5/NWROC_block_vs.png Graphic file (type QTm)
- <use  "images/chapter5/NWROC_block_vs.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [61]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [62]
-File: images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG" >
-File: images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG" >
-File: images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG" >
-File: images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG Graphic file (type QTm)
- <use  "images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG" >) (./data/chap6.tex
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [63]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [64]
-Chapter 6.
 File: images/chapter6/FrontedCircuit.png Graphic file (type QTm)
-<use  "images/chapter6/FrontedCircuit.png" > [65
+<use  "images/chapter6/FrontedCircuit.png" > [1
+
 
 ]
 File: images/chapter5/mirror.PNG Graphic file (type QTm)
  <use  "images/chapter5/mirror.PNG" >
 File: images/chapter6/Ibias.png Graphic file (type QTm)
  <use  "images/chapter6/Ibias.png" >
-
-LaTeX Warning: Reference `fig:mirror_ch6' on page 66 undefined on input line 44.
-
-
-Overfull \hbox (3.8402pt too wide) in paragraph at lines 51--60
-\EU1/lmr/m/n/12 The Fig.6.3[](a) and (c) show that the dynamic input current range of TIA is $\OT1/cmr/m/n/12 +5\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ^^VA \OMS/cmsy/m/n/12 ^^X
+Overfull \hbox (3.8402pt too wide) in paragraph at lines 39--48
+\EU1/lmr/m/n/12 The Fig.1.3[](a) and (c) show that the dynamic input current range of TIA is $\OT1/cmr/m/n/12 +5\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ^^VA \OMS/cmsy/m/n/12 ^^X
  []
 
 
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [66]
+ [2]
 File: images/chapter6/Trimp_I+.png Graphic file (type QTm)
  <use  "images/chapter6/Trimp_I+.png" >
 File: images/chapter6/Trimp_I-.png Graphic file (type QTm)
@@ -1901,59 +1341,76 @@ File: images/chapter6/Problem_OPGain.png Graphic file (type QTm)
  <use  "images/chapter6/Problem_OPGain.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [67]
+ [3]
 File: images/chapter6/DCMode.png Graphic file (type QTm)
  <use  "images/chapter6/DCMode.png" >
 File: images/chapter6/gvt_0101Manual_IdVg.png Graphic file (type QTm)
  <use  "images/chapter6/gvt_0101Manual_IdVg.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [68]
+ [4]
 File: images/chapter6/gvt_0101Manual_gmId.png Graphic file (type QTm)
  <use  "images/chapter6/gvt_0101Manual_gmId.png" >
+
+LaTeX Warning: Reference `sec:feedM' on page 5 undefined on input line 118.
+
+
+LaTeX Warning: Reference `eq:TF_RA' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq:TF_LG' on page 5 undefined on input line 120.
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [69]
+ [5]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [70]
+ [6]
 File: images/chapter6/gvt_0101Manual_VopiProblem.png Graphic file (type QTm)
  <use  "images/chapter6/gvt_0101Manual_VopiProblem.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [71]
+ [7]
 File: images/chapter6/OP_schematic.png Graphic file (type QTm)
  <use  "images/chapter6/OP_schematic.png" >
 File: images/chapter6/TrOP_layout.PNG Graphic file (type QTm)
  <use  "images/chapter6/TrOP_layout.PNG" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [72]
+ [8]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [73]
+ [9]
+LaTeX Font Info:    Try loading font information for EU1+ on input line 236.
+LaTeX Font Info:    No file EU1.fd. on input line 236.
+
+
+LaTeX Font Warning: Font shape `EU1//m/n' undefined
+(Font)              using `EU1/lmr/m/n' instead on input line 236.
+
 File: images/chapter6/NWROC_block.png Graphic file (type QTm)
- <use  "images/chapter6/NWROC_block.png" >
+<use  "images/chapter6/NWROC_block.png" >
 File: images/chapter6/Second.png Graphic file (type QTm)
  <use  "images/chapter6/Second.png" >
-Overfull \hbox (2.60799pt too wide) in paragraph at lines 265--278
+Overfull \hbox (2.60799pt too wide) in paragraph at lines 253--266
 [][]  [] 
  []
 
 
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [74]
+ [10]
 File: images/chapter6/CVMVsMeas.png Graphic file (type QTm)
  <use  "images/chapter6/CVMVsMeas.png" >
 File: images/chapter6/Subtractor_noise.png Graphic file (type QTm)
  <use  "images/chapter6/Subtractor_noise.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [75]
+ [11]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [76]
+ [12]
 File: images/chapter6/Amp_PM.PNG Graphic file (type QTm)
  <use  "images/chapter6/Amp_PM.PNG" >
 File: images/chapter6/Amp_PM_5p.PNG Graphic file (type QTm)
@@ -1962,25 +1419,25 @@ File: images/chapter6/SeconStage_feed.png Graphic file (type QTm)
  <use  "images/chapter6/SeconStage_feed.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [77]
+ [13]
 File: images/../images/chapter6/Amp_pm_5p_10x.PNG Graphic file (type QTm)
  <use  "images/../images/chapter6/Amp_pm_5p_10x.PNG" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [78]
+ [14]
 File: images/chapter6/SubtractorXin.png Graphic file (type QTm)
  <use  "images/chapter6/SubtractorXin.png" >
 File: images/chapter6/SubtractorZoffset.png Graphic file (type QTm)
  <use  "images/chapter6/SubtractorZoffset.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [79]
+ [15]
 Overfull \vbox (1.78517pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [80]
+ [16]
 File: images/chapter6/SubtractorXin_scope.png Graphic file (type QTm)
  <use  "images/chapter6/SubtractorXin_scope.png" >
 File: images/chapter6/SecondStageAmp10x.png Graphic file (type QTm)
@@ -1989,29 +1446,46 @@ File: images/chapter6/SecondStageAmp100x.png Graphic file (type QTm)
  <use  "images/chapter6/SecondStageAmp100x.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [81]
+ [17]
 File: images/chapter6/Bw_10x.png Graphic file (type QTm)
  <use  "images/chapter6/Bw_10x.png" >
 File: images/chapter6/Bw_100x.png Graphic file (type QTm)
  <use  "images/chapter6/Bw_100x.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [82]
+ [18]
+
+LaTeX Warning: Reference `fig:sim:vgnoise' on page 19 undefined on input line 483.
+
 File: images/chapter6/Noise.png Graphic file (type QTm)
- <use  "images/chapter6/Noise.png" >
+<use  "images/chapter6/Noise.png" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [83]
+ [19]
+File: images/chapter6/VinToVout_scope_0425_150mV.png Graphic file (type QTm)
+ <use  "images/chapter6/VinToVout_scope_0425_150mV.png" >
+File: images/chapter6/VinToVout_scope_0425_20mV.png Graphic file (type QTm)
+ <use  "images/chapter6/VinToVout_scope_0425_20mV.png" >
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+ [20]
 File: images/chapter6/Sin_1u.png Graphic file (type QTm)
  <use  "images/chapter6/Sin_1u.png" >
 File: images/chapter6/Sin_1p8u.png Graphic file (type QTm)
  <use  "images/chapter6/Sin_1p8u.png" >
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [84]
-Overfull \hbox (6.20473pt too wide) in paragraph at lines 572--573
+Overfull \hbox (6.20473pt too wide) in paragraph at lines 593--594
 \EU1/lmr/m/n/12 This section presents the measurement with the proposed variability-resisting method. 
  []
+
+
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+ [21]
+Overfull \vbox (8.568pt too high) has occurred while \output is active []
+
+ [22]
+
+LaTeX Warning: Reference `section:biasVg' on page 23 undefined on input line 598.
 
 File: images/chapter6/DeviceVar_IdVg.png Graphic file (type QTm)
 <use  "images/chapter6/DeviceVar_IdVg.png" >
@@ -2019,32 +1493,30 @@ File: images/chapter6/DeviceVar_gmId.png Graphic file (type QTm)
  <use  "images/chapter6/DeviceVar_gmId.png" >
 File: images/chapter6/DeviceVar_scope.png Graphic file (type QTm)
  <use  "images/chapter6/DeviceVar_scope.png" >
+
+LaTeX Warning: Reference `sec:assumpDiscuss' on page 23 undefined on input line 641.
+
+
+LaTeX Warning: Reference `section:SF' on page 23 undefined on input line 645.
+
+
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [85]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [86]
+ [23]
 File: images/chapter6/layout.PNG Graphic file (type QTm)
  <use  "images/chapter6/layout.PNG" >
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [87]
+ [24]
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [88])
+ [25])
 Overfull \vbox (8.568pt too high) has occurred while \output is active []
 
- [89] (./main.bbl [90
+ [26] (./main.bbl) [27
 
 
-]
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [91])
-Overfull \vbox (8.568pt too high) has occurred while \output is active []
-
- [92] (./main.aux)
+] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -2055,18 +1527,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 145 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 31771 strings out of 493706
- 670855 string characters out of 6145770
- 666027 words of memory out of 5000000
- 34556 multiletter control sequences out of 15000+600000
- 11173 words of font info for 72 fonts, out of 8000000 for 9000
+ 31487 strings out of 493706
+ 665482 string characters out of 6145770
+ 662809 words of memory out of 5000000
+ 34372 multiletter control sequences out of 15000+600000
+ 10028 words of font info for 67 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 55i,15n,69p,10463b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,69p,10463b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (105 pages).
+Output written on main.pdf (35 pages).
