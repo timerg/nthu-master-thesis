@@ -8,7 +8,6 @@ LICENSE.txt
 *.pages
 *.fdb_latexmk
 main.blg
-main.toc
 Makefile
 *.png
 *.svg

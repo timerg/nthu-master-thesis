@@ -296,10 +296,10 @@ It is then modulated in proportional to the ratio of Rs and TIA before being sen
 
 
 
-\subsubsection{The Noise Oscillation Problem in Amplifier with Amplification Rate of 1  }
+\subsubsection{The Oscillation Problem in Amplifier with Amplification Rate of 1  }
 The amplifier in the second stage circuit has three amplification rate ($A_{amp}$): 1, 10 and 100.
 The amplifier works well as the $A_{amp}$ is 10 and 100.
-However, when $A_{amp}$ is 1, the output signal is flooded with noise.
+However, when $A_{amp}$ is 1, the output signal is flooded with a set of high frequency signal (Mainly $180k$Hz in oscillosopce).
 In Fig.\ref{fig:chip:ss_noise}, the input is a 1Hz triangle signal.
 Ideally, the second stage output should be a similar triangle signal.
 But in fact the signal is flooded with noise.
@@ -310,13 +310,14 @@ But in fact the signal is flooded with noise.
     \label{fig:chip:ss_noise}
 \end{figure}
 
-We suggest that the oscillation of noise signal should be the main cause of the problem.
+We suggest that the oscillation of high frequency signal should be the main cause of the problem.
 When designing the amplifier, we did not consider the parasitic capacitance brought by the switches and the pad (with ESD circuit) at the output.
 The simulation below proves our suggestion.
 The parasitic capacitance is modeled by a $5p F$ capacitor.
 Fig.\ref{fig:chip:pMsim}(a) and (b) are the phase margin test of the amplifier before and after the capacitor is loaded on the output.
 The figures indicate that the second dominant pole locates at the output and the parasitic capacitors push it to the left.
 The phase margin is decreased subsequently.
+When the modeled capacitor is increased to $25p F$, the phase drops to -180 degree at $180k$Hz, which is roughly same with the frequency of the oscillation signal.
 
 
 \begin{figure}[tb!h]
@@ -347,7 +348,7 @@ The phase margin is decreased subsequently.
     \label{fig:chip:ss_feed}
 \end{figure}
 
-The reason that the noise oscillation problem only happens when $A_{amp}$ is 1 is because of the feedback mechanism.
+The reason that the oscillation problem only happens when $A_{amp}$ is 1 is because of the feedback mechanism.
 When $A_{amp}$ is 1, the structure is similar to an unit-gain buffer (Fig.\ref{fig:chip:ACschem}(b)).
 In Fig.\ref{fig:chip:ss_feed}, (a) is the feedback network of this structure while (c) is of the amplifier with $A_{amp}$ is 10 and 100.
 To compute the loop gain, the structure is broken at the negative input and a tested signal is injected ($Vt$) as illustrated in Fig.\ref{fig:chip:ss_feed} (b), (d).
@@ -369,7 +370,7 @@ The smaller loop gain increases the phase margin of amplifier by about 45 degree
     \label{fig:chip:pMsim_10x}
 \end{figure}
 
-We tried to dealt with the noise oscillation problem by the signal average technique.
+We tried to dealt with the oscillation problem by the signal average technique.
 The output signal is averaged out to remove the noise component.
 However, the average of the signal may lie on the wrong offset.
 Therefore, the amplifier with $A_{amp} = 1$ is used only when the signal trend is of interest (such as the dynamic input range in Section.\ref{sec:DIR}).
@@ -395,7 +396,7 @@ Another input of the circuit is the Vz (Fig.\ref{fig:chip:ACschem}(b)).
 This voltage is for shifting the offset voltage.
 Its dynamic input range is measured and presented in Fig.\ref{fig:chip:zin}, which ranges from $0.62V$ to $1.47V$.
 To be notable that ideally the input Vz should be equal to the output.
-But in fact an offset voltage of $0.15V$ occurs in Fig.\ref{fig:chip:ACschem} due to the noise oscillation problem mentioned in the last section.
+But in fact an offset voltage of $0.15V$ occurs in Fig.\ref{fig:chip:ACschem} due to the oscillation problem mentioned in the last section.
 This offset does not exist when the $A_{amp}$ is 10 and 100.
 \begin{figure}[tbh!p]
     \centering
@@ -472,7 +473,7 @@ This section presents some of its important properties (gain, noise and bandwidt
     \label{fig:chip:bw}
 \end{figure}
 The gain is the input current to output voltage ratio.
-Because the noise oscillation problem may disturb the bandwidth measurement, we did not measure the circuit with $A_{amp}$ of 1.
+Because the oscillation problem may disturb the bandwidth measurement, we did not measure the circuit with $A_{amp}$ of 1.
 The circuit with $A_{amp}$ of 10 has gain of $891k$ and -3dB bandwidth of $30k$Hz.
 The circuit with $A_{amp}$ of 100 has gain of $8.9M$ and -3dB bandwidth of $7.5k$Hz.
 
@@ -561,7 +562,7 @@ In the future, a bandpass filter with adjustable center frequency should be adde
 
 \subsubsection{Summary of Transient Measurement mode}
 The Table.\ref{tb:chip:cvmR} compares the chip properties and the specification for transient measurement mode.
-Although there is the noise oscillation problem, the performance of the circuit is fine.
+Although there is the oscillation problem, the performance of the circuit is fine.
 
 \begin{table}[tbh!]
     {\fontfamily{}\fontsize{10}{14}\selectfont
@@ -650,73 +651,7 @@ Therefore, in the future, if our circuit adopts the concept of source follower, 
 Overall, although our method does not entirely remove the device variability problem, it mitigates the problem.
 Furthermore, the improvement method is proposed and the progress can be looked forward.
 
-\section{Conclusion and Future Work}
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=0.7\textwidth] {images/chapter6/layout.PNG}
-    \caption{The layout of the Readout circuit}
-    \label{fig:layout}
-\end{figure}
-Fig.\ref{fig:layout} is the chip layout of the circuit.
-It contains four unit of the read-out circuits and is able to measure four nanowire devices at the same time.
 
-In this project, a circuit with two mode: DC-sweep mode and Transient Measurement mode is designed.
-The first mode is to perform $I_D$-$V_G$ sweep while the second mode is to perform transient measurement.
-By combining two mode, the circuit perform measurement by the variability-resisting method we proposed in this project.
-This method mitigate the device variability problem and can be further improve in the future.
-In Table.\ref{tb:ConcCompare}, our circuit is compared with the methods that were reviewed in chapter 2 \cite{Juv2}, \cite{Jlockin}.
-Our circuit has wider $\Delta I$ detection range and lower power consumption when comparing with the similar work \cite{Jlockin}.
-The work in \cite{Juv2} has better performance over all.
-Still our circuit deals with the device variability problem, which does not be mentioned in both works.
-
-\begin{table}[!htb]
-    {\fontfamily{}\fontsize{10}{14}\selectfont
-    \centering
-    \begin{tabular}{l|c|c|c}
-        & \cite{Juv2} & \cite{Jlockin} & This work \\
-        \hline
-        $\Delta I$ &  $120\mu A \sim 0.12n A$ & $3\mu A \sim 60n A$ &
-                \begin{tabular}{@{}c@{}}
-                    $3n A \sim 5.3\mu A$ \\ $-15\mu A\sim -3n A$
-                \end{tabular}
-                \\
-        \hline
-        Power consumption & 14.82uW & 2mW & 1.48mW\\
-        \hline
-        CMOS Technology & 0.13um & 0.18um & 0.35um\\
-        \hline
-        Device Variability & No Discussion & No Discussion & Variability-resisting method \\
-    \end{tabular}
-    \caption{Specification Summary}
-    \label{tb:ConcCompare}
-    }
-\end{table}
-
-
-
-
-\subsection{Future Work}
-\paragraph{Problems in the Circuit Design}
-The low current defect in DC-sweep mode is the most important problem that must be solved.
-The solution for it is to replace the feedback OP with other closed-loop amplifier.
-Another problem is the noise oscillation problem that happens when the $A_{amp}$ of the amplifier in the second-stage circuit is 1.
-This problem can be solved simply by fixing the insufficient phase margin.
-
-\paragraph{Introduce Filter and Better Experimental Process}
-The noise included in Transient Measurement mode could be removed by simply introduce a bandpass filter.
-The problem of this is that the signal speed is still hard to be defined.
-Besides, currently we use pipetman to change the concentration of solution.
-This process can evoke undesired noise and sometimes may not be carried on smoothly.
-Both of these factors destroy or affect the speed of the signal.
-If the process is improved and the signal speed is decided, a filter can be introduced and the noise can be reduced.
-
-Furthermore, for the measurement dealing with the device variability problem, a method to decide when to switch between DC-sweep and Transient Measurement mode is needed.
-This may be achieved by introducing digital circuit or by adding a feedback circuit for detecting whether the concentration changing reach a balance.
-
-\paragraph{The $\Delta V$ Problem}
-In Section.\ref{sec:ch6:dvp}, the method is functional but not perfect.
-We have discussed the improvement methods.
-They should help the further development of design and finally remove the device variability problem.
 
 
 

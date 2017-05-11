@@ -13,10 +13,9 @@
 
 %==============================================================
 \usepackage[BoldFont, SlantFont, CJKchecksingle]{xeCJK}
-\setCJKmainfont[Mapping=tex-text]{STSongti-TC-Light}
-\setCJKsansfont[Mapping=tex-text]{STSongti-TC-Light}
-\setCJKmonofont[Mapping=tex-text]{STSongti-TC-Light}
-
+\setCJKmainfont[Mapping=tex-text]{DFKaiShu-SB-Estd-BF}
+\setCJKsansfont[Mapping=tex-text]{DFKaiShu-SB-Estd-BF}
+\setCJKmonofont[Mapping=tex-text]{DFKaiShu-SB-Estd-BF}
 
 \usepackage[labelfont=bf]{caption}
 \usepackage{wallpaper}
@@ -26,26 +25,30 @@
 \usepackage{placeins}
 \usepackage{tikz}
 \usepackage{notoccite}
+\usepackage[nottoc]{tocbibind}
 \usetikzlibrary{shapes.geometric}
 \usetikzlibrary{matrix,arrows}
 \usetikzlibrary{positioning}
 \usetikzlibrary{calc}
 \usetikzlibrary{decorations.pathreplacing}
-
-
 \usepackage[makeroom]{cancel}
-% Configure your package here
-\newcommand{\scmsubst}[2]{{\color{red}\{#1\}$\rightarrow$}{\color{red}\{#2\}}}
+\usepackage{fancyhdr}
+\pagestyle{plain}
+\rfoot{\thepage}
 \newcommand{\emphy}{}
 %==============================================================
 % page setup for NTHU thesis format
-% \CenterWallPaper{.30}{images/nthu-logo.pdf}
+\CenterWallPaper{.30}{images/nthu-logo.pdf}
 
 % set paper size
-\special{papersize=8.5in,11in}
-\topmargin=14.7mm
-% \bottomargin= 14.7mm
-\oddsidemargin=30mm		% left & right margin 17.45mm
+\special{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+% \topmargin=14.7mm
+\oddsidemargin=25mm
 
 
 % text sizes (Keep these values unchanged!)
@@ -54,10 +57,10 @@
 \parindent=3.5mm
 
 % misc parameters
-\headsep=10mm  \headheight=0mm \footskip=18mm
+\footskip=14.7mm
 
 % conversion to values for LaTeX
-\advance\topmargin-1in\advance\oddsidemargin-1in
+\advance\topmargin-2cm\advance\oddsidemargin-2cm
 \evensidemargin\oddsidemargin
 %==============================================================
 
@@ -67,48 +70,28 @@
 
 \input{data/cover}
 
-% \title{\bf \Huge An Integrated Circuit Design for Silicon-Nanowire}
-% \date{}
-% \author{
-% \begin{tabular}{c}
-% \\
-% \\
-% {\LARGE \bf Student: Young-Chen Chang}\\
-% {\LARGE \bf Advisor: Prof. Hsin Chen}\\
-% \\
-% \\
-% \\
-% \\
-% {\LARGE \bf Department of Electrical Engineering}\\
-% {\LARGE \bf National Tsing Hua University}\\
-% {\LARGE \bf Hsinchu, Taiwan, 30013, R.O.C.}\\
-% \\
-% {\large  2016}
-% \end{tabular}
-% }
-
-% make the title area
-% \maketitle
 
 %==============================================================
 \frontmatter
-\pagenumbering{gobble}
+\pagenumbering{roman}
 \input{data/abstract-en}
-% \input{data/abstract-tc}
+\input{data/abstract-tc}
 \input{data/acknowledgement}
-\setcounter{tocdepth}{4}
+\setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{4}
 \tableofcontents
 \listoffigures
+\listoftables
 
 \mainmatter
 \pagenumbering{arabic}
-% \input{data/chap1}
-% \input{data/chap2}
+\input{data/chap1}
+\input{data/chap2}
 % \input{data/chap3}
 % \input{data/chap4}
 % \input{data/chap5}
-\input{data/chap6}
+% \input{data/chap6}
+% \input{data/chap7}
 
 %==============================================================
 \backmatter
