@@ -4,7 +4,7 @@
 Y~Cui, QQ~Wei, HK~Park, and CM~Lieber.
 \newblock {Nanowire nanosensors for highly sensitive and selective detection of
   biological and chemical species}.
-\newblock {\em {SCIENCE}}, {293}({5533}):{1289--1292}, {AUG 17} {2001}.
+\newblock {\em {SCIENCE}}, {293}:{1289--1292}, {2001}.
 
 \bibitem{R1}
 Bor-Ran Li, Chiao-Chen Chen, U.~Rajesh Kumar, and Yit-Tsong Chen.
@@ -17,21 +17,21 @@ Chih-Heng Lin, Cheng-Hsiung Hung, Cheng-Yun Hsiao, Horng-Chih Lin, Fu-Hsiang
   Ko, and Yuh-Shyong Yang.
 \newblock Poly-silicon nanowire field-effect transistor for ultrasensitive and
   label-free detection of pathogenic avian influenza dna.
-\newblock {\em WOS:000267162200012}, 2009.
+\newblock {\em {BIOSENSORS \& BIOELECTRONICS}}, {24}:{3019--3024}, {2009}.
 
 \bibitem{SF1}
 N.~Nikkhoo, P.~G. Gulak, and K.~Maxwell.
 \newblock Rapid detection of e. coli bacteria using potassium-sensitive fets in
   cmos.
 \newblock {\em IEEE Transactions on Biomedical Circuits and Systems},
-  7(5):621--630, Oct 2013.
+  7:621--630, 2013.
 
 \bibitem{SF2}
 S.~Thanapitak.
 \newblock An 1 v - 1 nw source follower isfet readout circuit for biomedical
   applications.
 \newblock In {\em Science and Information Conference (SAI), 2015}, pages
-  1118--1121, July 2015.
+  1118--1121, 2015.
 
 \bibitem{Drift}
 Stanley~D. Moss, Jiri Janata, and Curtis~C. Johnson.
@@ -42,21 +42,20 @@ A.~Bonanno, V.~Cauda, M.~Crepaldi, P.~M. Ros, M.~Morello, D.~Demarchi, and
 \newblock A low-power read-out circuit and low-cost assembly of nanosensors
   onto a 0.13 um cmos micro-for-nano chip.
 \newblock In {\em Advances in Sensors and Interfaces (IWASI), 2013 5th IEEE
-  International Workshop on}, pages 125--130, June 2013.
+  International Workshop on}, pages 125--130, 2013.
 
 \bibitem{Juv2}
 A.~Bonanno, M.~Morello, M.~Crepaldi, A.~Sanginario, S.~Benetto, V.~Cauda,
   P.~Civera, and D.~Demarchi.
 \newblock A low-power 0.13 um cmos ic for zno-nanowire assembly and
   nanowire-based uv sensor interface.
-\newblock {\em IEEE Sensors Journal}, 15(8):4203--4212, Aug 2015.
+\newblock {\em IEEE Sensors Journal}, 15:4203--4212, 2015.
 
 \bibitem{Jlockin}
 Jiawei Xu, Peter Offermans, Guy Meynants, Hien~Duy Tong, Cees J.~M. van Rijn,
   and Patrick Merken.
 \newblock {A low-power readout circuit for nanowire based hydrogen sensor}.
-\newblock {\em {MICROELECTRONICS JOURNAL}}, {41}({11, SI}):{733--739}, {NOV}
-  {2010}.
+\newblock {\em {MICROELECTRONICS JOURNAL}}, {41}:{733--739}, {2010}.
 
 \bibitem{M4N}
 A.~Bonanno, V.~Cauda, M.~Crepaldi, P.~M. Ros, M.~Morello, D.~Demarchi, and
@@ -64,7 +63,7 @@ A.~Bonanno, V.~Cauda, M.~Crepaldi, P.~M. Ros, M.~Morello, D.~Demarchi, and
 \newblock A low-power read-out circuit and low-cost assembly of nanosensors
   onto a 0.13 um cmos micro-for-nano chip.
 \newblock In {\em 5th IEEE International Workshop on Advances in Sensors and
-  Interfaces IWASI}, pages 125--130, June 2013.
+  Interfaces IWASI}, pages 125--130, 2013.
 
 \bibitem{ElecChem}
 {Allen J. Bard, Larry R . Faulkner}.
@@ -87,15 +86,39 @@ Ana Cuervo and et~al Dans, Laura.
 \newblock {Direct measurement of the dielectric polarization properties of
   DNA}.
 \newblock {\em {PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED
-  STATES OF AMERICA}}, {2014}.
+  STATES OF AMERICA}}, {111}:{E3624--E3630}, {2014}.
 
 \bibitem{DN17}
-Cheng-Yun Hsiao, Chih-Heng Lin, Cheng-Hsiung Hung, Chun-Jung Su, Yen-Ren Lo,
-  Cheng-Che Lee, Horng-Chin Lin, Fu-Hsiang Ko, Tiao-Yuan Huang, and Yuh-Shyong
-  Yang.
+Cheng-Yun Hsiao and et~al Lin, Yuh-Shyong.
 \newblock {Novel poly-silicon nanowire field effect transistor for biosensing
   application}.
-\newblock {\em {BIOSENSORS \& BIOELECTRONICS}}, {24}({5, SI}):{1223--1229},
-  {JAN 1} {2009}.
+\newblock {\em {BIOSENSORS \& BIOELECTRONICS}}, {24}:{1223--1229}, {2009}.
+
+\bibitem{C5}
+Chih-Heng Lin, Cheng-Yun Hsiao, Cheng-Hsiung Hung, Yen-Ren Lo, Cheng-Che Lee,
+  Chun-Jung Su, Horng-Chin Lin, Fu-Hsiang Ko, Tiao-Yuan Huang, and Yuh-Shyong
+  Yang.
+\newblock Ultrasensitive detection of dopamine using a polysilicon nanowire
+  field-effect transistor.
+\newblock {\em CHEMICAL COMMUNICATIONS}, pages 5749--5751.
+
+\bibitem{C7}
+I.~Zadorozhnyi, S.~Pud, S.~Vitusevich, and M.~Petrychuk.
+\newblock Features of the gate coupling effect in liquid-gated si nanowire
+  fets.
+\newblock In {\em Noise and Fluctuations (ICNF), 2015 International Conference
+  on}, pages 1--4, 2015.
+
+\bibitem{C8}
+Sergii Pud, Jing Li, Volodymyr Sibiliev, Mykhaylo Petrychuk, Valery Kovalenko,
+  Andreas OffenhÃ€usser, and Svetlana Vitusevich.
+\newblock Liquid and back gate coupling effect: Toward biosensing with lowest
+  detection limit.
+\newblock {\em Nano Letters}, 14:578--584, 2014.
+
+\bibitem{Tsubtractor}
+{徐文陽(Yen-Pang Lai)}.
+\newblock {A CMOS FET sensor chip to detect the DNA amplification process}.
+\newblock {\em {國立清華大學電子工程研究所碩士論文}}, {2011}.
 
 \end{thebibliography}

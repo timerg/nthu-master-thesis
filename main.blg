@@ -3,7 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: data/thesis.bib
-I was expecting a `,' or a `}'---line 144 of file data/thesis.bib
+You're missing a field name---line 25 of file data/thesis.bib
+ : pages  ="5749-5751",
+ :                     ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 106 of file data/thesis.bib
  : 
  : title = {Potassium ion-sensitive field effect transistor},
 (Error may have been on previous line)
@@ -12,45 +16,46 @@ Warning--empty title in Drift
 Warning--empty journal in Drift
 Warning--empty year in Drift
 Warning--empty year in bookOfElecMethod
-You've used 15 entries,
+Warning--empty year in C5
+You've used 19 entries,
             1791 wiz_defined-function locations,
-            550 strings with 6469 characters,
-and the built_in function-call counts, 3967 in all, are:
-= -- 309
-> -- 218
-< -- 3
-+ -- 79
-- -- 64
-* -- 303
-:= -- 625
-add.period$ -- 43
-call.type$ -- 15
-change.case$ -- 11
+            565 strings with 7207 characters,
+and the built_in function-call counts, 5249 in all, are:
+= -- 429
+> -- 267
+< -- 5
++ -- 97
+- -- 78
+* -- 367
+:= -- 814
+add.period$ -- 55
+call.type$ -- 19
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 173
-empty$ -- 374
-format.name$ -- 64
-if$ -- 887
+cite$ -- 24
+duplicate$ -- 229
+empty$ -- 498
+format.name$ -- 78
+if$ -- 1193
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 18
-newline$ -- 76
-num.names$ -- 15
-pop$ -- 59
+int.to.str$ -- 19
+missing$ -- 22
+newline$ -- 96
+num.names$ -- 19
+pop$ -- 69
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 84
+skip$ -- 119
 stack$ -- 0
-substring$ -- 260
-swap$ -- 46
-text.length$ -- 3
+substring$ -- 401
+swap$ -- 67
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 27
-width$ -- 17
-write$ -- 155
-(There was 1 error message)
+warning$ -- 5
+while$ -- 38
+width$ -- 21
+write$ -- 199
+(There were 2 error messages)

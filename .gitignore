@@ -18,10 +18,12 @@ main.toc
 main.synctex.gz
 main.log
 main.lof
+main.lot
 main.fls
 main.fdb_latexmk
 main.aux
 main.pdf
+main.bcf
 *.eps
 *.jpg
 

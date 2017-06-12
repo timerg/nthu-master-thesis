@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  11 MAY 2017 21:11
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.8)  5 JUN 2017 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1184,26 +1184,26 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 71.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 71.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    ... okay on input line 71.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1211,66 +1211,66 @@ LaTeX Font Info:    ... okay on input line 68.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 68.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 68.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 68.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 68.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 68.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 68.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 68.
-LaTeX Font Info:    Redeclaring math accent \check on input line 68.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 68.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 68.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 68.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 68.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 68.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 71.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 71.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 71.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 71.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 71.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 71.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 71.
+LaTeX Font Info:    Redeclaring math accent \check on input line 71.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 71.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 71.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 71.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 71.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 68.
+(Font)              `operators' in the math version `normal' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 68.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 71.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 68.
+(Font)              `operators' in the math version `bold' on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 68.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 68.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 68.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 68.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 68.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 68.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 68.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 68.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 68.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 68.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 71.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box60
  ABD: EveryShipout initializing macros (./data/cover.tex)
-Overfull \hbox (21.95847pt too wide) in paragraph at lines 28--72
+Overfull \hbox (21.95847pt too wide) in paragraph at lines 28--75
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--72
+Underfull \hbox (badness 10000) in paragraph at lines 28--75
 
  []
 
@@ -1301,31 +1301,67 @@ LaTeX Font Info:    Calculating math sizes for size <14> on input line 6.
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [4
 
-])
+]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [5])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [5] (./main.lof
+ <use  "images/nthu-logo.pdf" > [6] (./main.lof
 Overfull \hbox (9.19864pt too wide) in paragraph at lines 11--11
  [][] []\EU1/lmr/m/n/12 Concentration-dependent electric response($\OML/cmm/m/it/14.4 I[] \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 V[]$\EU1/lmr/m/n/12 ) of biotin-modified 
  []
 
-)
+
+Overfull \hbox (4.85011pt too wide) in paragraph at lines 16--16
+ \EU1/lmr/m/n/12 devices. In \EU1/lmr/bx/n/14 (a)\EU1/lmr/m/n/12 , the measurement result of 1fM and 100fM biomolecule 
+ []
+
+
+Overfull \hbox (40.18661pt too wide) in paragraph at lines 17--17
+ [][] []\EU1/lmr/m/n/12 Concentration-dependent $\OML/cmm/m/it/14.4 I[]$\EU1/lmr/m/n/12 -$\OML/cmm/m/it/14.4 V[]$ \EU1/lmr/m/n/12 curves with concentration of Na_PB(Buffer 
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [7
+
+]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [8]
+Overfull \hbox (15.40855pt too wide) in paragraph at lines 39--39
+ [][] []\EU1/lmr/m/n/12 The dc simulation results of TIA. The x-axis represents positive/negative 
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [9]
+Overfull \hbox (4.06224pt too wide) in paragraph at lines 50--50
+ [][] []\EU1/lmr/m/n/12 Five corners output DC response (vout) and derivative ($\OML/cmm/m/it/14.4 dvout\OT1/cmr/m/n/14.4 /\OML/cmm/m/it/14.4 dvin$\EU1/lmr/m/n/12 ) 
+ []
+
+
+Overfull \hbox (15.40855pt too wide) in paragraph at lines 62--62
+ [][] []\EU1/lmr/m/n/12 The dc simulation results of TIA. The x-axis represents positive/negative 
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [10]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [11])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [6
+ <use  "images/nthu-logo.pdf" > [12] (./main.lot
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [13
 
-] (./main.lot)
+])
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [7
-
-] (./data/chap1.tex
+ <use  "images/nthu-logo.pdf" > [14] (./data/chap1.tex
 Chapter 1.
 File: images/nthu-logo.pdf Graphic file (type QTm)
 <use  "images/nthu-logo.pdf" > [1
@@ -1374,11 +1410,8 @@ LaTeX Font Warning: Font shape `EU1//m/n' undefined
 
 File: images/nthu-logo.pdf Graphic file (type QTm)
 <use  "images/nthu-logo.pdf" > [11]
-
-LaTeX Warning: Reference `sec:Ibias' on page 12 undefined on input line 249.
-
 File: images/nthu-logo.pdf Graphic file (type QTm)
-<use  "images/nthu-logo.pdf" > [12]
+ <use  "images/nthu-logo.pdf" > [12]
 Overfull \hbox (0.70241pt too wide) in paragraph at lines 293--293
 [] 
  []
@@ -1395,34 +1428,589 @@ File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [15]
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [16]
-
-LaTeX Warning: Reference `section:disparityBio' on page 17 undefined on input line 381.
-
 File: images/chapter2/DN18Fig3D.png Graphic file (type QTm)
-<use  "images/chapter2/DN18Fig3D.png" >)
+ <use  "images/chapter2/DN18Fig3D.png" >) (./data/chap3.tex
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [17] (./main.bbl
+ <use  "images/nthu-logo.pdf" > [17]
+Chapter 3.
+
+LaTeX Warning: Reference `fid:proccess' on page 18 undefined on input line 15.
+
+File: images/chapter3/Nw.png Graphic file (type QTm)
+<use  "images/chapter3/Nw.png" >
+File: images/chapter3/Nw_section.png Graphic file (type QTm)
+ <use  "images/chapter3/Nw_section.png" >
 File: images/nthu-logo.pdf Graphic file (type QTm)
  <use  "images/nthu-logo.pdf" > [18
 
-
-])
+]
+File: images/chapter3/NwFigProccess.png Graphic file (type QTm)
+ <use  "images/chapter3/NwFigProccess.png" >
 File: images/nthu-logo.pdf Graphic file (type QTm)
- <use  "images/nthu-logo.pdf" > [19] (./main.aux)
+ <use  "images/nthu-logo.pdf" > [19]
+File: images/chapter3/NW_phys.png Graphic file (type QTm)
+ <use  "images/chapter3/NW_phys.png" >
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 81 replaced by U+FFFD.
+File: images/chapter3/208_devices/L2-8_log.eps Graphic file (type eps)
+ <images/chapter3/208_devices/L2-8_log.eps>
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 87 replaced by U+FFFD.
+File: images/chapter3/208_devices/L2-10_log.eps Graphic file (type eps)
+ <images/chapter3/208_devices/L2-10_log.eps>
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [20]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [21]
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+File: images/chapter3/128_allT_mag.eps Graphic file (type eps)
+ <images/chapter3/128_allT_mag.eps>
+Underfull \hbox (badness 1789) in paragraph at lines 107--107
+[]\EU1/lmr/bx/n/12 Figure 3.5: |\EU1/lmr/m/n/12 Concentration-dependent $\OML/cmm/m/it/12 I[]$\EU1/lmr/m/n/12 -$\OML/cmm/m/it/12 V[]$ \EU1/lmr/m/n/12 curves with concentration of
+ []
+
+Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 119 replaced by U+FFFD.
+File: images/chapter3/128_allT_error.eps Graphic file (type eps)
+<images/chapter3/128_allT_error.eps>
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [22]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [23]
+Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 152 replaced by U+FFFD.
+File: images/chapter3/208_devices/L2-7_log.eps Graphic file (type eps)
+ <images/chapter3/208_devices/L2-7_log.eps>
+Overfull \hbox (31.72258pt too wide) in paragraph at lines 152--154
+ [][] 
+ []
+
+Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 158 replaced by U+FFFD.
+File: images/chapter3/208_devices/L2-7_margin.eps Graphic file (type eps)
+<images/chapter3/208_devices/L2-7_margin.eps>
+Overfull \hbox (31.72258pt too wide) in paragraph at lines 158--161
+ [][] 
+ []
+
+
+Overfull \hbox (2.60799pt too wide) in paragraph at lines 150--162
+[][]  [] 
+ []
+
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 165 replaced by U+FFFD.
+File: images/chapter3/208_devices/L2-8_log.eps Graphic file (type eps)
+<images/chapter3/208_devices/L2-8_log.eps>
+Overfull \hbox (31.72258pt too wide) in paragraph at lines 165--167
+ [][] 
+ []
+
+Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 171 replaced by U+FFFD.
+File: images/chapter3/208_devices/L2-8_margin.eps Graphic file (type eps)
+<images/chapter3/208_devices/L2-8_margin.eps>
+Overfull \hbox (31.72258pt too wide) in paragraph at lines 171--174
+ [][] 
+ []
+
+
+Overfull \hbox (2.60799pt too wide) in paragraph at lines 163--175
+[][]  [] 
+ []
+
+Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 178 replaced by U+FFFD.
+File: images/chapter3/208_devices/L2-12_log.eps Graphic file (type eps)
+<images/chapter3/208_devices/L2-12_log.eps>
+Overfull \hbox (31.72258pt too wide) in paragraph at lines 178--180
+ [][] 
+ []
+
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+File: images/chapter3/208_devices/L2-12_margin.eps Graphic file (type eps)
+<images/chapter3/208_devices/L2-12_margin.eps>
+Overfull \hbox (31.72258pt too wide) in paragraph at lines 184--187
+ [][] 
+ []
+
+
+Overfull \hbox (2.60799pt too wide) in paragraph at lines 176--188
+[][]  [] 
+ []
+
+Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 206 replaced by U+FFFD.
+File: images/chapter3/Id_Dev_bio.eps Graphic file (type eps)
+<images/chapter3/Id_Dev_bio.eps>
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [24]
+
+LaTeX Warning: Text page 25 contains only floats.
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [25]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [26]
+File: images/chapter3/FgBg_Compare_Id.eps Graphic file (type eps)
+ <images/chapter3/FgBg_Compare_Id.eps>
+File: images/chapter3/FgBg_Compare_Id_dev.eps Graphic file (type eps)
+ <images/chapter3/FgBg_Compare_Id_dev.eps>
+File: images/chapter3/pIdVg.eps Graphic file (type eps)
+ <images/chapter3/pIdVg.eps>
+File: images/chapter3/pIdgbs.eps Graphic file (type eps)
+ <images/chapter3/pIdgbs.eps>
+File: images/chapter3/pIdgbs_Vd.eps Graphic file (type eps)
+ <images/chapter3/pIdgbs_Vd.eps>
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [27]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [28]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [29]
+File: images/chapter3/rds_I.eps Graphic file (type eps)
+ <images/chapter3/rds_I.eps>
+File: images/chapter3/pDisparity.eps Graphic file (type eps)
+ <images/chapter3/pDisparity.eps>
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [30]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [31]
+Overfull \hbox (20.21442pt too wide) in paragraph at lines 419--425
+ [][] 
+ []
+
+) (./data/chap4.tex
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [32]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [33]
+Chapter 4.
+File: images/chapter4/SFdiscrete_old.png Graphic file (type QTm)
+<use  "images/chapter4/SFdiscrete_old.png" >
+File: images/chapter4/SFdiscrete_schematic.png Graphic file (type QTm)
+ <use  "images/chapter4/SFdiscrete_schematic.png" >
+Overfull \hbox (1.7767pt too wide) in paragraph at lines 24--25
+\EU1/lmr/m/n/12 The circuit is divided into two sections: the constant-voltage circuit and the constant-
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [34
+
+]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [35]
+File: images/chapter4/LM334.png Graphic file (type QTm)
+ <use  "images/chapter4/LM334.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [36]
+Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+File: images/chapter4/SF.eps Graphic file (type eps)
+ <images/chapter4/SF.eps>
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 103 replaced by U+FFFD.
+File: images/chapter4/SF_impedance.eps Graphic file (type eps)
+ <images/chapter4/SF_impedance.eps>
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [37]) (./data/chap5.tex
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [38]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [39]
+Chapter 5.
+File: images/chapter5/DCMode.png Graphic file (type QTm)
+<use  "images/chapter5/DCMode.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [40
+
+]
+Overfull \hbox (5.59734pt too wide) in paragraph at lines 32--32
+[]\EU1/lmr/bx/n/14.4 The Circuit and Usage of Transient Measurement mode 
+ []
+
+File: images/chapter5/ACMode.png Graphic file (type QTm)
+<use  "images/chapter5/ACMode.png" >
+File: images/chapter5/ACMode_sine.png Graphic file (type QTm)
+ <use  "images/chapter5/ACMode_sine.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [41]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [42]
+File: images/chapter5/TIA_olda.png Graphic file (type QTm)
+ <use  "images/chapter5/TIA_olda.png" >
+Overfull \hbox (19.20665pt too wide) in paragraph at lines 92--94
+[][]
+ []
+
+File: images/chapter5/TIA_old.png Graphic file (type QTm)
+<use  "images/chapter5/TIA_old.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [43]
+File: images/chapter5/TIA.png Graphic file (type QTm)
+ <use  "images/chapter5/TIA.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [44]
+File: images/chapter5/TIA_block.png Graphic file (type QTm)
+ <use  "images/chapter5/TIA_block.png" >
+File: images/chapter5/TIA_sch.png Graphic file (type QTm)
+ <use  "images/chapter5/TIA_sch.png" >
+File: images/chapter5/postSim/TIA_ac.jpg Graphic file (type QTm)
+ <use  "images/chapter5/postSim/TIA_ac.jpg" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [45]
+File: images/chapter5/postSim/TIA_dc.jpg Graphic file (type QTm)
+ <use  "images/chapter5/postSim/TIA_dc.jpg" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [46]
+File: images/chapter5/feedbackBlock.png Graphic file (type QTm)
+ <use  "images/chapter5/feedbackBlock.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [47]
+File: images/chapter5/input_imp.png Graphic file (type QTm)
+ <use  "images/chapter5/input_imp.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [48]
+File: images/chapter5/LoopGain.png Graphic file (type QTm)
+ <use  "images/chapter5/LoopGain.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [49]
+File: images/chapter5/OP_block.png Graphic file (type QTm)
+ <use  "images/chapter5/OP_block.png" >
+File: images/chapter5/OP_sch.png Graphic file (type QTm)
+ <use  "images/chapter5/OP_sch.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [50]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [51]
+File: images/chapter5/postSim/DCIcompare_all.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/DCIcompare_all.PNG" >
+File: images/chapter5/postSim/stability_1p.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/stability_1p.PNG" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [52]
+File: images/chapter5/mirror.PNG Graphic file (type QTm)
+ <use  "images/chapter5/mirror.PNG" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [53]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+
+<use  "images/nthu-logo.pdf" > [54]
+File: images/chapter5/Second.png Graphic file (type QTm)
+ <use  "images/chapter5/Second.png" >
+File: images/chapter5/Subtractor.png Graphic file (type QTm)
+ <use  "images/chapter5/Subtractor.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [55]
+File: images/chapter5/postSim/subtractor_5_xx.jpg Graphic file (type QTm)
+ <use  "images/chapter5/postSim/subtractor_5_xx.jpg" >
+File: images/chapter5/postSim/subtractor_5_zz.jpg Graphic file (type QTm)
+ <use  "images/chapter5/postSim/subtractor_5_zz.jpg" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [56]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [57]
+File: images/chapter5/postSim/ResAmp_1x.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/ResAmp_1x.PNG" >
+File: images/chapter5/postSim/ResAmp_10x.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/ResAmp_10x.PNG" >
+File: images/chapter5/postSim/ResAmp_100x.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/ResAmp_100x.PNG" >
+Underfull \hbox (badness 10000) in paragraph at lines 595--611
+[][] []
+ []
+
+
+Overfull \hbox (6.35152pt too wide) in paragraph at lines 619--632
+ [][] 
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [58]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [59]
+File: images/chapter5/NWROC_block_vg.png Graphic file (type QTm)
+ <use  "images/chapter5/NWROC_block_vg.png" >
+File: images/chapter5/postSim/totalGain.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/totalGain.PNG" >
+File: images/chapter5/postSim/noise.png Graphic file (type QTm)
+ <use  "images/chapter5/postSim/noise.png" >
+Overfull \hbox (3.10849pt too wide) in paragraph at lines 687--691
+[]\EU1/lmr/m/n/12 Fig.5.20[] presents the maximal gain that the circuit provides at five corners. Fig.5.21[]
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [60]
+File: images/chapter5/NWROC_block_vs.png Graphic file (type QTm)
+ <use  "images/chapter5/NWROC_block_vs.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [61]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [62]
+File: images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_tran.PNG" >
+File: images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/sine_gm_x10_1u_10u_ac.PNG" >
+File: images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/sine_gm_x100_1u_6u_tran.PNG" >
+File: images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG Graphic file (type QTm)
+ <use  "images/chapter5/postSim/sine_gm_x100_1u_6u_ac.PNG" >) (./data/chap6.tex
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [63]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [64]
+Chapter 6.
+File: images/chapter6/FrontedCircuit.png Graphic file (type QTm)
+<use  "images/chapter6/FrontedCircuit.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [65
+
+]
+File: images/chapter5/mirror.PNG Graphic file (type QTm)
+ <use  "images/chapter5/mirror.PNG" >
+File: images/chapter6/Ibias.png Graphic file (type QTm)
+ <use  "images/chapter6/Ibias.png" >
+Overfull \hbox (14.37949pt too wide) in paragraph at lines 39--48
+\EU1/lmr/m/n/12 The Fig.6.3[](a) and (c) show that the dynamic input current range of TIA is $\OT1/cmr/m/n/14.4 +5\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 3\OML/cmm/m/it/14.4 ^^VA \OMS/cmsy/m/n/14.4 ^^X
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [66]
+File: images/chapter6/Trimp_I+.png Graphic file (type QTm)
+ <use  "images/chapter6/Trimp_I+.png" >
+File: images/chapter6/Trimp_I-.png Graphic file (type QTm)
+ <use  "images/chapter6/Trimp_I-.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [67]
+File: images/chapter6/Problem_OPGain.png Graphic file (type QTm)
+ <use  "images/chapter6/Problem_OPGain.png" >
+File: images/chapter6/DCMode.png Graphic file (type QTm)
+ <use  "images/chapter6/DCMode.png" >
+File: images/chapter6/gvt_0101Manual_IdVg.png Graphic file (type QTm)
+ <use  "images/chapter6/gvt_0101Manual_IdVg.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [68]
+File: images/chapter6/gvt_0101Manual_gmId.png Graphic file (type QTm)
+ <use  "images/chapter6/gvt_0101Manual_gmId.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [69]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [70]
+File: images/chapter6/gvt_0101Manual_VopiProblem.png Graphic file (type QTm)
+ <use  "images/chapter6/gvt_0101Manual_VopiProblem.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [71]
+File: images/chapter6/OP_schematic.png Graphic file (type QTm)
+ <use  "images/chapter6/OP_schematic.png" >
+File: images/chapter6/TrOP_layout.PNG Graphic file (type QTm)
+ <use  "images/chapter6/TrOP_layout.PNG" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [72]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [73]
+File: images/chapter6/NWROC_block.png Graphic file (type QTm)
+ <use  "images/chapter6/NWROC_block.png" >
+File: images/chapter6/Second.png Graphic file (type QTm)
+ <use  "images/chapter6/Second.png" >
+Overfull \hbox (2.60799pt too wide) in paragraph at lines 253--266
+[][]  [] 
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [74]
+File: images/chapter6/CVMVsMeas.png Graphic file (type QTm)
+ <use  "images/chapter6/CVMVsMeas.png" >
+File: images/chapter6/Subtractor_noise.png Graphic file (type QTm)
+ <use  "images/chapter6/Subtractor_noise.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [75]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [76]
+File: images/chapter6/Amp_PM.PNG Graphic file (type QTm)
+ <use  "images/chapter6/Amp_PM.PNG" >
+File: images/chapter6/Amp_PM_5p.PNG Graphic file (type QTm)
+ <use  "images/chapter6/Amp_PM_5p.PNG" >
+File: images/chapter6/SeconStage_feed.png Graphic file (type QTm)
+ <use  "images/chapter6/SeconStage_feed.png" >
+File: images/chapter6/Amp_pm_5p_10x.PNG Graphic file (type QTm)
+ <use  "images/chapter6/Amp_pm_5p_10x.PNG" >
+File: images/chapter6/SubtractorXin.png Graphic file (type QTm)
+ <use  "images/chapter6/SubtractorXin.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [77]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [78]
+File: images/chapter6/SubtractorZoffset.png Graphic file (type QTm)
+ <use  "images/chapter6/SubtractorZoffset.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [79]
+File: images/chapter6/SubtractorXin_scope.png Graphic file (type QTm)
+ <use  "images/chapter6/SubtractorXin_scope.png" >
+File: images/chapter6/SecondStageAmp10x.png Graphic file (type QTm)
+ <use  "images/chapter6/SecondStageAmp10x.png" >
+File: images/chapter6/SecondStageAmp100x.png Graphic file (type QTm)
+ <use  "images/chapter6/SecondStageAmp100x.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [80]
+File: images/chapter6/Bw_10x.png Graphic file (type QTm)
+ <use  "images/chapter6/Bw_10x.png" >
+File: images/chapter6/Bw_100x.png Graphic file (type QTm)
+ <use  "images/chapter6/Bw_100x.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [81]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [82]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [83]
+File: images/chapter6/Noise.png Graphic file (type QTm)
+ <use  "images/chapter6/Noise.png" >
+File: images/chapter6/VinToVout_scope_0425_150mV.png Graphic file (type QTm)
+
+<use  "images/chapter6/VinToVout_scope_0425_150mV.png" >
+File: images/chapter6/VinToVout_scope_0425_20mV.png Graphic file (type QTm)
+ <use  "images/chapter6/VinToVout_scope_0425_20mV.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [84]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [85]
+File: images/chapter6/Sin_1u.png Graphic file (type QTm)
+ <use  "images/chapter6/Sin_1u.png" >
+File: images/chapter6/Sin_1p8u.png Graphic file (type QTm)
+ <use  "images/chapter6/Sin_1p8u.png" >
+Overfull \hbox (6.20473pt too wide) in paragraph at lines 593--594
+\EU1/lmr/m/n/12 This section presents the measurement with the proposed variability-resisting method. 
+ []
+
+File: images/nthu-logo.pdf Graphic file (type QTm)
+<use  "images/nthu-logo.pdf" > [86]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [87]
+File: images/chapter6/DeviceVar_IdVg.png Graphic file (type QTm)
+ <use  "images/chapter6/DeviceVar_IdVg.png" >
+File: images/chapter6/DeviceVar_gmId.png Graphic file (type QTm)
+ <use  "images/chapter6/DeviceVar_gmId.png" >
+File: images/chapter6/DeviceVar_scope.png Graphic file (type QTm)
+ <use  "images/chapter6/DeviceVar_scope.png" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [88]) (./data/chap7.tex
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [89]
+Chapter 7.
+File: images/chapter6/layout.PNG Graphic file (type QTm)
+<use  "images/chapter6/layout.PNG" >
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [90
+
+]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [91])
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [92] (./main.bbl
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [93
+
+
+]
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [94])
+File: images/nthu-logo.pdf Graphic file (type QTm)
+ <use  "images/nthu-logo.pdf" > [95] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
- ) 
-Here is how much of TeX's memory you used:
- 31602 strings out of 493706
- 666802 string characters out of 6145770
- 664802 words of memory out of 5000000
- 34499 multiletter control sequences out of 15000+600000
- 10505 words of font info for 72 fonts, out of 8000000 for 9000
- 1328 hyphenation exceptions out of 8191
- 55i,14n,69p,10465b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+ )
+(\end occurred inside a group at level 1)
 
-Output written on main.pdf (27 pages).
+### simple group (level 1) entered at line 145 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 32017 strings out of 493706
+ 675306 string characters out of 6145770
+ 669099 words of memory out of 5000000
+ 34790 multiletter control sequences out of 15000+600000
+ 10513 words of font info for 73 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 55i,15n,69p,10465b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (110 pages).
